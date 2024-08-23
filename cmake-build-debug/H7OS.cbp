@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="H7OS"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/H7OS/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;D:/H7OS/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;D:/H7OS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;D:/H7OS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;D:/H7OS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="H7OS.elf">
+				<Option output="D:/H7OS/cmake-build-debug/H7OS.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/H7OS/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DARM_MATH_MATRIX_CHECK"/>
+					<Add option="-DARM_MATH_ROUNDING"/>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32H743xx"/>
+					<Add directory="D:/H7OS/Core/Inc"/>
+					<Add directory="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc"/>
+					<Add directory="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="D:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include"/>
+					<Add directory="D:/H7OS/Drivers/CMSIS/Include"/>
+					<Add directory="D:/H7OS/FATFS/Target"/>
+					<Add directory="D:/H7OS/FATFS/App"/>
+					<Add directory="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include"/>
+					<Add directory="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS"/>
+					<Add directory="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
+					<Add directory="D:/H7OS/Middlewares/Third_Party/FatFs/src"/>
+					<Add directory="D:/H7OS/Utilities/JPEG"/>
+					<Add directory="D:/H7OS/Drivers/Kernel/inc"/>
+					<Add directory="D:/H7OS/Applications/inc"/>
+					<Add directory="D:/H7OS/RAMFS"/>
+					<Add directory="e:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="e:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="e:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="e:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="e:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="e:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;D:/H7OS/cmake-build-debug/Makefile&quot;  VERBOSE=1 H7OS.elf"/>
+					<CompileFile command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;D:/H7OS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;D:/H7OS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;D:/H7OS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="H7OS.elf/fast">
+				<Option output="D:/H7OS/cmake-build-debug/H7OS.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/H7OS/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DARM_MATH_MATRIX_CHECK"/>
+					<Add option="-DARM_MATH_ROUNDING"/>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32H743xx"/>
+					<Add directory="D:/H7OS/Core/Inc"/>
+					<Add directory="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc"/>
+					<Add directory="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="D:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include"/>
+					<Add directory="D:/H7OS/Drivers/CMSIS/Include"/>
+					<Add directory="D:/H7OS/FATFS/Target"/>
+					<Add directory="D:/H7OS/FATFS/App"/>
+					<Add directory="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include"/>
+					<Add directory="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS"/>
+					<Add directory="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
+					<Add directory="D:/H7OS/Middlewares/Third_Party/FatFs/src"/>
+					<Add directory="D:/H7OS/Utilities/JPEG"/>
+					<Add directory="D:/H7OS/Drivers/Kernel/inc"/>
+					<Add directory="D:/H7OS/Applications/inc"/>
+					<Add directory="D:/H7OS/RAMFS"/>
+					<Add directory="e:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="e:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="e:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="e:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="e:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="e:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;D:/H7OS/cmake-build-debug/Makefile&quot;  VERBOSE=1 H7OS.elf/fast"/>
+					<CompileFile command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;D:/H7OS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;D:/H7OS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;D:/H7OS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/H7OS/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;D:/H7OS/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;D:/H7OS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;D:/H7OS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;D:/H7OS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/H7OS/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;D:/H7OS/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;D:/H7OS/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;D:/H7OS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;D:/H7OS/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/H7OS/Applications/inc/test.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Applications/src/test.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Inc/FreeRTOSConfig.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Inc/dma.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Inc/dma2d.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Inc/fmc.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Inc/gpio.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Inc/jpeg.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Inc/jpeg_utils_conf.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Inc/main.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Inc/mdma.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Inc/quadspi.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Inc/rng.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Inc/rtc.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Inc/sdmmc.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Inc/stm32h7xx_hal_conf.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Inc/stm32h7xx_it.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Inc/usart.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Src/dma.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Src/dma2d.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Src/fmc.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Src/freertos.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Src/gpio.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Src/jpeg.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Src/main.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Src/mdma.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Src/quadspi.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Src/rng.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Src/rtc.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Src/sdmmc.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Src/stm32h7xx_hal_msp.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Src/stm32h7xx_hal_timebase_tim.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Src/stm32h7xx_it.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Src/syscalls.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Src/sysmem.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Src/system_stm32h7xx.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Src/usart.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Core/Startup/startup_stm32h743iitx.s">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/LICENSE.txt">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Include/cmsis_armcc.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Include/cmsis_armclang.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Include/cmsis_armclang_ltm.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Include/cmsis_compiler.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Include/cmsis_gcc.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Include/cmsis_iccarm.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Include/cmsis_version.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Include/core_armv81mml.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Include/core_armv8mbl.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Include/core_armv8mml.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Include/core_cm0.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Include/core_cm0plus.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Include/core_cm1.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Include/core_cm23.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Include/core_cm3.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Include/core_cm33.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Include/core_cm35p.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Include/core_cm4.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Include/core_cm7.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Include/core_sc000.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Include/core_sc300.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Include/mpu_armv7.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Include/mpu_armv8.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/Include/tz_context.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/CMSIS/LICENSE.txt">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/Kernel/inc/memctl.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/Kernel/inc/timer.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/Kernel/inc/tlsf.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/Kernel/inc/tlsfbit.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/Kernel/inc/u_stdio.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/Kernel/inc/u_thread.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/Kernel/src/memctl.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/Kernel/src/timer.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/Kernel/src/tlsf.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/Kernel/src/u_stdio.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/Kernel/src/u_thread.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_jpeg.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_qspi.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rng.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rng_ex.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rtc.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rtc_ex.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sd.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sd_ex.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_bus.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_cortex.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_crs.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_delayblock.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dma.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dma2d.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dmamux.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_exti.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_gpio.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_hsem.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_lpuart.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_pwr.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_rcc.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_rng.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_rtc.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_sdmmc.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_system.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usart.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_utils.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/LICENSE.txt">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/FATFS/App/fatfs.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/FATFS/App/fatfs.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/FATFS/Target/bsp_driver_sd.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/FATFS/Target/bsp_driver_sd.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/FATFS/Target/fatfs_platform.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/FATFS/Target/fatfs_platform.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/FATFS/Target/ffconf.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/FATFS/Target/sd_diskio.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/FATFS/Target/sd_diskio.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FatFs/src/diskio.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FatFs/src/diskio.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FatFs/src/ff.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FatFs/src/ff.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FatFs/src/ff_gen_drv.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FatFs/src/integer.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FatFs/src/option/syscall.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/croutine.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/StackMacros.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/atomic.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/croutine.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/list.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/message_buffer.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_prototypes.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/portable.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/queue.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/stack_macros.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/task.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/list.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/queue.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/tasks.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/timers.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/RAMFS/RAMFS.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/RAMFS/init.d/DrT/DrT.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/RAMFS/init.d/DrT/DrT.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/STM32H743IITX_FLASH.ld">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Utilities/JPEG/jpeg_utils.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Utilities/JPEG/jpeg_utils.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Utilities/JPEG/jpeg_utils_conf_template.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
