@@ -25,8 +25,9 @@ void testFuncInit(){
 
 }
 
+
 void testFunc(){
     // kernel_test();
-    displayDevice();
+    // displayDevice();
     osDelay(1000);
 }

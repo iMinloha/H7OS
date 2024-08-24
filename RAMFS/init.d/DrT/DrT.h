@@ -73,6 +73,8 @@ struct FS{
     struct FS* parent;
     // 层级
     struct FS* next;
+    // 子级
+    struct FS* child;
 };
 
 static FS_t RAM_FS;
@@ -80,6 +82,50 @@ static FS_t RAM_FS;
 // 初始化设备树(添加设备目录与分类)
 void DrTInit();
 
-void displayDevice();
+// ===============================[设备操作]===============================
+
+/**
+ * @brief 创建目录
+ * @param path
+ * @param name
+ */
+void ram_mkdir(char* path, char* name);
+
+/**
+ * @brief 创建文件
+ * @param path
+ * @param name
+ */
+void ram_mkfile(char* path, char* name);
+
+/**
+ * @brief 删除目录
+ * @param path
+ * @param name
+ */
+void ram_rm(char* path, char *name);
+
+/**
+ * @brief 读取文件
+ * @param path
+ * @param buf
+ * @param size
+ */
+void ram_read(char* path, void* buf, int size);
+
+/**
+ * @brief 写入文件
+ * @param path
+ * @param buf
+ * @param size
+ */
+void ram_write(char* path, void* buf, int size);
+
+/**
+ * @brief 加载路径
+ * @param path
+ * @return
+ */
+FS_t loadPath(char* path);
 
 #endif
