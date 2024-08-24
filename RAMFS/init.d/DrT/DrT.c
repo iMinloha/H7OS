@@ -3,6 +3,8 @@
 #include "memctl.h"
 #include "usart.h"
 #include "u_stdio.h"
+#include "fatfs.h"
+#include "quadspi.h"
 
 void addFSChild(FS_t parent, char *path){
     // 创建子节点
@@ -14,16 +16,15 @@ void addFSChild(FS_t parent, char *path){
     child->node_count = 0;
     child->parent = parent;
     child->next = NULL;
-    child->Level = NULL;
 
     // 添加到父节点同层列表
     FS_t p = parent;
-    while(p->Level != NULL) p = p->Level;
-    p->Level = child;
+    while(p->next != NULL) p = p->next;
+    p->next = child;
 }
 
 FS_t getFSChild(FS_t parent, char *path){
-    FS_t p = parent->Level;
+    FS_t p = parent->next;
     while(p != NULL){
         if(strcmp(p->path, path) == 0) return p;
         p = p->next;
@@ -81,10 +82,8 @@ void DrTInit(){
 
     RAM_FS->parent = NULL;
     RAM_FS->next = NULL;
-    RAM_FS->Level = NULL;
 
     // 添加子路径
-    // TODO 这么添加都在ROOT的同级路径下了，应该是在ROOT下的子路径
     addFSChild(RAM_FS, "dev");
     addFSChild(RAM_FS, "tmp");
     addFSChild(RAM_FS, "mnt");
@@ -92,16 +91,35 @@ void DrTInit(){
     addFSChild(RAM_FS, "usr");
     addFSChild(RAM_FS, "root");
     addFSChild(RAM_FS, "opt");
-
+    // 添加设备
     addDevice("dev", &huart1, "USART1", "Serial uart", DEVICE_SERIAL, DEVICE_BUSY, NULL);
+    addDevice("mnt", &hsdram1, "SDMMC", "SD card", DEVICE_STORAGE, DEVICE_ON, NULL);
+    addDevice("mnt", &SDFatFS, "FATFS", "FAT file system", FILE_SYSTEM, DEVICE_ON, NULL);
+    addDevice("mnt", &hqspi, "QSPI", "Quad SPI", DEVICE_STORAGE, DEVICE_ON, NULL);
 }
 
 FS_t temp_node;
 
 void displayDevice(){
     FS_t node = RAM_FS;
-    while (node->Level != NULL){
-        u_print("path: %s \n",node->path);
-        node = node->Level;
+    while (node->next != NULL){
+        if(node->node_count != 0){
+            u_print("path: %s \n",node->path);
+            DrTNode_t p = node->node->next;
+            while(p != NULL){
+                u_print("====================\n");
+                u_print("  name: %s \n", p->name);
+                u_print("  description: %s \n", p->description);
+                u_print("  status: %d \n", p->status);
+                u_print("  type: %d \n", p->type);
+                u_print("  device: %p \n", p->device);
+                u_print("  data: %p \n", p->data);
+                u_print("  driver: %p \n", p->driver);
+                u_print("  mutex: %p \n", p->mutex);
+                u_print("====================\n");
+                p = p->next;
+            }
+        }
+        node = node->next;
     }
 }

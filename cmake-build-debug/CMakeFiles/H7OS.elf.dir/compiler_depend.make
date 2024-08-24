@@ -5031,7 +5031,37 @@ CMakeFiles/H7OS.elf.dir/RAMFS/init.d/DrT/DrT.c.obj: D:/H7OS/RAMFS/init.d/DrT/DrT
   D:/H7OS/Core/Inc/fmc.h \
   D:/H7OS/Core/Inc/main.h \
   D:/H7OS/Core/Inc/usart.h \
-  D:/H7OS/Drivers/Kernel/inc/u_stdio.h
+  D:/H7OS/Drivers/Kernel/inc/u_stdio.h \
+  D:/H7OS/FATFS/App/fatfs.h \
+  D:/H7OS/Middlewares/Third_Party/FatFs/src/ff.h \
+  D:/H7OS/Middlewares/Third_Party/FatFs/src/integer.h \
+  D:/H7OS/FATFS/Target/ffconf.h \
+  D:/H7OS/Core/Inc/main.h \
+  D:/H7OS/FATFS/Target/bsp_driver_sd.h \
+  D:/H7OS/FATFS/Target/fatfs_platform.h \
+  D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h \
+  D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+  D:/H7OS/Core/Inc/FreeRTOSConfig.h \
+  D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+  D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+  D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+  D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
+  D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+  E:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/reent.h \
+  D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+  D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+  D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
+  D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+  D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
+  D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h \
+  D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
+  D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h \
+  D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
+  D:/H7OS/Middlewares/Third_Party/FatFs/src/ff_gen_drv.h \
+  D:/H7OS/Middlewares/Third_Party/FatFs/src/diskio.h \
+  D:/H7OS/Middlewares/Third_Party/FatFs/src/ff.h \
+  D:/H7OS/FATFS/Target/sd_diskio.h \
+  D:/H7OS/Core/Inc/quadspi.h
 
 CMakeFiles/H7OS.elf.dir/Utilities/JPEG/jpeg_utils.c.obj: D:/H7OS/Utilities/JPEG/jpeg_utils.c \
   D:/H7OS/Utilities/JPEG/jpeg_utils.h \

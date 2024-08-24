@@ -71,20 +71,14 @@ struct FS{
 
     // 父级
     struct FS* parent;
-    // 子级
-    struct FS* next;
     // 层级
-    struct FS* Level;
+    struct FS* next;
 };
 
 static FS_t RAM_FS;
 
 // 初始化设备树(添加设备目录与分类)
 void DrTInit();
-
-DrTNode_t getDevice(char* path);
-
-void getPath(char* path, FS_t node);
 
 void displayDevice();
 
