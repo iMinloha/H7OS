@@ -15,9 +15,12 @@ enum DeviceType{
     DEVICE_STORAGE, // 存储设备(qspi, sd, emmc)
     DEVICE_DISPLAY, // 显示设备(RGB, LVDS, HDMI)
     DEVICE_INPUT,   // 输入设备(OTG)
-    DEVICE_SERIAL,  // 串口设备
+    DEVICE_SERIAL,  // 总线设备(USART, UART, SPI, IIC, CAN, LIN, USB)
     DEVICE_TRANSPORT,   // 传输设备(USB, ETH, WIFI)
     DEVICE_VOTAGE,  // 电压设备(ADC, DAC)
+    // --------------------
+    FILE_SYSTEM,    // 文件系统
+    FILE,           // 文件
 };
 
 typedef enum DeviceType DeviceType_E;
@@ -31,6 +34,8 @@ enum DeviceStatus{
 };
 
 typedef enum DeviceStatus DeviceStatus_E;
+typedef struct FS* FS_t;
+typedef struct DrTNode* DrTNode_t;
 
 struct DrTNode{
     // 设备地址
@@ -43,14 +48,44 @@ struct DrTNode{
     char* name;
     // 设备描述
     char* description;
+    // 设备数据缓冲
+    void* data;
+    // --------------------
     // 设备驱动
     Func_t driver;
     // --------------------
     Mutex_t mutex;  // 设备锁
     // --------------------
     struct DrTNode* next;
+    FS_t parent;
 };
 
-typedef struct DrTNode* DrTNode_t;
+struct FS{
+    // 路径
+    char* path;
+
+    // 子设备链表
+    DrTNode_t node;
+    // 设备数量
+    int node_count;
+
+    // 父级
+    struct FS* parent;
+    // 子级
+    struct FS* next;
+    // 层级
+    struct FS* Level;
+};
+
+static FS_t RAM_FS;
+
+// 初始化设备树(添加设备目录与分类)
+void DrTInit();
+
+DrTNode_t getDevice(char* path);
+
+void getPath(char* path, FS_t node);
+
+void displayDevice();
 
 #endif

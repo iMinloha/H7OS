@@ -1,4 +1,3 @@
-#include <limits.h>
 #include "memctl.h"
 #include "quadspi.h"
 #include "tlsf.h"
@@ -24,6 +23,20 @@ void memoryCopy(void *dest, void *src, int size){
 void memorySet(void *dest, char val, int size){
     char *d = (char *)dest;
     for(int i = 0; i < size; i++) d[i] = val;
+}
+
+/***
+ * @brief 内存比较
+ * @param dest: destination address
+ * @param src: source address
+ * @param size: size of the memory block
+ * @return 比较结果
+ * */
+int memoryCompare(void *dest, void *src, int size){
+    char *d = (char *)dest;
+    char *s = (char *)src;
+    for(int i = 0; i < size; i++) if(d[i] != s[i]) return 0;
+    return 1;
 }
 
 /***

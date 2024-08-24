@@ -96,7 +96,8 @@ Utilities // 工具, JPG解码
   - [x] 3.2.5. ram_create()初始化SDRAM为TLSF内存池
   - [x] 3.2.6. DrT设备树支持
   - [x] 3.2.7. SD挂载FATFS
-- [ ] 3.3. 外设指令功能
+- [x] 3.3. 外设指令功能
+  - [x] 3.3.1. ls指令
 - [ ] 3.4. SD卡指令开发功能 TODO
 - [ ] 3.5. USB功能 TODO
 - [ ] 3.6. 电源管理功能 TODO

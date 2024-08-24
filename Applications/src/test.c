@@ -5,6 +5,7 @@
 #include "timer.h"
 #include "fatfs.h"
 #include "memctl.h"
+#include "RAMFS.h"
 
 FRESULT FSRes;
 
@@ -17,6 +18,7 @@ void testFuncInit(){
         if (FSRes == FR_OK) u_print("SD card init succeed\r\n");
         else u_print("Init Faild, please replace SD card\r\n");
     }
+    DrTInit();
 
     if(QSPI_W25Qxx_BlockErase_32K(0) != QSPI_W25Qxx_OK)
         u_print("Erase Failed\n");
@@ -25,10 +27,6 @@ void testFuncInit(){
 
 void testFunc(){
     // kernel_test();
-    uint8_t tt[10] = {0};
-    void *p = ram_alloc(10);
-    u_print("inside ram: %p\n", tt);
-    u_print("sdram: %p\n", p);
-    ram_free(p);
+    displayDevice();
     osDelay(1000);
 }

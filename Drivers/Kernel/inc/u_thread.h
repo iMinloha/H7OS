@@ -33,6 +33,8 @@ struct _mutex {
  * */
 typedef struct _mutex* Mutex_t;
 
+#define MUTEX_SIZE sizeof(struct _mutex)
+
 /**
  * @brief »¥³âËø³õÊ¼»¯
  * @param self »¥³âËø

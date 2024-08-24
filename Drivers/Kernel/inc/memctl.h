@@ -3,6 +3,7 @@
 
 #include "fmc.h"
 
+// 定义内存管理算法
 /***
  * @brief 内存拷贝
  * @param dest: destination address
@@ -19,6 +20,17 @@ void memoryCopy(void *dest, void *src, int size);
  * */
 void memorySet(void *dest, char val, int size);
 
+/***
+ * @brief 内存比较
+ * @param dest: destination address
+ * @param src: source address
+ * @param size: size of the memory block
+ * @return 比较结果
+ * */
+int memoryCompare(void *dest, void *src, int size);
+
+
+// ========================= 以下是QSPI Flash内存管理算法 =========================
 /***
  * @brief QSPI flash写入数据
  * @param addr: 写入地址(从0x0000开始到0x0400)

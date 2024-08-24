@@ -118,6 +118,7 @@ void strconcat(char *dest, char *src);
  * */
 int strcmp(char *str1, char *str2);
 
+
 #define LED_ON HAL_GPIO_WritePin(GPIOH, GPIO_PIN_7, GPIO_PIN_RESET)
 
 #define LED_OFF HAL_GPIO_WritePin(GPIOH, GPIO_PIN_7, GPIO_PIN_SET)
