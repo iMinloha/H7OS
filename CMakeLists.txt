@@ -50,7 +50,7 @@ else ()
 endif ()
 
 # 包含头文件
-set(I "Drivers/Kernel/inc" "Applications/inc" "RAMFS/")
+set(I "Drivers/Kernel/inc" "Applications/inc" "RAMFS/" "Command/")
 # 包含路径文件
 set(S "Applications/*.*" "Command/*.*" "RAMFS/*.*")
 
@@ -61,10 +61,8 @@ add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx)
 file(GLOB_RECURSE SOURCES "Core/*.*" "Utilities/*.*" "FATFS/*.*" "Middlewares/*.*" "Drivers/*.*" ${S})
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32H743IITX_FLASH.ld
-        Command/ls/ls_main.c
-        Command/ls/ls_main.h
-        Command/Register.c
-        Command/Register.h)
+        Command/cd/cd_main.c
+        Command/cd/cd_main.h)
 
 add_link_options(-Wl,-gc-sections,--print-memory-usage,-Map=${PROJECT_BINARY_DIR}/${PROJECT_NAME}.map)
 add_link_options(-mcpu=cortex-m7 -mthumb -mthumb-interwork)

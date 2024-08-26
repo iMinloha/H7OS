@@ -45,6 +45,7 @@
 					<Add directory="D:/H7OS/Drivers/Kernel/inc"/>
 					<Add directory="D:/H7OS/Applications/inc"/>
 					<Add directory="D:/H7OS/RAMFS"/>
+					<Add directory="D:/H7OS/Command"/>
 					<Add directory="e:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="e:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="e:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -87,6 +88,7 @@
 					<Add directory="D:/H7OS/Drivers/Kernel/inc"/>
 					<Add directory="D:/H7OS/Applications/inc"/>
 					<Add directory="D:/H7OS/RAMFS"/>
+					<Add directory="D:/H7OS/Command"/>
 					<Add directory="e:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="e:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="e:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -132,6 +134,12 @@
 			<Option target="H7OS.elf"/>
 		</Unit>
 		<Unit filename="D:/H7OS/Command/Register.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Command/cd/cd_main.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Command/cd/cd_main.h">
 			<Option target="H7OS.elf"/>
 		</Unit>
 		<Unit filename="D:/H7OS/Command/ls/ls_main.c">

@@ -1,7 +1,6 @@
 #include "usart.h"
 #include "u_stdio.h"
 
-
 _OS_WEAK void put_char(char c){
     HAL_UART_Transmit(&huart1, (uint8_t *)&c, 1, 0xFFFF);
 }

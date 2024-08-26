@@ -2,6 +2,8 @@ CMakeFiles/H7OS.elf.dir/RAMFS/init.d/DrT/DrT.c.obj: \
  D:\H7OS\RAMFS\init.d\DrT\DrT.c D:\H7OS\RAMFS\init.d\DrT\DrT.h \
  D:\H7OS\Drivers\Kernel\inc/u_thread.h \
  e:\program\ files\ (x86)\gnu\ arm\ embedded\ toolchain\10\ 2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stdatomic.h \
+ D:\H7OS\Command/Register.h D:\H7OS\Drivers\Kernel\inc/memctl.h \
+ D:\H7OS\Core\Inc/fmc.h D:\H7OS\Core\Inc/main.h \
  D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal.h \
  D:\H7OS\Core\Inc/stm32h7xx_hal_conf.h \
  D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal_rcc.h \
@@ -65,10 +67,8 @@ CMakeFiles/H7OS.elf.dir/RAMFS/init.d/DrT/DrT.c.obj: \
  D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal_tim_ex.h \
  D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal_uart.h \
  D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal_uart_ex.h \
- D:\H7OS\Drivers\Kernel\inc/memctl.h D:\H7OS\Core\Inc/fmc.h \
- D:\H7OS\Core\Inc/main.h D:\H7OS\Core\Inc/usart.h \
- D:\H7OS\Drivers\Kernel\inc/u_stdio.h D:\H7OS\FATFS\App/fatfs.h \
- D:\H7OS\Middlewares\Third_Party\FatFs\src/ff.h \
+ D:\H7OS\Core\Inc/usart.h D:\H7OS\Drivers\Kernel\inc/u_stdio.h \
+ D:\H7OS\FATFS\App/fatfs.h D:\H7OS\Middlewares\Third_Party\FatFs\src/ff.h \
  D:\H7OS\Middlewares\Third_Party\FatFs\src/integer.h \
  D:\H7OS\FATFS\Target/ffconf.h D:\H7OS\Core\Inc/main.h \
  D:\H7OS\FATFS\Target/bsp_driver_sd.h \

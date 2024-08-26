@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/H7OS.elf.dir/Applications/src/test.c.obj.d"
   "CMakeFiles/H7OS.elf.dir/Command/Register.c.obj"
   "CMakeFiles/H7OS.elf.dir/Command/Register.c.obj.d"
+  "CMakeFiles/H7OS.elf.dir/Command/cd/cd_main.c.obj"
+  "CMakeFiles/H7OS.elf.dir/Command/cd/cd_main.c.obj.d"
   "CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj"
   "CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj.d"
   "CMakeFiles/H7OS.elf.dir/Core/Src/dma.c.obj"

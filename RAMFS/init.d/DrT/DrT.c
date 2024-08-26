@@ -1,5 +1,4 @@
 #include "DrT.h"
-#include "stm32h7xx_hal.h"
 #include "memctl.h"
 #include "usart.h"
 #include "u_stdio.h"
@@ -20,13 +19,18 @@ void addFSChild(FS_t parent, char *path){
     child->node = (DrTNode_t) kernal_alloc(sizeof(struct DrTNode));
     child->node_count = 0;
     child->parent = parent;
-    child->next = NULL;
-    child->child = NULL;
+    child->next = NULL; // 子文件夹
+    child->child = NULL;    // 同层文件夹
 
-    // 添加到父节点同层列表
-    FS_t p = parent;
-    while(p->next != NULL) p = p->next;
-    p->next = child;
+    // 添加到父节点的next的child同层列表
+    FS_t p = parent->next;
+    if (p == NULL) {
+        parent->next = child;
+        return;
+    }else{
+        while(p->child != NULL) p = p->child;
+        p->child = child;
+    }
 }
 
 /**
@@ -39,7 +43,7 @@ FS_t getFSChild(FS_t parent, char *path){
     FS_t p = parent->next;
     while(p != NULL){
         if(strcmp(p->path, path) == 0) return p;
-        p = p->next;
+        p = p->child;
     }
     return NULL;
 }
@@ -89,7 +93,10 @@ void addDevice(char *path, void* devicePtr, char *name, char *description, Devic
  * @brief 初始化设备树
  */
 void DrTInit(){
+    // 创建根节点RootFS
     RAM_FS = (FS_t) kernal_alloc(sizeof(struct FS));
+    CMDList = (CMD_t) kernal_alloc(sizeof(struct CMD));
+    CMDList->next = NULL;
     RAM_FS->path = "/";
 
     RAM_FS->node = NULL;
@@ -108,60 +115,45 @@ void DrTInit(){
     addFSChild(RAM_FS, "root");
     addFSChild(RAM_FS, "opt");
     addFSChild(RAM_FS, "etc");
+    u_print("DrT File system init OK\n");
+
     // 添加设备
     addDevice("dev", &huart1, "USART1", "Serial uart", DEVICE_SERIAL, DEVICE_BUSY, NULL);
     addDevice("mnt", &hsdram1, "SDMMC", "SD card", DEVICE_STORAGE, DEVICE_ON, NULL);
     addDevice("mnt", &SDFatFS, "FATFS", "FAT file system", FILE_SYSTEM, DEVICE_ON, NULL);
     addDevice("mnt", &hqspi, "QSPI", "Quad SPI", DEVICE_STORAGE, DEVICE_ON, NULL);
+
+    u_print("DrT Device init OK\n");
+
+    // 指令注册
+    register_main();
+    u_print("DrT Command init OK\n");
 }
 
-FS_t temp_node;
 
 /**
- * @brief 获取设备
- * @return 设备节点
- */
- /*
-void displayDevice(){
-    FS_t node = RAM_FS;
-    while (node->next != NULL){
-        if(node->node_count != 0){
-            u_print("path: %s \n",node->path);
-            DrTNode_t p = node->node->next;
-            while(p != NULL){
-                u_print("====================\n");
-                u_print("  name: %s \n", p->name);
-                u_print("  description: %s \n", p->description);
-                u_print("  status: %d \n", p->status);
-                u_print("  type: %d \n", p->type);
-                u_print("  device: %p \n", p->device);
-                u_print("  data: %p \n", p->data);
-                u_print("  driver: %p \n", p->driver);
-                u_print("  mutex: %p \n", p->mutex);
-                u_print("====================\n");
-                p = p->next;
-            }
-        }
-        node = node->next;
-    }
-}
-  */
-
-/**
- * @brief 加载路径
+ * @brief 加载路径(获取节点)
  * @param path
  * @return
  */
-FS_t loadPath(char* path){
+FS_t loadPath(char* path) {
     FS_t node = RAM_FS;
-    char* token = strtok(path, "/");
-    while(token != NULL){
-        node = getFSChild(node, token);
-        if(node == NULL) return NULL;
-        token = strtok(NULL, "/");
+    if (strcmp(path, "/") == 0) return node;
+    else {
+        if (path[0] == '/') path++;
+        char *token = strtok(path, "/");
+        while (token != NULL) {
+            node = getFSChild(node, token);
+            if (node == NULL) return NULL;
+            token = strtok(NULL, "/");
+        }
     }
+
     return node;
 }
+
+// DrT操作
+// ====================================[指令操作]===================================
 
 /**
  * @brief 创建目录
@@ -243,11 +235,66 @@ void ram_write(char* path, void* buf, int size){
     }
 }
 
+/**
+ * @brief 显示目录
+ * @param path
+ */
+void ram_ls(char* path){
+    FS_t node = loadPath(path);
+    if(node == NULL) return;
+
+    FS_t temp = node->next;
+
+    while(temp != NULL){
+        // 输出node的子文件夹
+        u_print("%s  ", temp->path);
+        temp = temp->child;
+    }
+
+    if (node->node_count != 0) {
+        DrTNode_t p = node->node->next;
+        while(p != NULL){
+            u_print("%s  ", p->name);
+            p = p->next;
+        }
+    }
+
+    u_print("\n");
+}
+
+/**
+ * @brief 切换目录
+ * @param path
+ */
+FS_t ram_cd(char* path){
+    FS_t node = loadPath(path);
+    if(node == NULL) return NULL;
+    currentFS = node;
+    return node;
+}
+
+void ram_pwd(FS_t fs, char* path){
+    FS_t temp_node;
+    // 递归显示路径
+    while(fs->parent != RAM_FS){
+        temp_node = fs;
+        fs = fs->parent;
+        strcopy(path, temp_node->path);
+        strcopy(path + strlen(path), "/");
+        strcopy(path + strlen(path), path);
+        path[strlen(path)] = '\0';
+    }
+}
+
+
+// ============================[指令操作]===========================
+
 // 添加指令
 void addCMD(char* name, char* description, Comand_t cmd){
     CMD_t p = CMDList;
     while(p->next != NULL) p = p->next;
     CMD_t newCMD = (CMD_t) kernal_alloc(sizeof(struct CMD));
+
 
     newCMD->name = (char*) kernal_alloc(strlen(name) + 1);
     newCMD->description = (char*) kernal_alloc(strlen(description) + 1);
@@ -266,9 +313,12 @@ void execCMD(char* command){
     int argc = 0;
     char* token = strtok(command, " ");
     while(token != NULL){
+        // 按空格分割
         argv[argc++] = token;
         token = strtok(NULL, " ");
     }
+
+    argc -= 1;
 
     // 查找指令
     CMD_t p = CMDList->next;

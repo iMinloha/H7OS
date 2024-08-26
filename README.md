@@ -57,10 +57,16 @@ Appication // 应用程序
 Command // 指令集
     |---cat // 读取文件
     |---cd // 切换目录
+    |   |---cd_main.c 
+    |   `---cd_main.h
     |---cp // 复制文件
     |---ls // 列出文件
+    |   |---ls_main.c 
+    |   `---ls_main.h
     |---mv // 移动文件
-    `---tree // 显示目录树
+    |---tree // 显示目录树
+    |---Register.c // 指令注册
+    `---Register.h // 指令注册头文件
 
 Core // 核心文件
     |---inc // 头文件

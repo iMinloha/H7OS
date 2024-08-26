@@ -111,15 +111,15 @@ int main(void)
   MX_GPIO_Init();
   MX_DMA_Init();
   MX_MDMA_Init();
-  MX_USART1_UART_Init();
   MX_FMC_Init();
   MX_FATFS_Init();
   MX_DMA2D_Init();
   MX_QUADSPI_Init();
   MX_JPEG_Init();
   MX_SDMMC1_SD_Init();
-  MX_RTC_Init();
+  MX_USART1_UART_Init();
   MX_RNG_Init();
+  MX_RTC_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */

@@ -39,12 +39,14 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "D:/H7OS/Drivers/Kernel/inc"
   "D:/H7OS/Applications/inc"
   "D:/H7OS/RAMFS"
+  "D:/H7OS/Command"
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/H7OS/Applications/src/test.c" "CMakeFiles/H7OS.elf.dir/Applications/src/test.c.obj" "gcc" "CMakeFiles/H7OS.elf.dir/Applications/src/test.c.obj.d"
   "D:/H7OS/Command/Register.c" "CMakeFiles/H7OS.elf.dir/Command/Register.c.obj" "gcc" "CMakeFiles/H7OS.elf.dir/Command/Register.c.obj.d"
+  "D:/H7OS/Command/cd/cd_main.c" "CMakeFiles/H7OS.elf.dir/Command/cd/cd_main.c.obj" "gcc" "CMakeFiles/H7OS.elf.dir/Command/cd/cd_main.c.obj.d"
   "D:/H7OS/Command/ls/ls_main.c" "CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj" "gcc" "CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj.d"
   "D:/H7OS/Core/Src/dma.c" "CMakeFiles/H7OS.elf.dir/Core/Src/dma.c.obj" "gcc" "CMakeFiles/H7OS.elf.dir/Core/Src/dma.c.obj.d"
   "D:/H7OS/Core/Src/dma2d.c" "CMakeFiles/H7OS.elf.dir/Core/Src/dma2d.c.obj" "gcc" "CMakeFiles/H7OS.elf.dir/Core/Src/dma2d.c.obj.d"

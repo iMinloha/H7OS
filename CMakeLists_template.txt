@@ -49,7 +49,7 @@ else ()
 endif ()
 
 # 包含头文件
-set(I "Drivers/Kernel/inc" "Applications/inc" "RAMFS/")
+set(I "Drivers/Kernel/inc" "Applications/inc" "RAMFS/" "Command/")
 # 包含路径文件
 set(S "Applications/*.*" "Command/*.*" "RAMFS/*.*")
 

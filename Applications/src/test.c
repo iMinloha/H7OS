@@ -18,10 +18,14 @@ void testFuncInit(){
         if (FSRes == FR_OK) u_print("SD card init succeed\r\n");
         else u_print("Init Faild, please replace SD card\r\n");
     }
-    DrTInit();
 
     if(QSPI_W25Qxx_BlockErase_32K(0) != QSPI_W25Qxx_OK)
         u_print("Erase Failed\n");
+
+
+    DrTInit();
+
+    u_print("init OK");
 
 }
 
@@ -29,5 +33,7 @@ void testFuncInit(){
 void testFunc(){
     // kernel_test();
     // displayDevice();
+    // execCMD("ls");
+    // u_print("testFunc\n");
     osDelay(1000);
 }

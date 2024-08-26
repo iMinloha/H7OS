@@ -50,7 +50,6 @@
 
 /* USER CODE END Variables */
 osThreadId shellHandle;
-osThreadId testHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -58,7 +57,6 @@ osThreadId testHandle;
 /* USER CODE END FunctionPrototypes */
 
 void ShellTask(void const * argument);
-void testfunc(void const * argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -109,14 +107,11 @@ void MX_FREERTOS_Init(void) {
   osThreadDef(shell, ShellTask, osPriorityNormal, 0, 512);
   shellHandle = osThreadCreate(osThread(shell), NULL);
 
-  /* definition and creation of test */
-  osThreadDef(test, testfunc, osPriorityIdle, 0, 512);
-  testHandle = osThreadCreate(osThread(test), NULL);
-
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
   //  SDRAM_Initialization_Sequence(&hsdram1);
     MemControl_Init();
+    testFuncInit();
   /* USER CODE END RTOS_THREADS */
 
 }
@@ -131,31 +126,13 @@ void MX_FREERTOS_Init(void) {
 void ShellTask(void const * argument)
 {
   /* USER CODE BEGIN ShellTask */
-    testFuncInit();
+    // testFuncInit();
   /* Infinite loop */
   for(;;)
   {
       testFunc();
   }
   /* USER CODE END ShellTask */
-}
-
-/* USER CODE BEGIN Header_testfunc */
-/**
-* @brief Function implementing the test thread.
-* @param argument: Not used
-* @retval None
-*/
-/* USER CODE END Header_testfunc */
-void testfunc(void const * argument)
-{
-  /* USER CODE BEGIN testfunc */
-  /* Infinite loop */
-  for(;;)
-  {
-    osDelay(1);
-  }
-  /* USER CODE END testfunc */
 }
 
 /* Private application code --------------------------------------------------*/

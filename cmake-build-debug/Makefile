@@ -176,6 +176,30 @@ Command/Register.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Command/Register.c.s
 .PHONY : Command/Register.c.s
 
+Command/cd/cd_main.obj: Command/cd/cd_main.c.obj
+.PHONY : Command/cd/cd_main.obj
+
+# target to build an object file
+Command/cd/cd_main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Command/cd/cd_main.c.obj
+.PHONY : Command/cd/cd_main.c.obj
+
+Command/cd/cd_main.i: Command/cd/cd_main.c.i
+.PHONY : Command/cd/cd_main.i
+
+# target to preprocess a source file
+Command/cd/cd_main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Command/cd/cd_main.c.i
+.PHONY : Command/cd/cd_main.c.i
+
+Command/cd/cd_main.s: Command/cd/cd_main.c.s
+.PHONY : Command/cd/cd_main.s
+
+# target to generate assembly for a file
+Command/cd/cd_main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Command/cd/cd_main.c.s
+.PHONY : Command/cd/cd_main.c.s
+
 Command/ls/ls_main.obj: Command/ls/ls_main.c.obj
 .PHONY : Command/ls/ls_main.obj
 
@@ -2095,6 +2119,9 @@ help:
 	@echo ... Command/Register.obj
 	@echo ... Command/Register.i
 	@echo ... Command/Register.s
+	@echo ... Command/cd/cd_main.obj
+	@echo ... Command/cd/cd_main.i
+	@echo ... Command/cd/cd_main.s
 	@echo ... Command/ls/ls_main.obj
 	@echo ... Command/ls/ls_main.i
 	@echo ... Command/ls/ls_main.s

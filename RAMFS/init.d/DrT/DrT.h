@@ -3,6 +3,7 @@
 
 // DrT: Device Tree
 #include "u_thread.h"
+#include "Register.h"
 
 /****************************************************
  * DrT 设备树
@@ -79,7 +80,10 @@ struct FS{
     FS_t child;
 };
 
+// 根文件系统
 static FS_t RAM_FS;
+// 串口设备指针
+static FS_t currentFS;
 
 // 初始化设备树(添加设备目录与分类)
 void DrTInit();
@@ -151,6 +155,25 @@ void ram_read(char* path, void* buf, int size);
  * @param size
  */
 void ram_write(char* path, void* buf, int size);
+
+/**
+ * @brief 显示目录
+ * @param path
+ */
+void ram_ls(char* path);
+
+/**
+ * @brief 切换目录
+ * @param path
+ */
+FS_t ram_cd(char* path);
+
+/**
+ * @brief 显示当前目录
+ * @param fs 当前文件夹
+ * @param path 路径(已经ram_alloc)
+ */
+void ram_pwd(FS_t fs, char* path);
 
 /**
  * @brief 加载路径,返回目录
