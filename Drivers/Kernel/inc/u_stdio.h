@@ -24,6 +24,8 @@
 typedef char * va_list;
 
 #define _OS_WEAK __attribute__((weak))
+// 对象类型
+#define type(x) typeof(x)
 
 /**
  * @brief 输出格式化字符串到串口

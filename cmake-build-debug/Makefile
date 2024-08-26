@@ -152,6 +152,54 @@ Applications/src/test.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Applications/src/test.c.s
 .PHONY : Applications/src/test.c.s
 
+Command/Register.obj: Command/Register.c.obj
+.PHONY : Command/Register.obj
+
+# target to build an object file
+Command/Register.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Command/Register.c.obj
+.PHONY : Command/Register.c.obj
+
+Command/Register.i: Command/Register.c.i
+.PHONY : Command/Register.i
+
+# target to preprocess a source file
+Command/Register.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Command/Register.c.i
+.PHONY : Command/Register.c.i
+
+Command/Register.s: Command/Register.c.s
+.PHONY : Command/Register.s
+
+# target to generate assembly for a file
+Command/Register.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Command/Register.c.s
+.PHONY : Command/Register.c.s
+
+Command/ls/ls_main.obj: Command/ls/ls_main.c.obj
+.PHONY : Command/ls/ls_main.obj
+
+# target to build an object file
+Command/ls/ls_main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj
+.PHONY : Command/ls/ls_main.c.obj
+
+Command/ls/ls_main.i: Command/ls/ls_main.c.i
+.PHONY : Command/ls/ls_main.i
+
+# target to preprocess a source file
+Command/ls/ls_main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.i
+.PHONY : Command/ls/ls_main.c.i
+
+Command/ls/ls_main.s: Command/ls/ls_main.c.s
+.PHONY : Command/ls/ls_main.s
+
+# target to generate assembly for a file
+Command/ls/ls_main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.s
+.PHONY : Command/ls/ls_main.c.s
+
 Core/Src/dma.obj: Core/Src/dma.c.obj
 .PHONY : Core/Src/dma.obj
 
@@ -2044,6 +2092,12 @@ help:
 	@echo ... Applications/src/test.obj
 	@echo ... Applications/src/test.i
 	@echo ... Applications/src/test.s
+	@echo ... Command/Register.obj
+	@echo ... Command/Register.i
+	@echo ... Command/Register.s
+	@echo ... Command/ls/ls_main.obj
+	@echo ... Command/ls/ls_main.i
+	@echo ... Command/ls/ls_main.s
 	@echo ... Core/Src/dma.obj
 	@echo ... Core/Src/dma.i
 	@echo ... Core/Src/dma.s

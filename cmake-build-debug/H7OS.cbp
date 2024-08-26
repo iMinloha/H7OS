@@ -128,6 +128,18 @@
 		<Unit filename="D:/H7OS/Applications/src/test.c">
 			<Option target="H7OS.elf"/>
 		</Unit>
+		<Unit filename="D:/H7OS/Command/Register.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Command/Register.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Command/ls/ls_main.c">
+			<Option target="H7OS.elf"/>
+		</Unit>
+		<Unit filename="D:/H7OS/Command/ls/ls_main.h">
+			<Option target="H7OS.elf"/>
+		</Unit>
 		<Unit filename="D:/H7OS/Core/Inc/FreeRTOSConfig.h">
 			<Option target="H7OS.elf"/>
 		</Unit>

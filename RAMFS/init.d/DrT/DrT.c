@@ -13,11 +13,11 @@
  */
 void addFSChild(FS_t parent, char *path){
     // 创建子节点
-    FS_t child = (FS_t) ram_alloc(sizeof(struct FS));
-    child->path = (char*) ram_alloc(strlen(path) + 1);
+    FS_t child = (FS_t) kernal_alloc(sizeof(struct FS));
+    child->path = (char*) kernal_alloc(strlen(path) + 1);
     strcopy(child->path, path);
 
-    child->node = (DrTNode_t) ram_alloc(sizeof(struct DrTNode));
+    child->node = (DrTNode_t) kernal_alloc(sizeof(struct DrTNode));
     child->node_count = 0;
     child->parent = parent;
     child->next = NULL;
@@ -60,9 +60,9 @@ void addDevice(char *path, void* devicePtr, char *name, char *description, Devic
     FS_t node = getFSChild(RAM_FS, path);
     if (node == NULL) return;
     // 创建设备节点
-    DrTNode_t device = (DrTNode_t) ram_alloc(sizeof(struct DrTNode));
-    device->name = (char*) ram_alloc(strlen(name) + 1);
-    device->description = (char*) ram_alloc(strlen(description) + 1);
+    DrTNode_t device = (DrTNode_t) kernal_alloc(sizeof(struct DrTNode));
+    device->name = (char*) kernal_alloc(strlen(name) + 1);
+    device->description = (char*) kernal_alloc(strlen(description) + 1);
 
     strcopy(device->name, name);
     strcopy(device->description, description);
@@ -70,9 +70,9 @@ void addDevice(char *path, void* devicePtr, char *name, char *description, Devic
     device->device = devicePtr;
     device->status = status;
     device->type = type;
-    device->data = ram_alloc(128);
+    device->data = kernal_alloc(128);
     device->driver = driver;
-    Mutex_t mutex = (Mutex_t) ram_alloc(MUTEX_SIZE);
+    Mutex_t mutex = (Mutex_t) kernal_alloc(MUTEX_SIZE);
     mutex_init(mutex);
     device->mutex = mutex;
     device->parent = node;
@@ -89,7 +89,7 @@ void addDevice(char *path, void* devicePtr, char *name, char *description, Devic
  * @brief 初始化设备树
  */
 void DrTInit(){
-    RAM_FS = (FS_t) ram_alloc(sizeof(struct FS));
+    RAM_FS = (FS_t) kernal_alloc(sizeof(struct FS));
     RAM_FS->path = "/";
 
     RAM_FS->node = NULL;
@@ -241,4 +241,44 @@ void ram_write(char* path, void* buf, int size){
         }
         p = p->next;
     }
+}
+
+// 添加指令
+void addCMD(char* name, char* description, Comand_t cmd){
+    CMD_t p = CMDList;
+    while(p->next != NULL) p = p->next;
+    CMD_t newCMD = (CMD_t) kernal_alloc(sizeof(struct CMD));
+
+    newCMD->name = (char*) kernal_alloc(strlen(name) + 1);
+    newCMD->description = (char*) kernal_alloc(strlen(description) + 1);
+    strcopy(newCMD->name, name);
+    strcopy(newCMD->description, description);
+
+    newCMD->cmd = cmd;
+    newCMD->next = NULL;
+    p->next = newCMD;
+}
+
+// 执行指令
+void execCMD(char* command){
+    // command解析, command按空格分割保存到argv数组中
+    char *argv[128] = {0};
+    int argc = 0;
+    char* token = strtok(command, " ");
+    while(token != NULL){
+        argv[argc++] = token;
+        token = strtok(NULL, " ");
+    }
+
+    // 查找指令
+    CMD_t p = CMDList->next;
+    while(p != NULL){
+        if(strcmp(p->name, argv[0]) == 0){
+            p->cmd(argc, argv);
+            return;
+        }
+        p = p->next;
+    }
+
+    u_print("Command not found\n");
 }

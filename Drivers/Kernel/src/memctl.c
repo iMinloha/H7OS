@@ -69,6 +69,7 @@ void flashSDRAM(){
 
 // 内存池
 tlsf_t mem_pool;
+tlsf_t kernel_pool;
 // 使用内存
 uint32_t using_mem = 0;
 
@@ -78,7 +79,10 @@ uint32_t using_mem = 0;
  * */
 void MemControl_Init(){
     flashSDRAM();
-    mem_pool = tlsf_create_with_pool((void*)SDRAM_BANK_ADDR, SDRAM_Size);
+    // 内核空间(会自动保存在QSPI Flash中)
+    kernel_pool = tlsf_create_with_pool((void*)SDRAM_BANK_ADDR, 2 * 1024 * 1024);
+    // 程序运行空间
+    mem_pool = tlsf_create_with_pool((void*)SDRAM_BANK_ADDR + 2 * 1024 * 1024, 30 * 1024 * 1024);
 }
 
 /***
@@ -99,7 +103,6 @@ void* ram_alloc(uint32_t size){
  * */
 void* ram_realloc(void* addr, uint32_t size){
     return tlsf_realloc(mem_pool, addr, size);
-
 }
 
 /***
@@ -143,4 +146,16 @@ void ram_destroy(){
  * */
 void ram_align(size_t align, size_t bytes){
     tlsf_memalign(mem_pool, align, bytes);
+}
+
+void* kernal_alloc(uint32_t size){
+    return tlsf_malloc(kernel_pool, size);
+}
+
+void* kernal_realloc(void* addr, uint32_t size){
+    return tlsf_realloc(kernel_pool, addr, size);
+}
+
+void kernal_free(void* addr){
+    tlsf_free(kernel_pool, addr);
 }

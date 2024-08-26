@@ -71,6 +71,15 @@ void MemControl_Init();
  * */
 void* ram_alloc(uint32_t size);
 
+
+/***
+ * @brief 内核内存管理分配
+ * @param size: 分配内存大小
+ * @return 分配内存的地址
+ * */
+void* kernal_alloc(uint32_t size);
+
+
 /***
  * @brief SDRAM内存管理重新分配
  * @param addr: 重新分配内存的地址
@@ -80,10 +89,24 @@ void* ram_alloc(uint32_t size);
 void* ram_realloc(void* addr, uint32_t size);
 
 /***
+ * @brief 内核内存管理重新分配
+ * @param addr: 重新分配内存的地址
+ * @param size: 重新分配内存大小
+ * @return 重新分配内存的地址
+ * */
+void* kernal_realloc(void* addr, uint32_t size);
+
+/***
  * @brief SDRAM内存管理释放
  * @param addr: 释放内存的地址
  * */
 void ram_free(void* addr);
+
+/***
+ * @brief 内核内存管理释放
+ * @param addr: 释放内存的地址
+ * */
+void kernal_free(void* addr);
 
 /***
  * @brief SDRAM内存管理检查

@@ -8,6 +8,7 @@
  * DrT 设备树
  *      - 设备树是一个树形结构，用于描述系统中的硬件设备。
  *      - 设备树是一个平台无关的描述硬件的数据结构。
+ *      - 文件包含：DrT的创建和声明以及指令处理
  * */
 
 enum DeviceType{
@@ -25,6 +26,7 @@ enum DeviceType{
 
 typedef enum DeviceType DeviceType_E;
 
+// 设备状态
 enum DeviceStatus{
     DEVICE_OFF,     // 关闭
     DEVICE_ON,      // 打开
@@ -56,7 +58,7 @@ struct DrTNode{
     // --------------------
     Mutex_t mutex;  // 设备锁
     // --------------------
-    struct DrTNode* next;
+    DrTNode_t next;
     FS_t parent;
 };
 
@@ -70,17 +72,46 @@ struct FS{
     int node_count;
 
     // 父级
-    struct FS* parent;
+    FS_t parent;
     // 层级
-    struct FS* next;
+    FS_t next;
     // 子级
-    struct FS* child;
+    FS_t child;
 };
 
 static FS_t RAM_FS;
 
 // 初始化设备树(添加设备目录与分类)
 void DrTInit();
+
+
+// ===============================[指令操作]===============================
+
+typedef void (*Comand_t)(int argc, char **argv);
+
+typedef struct CMD* CMD_t;
+
+struct CMD{
+    char* name; // 指令名，如mkdir, rm, ls
+    char* description;  // 指令描述, 用于help
+    /***
+     * @brief 指令函数要求
+     * @param argc 参数数量
+     * @param argv 参数列表(char**)
+     * */
+    Comand_t cmd; // 指令主函数
+    CMD_t next; // 下一个指令
+};
+
+static CMD_t CMDList;
+
+// 添加指令
+void addCMD(char* name, char* description, Comand_t cmd);
+
+// 执行指令
+void execCMD(char* command);
+
+#define CMD(name, description, cmd) addCMD(name, description, cmd)
 
 // ===============================[设备操作]===============================
 
@@ -122,7 +153,7 @@ void ram_read(char* path, void* buf, int size);
 void ram_write(char* path, void* buf, int size);
 
 /**
- * @brief 加载路径
+ * @brief 加载路径,返回目录
  * @param path
  * @return
  */

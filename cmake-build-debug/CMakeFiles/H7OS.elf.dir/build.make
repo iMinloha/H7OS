@@ -82,10 +82,38 @@ CMakeFiles/H7OS.elf.dir/Applications/src/test.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/H7OS.elf.dir/Applications/src/test.c.s"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\H7OS\Applications\src\test.c -o CMakeFiles\H7OS.elf.dir\Applications\src\test.c.s
 
+CMakeFiles/H7OS.elf.dir/Command/Register.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
+CMakeFiles/H7OS.elf.dir/Command/Register.c.obj: D:/H7OS/Command/Register.c
+CMakeFiles/H7OS.elf.dir/Command/Register.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/H7OS.elf.dir/Command/Register.c.obj"
+	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Command/Register.c.obj -MF CMakeFiles\H7OS.elf.dir\Command\Register.c.obj.d -o CMakeFiles\H7OS.elf.dir\Command\Register.c.obj -c D:\H7OS\Command\Register.c
+
+CMakeFiles/H7OS.elf.dir/Command/Register.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/H7OS.elf.dir/Command/Register.c.i"
+	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\H7OS\Command\Register.c > CMakeFiles\H7OS.elf.dir\Command\Register.c.i
+
+CMakeFiles/H7OS.elf.dir/Command/Register.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/H7OS.elf.dir/Command/Register.c.s"
+	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\H7OS\Command\Register.c -o CMakeFiles\H7OS.elf.dir\Command\Register.c.s
+
+CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
+CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj: D:/H7OS/Command/ls/ls_main.c
+CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj"
+	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj -MF CMakeFiles\H7OS.elf.dir\Command\ls\ls_main.c.obj.d -o CMakeFiles\H7OS.elf.dir\Command\ls\ls_main.c.obj -c D:\H7OS\Command\ls\ls_main.c
+
+CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.i"
+	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\H7OS\Command\ls\ls_main.c > CMakeFiles\H7OS.elf.dir\Command\ls\ls_main.c.i
+
+CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.s"
+	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\H7OS\Command\ls\ls_main.c -o CMakeFiles\H7OS.elf.dir\Command\ls\ls_main.c.s
+
 CMakeFiles/H7OS.elf.dir/Core/Src/dma.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Core/Src/dma.c.obj: D:/H7OS/Core/Src/dma.c
 CMakeFiles/H7OS.elf.dir/Core/Src/dma.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/dma.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Core/Src/dma.c.obj -MF CMakeFiles\H7OS.elf.dir\Core\Src\dma.c.obj.d -o CMakeFiles\H7OS.elf.dir\Core\Src\dma.c.obj -c D:\H7OS\Core\Src\dma.c
 
 CMakeFiles/H7OS.elf.dir/Core/Src/dma.c.i: cmake_force
@@ -99,7 +127,7 @@ CMakeFiles/H7OS.elf.dir/Core/Src/dma.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Core/Src/dma2d.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Core/Src/dma2d.c.obj: D:/H7OS/Core/Src/dma2d.c
 CMakeFiles/H7OS.elf.dir/Core/Src/dma2d.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/dma2d.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/dma2d.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Core/Src/dma2d.c.obj -MF CMakeFiles\H7OS.elf.dir\Core\Src\dma2d.c.obj.d -o CMakeFiles\H7OS.elf.dir\Core\Src\dma2d.c.obj -c D:\H7OS\Core\Src\dma2d.c
 
 CMakeFiles/H7OS.elf.dir/Core/Src/dma2d.c.i: cmake_force
@@ -113,7 +141,7 @@ CMakeFiles/H7OS.elf.dir/Core/Src/dma2d.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Core/Src/fmc.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Core/Src/fmc.c.obj: D:/H7OS/Core/Src/fmc.c
 CMakeFiles/H7OS.elf.dir/Core/Src/fmc.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/fmc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/fmc.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Core/Src/fmc.c.obj -MF CMakeFiles\H7OS.elf.dir\Core\Src\fmc.c.obj.d -o CMakeFiles\H7OS.elf.dir\Core\Src\fmc.c.obj -c D:\H7OS\Core\Src\fmc.c
 
 CMakeFiles/H7OS.elf.dir/Core/Src/fmc.c.i: cmake_force
@@ -127,7 +155,7 @@ CMakeFiles/H7OS.elf.dir/Core/Src/fmc.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj: D:/H7OS/Core/Src/freertos.c
 CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj -MF CMakeFiles\H7OS.elf.dir\Core\Src\freertos.c.obj.d -o CMakeFiles\H7OS.elf.dir\Core\Src\freertos.c.obj -c D:\H7OS\Core\Src\freertos.c
 
 CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.i: cmake_force
@@ -141,7 +169,7 @@ CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Core/Src/gpio.c.obj: D:/H7OS/Core/Src/gpio.c
 CMakeFiles/H7OS.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/gpio.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Core/Src/gpio.c.obj -MF CMakeFiles\H7OS.elf.dir\Core\Src\gpio.c.obj.d -o CMakeFiles\H7OS.elf.dir\Core\Src\gpio.c.obj -c D:\H7OS\Core\Src\gpio.c
 
 CMakeFiles/H7OS.elf.dir/Core/Src/gpio.c.i: cmake_force
@@ -155,7 +183,7 @@ CMakeFiles/H7OS.elf.dir/Core/Src/gpio.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Core/Src/jpeg.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Core/Src/jpeg.c.obj: D:/H7OS/Core/Src/jpeg.c
 CMakeFiles/H7OS.elf.dir/Core/Src/jpeg.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/jpeg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/jpeg.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Core/Src/jpeg.c.obj -MF CMakeFiles\H7OS.elf.dir\Core\Src\jpeg.c.obj.d -o CMakeFiles\H7OS.elf.dir\Core\Src\jpeg.c.obj -c D:\H7OS\Core\Src\jpeg.c
 
 CMakeFiles/H7OS.elf.dir/Core/Src/jpeg.c.i: cmake_force
@@ -169,7 +197,7 @@ CMakeFiles/H7OS.elf.dir/Core/Src/jpeg.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Core/Src/main.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Core/Src/main.c.obj: D:/H7OS/Core/Src/main.c
 CMakeFiles/H7OS.elf.dir/Core/Src/main.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/main.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Core/Src/main.c.obj -MF CMakeFiles\H7OS.elf.dir\Core\Src\main.c.obj.d -o CMakeFiles\H7OS.elf.dir\Core\Src\main.c.obj -c D:\H7OS\Core\Src\main.c
 
 CMakeFiles/H7OS.elf.dir/Core/Src/main.c.i: cmake_force
@@ -183,7 +211,7 @@ CMakeFiles/H7OS.elf.dir/Core/Src/main.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Core/Src/mdma.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Core/Src/mdma.c.obj: D:/H7OS/Core/Src/mdma.c
 CMakeFiles/H7OS.elf.dir/Core/Src/mdma.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/mdma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/mdma.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Core/Src/mdma.c.obj -MF CMakeFiles\H7OS.elf.dir\Core\Src\mdma.c.obj.d -o CMakeFiles\H7OS.elf.dir\Core\Src\mdma.c.obj -c D:\H7OS\Core\Src\mdma.c
 
 CMakeFiles/H7OS.elf.dir/Core/Src/mdma.c.i: cmake_force
@@ -197,7 +225,7 @@ CMakeFiles/H7OS.elf.dir/Core/Src/mdma.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Core/Src/quadspi.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Core/Src/quadspi.c.obj: D:/H7OS/Core/Src/quadspi.c
 CMakeFiles/H7OS.elf.dir/Core/Src/quadspi.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/quadspi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/quadspi.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Core/Src/quadspi.c.obj -MF CMakeFiles\H7OS.elf.dir\Core\Src\quadspi.c.obj.d -o CMakeFiles\H7OS.elf.dir\Core\Src\quadspi.c.obj -c D:\H7OS\Core\Src\quadspi.c
 
 CMakeFiles/H7OS.elf.dir/Core/Src/quadspi.c.i: cmake_force
@@ -211,7 +239,7 @@ CMakeFiles/H7OS.elf.dir/Core/Src/quadspi.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Core/Src/rng.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Core/Src/rng.c.obj: D:/H7OS/Core/Src/rng.c
 CMakeFiles/H7OS.elf.dir/Core/Src/rng.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/rng.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/rng.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Core/Src/rng.c.obj -MF CMakeFiles\H7OS.elf.dir\Core\Src\rng.c.obj.d -o CMakeFiles\H7OS.elf.dir\Core\Src\rng.c.obj -c D:\H7OS\Core\Src\rng.c
 
 CMakeFiles/H7OS.elf.dir/Core/Src/rng.c.i: cmake_force
@@ -225,7 +253,7 @@ CMakeFiles/H7OS.elf.dir/Core/Src/rng.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Core/Src/rtc.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Core/Src/rtc.c.obj: D:/H7OS/Core/Src/rtc.c
 CMakeFiles/H7OS.elf.dir/Core/Src/rtc.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/rtc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/rtc.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Core/Src/rtc.c.obj -MF CMakeFiles\H7OS.elf.dir\Core\Src\rtc.c.obj.d -o CMakeFiles\H7OS.elf.dir\Core\Src\rtc.c.obj -c D:\H7OS\Core\Src\rtc.c
 
 CMakeFiles/H7OS.elf.dir/Core/Src/rtc.c.i: cmake_force
@@ -239,7 +267,7 @@ CMakeFiles/H7OS.elf.dir/Core/Src/rtc.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Core/Src/sdmmc.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Core/Src/sdmmc.c.obj: D:/H7OS/Core/Src/sdmmc.c
 CMakeFiles/H7OS.elf.dir/Core/Src/sdmmc.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/sdmmc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/sdmmc.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Core/Src/sdmmc.c.obj -MF CMakeFiles\H7OS.elf.dir\Core\Src\sdmmc.c.obj.d -o CMakeFiles\H7OS.elf.dir\Core\Src\sdmmc.c.obj -c D:\H7OS\Core\Src\sdmmc.c
 
 CMakeFiles/H7OS.elf.dir/Core/Src/sdmmc.c.i: cmake_force
@@ -253,7 +281,7 @@ CMakeFiles/H7OS.elf.dir/Core/Src/sdmmc.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj: D:/H7OS/Core/Src/stm32h7xx_hal_msp.c
 CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj -MF CMakeFiles\H7OS.elf.dir\Core\Src\stm32h7xx_hal_msp.c.obj.d -o CMakeFiles\H7OS.elf.dir\Core\Src\stm32h7xx_hal_msp.c.obj -c D:\H7OS\Core\Src\stm32h7xx_hal_msp.c
 
 CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_hal_msp.c.i: cmake_force
@@ -267,7 +295,7 @@ CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_hal_msp.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_hal_timebase_tim.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_hal_timebase_tim.c.obj: D:/H7OS/Core/Src/stm32h7xx_hal_timebase_tim.c
 CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_hal_timebase_tim.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_hal_timebase_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_hal_timebase_tim.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_hal_timebase_tim.c.obj -MF CMakeFiles\H7OS.elf.dir\Core\Src\stm32h7xx_hal_timebase_tim.c.obj.d -o CMakeFiles\H7OS.elf.dir\Core\Src\stm32h7xx_hal_timebase_tim.c.obj -c D:\H7OS\Core\Src\stm32h7xx_hal_timebase_tim.c
 
 CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_hal_timebase_tim.c.i: cmake_force
@@ -281,7 +309,7 @@ CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_hal_timebase_tim.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_it.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_it.c.obj: D:/H7OS/Core/Src/stm32h7xx_it.c
 CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_it.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_it.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_it.c.obj -MF CMakeFiles\H7OS.elf.dir\Core\Src\stm32h7xx_it.c.obj.d -o CMakeFiles\H7OS.elf.dir\Core\Src\stm32h7xx_it.c.obj -c D:\H7OS\Core\Src\stm32h7xx_it.c
 
 CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_it.c.i: cmake_force
@@ -295,7 +323,7 @@ CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_it.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Core/Src/syscalls.c.obj: D:/H7OS/Core/Src/syscalls.c
 CMakeFiles/H7OS.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/syscalls.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Core/Src/syscalls.c.obj -MF CMakeFiles\H7OS.elf.dir\Core\Src\syscalls.c.obj.d -o CMakeFiles\H7OS.elf.dir\Core\Src\syscalls.c.obj -c D:\H7OS\Core\Src\syscalls.c
 
 CMakeFiles/H7OS.elf.dir/Core/Src/syscalls.c.i: cmake_force
@@ -309,7 +337,7 @@ CMakeFiles/H7OS.elf.dir/Core/Src/syscalls.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Core/Src/sysmem.c.obj: D:/H7OS/Core/Src/sysmem.c
 CMakeFiles/H7OS.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/sysmem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/sysmem.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Core/Src/sysmem.c.obj -MF CMakeFiles\H7OS.elf.dir\Core\Src\sysmem.c.obj.d -o CMakeFiles\H7OS.elf.dir\Core\Src\sysmem.c.obj -c D:\H7OS\Core\Src\sysmem.c
 
 CMakeFiles/H7OS.elf.dir/Core/Src/sysmem.c.i: cmake_force
@@ -323,7 +351,7 @@ CMakeFiles/H7OS.elf.dir/Core/Src/sysmem.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Core/Src/system_stm32h7xx.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Core/Src/system_stm32h7xx.c.obj: D:/H7OS/Core/Src/system_stm32h7xx.c
 CMakeFiles/H7OS.elf.dir/Core/Src/system_stm32h7xx.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/system_stm32h7xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/system_stm32h7xx.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Core/Src/system_stm32h7xx.c.obj -MF CMakeFiles\H7OS.elf.dir\Core\Src\system_stm32h7xx.c.obj.d -o CMakeFiles\H7OS.elf.dir\Core\Src\system_stm32h7xx.c.obj -c D:\H7OS\Core\Src\system_stm32h7xx.c
 
 CMakeFiles/H7OS.elf.dir/Core/Src/system_stm32h7xx.c.i: cmake_force
@@ -337,7 +365,7 @@ CMakeFiles/H7OS.elf.dir/Core/Src/system_stm32h7xx.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Core/Src/usart.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Core/Src/usart.c.obj: D:/H7OS/Core/Src/usart.c
 CMakeFiles/H7OS.elf.dir/Core/Src/usart.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/usart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/H7OS.elf.dir/Core/Src/usart.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Core/Src/usart.c.obj -MF CMakeFiles\H7OS.elf.dir\Core\Src\usart.c.obj.d -o CMakeFiles\H7OS.elf.dir\Core\Src\usart.c.obj -c D:\H7OS\Core\Src\usart.c
 
 CMakeFiles/H7OS.elf.dir/Core/Src/usart.c.i: cmake_force
@@ -350,7 +378,7 @@ CMakeFiles/H7OS.elf.dir/Core/Src/usart.c.s: cmake_force
 
 CMakeFiles/H7OS.elf.dir/Core/Startup/startup_stm32h743iitx.s.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Core/Startup/startup_stm32h743iitx.s.obj: D:/H7OS/Core/Startup/startup_stm32h743iitx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building ASM object CMakeFiles/H7OS.elf.dir/Core/Startup/startup_stm32h743iitx.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building ASM object CMakeFiles/H7OS.elf.dir/Core/Startup/startup_stm32h743iitx.s.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\H7OS.elf.dir\Core\Startup\startup_stm32h743iitx.s.obj -c D:\H7OS\Core\Startup\startup_stm32h743iitx.s
 
 CMakeFiles/H7OS.elf.dir/Core/Startup/startup_stm32h743iitx.s.i: cmake_force
@@ -364,7 +392,7 @@ CMakeFiles/H7OS.elf.dir/Core/Startup/startup_stm32h743iitx.s.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/memctl.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/memctl.c.obj: D:/H7OS/Drivers/Kernel/src/memctl.c
 CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/memctl.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/memctl.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/memctl.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/memctl.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\Kernel\src\memctl.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\Kernel\src\memctl.c.obj -c D:\H7OS\Drivers\Kernel\src\memctl.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/memctl.c.i: cmake_force
@@ -378,7 +406,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/memctl.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/timer.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/timer.c.obj: D:/H7OS/Drivers/Kernel/src/timer.c
 CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/timer.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/timer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/timer.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/timer.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\Kernel\src\timer.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\Kernel\src\timer.c.obj -c D:\H7OS\Drivers\Kernel\src\timer.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/timer.c.i: cmake_force
@@ -392,7 +420,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/timer.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/tlsf.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/tlsf.c.obj: D:/H7OS/Drivers/Kernel/src/tlsf.c
 CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/tlsf.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/tlsf.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/tlsf.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/tlsf.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\Kernel\src\tlsf.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\Kernel\src\tlsf.c.obj -c D:\H7OS\Drivers\Kernel\src\tlsf.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/tlsf.c.i: cmake_force
@@ -406,7 +434,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/tlsf.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_stdio.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_stdio.c.obj: D:/H7OS/Drivers/Kernel/src/u_stdio.c
 CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_stdio.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_stdio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_stdio.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_stdio.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\Kernel\src\u_stdio.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\Kernel\src\u_stdio.c.obj -c D:\H7OS\Drivers\Kernel\src\u_stdio.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_stdio.c.i: cmake_force
@@ -420,7 +448,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_stdio.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_thread.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_thread.c.obj: D:/H7OS/Drivers/Kernel/src/u_thread.c
 CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_thread.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_thread.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_thread.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_thread.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\Kernel\src\u_thread.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\Kernel\src\u_thread.c.obj -c D:\H7OS\Drivers\Kernel\src\u_thread.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_thread.c.i: cmake_force
@@ -434,7 +462,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_thread.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.i: cmake_force
@@ -448,7 +476,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.s: cmak
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cortex.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cortex.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cortex.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.i: cmake_force
@@ -462,7 +490,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.i: cmake_force
@@ -476,7 +504,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.s: 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma2d.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma2d.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma2d.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.i: cmake_force
@@ -490,7 +518,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.s
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma_ex.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma_ex.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma_ex.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.i: cmake_force
@@ -504,7 +532,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_exti.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_exti.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_exti.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.i: cmake_force
@@ -518,7 +546,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.s:
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.i: cmake_force
@@ -532,7 +560,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.s
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash_ex.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash_ex.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash_ex.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.i: cmake_force
@@ -546,7 +574,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_gpio.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_gpio.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_gpio.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.i: cmake_force
@@ -560,7 +588,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.s:
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_hsem.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_hsem.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_hsem.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.i: cmake_force
@@ -574,7 +602,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.s:
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.i: cmake_force
@@ -588,7 +616,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.s: 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c_ex.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c_ex.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c_ex.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.i: cmake_force
@@ -602,7 +630,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_jpeg.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_jpeg.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_jpeg.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.i: cmake_force
@@ -616,7 +644,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.s:
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_mdma.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_mdma.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_mdma.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.i: cmake_force
@@ -630,7 +658,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.s:
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.i: cmake_force
@@ -644,7 +672,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.s: 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr_ex.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr_ex.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr_ex.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.i: cmake_force
@@ -658,7 +686,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_qspi.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_qspi.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_qspi.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.i: cmake_force
@@ -672,7 +700,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.s:
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.i: cmake_force
@@ -686,7 +714,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.s: 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc_ex.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc_ex.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc_ex.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.i: cmake_force
@@ -700,7 +728,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rng.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rng.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rng.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.i: cmake_force
@@ -714,7 +742,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.s: 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rng_ex.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rng_ex.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rng_ex.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.i: cmake_force
@@ -728,7 +756,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rtc.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rtc.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rtc.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.i: cmake_force
@@ -742,7 +770,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.s: 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rtc_ex.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rtc_ex.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rtc_ex.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.i: cmake_force
@@ -756,7 +784,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sd.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sd.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sd.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.i: cmake_force
@@ -770,7 +798,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.s: c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sd_ex.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sd_ex.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sd_ex.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.i: cmake_force
@@ -784,7 +812,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.s
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sdram.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sdram.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sdram.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.i: cmake_force
@@ -798,7 +826,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.s
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.i: cmake_force
@@ -812,7 +840,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.s: 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim_ex.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim_ex.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim_ex.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.i: cmake_force
@@ -826,7 +854,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.i: cmake_force
@@ -840,7 +868,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.s:
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.i: cmake_force
@@ -854,7 +882,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_delayblock.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_delayblock.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_delayblock.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.i: cmake_force
@@ -868,7 +896,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_fmc.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_fmc.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_fmc.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.i: cmake_force
@@ -882,7 +910,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.s: c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.obj: D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.obj -MF CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_sdmmc.c.obj.d -o CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_sdmmc.c.obj -c D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_sdmmc.c
 
 CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.i: cmake_force
@@ -896,7 +924,7 @@ CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.s:
 CMakeFiles/H7OS.elf.dir/FATFS/App/fatfs.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/FATFS/App/fatfs.c.obj: D:/H7OS/FATFS/App/fatfs.c
 CMakeFiles/H7OS.elf.dir/FATFS/App/fatfs.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/H7OS.elf.dir/FATFS/App/fatfs.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/H7OS.elf.dir/FATFS/App/fatfs.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/FATFS/App/fatfs.c.obj -MF CMakeFiles\H7OS.elf.dir\FATFS\App\fatfs.c.obj.d -o CMakeFiles\H7OS.elf.dir\FATFS\App\fatfs.c.obj -c D:\H7OS\FATFS\App\fatfs.c
 
 CMakeFiles/H7OS.elf.dir/FATFS/App/fatfs.c.i: cmake_force
@@ -910,7 +938,7 @@ CMakeFiles/H7OS.elf.dir/FATFS/App/fatfs.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/FATFS/Target/bsp_driver_sd.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/FATFS/Target/bsp_driver_sd.c.obj: D:/H7OS/FATFS/Target/bsp_driver_sd.c
 CMakeFiles/H7OS.elf.dir/FATFS/Target/bsp_driver_sd.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/H7OS.elf.dir/FATFS/Target/bsp_driver_sd.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/H7OS.elf.dir/FATFS/Target/bsp_driver_sd.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/FATFS/Target/bsp_driver_sd.c.obj -MF CMakeFiles\H7OS.elf.dir\FATFS\Target\bsp_driver_sd.c.obj.d -o CMakeFiles\H7OS.elf.dir\FATFS\Target\bsp_driver_sd.c.obj -c D:\H7OS\FATFS\Target\bsp_driver_sd.c
 
 CMakeFiles/H7OS.elf.dir/FATFS/Target/bsp_driver_sd.c.i: cmake_force
@@ -924,7 +952,7 @@ CMakeFiles/H7OS.elf.dir/FATFS/Target/bsp_driver_sd.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/FATFS/Target/fatfs_platform.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/FATFS/Target/fatfs_platform.c.obj: D:/H7OS/FATFS/Target/fatfs_platform.c
 CMakeFiles/H7OS.elf.dir/FATFS/Target/fatfs_platform.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/H7OS.elf.dir/FATFS/Target/fatfs_platform.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/H7OS.elf.dir/FATFS/Target/fatfs_platform.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/FATFS/Target/fatfs_platform.c.obj -MF CMakeFiles\H7OS.elf.dir\FATFS\Target\fatfs_platform.c.obj.d -o CMakeFiles\H7OS.elf.dir\FATFS\Target\fatfs_platform.c.obj -c D:\H7OS\FATFS\Target\fatfs_platform.c
 
 CMakeFiles/H7OS.elf.dir/FATFS/Target/fatfs_platform.c.i: cmake_force
@@ -938,7 +966,7 @@ CMakeFiles/H7OS.elf.dir/FATFS/Target/fatfs_platform.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/FATFS/Target/sd_diskio.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/FATFS/Target/sd_diskio.c.obj: D:/H7OS/FATFS/Target/sd_diskio.c
 CMakeFiles/H7OS.elf.dir/FATFS/Target/sd_diskio.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/H7OS.elf.dir/FATFS/Target/sd_diskio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/H7OS.elf.dir/FATFS/Target/sd_diskio.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/FATFS/Target/sd_diskio.c.obj -MF CMakeFiles\H7OS.elf.dir\FATFS\Target\sd_diskio.c.obj.d -o CMakeFiles\H7OS.elf.dir\FATFS\Target\sd_diskio.c.obj -c D:\H7OS\FATFS\Target\sd_diskio.c
 
 CMakeFiles/H7OS.elf.dir/FATFS/Target/sd_diskio.c.i: cmake_force
@@ -952,7 +980,7 @@ CMakeFiles/H7OS.elf.dir/FATFS/Target/sd_diskio.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj: D:/H7OS/Middlewares/Third_Party/FatFs/src/diskio.c
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj -MF CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FatFs\src\diskio.c.obj.d -o CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FatFs\src\diskio.c.obj -c D:\H7OS\Middlewares\Third_Party\FatFs\src\diskio.c
 
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.i: cmake_force
@@ -966,7 +994,7 @@ CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.s: cmake_forc
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj: D:/H7OS/Middlewares/Third_Party/FatFs/src/ff.c
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj -MF CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FatFs\src\ff.c.obj.d -o CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FatFs\src\ff.c.obj -c D:\H7OS\Middlewares\Third_Party\FatFs\src\ff.c
 
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.i: cmake_force
@@ -980,7 +1008,7 @@ CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj: D:/H7OS/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj -MF CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FatFs\src\ff_gen_drv.c.obj.d -o CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FatFs\src\ff_gen_drv.c.obj -c D:\H7OS\Middlewares\Third_Party\FatFs\src\ff_gen_drv.c
 
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.i: cmake_force
@@ -994,7 +1022,7 @@ CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.s: cmake_
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.obj: D:/H7OS/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.obj -MF CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FatFs\src\option\ccsbcs.c.obj.d -o CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FatFs\src\option\ccsbcs.c.obj -c D:\H7OS\Middlewares\Third_Party\FatFs\src\option\ccsbcs.c
 
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.i: cmake_force
@@ -1008,7 +1036,7 @@ CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/ccsbcs.c.s: cma
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj: D:/H7OS/Middlewares/Third_Party/FatFs/src/option/syscall.c
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj -MF CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FatFs\src\option\syscall.c.obj.d -o CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FatFs\src\option\syscall.c.obj -c D:\H7OS\Middlewares\Third_Party\FatFs\src\option\syscall.c
 
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.i: cmake_force
@@ -1022,7 +1050,7 @@ CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.s: cm
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj: D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj -MF CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c.obj.d -o CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c.obj -c D:\H7OS\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c
 
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.i: cmake_force
@@ -1036,7 +1064,7 @@ CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj: D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/croutine.c
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj -MF CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\croutine.c.obj.d -o CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\croutine.c.obj -c D:\H7OS\Middlewares\Third_Party\FreeRTOS\Source\croutine.c
 
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.i: cmake_force
@@ -1050,7 +1078,7 @@ CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.s: cm
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj: D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj -MF CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\event_groups.c.obj.d -o CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\event_groups.c.obj -c D:\H7OS\Middlewares\Third_Party\FreeRTOS\Source\event_groups.c
 
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.i: cmake_force
@@ -1064,7 +1092,7 @@ CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.s
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj: D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/list.c
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj -MF CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\list.c.obj.d -o CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\list.c.obj -c D:\H7OS\Middlewares\Third_Party\FreeRTOS\Source\list.c
 
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.i: cmake_force
@@ -1078,7 +1106,7 @@ CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.s: cmake_
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj: D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj -MF CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c.obj.d -o CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c.obj -c D:\H7OS\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c
 
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.i: cmake_force
@@ -1092,7 +1120,7 @@ CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj -MF CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c.obj.d -o CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c.obj -c D:\H7OS\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c
 
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.i: cmake_force
@@ -1106,7 +1134,7 @@ CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj: D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/queue.c
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj -MF CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\queue.c.obj.d -o CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\queue.c.obj -c D:\H7OS\Middlewares\Third_Party\FreeRTOS\Source\queue.c
 
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.i: cmake_force
@@ -1120,7 +1148,7 @@ CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.s: cmake
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj: D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj -MF CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c.obj.d -o CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c.obj -c D:\H7OS\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c
 
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.i: cmake_force
@@ -1134,7 +1162,7 @@ CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj: D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/tasks.c
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj -MF CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\tasks.c.obj.d -o CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\tasks.c.obj -c D:\H7OS\Middlewares\Third_Party\FreeRTOS\Source\tasks.c
 
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.i: cmake_force
@@ -1148,7 +1176,7 @@ CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.s: cmake
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj: D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/timers.c
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj -MF CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\timers.c.obj.d -o CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\timers.c.obj -c D:\H7OS\Middlewares\Third_Party\FreeRTOS\Source\timers.c
 
 CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.i: cmake_force
@@ -1162,7 +1190,7 @@ CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s: cmak
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/DrT/DrT.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/DrT/DrT.c.obj: D:/H7OS/RAMFS/init.d/DrT/DrT.c
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/DrT/DrT.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/DrT/DrT.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/DrT/DrT.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/RAMFS/init.d/DrT/DrT.c.obj -MF CMakeFiles\H7OS.elf.dir\RAMFS\init.d\DrT\DrT.c.obj.d -o CMakeFiles\H7OS.elf.dir\RAMFS\init.d\DrT\DrT.c.obj -c D:\H7OS\RAMFS\init.d\DrT\DrT.c
 
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/DrT/DrT.c.i: cmake_force
@@ -1176,7 +1204,7 @@ CMakeFiles/H7OS.elf.dir/RAMFS/init.d/DrT/DrT.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Utilities/JPEG/jpeg_utils.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Utilities/JPEG/jpeg_utils.c.obj: D:/H7OS/Utilities/JPEG/jpeg_utils.c
 CMakeFiles/H7OS.elf.dir/Utilities/JPEG/jpeg_utils.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/H7OS.elf.dir/Utilities/JPEG/jpeg_utils.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/H7OS.elf.dir/Utilities/JPEG/jpeg_utils.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Utilities/JPEG/jpeg_utils.c.obj -MF CMakeFiles\H7OS.elf.dir\Utilities\JPEG\jpeg_utils.c.obj.d -o CMakeFiles\H7OS.elf.dir\Utilities\JPEG\jpeg_utils.c.obj -c D:\H7OS\Utilities\JPEG\jpeg_utils.c
 
 CMakeFiles/H7OS.elf.dir/Utilities/JPEG/jpeg_utils.c.i: cmake_force
@@ -1190,6 +1218,8 @@ CMakeFiles/H7OS.elf.dir/Utilities/JPEG/jpeg_utils.c.s: cmake_force
 # Object files for target H7OS.elf
 H7OS_elf_OBJECTS = \
 "CMakeFiles/H7OS.elf.dir/Applications/src/test.c.obj" \
+"CMakeFiles/H7OS.elf.dir/Command/Register.c.obj" \
+"CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj" \
 "CMakeFiles/H7OS.elf.dir/Core/Src/dma.c.obj" \
 "CMakeFiles/H7OS.elf.dir/Core/Src/dma2d.c.obj" \
 "CMakeFiles/H7OS.elf.dir/Core/Src/fmc.c.obj" \
@@ -1274,6 +1304,8 @@ H7OS_elf_OBJECTS = \
 H7OS_elf_EXTERNAL_OBJECTS =
 
 H7OS.elf: CMakeFiles/H7OS.elf.dir/Applications/src/test.c.obj
+H7OS.elf: CMakeFiles/H7OS.elf.dir/Command/Register.c.obj
+H7OS.elf: CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj
 H7OS.elf: CMakeFiles/H7OS.elf.dir/Core/Src/dma.c.obj
 H7OS.elf: CMakeFiles/H7OS.elf.dir/Core/Src/dma2d.c.obj
 H7OS.elf: CMakeFiles/H7OS.elf.dir/Core/Src/fmc.c.obj
@@ -1356,7 +1388,7 @@ H7OS.elf: CMakeFiles/H7OS.elf.dir/Utilities/JPEG/jpeg_utils.c.obj
 H7OS.elf: CMakeFiles/H7OS.elf.dir/build.make
 H7OS.elf: CMakeFiles/H7OS.elf.dir/objects1.rsp
 H7OS.elf: CMakeFiles/H7OS.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Linking C executable H7OS.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\H7OS\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Linking C executable H7OS.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\H7OS.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/H7OS/cmake-build-debug/H7OS.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/H7OS/cmake-build-debug/H7OS.bin"
