@@ -25,15 +25,14 @@ void testFuncInit(){
 
     DrTInit();
 
-    u_print("init OK");
-
 }
 
 
 void testFunc(){
     // kernel_test();
     // displayDevice();
-    // execCMD("ls");
+    execCMD("cd /mnt");
+    execCMD("ls");
     // u_print("testFunc\n");
     osDelay(1000);
 }

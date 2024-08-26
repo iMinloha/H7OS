@@ -82,8 +82,6 @@ struct FS{
 
 // 根文件系统
 static FS_t RAM_FS;
-// 串口设备指针
-static FS_t currentFS;
 
 // 初始化设备树(添加设备目录与分类)
 void DrTInit();

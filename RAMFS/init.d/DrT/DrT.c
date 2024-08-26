@@ -5,6 +5,9 @@
 #include "fatfs.h"
 #include "quadspi.h"
 
+// 串口设备指针
+FS_t currentFS;
+
 /**
  * @brief 添加子节点
  * @param parent 父节点
@@ -106,6 +109,9 @@ void DrTInit(){
     RAM_FS->next = NULL;
     RAM_FS->child = NULL;
 
+    // 串口终端路径
+    currentFS = RAM_FS;
+
     // 添加子路径
     addFSChild(RAM_FS, "dev");
     addFSChild(RAM_FS, "tmp");
@@ -115,7 +121,6 @@ void DrTInit(){
     addFSChild(RAM_FS, "root");
     addFSChild(RAM_FS, "opt");
     addFSChild(RAM_FS, "etc");
-    u_print("DrT File system init OK\n");
 
     // 添加设备
     addDevice("dev", &huart1, "USART1", "Serial uart", DEVICE_SERIAL, DEVICE_BUSY, NULL);
@@ -123,11 +128,9 @@ void DrTInit(){
     addDevice("mnt", &SDFatFS, "FATFS", "FAT file system", FILE_SYSTEM, DEVICE_ON, NULL);
     addDevice("mnt", &hqspi, "QSPI", "Quad SPI", DEVICE_STORAGE, DEVICE_ON, NULL);
 
-    u_print("DrT Device init OK\n");
 
     // 指令注册
     register_main();
-    u_print("DrT Command init OK\n");
 }
 
 
@@ -276,14 +279,17 @@ FS_t ram_cd(char* path){
 void ram_pwd(FS_t fs, char* path){
     FS_t temp_node;
     // 递归显示路径
-    while(fs->parent != RAM_FS){
+    if (fs == RAM_FS) {
+        strcopy(path, "/");
+        return;
+    }else{
         temp_node = fs;
-        fs = fs->parent;
-        strcopy(path, temp_node->path);
-        strcopy(path + strlen(path), "/");
-        strcopy(path + strlen(path), path);
-        path[strlen(path)] = '\0';
+        ram_pwd(temp_node->parent, path);
+        strconcat(path, temp_node->path);
+        strconcat(path, "/");
     }
+
+    path[strlen(path) - 1] = '\0';
 }
 
 
@@ -324,7 +330,7 @@ void execCMD(char* command){
     CMD_t p = CMDList->next;
     while(p != NULL){
         if(strcmp(p->name, argv[0]) == 0){
-            p->cmd(argc, argv);
+            p->cmd(argc, &argv[1]);
             return;
         }
         p = p->next;
