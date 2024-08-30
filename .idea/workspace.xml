@@ -20,31 +20,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b472e725-50d4-49aa-a3fb-20d03d3770a2" name="更改" comment="增加CPU设备信息">
-      <change afterPath="$PROJECT_DIR$/Command/info/info_main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Command/info/info_main.h" afterDir="false" />
+    <list default="true" id="b472e725-50d4-49aa-a3fb-20d03d3770a2" name="更改" comment="info指令用于查看设备信息">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Applications/src/xShellTask.c" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/src/xShellTask.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Command/Register.c" beforeDir="false" afterPath="$PROJECT_DIR$/Command/Register.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/FreeRTOSConfig.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/FreeRTOSConfig.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/freertos.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/freertos.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/H7OS.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/H7OS.ioc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/DrT/DrT.c" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/DrT/DrT.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/DrT/DrT.h" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/DrT/DrT.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-e577f61d023ecdb950d1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-08-30T08-59-15-0110.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-H7OS.elf-Debug-2b5565a53056016f118e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/H7OS.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/H7OS.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/H7OS.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/H7OS.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/H7OS.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/H7OS.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/H7OS.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/H7OS.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +103,7 @@
       <workItem from="1724990371096" duration="4362000" />
       <workItem from="1725003582713" duration="5121000" />
       <workItem from="1725021103648" duration="10000" />
-      <workItem from="1725022450140" duration="3235000" />
+      <workItem from="1725022450140" duration="3464000" />
     </task>
     <task id="LOCAL-00001" summary="Fatfs初始化">
       <option name="closed" value="true" />
@@ -159,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725008420015</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="info指令用于查看设备信息">
+      <option name="closed" value="true" />
+      <created>1725025852954</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725025852954</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +173,7 @@
     <MESSAGE value="Fatfs初始化" />
     <MESSAGE value="Fatfs初始化瞬死线程" />
     <MESSAGE value="增加CPU设备信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加CPU设备信息" />
+    <MESSAGE value="info指令用于查看设备信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="info指令用于查看设备信息" />
   </component>
 </project>
