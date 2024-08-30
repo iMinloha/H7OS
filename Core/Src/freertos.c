@@ -25,9 +25,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "test.h"
-#include "fmc.h"
 #include "memctl.h"
+#include "xShellTask.h"
+#include "bsp_driver_sd.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -49,7 +49,8 @@
 /* USER CODE BEGIN Variables */
 
 /* USER CODE END Variables */
-osThreadId shellHandle;
+osThreadId xShellHandle;
+osThreadId xFatfsInitHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -57,6 +58,7 @@ osThreadId shellHandle;
 /* USER CODE END FunctionPrototypes */
 
 void ShellTask(void const * argument);
+void QueueInit(void const * argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -103,15 +105,19 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
-  /* definition and creation of shell */
-  osThreadDef(shell, ShellTask, osPriorityNormal, 0, 512);
-  shellHandle = osThreadCreate(osThread(shell), NULL);
+  /* definition and creation of xShell */
+  osThreadDef(xShell, ShellTask, osPriorityNormal, 0, 1024);
+  xShellHandle = osThreadCreate(osThread(xShell), NULL);
+
+  /* definition and creation of xFatfsInit */
+  osThreadDef(xFatfsInit, QueueInit, osPriorityIdle, 0, 2048);
+  xFatfsInitHandle = osThreadCreate(osThread(xFatfsInit), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
   //  SDRAM_Initialization_Sequence(&hsdram1);
     MemControl_Init();
-    testFuncInit();
+    taskGlobalInit();
   /* USER CODE END RTOS_THREADS */
 
 }
@@ -127,12 +133,31 @@ void ShellTask(void const * argument)
 {
   /* USER CODE BEGIN ShellTask */
     // testFuncInit();
+    taskShellInit();
   /* Infinite loop */
   for(;;)
   {
-      testFunc();
+      taskLoop();
   }
   /* USER CODE END ShellTask */
+}
+
+/* USER CODE BEGIN Header_QueueInit */
+/**
+* @brief Function implementing the xFatfsInit thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_QueueInit */
+void QueueInit(void const * argument)
+{
+  /* USER CODE BEGIN QueueInit */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END QueueInit */
 }
 
 /* Private application code --------------------------------------------------*/

@@ -112,7 +112,6 @@ int main(void)
   MX_DMA_Init();
   MX_MDMA_Init();
   MX_FMC_Init();
-  MX_FATFS_Init();
   MX_DMA2D_Init();
   MX_QUADSPI_Init();
   MX_JPEG_Init();
@@ -120,8 +119,9 @@ int main(void)
   MX_USART1_UART_Init();
   MX_RNG_Init();
   MX_RTC_Init();
+  MX_FATFS_Init();
   /* USER CODE BEGIN 2 */
-
+  BSP_SD_Init();
   /* USER CODE END 2 */
 
   /* Call init function for freertos objects (in freertos.c) */
@@ -239,6 +239,15 @@ void MPU_Config(void)
   MPU_InitStruct.IsShareable = MPU_ACCESS_NOT_SHAREABLE;
   MPU_InitStruct.IsCacheable = MPU_ACCESS_CACHEABLE;
   MPU_InitStruct.IsBufferable = MPU_ACCESS_NOT_BUFFERABLE;
+
+  HAL_MPU_ConfigRegion(&MPU_InitStruct);
+
+  /** Initializes and configures the Region and the memory to be protected
+  */
+  MPU_InitStruct.Number = MPU_REGION_NUMBER1;
+  MPU_InitStruct.BaseAddress = 0x24000000;
+  MPU_InitStruct.Size = MPU_REGION_SIZE_512KB;
+  MPU_InitStruct.IsBufferable = MPU_ACCESS_BUFFERABLE;
 
   HAL_MPU_ConfigRegion(&MPU_InitStruct);
   /* Enables the MPU */

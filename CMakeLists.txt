@@ -54,13 +54,15 @@ set(I "Drivers/Kernel/inc" "Applications/inc" "RAMFS/" "Command/")
 # 包含路径文件
 set(S "Applications/*.*" "Command/*.*" "RAMFS/*.*")
 
-include_directories(Core/Inc Drivers/STM32H7xx_HAL_Driver/Inc Drivers/STM32H7xx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32H7xx/Include Drivers/CMSIS/Include FATFS/Target FATFS/App Middlewares/Third_Party/FreeRTOS/Source/include Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F Middlewares/Third_Party/FatFs/src Utilities/JPEG ${I})
+include_directories(Core/Inc Drivers/STM32H7xx_HAL_Driver/Inc Drivers/STM32H7xx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32H7xx/Include Drivers/CMSIS/Include Middlewares/Third_Party/FreeRTOS/Source/include Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F Utilities/JPEG FATFS/Target FATFS/App Middlewares/Third_Party/FatFs/src ${I})
 
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx)
 
 file(GLOB_RECURSE SOURCES "Core/*.*" "Utilities/*.*" "FATFS/*.*" "Middlewares/*.*" "Drivers/*.*" ${S})
 
-set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32H743IITX_FLASH.ld)
+set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32H743IITX_FLASH.ld
+        Applications/src/xFatfsInit.c
+        Applications/inc/xFatfsInit.h)
 
 add_link_options(-Wl,-gc-sections,--print-memory-usage,-Map=${PROJECT_BINARY_DIR}/${PROJECT_NAME}.map)
 add_link_options(-mcpu=cortex-m7 -mthumb -mthumb-interwork)

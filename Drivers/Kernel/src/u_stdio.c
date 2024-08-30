@@ -40,6 +40,16 @@ _OS_WEAK void put_address_num(uint32_t num, int base, int sign){
     for(int j = i - 1; j >= 0; j--) put_char(buf[j]);
 }
 
+_OS_WEAK void put_huge_num(uint32_t num, int base, int sign){
+    char buf[11];
+    int i = 0;
+    do{
+        buf[i++] = "0123456789ABCDEF"[num % base];
+        num /= base;
+    } while(num);
+    for(int j = i - 1; j >= 0; j--) put_char(buf[j]);
+}
+
 static int v_printf(const char *fmt, va_list ap){
     for(; *fmt != '\0'; fmt++){
         if(*fmt != '%'){
@@ -57,6 +67,7 @@ static int v_printf(const char *fmt, va_list ap){
             case 'f': put_num(va_arg(ap, double), 10, 1); break;
             case 'l': put_num(va_arg(ap, long), 10, 1); break;
             case 'p': put_address(va_arg(ap, void *)); break;
+            case 'D': put_huge_num(va_arg(ap, int), 10, 1); break;
 
             default:
                 put_char(*fmt);

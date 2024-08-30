@@ -2,8 +2,8 @@
 #include "memctl.h"
 #include "usart.h"
 #include "u_stdio.h"
-#include "fatfs.h"
 #include "quadspi.h"
+#include "fatfs.h"
 
 // 串口设备指针
 FS_t currentFS;
