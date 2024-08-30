@@ -25,9 +25,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "test.h"
-#include "fmc.h"
 #include "memctl.h"
+#include "xShellTask.h"
+#include "xTaskInit.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -49,7 +49,7 @@
 /* USER CODE BEGIN Variables */
 
 /* USER CODE END Variables */
-osThreadId shellHandle;
+osThreadId xShellHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -57,6 +57,7 @@ osThreadId shellHandle;
 /* USER CODE END FunctionPrototypes */
 
 void ShellTask(void const * argument);
+void QueueInit(void const * argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -103,15 +104,19 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
-  /* definition and creation of shell */
-  osThreadDef(shell, ShellTask, osPriorityNormal, 0, 512);
-  shellHandle = osThreadCreate(osThread(shell), NULL);
+  /* definition and creation of xShell */
+  osThreadDef(xShell, ShellTask, osPriorityNormal, 0, 1024);
+  xShellHandle = osThreadCreate(osThread(xShell), NULL);
+
+  /* definition and creation of xTaskInit */
+  osThreadDef(xTaskInit, QueueInit, osPriorityIdle, 0, 2048);
+  xTaskInitHandle = osThreadCreate(osThread(xTaskInit), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
   //  SDRAM_Initialization_Sequence(&hsdram1);
     MemControl_Init();
-    testFuncInit();
+    taskGlobalInit();
   /* USER CODE END RTOS_THREADS */
 
 }
@@ -127,10 +132,11 @@ void ShellTask(void const * argument)
 {
   /* USER CODE BEGIN ShellTask */
     // testFuncInit();
+    taskShellInit();
   /* Infinite loop */
   for(;;)
   {
-      testFunc();
+      taskLoop();
   }
   /* USER CODE END ShellTask */
 }

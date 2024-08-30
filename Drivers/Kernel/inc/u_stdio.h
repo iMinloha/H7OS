@@ -55,6 +55,12 @@ void put_char(char c);
 void put_num(int num, int base, int sign);
 
 /**
+ * @brief 输出大数字到串口
+ * @param num: 大数字
+ * */
+void put_huge_num(uint32_t num, int base, int sign);
+
+/**
  * @brief 输出地址到串口
  * @param num: 地址
  * */

@@ -54,7 +54,7 @@ set(I "Drivers/Kernel/inc" "Applications/inc" "RAMFS/" "Command/")
 # 包含路径文件
 set(S "Applications/*.*" "Command/*.*" "RAMFS/*.*")
 
-include_directories(Core/Inc Drivers/STM32H7xx_HAL_Driver/Inc Drivers/STM32H7xx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32H7xx/Include Drivers/CMSIS/Include FATFS/Target FATFS/App Middlewares/Third_Party/FreeRTOS/Source/include Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F Middlewares/Third_Party/FatFs/src Utilities/JPEG ${I})
+include_directories(Core/Inc Drivers/STM32H7xx_HAL_Driver/Inc Drivers/STM32H7xx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32H7xx/Include Drivers/CMSIS/Include Middlewares/Third_Party/FreeRTOS/Source/include Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F Utilities/JPEG FATFS/Target FATFS/App Middlewares/Third_Party/FatFs/src ${I})
 
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx)
 

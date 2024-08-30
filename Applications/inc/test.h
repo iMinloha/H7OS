@@ -3,6 +3,8 @@
 
 void testFuncInit();
 
+void testTask();
+
 void testFunc();
 
 #endif //H7OS_TEST_H
