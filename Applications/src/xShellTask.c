@@ -7,7 +7,7 @@ void taskShellInit(){
 }
 
 void taskLoop(){
-    execCMD("cd /mnt");
-    execCMD("ls");
+//    execCMD("cd /mnt");
+//    execCMD("ls");
     osDelay(1000);
 }

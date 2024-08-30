@@ -57,7 +57,6 @@ osThreadId xShellHandle;
 /* USER CODE END FunctionPrototypes */
 
 void ShellTask(void const * argument);
-void QueueInit(void const * argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -108,11 +107,9 @@ void MX_FREERTOS_Init(void) {
   osThreadDef(xShell, ShellTask, osPriorityNormal, 0, 1024);
   xShellHandle = osThreadCreate(osThread(xShell), NULL);
 
-  /* definition and creation of xTaskInit */
-  osThreadDef(xTaskInit, QueueInit, osPriorityIdle, 0, 2048);
-  xTaskInitHandle = osThreadCreate(osThread(xTaskInit), NULL);
-
   /* USER CODE BEGIN RTOS_THREADS */
+    osThreadDef(xTaskInit, QueueInit, osPriorityIdle, 0, 2048);
+    xTaskInitHandle = osThreadCreate(osThread(xTaskInit), NULL);
   /* add threads, ... */
   //  SDRAM_Initialization_Sequence(&hsdram1);
     MemControl_Init();

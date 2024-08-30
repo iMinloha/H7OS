@@ -3,4 +3,7 @@
 
 #include "init.d/DrT/DrT.h"
 
+#include "init.d/CPU/cpu.h"
+
+
 #endif

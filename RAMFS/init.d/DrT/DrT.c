@@ -4,6 +4,7 @@
 #include "u_stdio.h"
 #include "quadspi.h"
 #include "fatfs.h"
+#include "RAMFS.h"
 
 // 串口设备指针
 FS_t currentFS;
@@ -15,11 +16,11 @@ FS_t currentFS;
  */
 void addFSChild(FS_t parent, char *path){
     // 创建子节点
-    FS_t child = (FS_t) kernal_alloc(sizeof(struct FS));
-    child->path = (char*) kernal_alloc(strlen(path) + 1);
+    FS_t child = (FS_t) kernel_alloc(sizeof(struct FS));
+    child->path = (char*) kernel_alloc(strlen(path) + 1);
     strcopy(child->path, path);
 
-    child->node = (DrTNode_t) kernal_alloc(sizeof(struct DrTNode));
+    child->node = (DrTNode_t) kernel_alloc(sizeof(struct DrTNode));
     child->node_count = 0;
     child->parent = parent;
     child->next = NULL; // 子文件夹
@@ -67,9 +68,9 @@ void addDevice(char *path, void* devicePtr, char *name, char *description, Devic
     FS_t node = getFSChild(RAM_FS, path);
     if (node == NULL) return;
     // 创建设备节点
-    DrTNode_t device = (DrTNode_t) kernal_alloc(sizeof(struct DrTNode));
-    device->name = (char*) kernal_alloc(strlen(name) + 1);
-    device->description = (char*) kernal_alloc(strlen(description) + 1);
+    DrTNode_t device = (DrTNode_t) kernel_alloc(sizeof(struct DrTNode));
+    device->name = (char*) kernel_alloc(strlen(name) + 1);
+    device->description = (char*) kernel_alloc(strlen(description) + 1);
 
     strcopy(device->name, name);
     strcopy(device->description, description);
@@ -77,9 +78,9 @@ void addDevice(char *path, void* devicePtr, char *name, char *description, Devic
     device->device = devicePtr;
     device->status = status;
     device->type = type;
-    device->data = kernal_alloc(128);
+    device->data = kernel_alloc(128);
     device->driver = driver;
-    Mutex_t mutex = (Mutex_t) kernal_alloc(MUTEX_SIZE);
+    Mutex_t mutex = (Mutex_t) kernel_alloc(MUTEX_SIZE);
     mutex_init(mutex);
     device->mutex = mutex;
     device->parent = node;
@@ -96,9 +97,9 @@ void addDevice(char *path, void* devicePtr, char *name, char *description, Devic
  * @brief 初始化设备树
  */
 void DrTInit(){
-    // 创建根节点RootFS
-    RAM_FS = (FS_t) kernal_alloc(sizeof(struct FS));
-    CMDList = (CMD_t) kernal_alloc(sizeof(struct CMD));
+    // 创建根节点RootFS与命令列表
+    RAM_FS = (FS_t) kernel_alloc(sizeof(struct FS));
+    CMDList = (CMD_t) kernel_alloc(sizeof(struct CMD));
     CMDList->next = NULL;
     RAM_FS->path = "/";
 
@@ -121,9 +122,12 @@ void DrTInit(){
     addFSChild(RAM_FS, "root");
     addFSChild(RAM_FS, "opt");
     addFSChild(RAM_FS, "etc");
+    addFSChild(RAM_FS, "proc");
 
     // 添加设备
-    addDevice("dev", &huart1, "USART1", "Serial uart", DEVICE_SERIAL, DEVICE_BUSY, NULL);
+    addDevice("dev", &CortexM7, "Cortex-M7", "Central Processing Unit", DEVICE_BS, DEVICE_BUSY, NULL);
+    addDevice("dev", &huart1, "USART1", "Serial bus device", DEVICE_SERIAL, DEVICE_BUSY, NULL);
+
     addDevice("mnt", &hsdram1, "SDMMC", "SD card", DEVICE_STORAGE, DEVICE_ON, NULL);
     addDevice("mnt", &SDFatFS, "FATFS", "FAT file system", FILE_SYSTEM, DEVICE_ON, NULL);
     addDevice("mnt", &hqspi, "QSPI", "Quad SPI", DEVICE_STORAGE, DEVICE_ON, NULL);
@@ -153,6 +157,39 @@ FS_t loadPath(char* path) {
     }
 
     return node;
+}
+
+/**
+ * @brief 加载设备
+ * @param path
+ * @return
+ */
+void* loadDevice(char* path){
+    FS_t node = RAM_FS;
+    if (strcmp(path, "/") == 0) return NULL;
+
+    else {
+        if (path[0] == '/') path++;
+        char *token = strtok(path, "/");
+        while (token != NULL) {
+            node = getFSChild(node, token);
+            if (node == NULL) break;
+            token = strtok(NULL, "/");
+        }
+        // node就是目标节点的父文件夹
+        // token可能是不存在的文件夹或设备
+        if (strtok(NULL, "/") != NULL) {
+            // 说明path中有多余的路径
+            return NULL;
+        } else {
+            DrTNode_t p = node->node->next;
+            while (p != NULL) {
+                if (strcmp(p->name, token) == 0) return p->device;
+                p = p->next;
+            }
+        }
+    }
+    return NULL;
 }
 
 // DrT操作
@@ -276,6 +313,11 @@ FS_t ram_cd(char* path){
     return node;
 }
 
+/**
+ * @brief 显示当前目录
+ * @param fs 当前文件夹
+ * @param path 路径(已经ram_alloc)
+ */
 void ram_pwd(FS_t fs, char* path){
     FS_t temp_node;
     // 递归显示路径
@@ -296,16 +338,18 @@ void ram_pwd(FS_t fs, char* path){
 // ============================[指令操作]===========================
 
 // 添加指令
-void addCMD(char* name, char* description, Comand_t cmd){
+void addCMD(char* name, char* description, char* usage, Comand_t cmd){
     CMD_t p = CMDList;
     while(p->next != NULL) p = p->next;
-    CMD_t newCMD = (CMD_t) kernal_alloc(sizeof(struct CMD));
+    CMD_t newCMD = (CMD_t) kernel_alloc(sizeof(struct CMD));
 
 
-    newCMD->name = (char*) kernal_alloc(strlen(name) + 1);
-    newCMD->description = (char*) kernal_alloc(strlen(description) + 1);
+    newCMD->name = (char*) kernel_alloc(strlen(name) + 1);
+    newCMD->description = (char*) kernel_alloc(strlen(description) + 1);
+    newCMD->usage = (char*) kernel_alloc(strlen(usage) + 1);
     strcopy(newCMD->name, name);
     strcopy(newCMD->description, description);
+    strcopy(newCMD->usage, usage);
 
     newCMD->cmd = cmd;
     newCMD->next = NULL;

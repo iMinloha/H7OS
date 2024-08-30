@@ -148,14 +148,14 @@ void ram_align(size_t align, size_t bytes){
     tlsf_memalign(mem_pool, align, bytes);
 }
 
-void* kernal_alloc(uint32_t size){
+void* kernel_alloc(uint32_t size){
     return tlsf_malloc(kernel_pool, size);
 }
 
-void* kernal_realloc(void* addr, uint32_t size){
+void* kernel_realloc(void* addr, uint32_t size){
     return tlsf_realloc(kernel_pool, addr, size);
 }
 
-void kernal_free(void* addr){
+void kernel_free(void* addr){
     tlsf_free(kernel_pool, addr);
 }

@@ -4,6 +4,7 @@
 #include "sdmmc.h"
 #include "quadspi.h"
 #include "RAMFS.h"
+#include "adc.h"
 
 void taskGlobalInit(){
 
@@ -15,11 +16,17 @@ void taskGlobalInit(){
     uint64_t CardCap=(uint64_t)(SDCardInfo.LogBlockNbr)*(uint64_t)(SDCardInfo.LogBlockSize);	//计算SD卡容量
     u_print("SD card Drive Capacitor: %D MB\r\n", (uint32_t)(CardCap>>20));
 
+    // CPU采样初始化
+    HAL_ADCEx_Calibration_Start(&hadc3,ADC_CALIB_OFFSET,ADC_SINGLE_ENDED);
+
+    // QSPI Flash初始化
     if(QSPI_W25Qxx_BlockErase_32K(0) != QSPI_W25Qxx_OK)
         u_print("Erase Failed\n");
     else u_print("QSPI Flash Succeed, ID: %d\n", QSPI_W25Qxx_ReadID());
 
     DrTInit();
+
+    createCPU();
 }
 
 void QueueInit(void const * argument){

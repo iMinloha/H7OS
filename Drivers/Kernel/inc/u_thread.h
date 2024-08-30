@@ -7,6 +7,7 @@ typedef struct param* param_t;
 
 /**
  * @brief 函数指针
+ * @param param 参数结构体
  * */
 typedef void (*Func_t)(param_t param);
 
@@ -64,6 +65,6 @@ int mutex_status(Mutex_t self);
  * @param self 互斥锁
  * @param func 函数
  * */
-void LockFunc(Mutex_t self, Func_t func, struct param *param);
+void LockFunc(Mutex_t self, Func_t func, param_t param);
 
 #endif

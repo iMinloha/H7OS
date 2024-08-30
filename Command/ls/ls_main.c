@@ -11,7 +11,7 @@ void ls_main(int argc, char **argv){
     else if (argc == 1)
         ram_ls(argv[0]);
     else{
-        char *pwd = (char *)kernal_alloc(1024);
+        char *pwd = (char *)kernel_alloc(1024);
         ram_pwd(currentFS, pwd);
         ram_ls(pwd);
     }

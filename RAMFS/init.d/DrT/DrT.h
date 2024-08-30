@@ -14,6 +14,7 @@
 
 enum DeviceType{
     DEVICE_TIMER,   // 定时器
+    DEVICE_BS,      // 基设备
     DEVICE_STORAGE, // 存储设备(qspi, sd, emmc)
     DEVICE_DISPLAY, // 显示设备(RGB, LVDS, HDMI)
     DEVICE_INPUT,   // 输入设备(OTG)
@@ -96,6 +97,7 @@ typedef struct CMD* CMD_t;
 struct CMD{
     char* name; // 指令名，如mkdir, rm, ls
     char* description;  // 指令描述, 用于help
+    char* usage;    // 指令使用方法
     /***
      * @brief 指令函数要求
      * @param argc 参数数量
@@ -108,12 +110,12 @@ struct CMD{
 static CMD_t CMDList;
 
 // 添加指令
-void addCMD(char* name, char* description, Comand_t cmd);
+void addCMD(char* name, char* description, char* usage, Comand_t cmd);
 
 // 执行指令
 void execCMD(char* command);
 
-#define CMD(name, description, cmd) addCMD(name, description, cmd)
+#define CMD(name, description, usage, cmd) addCMD(name, description, usage, cmd)
 
 // ===============================[设备操作]===============================
 
@@ -179,5 +181,12 @@ void ram_pwd(FS_t fs, char* path);
  * @return
  */
 FS_t loadPath(char* path);
+
+/**
+ * @brief 加载设备
+ * @param path
+ * @return
+ */
+void* loadDevice(char* path);
 
 #endif
