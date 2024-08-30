@@ -187,6 +187,6 @@ FS_t loadPath(char* path);
  * @param path
  * @return
  */
-void* loadDevice(char* path);
+DrTNode_t loadDevice(char* path);
 
 #endif

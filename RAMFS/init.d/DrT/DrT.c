@@ -20,7 +20,7 @@ void addFSChild(FS_t parent, char *path){
     child->path = (char*) kernel_alloc(strlen(path) + 1);
     strcopy(child->path, path);
 
-    child->node = (DrTNode_t) kernel_alloc(sizeof(struct DrTNode));
+    child->node = NULL;
     child->node_count = 0;
     child->parent = parent;
     child->next = NULL; // 子文件夹
@@ -88,9 +88,15 @@ void addDevice(char *path, void* devicePtr, char *name, char *description, Devic
 
     // 添加到设备链表
     DrTNode_t p = node->node;
-    while(p->next != NULL) p = p->next;
-    p->next = device;
-    node->node_count++;
+    if (p == NULL) {
+        node->node = device;
+        node->node_count++;
+        return;
+    }else{
+        while(p->next != NULL) p = p->next;
+        p->next = device;
+        node->node_count++;
+    }
 }
 
 /**
@@ -164,7 +170,7 @@ FS_t loadPath(char* path) {
  * @param path
  * @return
  */
-void* loadDevice(char* path){
+DrTNode_t loadDevice(char* path){
     FS_t node = RAM_FS;
     if (strcmp(path, "/") == 0) return NULL;
 
@@ -172,19 +178,19 @@ void* loadDevice(char* path){
         if (path[0] == '/') path++;
         char *token = strtok(path, "/");
         while (token != NULL) {
-            node = getFSChild(node, token);
-            if (node == NULL) break;
+            FS_t tmp_node = getFSChild(node, token);
+            if (tmp_node == NULL) break;
             token = strtok(NULL, "/");
+            node = tmp_node;
         }
-        // node就是目标节点的父文件夹
-        // token可能是不存在的文件夹或设备
-        if (strtok(NULL, "/") != NULL) {
-            // 说明path中有多余的路径
+
+        // token字符大于0说明path中有多余的路径
+        if (strcmp(token, strtok(token, "/")) != 0){
             return NULL;
         } else {
-            DrTNode_t p = node->node->next;
+            DrTNode_t p = node->node;
             while (p != NULL) {
-                if (strcmp(p->name, token) == 0) return p->device;
+                if (strcmp(p->name, token) == 0) return p;
                 p = p->next;
             }
         }
@@ -292,7 +298,7 @@ void ram_ls(char* path){
     }
 
     if (node->node_count != 0) {
-        DrTNode_t p = node->node->next;
+        DrTNode_t p = node->node;
         while(p != NULL){
             u_print("%s  ", p->name);
             p = p->next;
@@ -357,7 +363,11 @@ void addCMD(char* name, char* description, char* usage, Comand_t cmd){
 }
 
 // 执行指令
-void execCMD(char* command){
+void execCMD(char* command_rel){
+    // 复制command, 防止command被修改
+    char* command = (char*) kernel_alloc(strlen(command_rel) + 1);
+    strcopy(command, command_rel);
+
     // command解析, command按空格分割保存到argv数组中
     char *argv[128] = {0};
     int argc = 0;
