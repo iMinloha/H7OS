@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "usart.h"
 #include "u_stdio.h"
 
@@ -30,6 +31,52 @@ _OS_WEAK void put_num(int num, int base, int sign){
     for(int j = i - 1; j >= 0; j--) put_char(buf[j]);
 }
 
+_OS_WEAK void put_double(double num, int base, int sign) {
+    if (sign && num < 0) {
+        put_char('-');
+        num = -num;
+    }
+
+    long long int_part = (long long)num;
+    double frac_part = num - int_part;
+
+    char buffer[65];
+    int i = 0;
+
+    if (int_part == 0) {
+        put_char('0');
+    } else {
+        while (int_part > 0) {
+            int digit = int_part % base;
+            buffer[i++] = (digit < 10) ? digit + '0' : digit - 10 + 'A';
+            int_part /= base;
+        }
+    }
+
+    // 反向输出整数部分
+    while (i > 0) put_char(buffer[--i]);
+
+
+    // 如果存在小数部分，则输出小数点
+    if (frac_part > 0) put_char('.');
+
+
+    // 转换并输出小数部分
+    int frac_digits = 6; // 控制精度的位数
+    while (frac_digits-- > 0 && frac_part > 0) {
+        frac_part *= base;
+        int digit = (int)frac_part;
+        put_char((digit < 10) ? digit + '0' : digit - 10 + 'A');
+        frac_part -= digit;
+
+        if (frac_part < 1e-10) break;
+
+    }
+
+    if (frac_part > 0 && frac_digits == -1) put_char('0');
+
+}
+
 _OS_WEAK void put_address_num(uint32_t num, int base, int sign){
     char buf[11];
     int i = 0;
@@ -50,28 +97,25 @@ _OS_WEAK void put_huge_num(uint32_t num, int base, int sign){
     for(int j = i - 1; j >= 0; j--) put_char(buf[j]);
 }
 
-static int v_printf(const char *fmt, va_list ap){
-    for(; *fmt != '\0'; fmt++){
-        if(*fmt != '%'){
+static int v_printf(const char *fmt, va_list ap) {
+    for(; *fmt != '\0'; fmt++) {
+        if(*fmt != '%') {
             put_char(*fmt);
-            continue;      /*终止本次for循环，即本次循环执行到这里不再往下执行，开始下一次for循环*/
+            continue;
         }
         fmt++;
-        switch(*fmt){
-            case 'd': put_num(va_arg(ap, int), 10, 1);break;
+        switch(*fmt) {
+            case 'd': put_num(va_arg(ap, int), 10, 1); break;
             case 'o': put_num(va_arg(ap, unsigned int), 8, 0); break;
             case 'u': put_num(va_arg(ap, unsigned int), 10, 0); break;
             case 'x': put_num(va_arg(ap, unsigned int), 16, 0); break;
             case 'c': put_char(va_arg(ap, int)); break;
-            case 's': put_s(va_arg(ap,char *)); break;
-            case 'f': put_num(va_arg(ap, double), 10, 1); break;
+            case 's': put_s(va_arg(ap, char*)); break;
+            case 'f': put_double(va_arg(ap, double ), 10, 1); break;
             case 'l': put_num(va_arg(ap, long), 10, 1); break;
-            case 'p': put_address(va_arg(ap, void *)); break;
+            case 'p': put_address(va_arg(ap, void*)); break;
             case 'D': put_huge_num(va_arg(ap, int), 10, 1); break;
-
-            default:
-                put_char(*fmt);
-                break;
+            default: put_char(*fmt); break;
         }
     }
     return 0;

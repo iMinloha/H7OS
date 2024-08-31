@@ -6,6 +6,7 @@
 #include "fatfs.h"
 #include "sdmmc.h"
 
+// 输出SD卡信息
 void printf_sdcard_info(void)
 {
     HAL_SD_CardInfoTypeDef  SDCardInfo;
@@ -28,7 +29,7 @@ void printf_sdcard_info(void)
         case CARD_SDHC_SDXC:u_print("Card Type:SDHC\r\n");break;
         default:break;
     }
-
+    // SD的各种信息输出，用于确定SD卡是否正常工作
     u_print("Card ManufacturerID: %d \r\n",SDCard_CID.ManufacturerID);				//制造商ID
     u_print("CardVersion:         %d \r\n",(uint32_t)(SDCardInfo.CardVersion));		//卡版本号
     u_print("Class:               %d \r\n",(uint32_t)(SDCardInfo.Class));		    //

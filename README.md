@@ -5,25 +5,19 @@
 
 初步计划指令集如下：
 - 1. GPIO指令
-1. gpio_init(port, pin, mode, speed, pull) // 初始化GPIO
-2. gpio_read(port, pin) // 读取GPIO
-3. gpio_write(port, pin, value) // 写入GPIO
-4. gpio_toggle(port, pin) // 翻转GPIO
+1. gpio_read(port, pin) // 读取GPIO
+2. gpio_write(port, pin, value) // 写入GPIO
+3. gpio_toggle(port, pin) // 翻转GPIO
 - 2. 外设指令
 3. spi_read(name, data) // 读取SPI
 4. spi_write(name, data) // 写入SPI
-5. spi_transfer(name, data) // 读写SPI
 7. i2c_read(name, data) // 读取I2C
 8. i2c_write(name, data) // 写入I2C
-9. i2c_transfer(name, data) // 读写I2C
 11. uart_read(name, data) // 读取UART
 12. uart_write(name, data) // 写入UART
 13. tim_setfreq(name, freq) // 设置定时器频率
-14. tim_upcount(name) // 定时器计数
-15. tim_downcount(name) // 定时器计数
+14. tim_count(name) // 定时器计数
 16. tim_pwm(name, duty) // 定时器PWM
-17. otg_read(name, data) // 读取OTG
-18. otg_write(name, data) // 写入OTG
 - 3. SD卡指令
 3. mkdir(path)
 4. cd(path)

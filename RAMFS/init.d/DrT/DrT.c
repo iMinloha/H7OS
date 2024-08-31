@@ -6,7 +6,7 @@
 #include "fatfs.h"
 #include "RAMFS.h"
 
-// 串口设备指针
+// 串口设备指针(用于指向当前串口终端所在位置)
 FS_t currentFS;
 
 /**
@@ -171,7 +171,11 @@ FS_t loadPath(char* path) {
  * @return
  */
 DrTNode_t loadDevice(char* path){
-    FS_t node = RAM_FS;
+
+    FS_t node;
+    if (path[0] == '/') node = RAM_FS;
+    else node = currentFS;
+
     if (strcmp(path, "/") == 0) return NULL;
 
     else {

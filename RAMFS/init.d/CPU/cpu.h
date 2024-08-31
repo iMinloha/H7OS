@@ -30,7 +30,7 @@ static CPU_t CortexM7;
  * @return CPU对象
  * @note 该函数会自动初始化CPU对象，对象为CortexM7
  */
-CPU_t createCPU();
+void createCPU();
 
 
 #endif //H7OS_CPU_H
