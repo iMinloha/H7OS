@@ -70,11 +70,9 @@ _OS_WEAK void put_double(double num, int base, int sign) {
         frac_part -= digit;
 
         if (frac_part < 1e-10) break;
-
     }
 
     if (frac_part > 0 && frac_digits == -1) put_char('0');
-
 }
 
 _OS_WEAK void put_address_num(uint32_t num, int base, int sign){
@@ -111,7 +109,7 @@ static int v_printf(const char *fmt, va_list ap) {
             case 'x': put_num(va_arg(ap, unsigned int), 16, 0); break;
             case 'c': put_char(va_arg(ap, int)); break;
             case 's': put_s(va_arg(ap, char*)); break;
-            case 'f': put_double(va_arg(ap, double ), 10, 1); break;
+            case 'f': put_double(va_arg(ap, double), 10, 1); break;
             case 'l': put_num(va_arg(ap, long), 10, 1); break;
             case 'p': put_address(va_arg(ap, void*)); break;
             case 'D': put_huge_num(va_arg(ap, int), 10, 1); break;

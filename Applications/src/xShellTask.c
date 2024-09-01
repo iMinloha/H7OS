@@ -11,8 +11,6 @@ void taskShellInit(){
 
 // ÷’∂Àœﬂ≥Ã—≠ª∑
 void taskLoop(){
-    double temp = 9.2;
-    // put_double(temp, 10, 1);
-
+    // execCMD("help ls");
     osDelay(1000);
 }

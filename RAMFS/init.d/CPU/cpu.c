@@ -4,12 +4,11 @@
 #include "u_stdio.h"
 
 
-void updateCPU(param_t param){
+float updateCPU(){
     HAL_ADC_Start(&hadc3);
     uint16_t adc_v = HAL_ADC_GetValue(&hadc3);
     double adc_x = (110.0-30.0)/(*(unsigned short*)(0x1FF1E840) - *(unsigned short*)(0x1FF1E820));
-    u_print("%f \n", adc_x);
-    CortexM7->temperature = adc_x*(adc_v - *(unsigned short*)(0x1FF1E820)) + 30;
+    return adc_x * (adc_v - *(unsigned short*)(0x1FF1E820)) + 30;
 }
 
 /**
@@ -23,5 +22,14 @@ void createCPU(){
     CortexM7->description = "Cortex-M7 CPU";
     CortexM7->frequency = HAL_RCC_GetSysClockFreq();
     CortexM7->temperature = 0;
-    CortexM7->loadState = updateCPU;
+}
+
+void showCPUInfo(){
+    u_print("CPU name: %s\n", CortexM7->name);
+    u_print("CPU description: %s\n", CortexM7->description);
+    u_print("CPU frequency: %d HZ\n", CortexM7->frequency);
+    float temp = updateCPU();
+    u_print("CPU temperature:");
+    put_double(temp, 10, 1);
+    u_print(" C\n");
 }

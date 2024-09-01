@@ -115,6 +115,8 @@ void addCMD(char* name, char* description, char* usage, Comand_t cmd);
 // 执行指令
 void execCMD(char* command);
 
+void helpCMD(char *cmd);
+
 #define CMD(name, description, usage, cmd) addCMD(name, description, usage, cmd)
 
 // ===============================[设备操作]===============================

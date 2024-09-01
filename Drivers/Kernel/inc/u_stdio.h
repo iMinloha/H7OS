@@ -55,12 +55,6 @@ void put_char(char c);
 void put_num(int num, int base, int sign);
 
 /**
- * @brief 输出浮点数到串口
- * @param num: 浮点数
- * */
-void put_float(float num, int base, int sign);
-
-/**
  * @brief 输出双精度浮点数到串口
  * @param num: 双精度浮点数
  * */

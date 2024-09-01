@@ -396,3 +396,25 @@ void execCMD(char* command_rel){
 
     u_print("Command not found\n");
 }
+
+void helpCMD(char *cmd){
+    char buf[128];
+    memoryCopy(buf, cmd, strlen(cmd) + 1);
+    CMD_t p = CMDList->next;
+    u_print("Command\t\tDescription\t\tUsage\n");
+    if(buf[0] == '\0') {
+        while(p != NULL){
+            u_print("%s\t\t%s\t\t%s\n", p->name, p->description, p->usage);
+            p = p->next;
+        }
+    }else{
+        while(p != NULL){
+            if(strcmp(p->name, cmd) == 0){
+                u_print("%s\t\t%s\t\t%s\n", p->name, p->description, p->usage);
+                return;
+            }
+            p = p->next;
+        }
+
+    }
+}

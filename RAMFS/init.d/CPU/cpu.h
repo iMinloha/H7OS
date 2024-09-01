@@ -5,6 +5,8 @@
 #include "RAMFS.h"
 #include "cmsis_os.h"
 
+typedef float (*CPU_Func_t)(void);
+
 struct CPU{
     // CPU名称
     char* name;
@@ -16,9 +18,6 @@ struct CPU{
     double temperature;
     // CPU负载
     double load;
-    // --------------------
-    // CPU驱动
-    Func_t loadState;
 };
 
 typedef struct CPU* CPU_t;
@@ -31,6 +30,8 @@ static CPU_t CortexM7;
  * @note 该函数会自动初始化CPU对象，对象为CortexM7
  */
 void createCPU();
+
+void showCPUInfo();
 
 
 #endif //H7OS_CPU_H
