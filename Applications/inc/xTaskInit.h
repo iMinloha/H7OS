@@ -4,8 +4,6 @@
 
 #include "cmsis_os.h"
 
-static osThreadId xTaskInitHandle;
-
 // 在FreeRTOS初始化前进行的初始化
 void taskGlobalInit();
 

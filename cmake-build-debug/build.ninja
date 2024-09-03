@@ -56,6 +56,8 @@ build CMakeFiles/H7OS.elf.dir/Applications/src/test.c.obj: C_COMPILER__H7OS.2eel
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Applications\src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Applications/src/xShellTask.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Applications/src/xShellTask.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -64,6 +66,8 @@ build CMakeFiles/H7OS.elf.dir/Applications/src/xShellTask.c.obj: C_COMPILER__H7O
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Applications\src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Applications/src/xTaskInit.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Applications/src/xTaskInit.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -72,6 +76,18 @@ build CMakeFiles/H7OS.elf.dir/Applications/src/xTaskInit.c.obj: C_COMPILER__H7OS
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Applications\src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
+
+build CMakeFiles/H7OS.elf.dir/Applications/src/xTaskManager.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Applications/src/xTaskManager.c || cmake_object_order_depends_target_H7OS.elf
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles\H7OS.elf.dir\Applications\src\xTaskManager.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m7 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
+  INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
+  OBJECT_DIR = CMakeFiles\H7OS.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Applications\src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Command/Register.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Command/Register.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -80,6 +96,8 @@ build CMakeFiles/H7OS.elf.dir/Command/Register.c.obj: C_COMPILER__H7OS.2eelf_uns
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Command
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Command/cd/cd_main.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Command/cd/cd_main.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -88,6 +106,8 @@ build CMakeFiles/H7OS.elf.dir/Command/cd/cd_main.c.obj: C_COMPILER__H7OS.2eelf_u
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Command\cd
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Command/echo/echo_main.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Command/echo/echo_main.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -96,6 +116,8 @@ build CMakeFiles/H7OS.elf.dir/Command/echo/echo_main.c.obj: C_COMPILER__H7OS.2ee
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Command\echo
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Command/help/help_main.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Command/help/help_main.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -104,6 +126,8 @@ build CMakeFiles/H7OS.elf.dir/Command/help/help_main.c.obj: C_COMPILER__H7OS.2ee
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Command\help
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Command/info/info_main.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Command/info/info_main.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -112,6 +136,8 @@ build CMakeFiles/H7OS.elf.dir/Command/info/info_main.c.obj: C_COMPILER__H7OS.2ee
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Command\info
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Command/ls/ls_main.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -120,6 +146,8 @@ build CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj: C_COMPILER__H7OS.2eelf_u
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Command\ls
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Command/tree/tree_main.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Command/tree/tree_main.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -128,6 +156,8 @@ build CMakeFiles/H7OS.elf.dir/Command/tree/tree_main.c.obj: C_COMPILER__H7OS.2ee
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Command\tree
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Core/Src/adc.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Core/Src/adc.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -136,6 +166,8 @@ build CMakeFiles/H7OS.elf.dir/Core/Src/adc.c.obj: C_COMPILER__H7OS.2eelf_unscann
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Core\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Core/Src/dma.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Core/Src/dma.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -144,6 +176,8 @@ build CMakeFiles/H7OS.elf.dir/Core/Src/dma.c.obj: C_COMPILER__H7OS.2eelf_unscann
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Core\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Core/Src/dma2d.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Core/Src/dma2d.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -152,6 +186,8 @@ build CMakeFiles/H7OS.elf.dir/Core/Src/dma2d.c.obj: C_COMPILER__H7OS.2eelf_unsca
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Core\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Core/Src/fmc.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Core/Src/fmc.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -160,6 +196,8 @@ build CMakeFiles/H7OS.elf.dir/Core/Src/fmc.c.obj: C_COMPILER__H7OS.2eelf_unscann
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Core\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Core/Src/freertos.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -168,6 +206,8 @@ build CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj: C_COMPILER__H7OS.2eelf_un
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Core\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Core/Src/gpio.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Core/Src/gpio.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -176,6 +216,8 @@ build CMakeFiles/H7OS.elf.dir/Core/Src/gpio.c.obj: C_COMPILER__H7OS.2eelf_unscan
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Core\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Core/Src/jpeg.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Core/Src/jpeg.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -184,6 +226,8 @@ build CMakeFiles/H7OS.elf.dir/Core/Src/jpeg.c.obj: C_COMPILER__H7OS.2eelf_unscan
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Core\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Core/Src/main.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Core/Src/main.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -192,6 +236,8 @@ build CMakeFiles/H7OS.elf.dir/Core/Src/main.c.obj: C_COMPILER__H7OS.2eelf_unscan
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Core\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Core/Src/mdma.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Core/Src/mdma.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -200,6 +246,8 @@ build CMakeFiles/H7OS.elf.dir/Core/Src/mdma.c.obj: C_COMPILER__H7OS.2eelf_unscan
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Core\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Core/Src/quadspi.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Core/Src/quadspi.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -208,6 +256,8 @@ build CMakeFiles/H7OS.elf.dir/Core/Src/quadspi.c.obj: C_COMPILER__H7OS.2eelf_uns
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Core\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Core/Src/rng.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Core/Src/rng.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -216,6 +266,8 @@ build CMakeFiles/H7OS.elf.dir/Core/Src/rng.c.obj: C_COMPILER__H7OS.2eelf_unscann
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Core\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Core/Src/rtc.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Core/Src/rtc.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -224,6 +276,8 @@ build CMakeFiles/H7OS.elf.dir/Core/Src/rtc.c.obj: C_COMPILER__H7OS.2eelf_unscann
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Core\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Core/Src/sdmmc.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Core/Src/sdmmc.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -232,6 +286,8 @@ build CMakeFiles/H7OS.elf.dir/Core/Src/sdmmc.c.obj: C_COMPILER__H7OS.2eelf_unsca
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Core\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Core/Src/stm32h7xx_hal_msp.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -240,6 +296,8 @@ build CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj: C_COMPILER__H7OS
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Core\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_hal_timebase_tim.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Core/Src/stm32h7xx_hal_timebase_tim.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -248,6 +306,8 @@ build CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_hal_timebase_tim.c.obj: C_COMPI
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Core\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_it.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Core/Src/stm32h7xx_it.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -256,6 +316,8 @@ build CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_it.c.obj: C_COMPILER__H7OS.2eel
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Core\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Core/Src/syscalls.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Core/Src/syscalls.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -264,6 +326,8 @@ build CMakeFiles/H7OS.elf.dir/Core/Src/syscalls.c.obj: C_COMPILER__H7OS.2eelf_un
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Core\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Core/Src/sysmem.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Core/Src/sysmem.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -272,6 +336,8 @@ build CMakeFiles/H7OS.elf.dir/Core/Src/sysmem.c.obj: C_COMPILER__H7OS.2eelf_unsc
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Core\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Core/Src/system_stm32h7xx.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Core/Src/system_stm32h7xx.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -280,6 +346,8 @@ build CMakeFiles/H7OS.elf.dir/Core/Src/system_stm32h7xx.c.obj: C_COMPILER__H7OS.
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Core\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Core/Src/usart.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Core/Src/usart.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -288,6 +356,8 @@ build CMakeFiles/H7OS.elf.dir/Core/Src/usart.c.obj: C_COMPILER__H7OS.2eelf_unsca
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Core\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Core/Startup/startup_stm32h743iitx.s.obj: ASM_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Core/Startup/startup_stm32h743iitx.s || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -296,6 +366,8 @@ build CMakeFiles/H7OS.elf.dir/Core/Startup/startup_stm32h743iitx.s.obj: ASM_COMP
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Core\Startup
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/memctl.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/Kernel/src/memctl.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -304,6 +376,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/memctl.c.obj: C_COMPILER__H7OS.
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\Kernel\src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/timer.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/Kernel/src/timer.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -312,6 +386,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/timer.c.obj: C_COMPILER__H7OS.2
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\Kernel\src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/tlsf.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/Kernel/src/tlsf.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -320,6 +396,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/tlsf.c.obj: C_COMPILER__H7OS.2e
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\Kernel\src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_stdio.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/Kernel/src/u_stdio.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -328,6 +406,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_stdio.c.obj: C_COMPILER__H7OS
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\Kernel\src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_thread.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/Kernel/src/u_thread.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -336,6 +416,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_thread.c.obj: C_COMPILER__H7O
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\Kernel\src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -344,6 +426,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.o
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -352,6 +436,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -360,6 +446,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -368,6 +456,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cor
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -376,6 +466,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -384,6 +476,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -392,6 +486,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -400,6 +496,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ext
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -408,6 +506,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_fla
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -416,6 +516,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_fla
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -424,6 +526,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpi
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -432,6 +536,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hse
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -440,6 +546,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -448,6 +556,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -456,6 +566,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpe
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -464,6 +576,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdm
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -472,6 +586,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -480,6 +596,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -488,6 +606,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qsp
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -496,6 +616,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -504,6 +626,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -512,6 +636,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -520,6 +646,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -528,6 +656,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -536,6 +666,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -544,6 +676,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -552,6 +686,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -560,6 +696,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdr
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -568,6 +706,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -576,6 +716,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -584,6 +726,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uar
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -592,6 +736,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uar
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -600,6 +746,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_dela
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -608,6 +756,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -616,6 +766,8 @@ build CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmm
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Drivers\STM32H7xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/FATFS/App/fatfs.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/FATFS/App/fatfs.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -624,6 +776,8 @@ build CMakeFiles/H7OS.elf.dir/FATFS/App/fatfs.c.obj: C_COMPILER__H7OS.2eelf_unsc
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\FATFS\App
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/FATFS/Target/bsp_driver_sd.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/FATFS/Target/bsp_driver_sd.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -632,6 +786,8 @@ build CMakeFiles/H7OS.elf.dir/FATFS/Target/bsp_driver_sd.c.obj: C_COMPILER__H7OS
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\FATFS\Target
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/FATFS/Target/fatfs_platform.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/FATFS/Target/fatfs_platform.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -640,6 +796,8 @@ build CMakeFiles/H7OS.elf.dir/FATFS/Target/fatfs_platform.c.obj: C_COMPILER__H7O
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\FATFS\Target
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/FATFS/Target/sd_diskio.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/FATFS/Target/sd_diskio.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -648,6 +806,8 @@ build CMakeFiles/H7OS.elf.dir/FATFS/Target/sd_diskio.c.obj: C_COMPILER__H7OS.2ee
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\FATFS\Target
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Middlewares/Third_Party/FatFs/src/diskio.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -656,6 +816,8 @@ build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj: C_
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FatFs\src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Middlewares/Third_Party/FatFs/src/ff.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -664,6 +826,8 @@ build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj: C_COMP
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FatFs\src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -672,6 +836,8 @@ build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FatFs\src
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Middlewares/Third_Party/FatFs/src/option/syscall.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -680,6 +846,8 @@ build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FatFs\src\option
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -688,6 +856,8 @@ build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/croutine.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -696,6 +866,8 @@ build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -704,6 +876,8 @@ build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_grou
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/list.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -712,6 +886,8 @@ build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -720,6 +896,8 @@ build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/G
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -728,6 +906,8 @@ build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/M
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/queue.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -736,6 +916,8 @@ build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.ob
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -744,6 +926,8 @@ build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buf
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/tasks.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -752,6 +936,8 @@ build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.ob
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/timers.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -760,6 +946,8 @@ build CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.o
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Middlewares\Third_Party\FreeRTOS\Source
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/RAMFS/init.d/CPU/cpu.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/RAMFS/init.d/CPU/cpu.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -768,6 +956,8 @@ build CMakeFiles/H7OS.elf.dir/RAMFS/init.d/CPU/cpu.c.obj: C_COMPILER__H7OS.2eelf
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\RAMFS\init.d\CPU
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/RAMFS/init.d/DrT/DrT.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/RAMFS/init.d/DrT/DrT.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -776,6 +966,8 @@ build CMakeFiles/H7OS.elf.dir/RAMFS/init.d/DrT/DrT.c.obj: C_COMPILER__H7OS.2eelf
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\RAMFS\init.d\DrT
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 build CMakeFiles/H7OS.elf.dir/Utilities/JPEG/jpeg_utils.c.obj: C_COMPILER__H7OS.2eelf_unscanned_Debug D$:/H7OS/Utilities/JPEG/jpeg_utils.c || cmake_object_order_depends_target_H7OS.elf
   DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER
@@ -784,6 +976,8 @@ build CMakeFiles/H7OS.elf.dir/Utilities/JPEG/jpeg_utils.c.obj: C_COMPILER__H7OS.
   INCLUDES = -ID:/H7OS/Core/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc -ID:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -ID:/H7OS/Drivers/CMSIS/Device/ST/STM32H7xx/Include -ID:/H7OS/Drivers/CMSIS/Include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -ID:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -ID:/H7OS/Utilities/JPEG -ID:/H7OS/FATFS/Target -ID:/H7OS/FATFS/App -ID:/H7OS/Middlewares/Third_Party/FatFs/src -ID:/H7OS/Drivers/Kernel/inc -ID:/H7OS/Applications/inc -ID:/H7OS/RAMFS -ID:/H7OS/Command
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\H7OS.elf.dir\Utilities\JPEG
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
+  TARGET_PDB = H7OS.elf.pdb
 
 
 # =============================================================================
@@ -793,14 +987,15 @@ build CMakeFiles/H7OS.elf.dir/Utilities/JPEG/jpeg_utils.c.obj: C_COMPILER__H7OS.
 #############################################
 # Link the executable H7OS.elf
 
-build H7OS.elf: C_EXECUTABLE_LINKER__H7OS.2eelf_Debug CMakeFiles/H7OS.elf.dir/Applications/src/test.c.obj CMakeFiles/H7OS.elf.dir/Applications/src/xShellTask.c.obj CMakeFiles/H7OS.elf.dir/Applications/src/xTaskInit.c.obj CMakeFiles/H7OS.elf.dir/Command/Register.c.obj CMakeFiles/H7OS.elf.dir/Command/cd/cd_main.c.obj CMakeFiles/H7OS.elf.dir/Command/echo/echo_main.c.obj CMakeFiles/H7OS.elf.dir/Command/help/help_main.c.obj CMakeFiles/H7OS.elf.dir/Command/info/info_main.c.obj CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj CMakeFiles/H7OS.elf.dir/Command/tree/tree_main.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/adc.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/dma.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/dma2d.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/fmc.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/gpio.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/jpeg.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/main.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/mdma.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/quadspi.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/rng.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/rtc.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/sdmmc.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_hal_timebase_tim.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_it.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/syscalls.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/sysmem.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/system_stm32h7xx.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/usart.c.obj CMakeFiles/H7OS.elf.dir/Core/Startup/startup_stm32h743iitx.s.obj CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/memctl.c.obj CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/timer.c.obj CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/tlsf.c.obj CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_stdio.c.obj CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_thread.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.obj CMakeFiles/H7OS.elf.dir/FATFS/App/fatfs.c.obj CMakeFiles/H7OS.elf.dir/FATFS/Target/bsp_driver_sd.c.obj CMakeFiles/H7OS.elf.dir/FATFS/Target/fatfs_platform.c.obj CMakeFiles/H7OS.elf.dir/FATFS/Target/sd_diskio.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj CMakeFiles/H7OS.elf.dir/RAMFS/init.d/CPU/cpu.c.obj CMakeFiles/H7OS.elf.dir/RAMFS/init.d/DrT/DrT.c.obj CMakeFiles/H7OS.elf.dir/Utilities/JPEG/jpeg_utils.c.obj
+build H7OS.elf: C_EXECUTABLE_LINKER__H7OS.2eelf_Debug CMakeFiles/H7OS.elf.dir/Applications/src/test.c.obj CMakeFiles/H7OS.elf.dir/Applications/src/xShellTask.c.obj CMakeFiles/H7OS.elf.dir/Applications/src/xTaskInit.c.obj CMakeFiles/H7OS.elf.dir/Applications/src/xTaskManager.c.obj CMakeFiles/H7OS.elf.dir/Command/Register.c.obj CMakeFiles/H7OS.elf.dir/Command/cd/cd_main.c.obj CMakeFiles/H7OS.elf.dir/Command/echo/echo_main.c.obj CMakeFiles/H7OS.elf.dir/Command/help/help_main.c.obj CMakeFiles/H7OS.elf.dir/Command/info/info_main.c.obj CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj CMakeFiles/H7OS.elf.dir/Command/tree/tree_main.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/adc.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/dma.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/dma2d.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/fmc.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/gpio.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/jpeg.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/main.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/mdma.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/quadspi.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/rng.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/rtc.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/sdmmc.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_hal_msp.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_hal_timebase_tim.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_it.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/syscalls.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/sysmem.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/system_stm32h7xx.c.obj CMakeFiles/H7OS.elf.dir/Core/Src/usart.c.obj CMakeFiles/H7OS.elf.dir/Core/Startup/startup_stm32h743iitx.s.obj CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/memctl.c.obj CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/timer.c.obj CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/tlsf.c.obj CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_stdio.c.obj CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_thread.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.obj CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.obj CMakeFiles/H7OS.elf.dir/FATFS/App/fatfs.c.obj CMakeFiles/H7OS.elf.dir/FATFS/Target/bsp_driver_sd.c.obj CMakeFiles/H7OS.elf.dir/FATFS/Target/fatfs_platform.c.obj CMakeFiles/H7OS.elf.dir/FATFS/Target/sd_diskio.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj CMakeFiles/H7OS.elf.dir/RAMFS/init.d/CPU/cpu.c.obj CMakeFiles/H7OS.elf.dir/RAMFS/init.d/DrT/DrT.c.obj CMakeFiles/H7OS.elf.dir/Utilities/JPEG/jpeg_utils.c.obj
   FLAGS = -g
-  LINK_FLAGS = -mfloat-abi=hard -mfpu=fpv4-sp-d16 -Wl,-gc-sections,--print-memory-usage,-Map=D:/H7OS/cmake-build-debug/H7OS.map -mcpu=cortex-m7 -mthumb -mthumb-interwork -T D:/H7OS/STM32H743IITX_FLASH.ld Command/tree/tree_main.c Command/tree/tree_main.h
+  LINK_FLAGS = -mfloat-abi=hard -mfpu=fpv4-sp-d16 -Wl,-gc-sections,--print-memory-usage,-Map=D:/H7OS/cmake-build-debug/H7OS.map -mcpu=cortex-m7 -mthumb -mthumb-interwork -T D:/H7OS/STM32H743IITX_FLASH.ld
   OBJECT_DIR = CMakeFiles\H7OS.elf.dir
   POST_BUILD = cmd.exe /C "cd /D D:\H7OS\cmake-build-debug && arm-none-eabi-objcopy -Oihex D:/H7OS/cmake-build-debug/H7OS.elf D:/H7OS/cmake-build-debug/H7OS.hex && arm-none-eabi-objcopy -Obinary D:/H7OS/cmake-build-debug/H7OS.elf D:/H7OS/cmake-build-debug/H7OS.bin"
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\H7OS.elf.dir\
   TARGET_FILE = H7OS.elf
-  TARGET_PDB = H7OS.elf.dbg
+  TARGET_PDB = H7OS.elf.pdb
 
 
 #############################################
@@ -845,14 +1040,14 @@ build all: phony H7OS.elf
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.26.4/CMakeASMCompiler.cmake CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/H7OS/CMakeLists.txt E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeASMInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-ASM.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Generic.cmake
+build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.26.4/CMakeASMCompiler.cmake CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/H7OS/CMakeLists.txt E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeASMCompiler.cmake.in E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeASMInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompilerABI.c E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineASMCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystem.cmake.in E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestASMCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-ASM.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-FindBinUtils.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Generic.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.26.4/CMakeASMCompiler.cmake CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/H7OS/CMakeLists.txt E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeASMInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-ASM.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Generic.cmake: phony
+build CMakeCache.txt CMakeFiles/3.26.4/CMakeASMCompiler.cmake CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/H7OS/CMakeLists.txt E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeASMCompiler.cmake.in E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeASMInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompilerABI.c E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineASMCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystem.cmake.in E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestASMCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-ASM.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-FindBinUtils.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake E$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Generic.cmake: phony
 
 
 #############################################

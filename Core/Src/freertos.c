@@ -28,6 +28,8 @@
 #include "memctl.h"
 #include "xShellTask.h"
 #include "xTaskInit.h"
+#include "xTaskManager.h"
+#include "TaskHead.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -49,16 +51,11 @@
 /* USER CODE BEGIN Variables */
 
 /* USER CODE END Variables */
-osThreadId xShellHandle;
-osThreadId xTaskManagerHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
 
 /* USER CODE END FunctionPrototypes */
-
-void ShellTask(void const * argument);
-void TaskManager(void const * argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -138,61 +135,16 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
-  /* definition and creation of xShell */
-  osThreadDef(xShell, ShellTask, osPriorityNormal, 0, 1024);
-  xShellHandle = osThreadCreate(osThread(xShell), NULL);
-
-  /* definition and creation of xTaskManager */
-  osThreadDef(xTaskManager, TaskManager, osPriorityAboveNormal, 0, 1024);
-  xTaskManagerHandle = osThreadCreate(osThread(xTaskManager), NULL);
+  /* definition and creation of xNone */
 
   /* USER CODE BEGIN RTOS_THREADS */
-    osThreadDef(xTaskInit, QueueInit, osPriorityIdle, 0, 2048);
-    xTaskInitHandle = osThreadCreate(osThread(xTaskInit), NULL);
+    ThreadInit();
   /* add threads, ... */
   //  SDRAM_Initialization_Sequence(&hsdram1);
     MemControl_Init();
     taskGlobalInit();
   /* USER CODE END RTOS_THREADS */
 
-}
-
-/* USER CODE BEGIN Header_ShellTask */
-/**
-  * @brief  Function implementing the shell thread.
-  * @param  argument: Not used
-  * @retval None
-  */
-/* USER CODE END Header_ShellTask */
-void ShellTask(void const * argument)
-{
-  /* USER CODE BEGIN ShellTask */
-    // testFuncInit();
-    taskShellInit();
-  /* Infinite loop */
-  for(;;)
-  {
-      taskLoop();
-  }
-  /* USER CODE END ShellTask */
-}
-
-/* USER CODE BEGIN Header_TaskManager */
-/**
-* @brief Function implementing the xTaskManager thread.
-* @param argument: Not used
-* @retval None
-*/
-/* USER CODE END Header_TaskManager */
-void TaskManager(void const * argument)
-{
-  /* USER CODE BEGIN TaskManager */
-  /* Infinite loop */
-  for(;;)
-  {
-    osDelay(1);
-  }
-  /* USER CODE END TaskManager */
 }
 
 /* Private application code --------------------------------------------------*/

@@ -14,5 +14,5 @@ void register_main(){
     CMD("info", "list something infomation", "info path/file", info_main);
     CMD("echo", "echo something", "echo your want print things", echo_main);
     CMD("help", "help using command", "help command", help_main);
-    CMD("tree", "show tree", "tree path", tree_main);
+//    CMD("tree", "show tree", "tree path", tree_main);
 }

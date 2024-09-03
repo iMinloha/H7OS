@@ -4,13 +4,12 @@
 #include "u_stdio.h"
 #include "adc.h"
 
-// 终端线程初始化，延时为了等待其他线程初始化完成
-void taskShellInit(){
-    osDelay(1000);
-}
 
 // 终端线程循环
-void taskLoop(){
-    // execCMD("help ls");
+void ShellTask(){
     osDelay(1000);
+    while(1){
+//        execCMD("ls /proc");
+        osDelay(1000);
+    }
 }

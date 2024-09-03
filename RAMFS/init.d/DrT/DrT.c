@@ -99,6 +99,41 @@ void addDevice(char *path, void* devicePtr, char *name, char *description, Devic
     }
 }
 
+void addThread(Task_t task){
+    FS_t node = getFSChild(RAM_FS, "proc");
+    if (node == NULL) return;
+    Task_t p = node->tasklist;
+    if (p == NULL) {
+        node->tasklist = task;
+        return;
+    }else{
+        while(p->next != NULL) p = p->next;
+        p->next = task;
+    }
+}
+
+Task_t getThread(char* name){
+    FS_t node = getFSChild(RAM_FS, "proc");
+    if (node == NULL) return NULL;
+    Task_t p = node->tasklist;
+    while(p != NULL){
+        if(strcmp(p->name, name) == 0) return p;
+        p = p->next;
+    }
+    return NULL;
+}
+
+Task_t getThreadByPID(uint8_t pid){
+    FS_t node = getFSChild(RAM_FS, "proc");
+    if (node == NULL) return NULL;
+    Task_t p = node->tasklist;
+    while(p != NULL){
+        if(p->PID == pid) return p;
+        p = p->next;
+    }
+    return NULL;
+}
+
 /**
  * @brief 初始化设备树
  */
@@ -305,6 +340,14 @@ void ram_ls(char* path){
         DrTNode_t p = node->node;
         while(p != NULL){
             u_print("%s  ", p->name);
+            p = p->next;
+        }
+    }
+
+    if(node->tasklist != NULL){
+        Task_t p = node->tasklist;
+        while(p != NULL){
+            u_print("%s\t", p->name);
             p = p->next;
         }
     }

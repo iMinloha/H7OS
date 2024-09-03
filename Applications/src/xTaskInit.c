@@ -5,6 +5,7 @@
 #include "quadspi.h"
 #include "RAMFS.h"
 #include "adc.h"
+#include "TaskHead.h"
 
 // 初始化全局任务
 void taskGlobalInit(){

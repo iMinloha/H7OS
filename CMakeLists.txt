@@ -24,7 +24,7 @@ add_compile_options(-mfloat-abi=hard -mfpu=fpv4-sp-d16)
 add_link_options(-mfloat-abi=hard -mfpu=fpv4-sp-d16)
 
 #Uncomment for software floating point
-add_compile_options(-mfloat-abi=hard)
+#add_compile_options(-mfloat-abi=soft)
 
 add_compile_options(-mcpu=cortex-m7 -mthumb -mthumb-interwork)
 add_compile_options(-ffunction-sections -fdata-sections -fno-common -fmessage-length=0)
@@ -60,9 +60,7 @@ add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx)
 
 file(GLOB_RECURSE SOURCES "Core/*.*" "Utilities/*.*" "FATFS/*.*" "Middlewares/*.*" "Drivers/*.*" ${S})
 
-set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32H743IITX_FLASH.ld
-        Command/tree/tree_main.c
-        Command/tree/tree_main.h)
+set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32H743IITX_FLASH.ld)
 
 add_link_options(-Wl,-gc-sections,--print-memory-usage,-Map=${PROJECT_BINARY_DIR}/${PROJECT_NAME}.map)
 add_link_options(-mcpu=cortex-m7 -mthumb -mthumb-interwork)

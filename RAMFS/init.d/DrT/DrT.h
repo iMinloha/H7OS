@@ -4,6 +4,7 @@
 // DrT: Device Tree
 #include "u_thread.h"
 #include "Register.h"
+#include "xTaskManager.h"
 
 /****************************************************
  * DrT 设备树
@@ -21,6 +22,7 @@ enum DeviceType{
     DEVICE_SERIAL,  // 总线设备(USART, UART, SPI, IIC, CAN, LIN, USB)
     DEVICE_TRANSPORT,   // 传输设备(USB, ETH, WIFI)
     DEVICE_VOTAGE,  // 电压设备(ADC, DAC)
+    DEVICE_TASK,    // 任务设备(proc显示的内容)
     // --------------------
     FILE_SYSTEM,    // 文件系统
     FILE,           // 文件
@@ -72,6 +74,9 @@ struct FS{
     DrTNode_t node;
     // 设备数量
     int node_count;
+    // --------------------
+    // proc目录子项目
+    Task_t tasklist;
 
     // 父级
     FS_t parent;
@@ -190,5 +195,23 @@ FS_t loadPath(char* path);
  * @return
  */
 DrTNode_t loadDevice(char* path);
+
+/**
+ * @brief 添加设备
+ * @param task 任务结构体
+ * */
+void addThread(Task_t task);
+
+/**
+ * @brief 使用线程名获取线程结构体
+ * @param name 线程名
+ * */
+Task_t getThread(char* name);
+
+/**
+ * @brief 使用线程PID获取线程结构体
+ * @param pid 线程id
+ * */
+Task_t getThreadByPID(uint8_t pid);
 
 #endif
