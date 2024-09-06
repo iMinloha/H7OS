@@ -1,15 +1,20 @@
 #include "xShellTask.h"
 #include "cmsis_os.h"
 #include "RAMFS.h"
-#include "u_stdio.h"
-#include "adc.h"
+#include "TaskHead.h"
+
+extern Task_t xShell;
 
 
 // ÷’∂Àœﬂ≥Ã—≠ª∑
 void ShellTask(){
     osDelay(1000);
     while(1){
-//        execCMD("ls /proc");
+        TaskTickStart(xShell);
+        execCMD("info /proc/xTaskTest");
+//        execCMD("info /proc/xTaskManager");
+//        execCMD("info /proc/xShell");
         osDelay(1000);
+        TaskTickEnd(xShell);
     }
 }

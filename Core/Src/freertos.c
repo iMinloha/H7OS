@@ -138,11 +138,14 @@ void MX_FREERTOS_Init(void) {
   /* definition and creation of xNone */
 
   /* USER CODE BEGIN RTOS_THREADS */
+    // 内存控制初始化
+    MemControl_Init();
+    // 设备全局初始化
+    taskGlobalInit();
+    // 初始化全局任务
     ThreadInit();
   /* add threads, ... */
   //  SDRAM_Initialization_Sequence(&hsdram1);
-    MemControl_Init();
-    taskGlobalInit();
   /* USER CODE END RTOS_THREADS */
 
 }

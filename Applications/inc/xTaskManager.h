@@ -33,17 +33,20 @@ struct Task{
     TaskStatus_E status;
     // CPU占用率
     float cpu;
-    // 内存占用
-    float memory;
     // 任务权限
     TaskPriority_E priority;
     // 任务句柄
     osThreadId handle;
-
+    // 计数
+    uint32_t lastWakeTime;
+    // 累计时间
+    uint32_t accumulatedTime;
+    // PID
     uint8_t PID;
-
+    // 下一个任务
     Task_t next;
 };
+
 
 void TaskManager(void const * argument);
 

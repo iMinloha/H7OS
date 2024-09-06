@@ -4,7 +4,13 @@
 #include "xTaskInit.h"
 #include "memctl.h"
 #include "u_stdio.h"
-#include "init.d/DrT/DrT.h"
+#include "RAMFS.h"
+#include "test.h"
+
+
+Task_t xTaskManager;
+Task_t xShell;
+Task_t xTest;
 
 uint8_t PID_Global = 0;
 
@@ -34,23 +40,41 @@ void ThreadInit(){
 
     osThreadDef(xTaskInit, QueueInit, osPriorityIdle, 0, 2048);
     xTaskInitHandle = osThreadCreate(osThread(xTaskInit), NULL);
+
+    osThreadDef(xTaskTest, testFunc, osPriorityRealtime, 0, 2048);
+    xTaskTestHandle = osThreadCreate(osThread(xTaskTest), NULL);
+
+    xTaskManager = RAMFS_TASK_Create("xTaskManager", TASK_READY, TASK_PRIORITY_SYSTEM, xTaskManagerHandle);
+    xShell = RAMFS_TASK_Create("xShell", TASK_READY, TASK_PRIORITY_SYSTEM, xShellHandle);
+    xTest = RAMFS_TASK_Create("xTaskTest", TASK_READY, TASK_PRIORITY_NORMAL, xTaskTestHandle);
 }
 
 void TaskManager(void const * argument){
-    addThread(RAMFS_TASK_Create("xShell", TASK_READY, TASK_PRIORITY_SYSTEM, xShellHandle));
-    addThread(RAMFS_TASK_Create("xTaskManager", TASK_READY, TASK_PRIORITY_SYSTEM, xTaskManagerHandle));
-    addThread(RAMFS_TASK_Create("xTaskInit", TASK_READY, TASK_PRIORITY_SYSTEM, xTaskInitHandle));
+    addThread(xShell);
+    addThread(xTaskManager);
+    addThread(xTest);
 
-    uint8_t *info = kernel_alloc(1024);
+    Task_t head = getTaskList();
+
+    uint32_t lastTotalTicks = xTaskGetTickCount();
 
     while(1){
-        memorySet(info, 0, 1024);
-        // TODO 不适用FreeRTOS的vTaskList函数，因为FreeRTOS的vTaskList函数会导致任务挂起，无法获取任务信息
-        // TODO 实现一个自己的vTaskList函数
+        TaskTickStart(xTaskManager);
+        Task_t currentTask = head;
 
-//         vTaskList((char *)&info); //获取任务运行时间信息
-//        u_print("%s", info);
-//        u_print("TaskManager\n");
+        uint32_t currentTotalTicks = xTaskGetTickCount(); // 当前系统总滴答数
+        uint32_t deltaTime = currentTotalTicks - lastTotalTicks; // 计算自上次统计以来的增量时间
+
+
+        while (currentTask != NULL){
+
+            currentTask->cpu = (float)currentTask->accumulatedTime / (10 * deltaTime) * 100.0f;
+
+            currentTask = currentTask->next;
+        }
+        lastTotalTicks = currentTotalTicks;
+
         osDelay(1000);
+        TaskTickEnd(xTaskManager);
     }
 }

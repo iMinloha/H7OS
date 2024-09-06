@@ -8,7 +8,51 @@ void info_main(int argc, char **argv){
     }else if (argc == 1){
         DrTNode_t drt = loadDevice(argv[0]);
         if(drt == NULL){
-            u_print("info: device not found\n");
+            Task_t task = loadTask(argv[0]);
+            if(task == NULL){
+                u_print("info: device not found\n");
+                return;
+            }else{
+                u_print("Task\t\t\tPID\t\t\tPriority\t\t\tLoad\t\t\tStatus\n");
+                u_print("%s\t\t%d", task->name, task->PID);
+                switch (task->priority) {
+                    case TASK_PRIORITY_NORMAL:
+                        u_print("\t\t\tNormal");
+                        break;
+                    case TASK_PRIORITY_HIGH:
+                        u_print("\t\t\tHigh");
+                        break;
+                    case TASK_PRIORITY_ROOT:
+                        u_print("\t\t\tRoot");
+                        break;
+                    case TASK_PRIORITY_SYSTEM:
+                        u_print("\t\t\tSystem");
+                        break;
+                    default:
+                        u_print("\t\t\tUnknown");
+                        break;
+                }
+                u_print("\t\t\t\t");
+                put_double(task->cpu, 10, 1);
+                u_print("%%");
+                switch (task->status) {
+                    case TASK_READY:
+                        u_print("\t\t\tReady\n");
+                        break;
+                    case TASK_RUNNING:
+                        u_print("\t\t\tRunning\n");
+                        break;
+                    case TASK_SUSPEND:
+                        u_print("\t\t\tSuspend\n");
+                        break;
+                    case TASK_STOP:
+                        u_print("\t\t\tStop\n");
+                        break;
+                    default:
+                        u_print("\t\t\tUnknown\n");
+                        break;
+                }
+            }
             return;
         }else{
             u_print("Device: %s\n", drt->name);

@@ -1,14 +1,11 @@
 #include "test.h"
-#include "u_stdio.h"
 #include "cmsis_os.h"
-#include "quadspi.h"
-#include "RAMFS.h"
-#include "fatfs.h"
-#include "sdmmc.h"
+#include "u_stdio.h"
+#include "TaskHead.h"
 
 // 输出SD卡信息
-void printf_sdcard_info(void)
-{
+#if 0
+void printf_sdcard_info(void){
     HAL_SD_CardInfoTypeDef  SDCardInfo;
     uint64_t CardCap;      	//SD卡容量
     HAL_SD_CardCIDTypeDef SDCard_CID;
@@ -40,14 +37,17 @@ void printf_sdcard_info(void)
     u_print("LogBlockSize:        %d \r\n",(uint32_t)(SDCardInfo.LogBlockSize));		//逻辑块大小
     u_print("Card Capacity:       %d MB\r\n",(uint32_t)(CardCap>>20));				//卡容量
 }
+#endif
 
+extern Task_t xTest;
 
 void testFunc(){
-    // kernel_test();
-    // displayDevice();
-    // execCMD("cd /mnt");
-    // execCMD("ls");
-    // u_print("testFunc\n");
+    u_print("OK \r\n");
+    while(1){
+        TaskTickStart(xTest);
+        u_print("Hi! \r\n");
+        osDelay(1000);
+        TaskTickEnd(xTest);
+    }
 
-    osDelay(1000);
 }

@@ -197,6 +197,13 @@ FS_t loadPath(char* path);
 DrTNode_t loadDevice(char* path);
 
 /**
+ * @brief 加载任务信息
+ * @param path
+ * @return
+ */
+Task_t loadTask(char* path);
+
+/**
  * @brief 添加设备
  * @param task 任务结构体
  * */
@@ -213,5 +220,16 @@ Task_t getThread(char* name);
  * @param pid 线程id
  * */
 Task_t getThreadByPID(uint8_t pid);
+
+/**
+ * @brief 获取任务列表
+ * */
+Task_t getTaskList();
+
+/**
+ * @brief 获取任务
+ * @param handle 任务句柄
+ * */
+Task_t getTaskByHandle(osThreadId handle);
 
 #endif

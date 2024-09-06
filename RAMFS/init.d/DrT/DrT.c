@@ -37,6 +37,7 @@ void addFSChild(FS_t parent, char *path){
     }
 }
 
+
 /**
  * @brief 获取子节点
  * @param parent 父节点
@@ -118,6 +119,23 @@ Task_t getThread(char* name){
     Task_t p = node->tasklist;
     while(p != NULL){
         if(strcmp(p->name, name) == 0) return p;
+        p = p->next;
+    }
+    return NULL;
+}
+
+Task_t getTaskList(){
+    FS_t node = getFSChild(RAM_FS, "proc");
+    if (node == NULL) return NULL;
+    return node->tasklist;
+}
+
+Task_t getTaskByHandle(osThreadId handle){
+    FS_t node = getFSChild(RAM_FS, "proc");
+    if (node == NULL) return NULL;
+    Task_t p = node->tasklist;
+    while(p != NULL){
+        if(p->handle == handle) return p;
         p = p->next;
     }
     return NULL;
@@ -205,7 +223,9 @@ FS_t loadPath(char* path) {
  * @param path
  * @return
  */
-DrTNode_t loadDevice(char* path){
+DrTNode_t loadDevice(char* path_aim){
+    char *path = (char*) kernel_alloc(strlen(path_aim) + 1);
+    strcopy(path, path_aim);
 
     FS_t node;
     if (path[0] == '/') node = RAM_FS;
@@ -234,6 +254,38 @@ DrTNode_t loadDevice(char* path){
             }
         }
     }
+    return NULL;
+}
+
+Task_t loadTask(char* path){
+    FS_t node;
+    if (path[0] == '/') node = RAM_FS;
+    else node = currentFS;
+
+    if (strcmp(path, "/") == 0) return NULL;
+
+    else {
+        if (path[0] == '/') path++;
+        char *token = strtok(path, "/");
+        while (token != NULL) {
+            FS_t tmp_node = getFSChild(node, token);
+            if (tmp_node == NULL) break;
+            token = strtok(NULL, "/");
+            node = tmp_node;
+        }
+
+        // token字符大于0说明path中有多余的路径
+        if (strcmp(token, strtok(token, "/")) != 0){
+            return NULL;
+        } else {
+            Task_t p = node->tasklist;
+            while (p != NULL) {
+                if (strcmp(p->name, token) == 0) return p;
+                p = p->next;
+            }
+        }
+    }
+
     return NULL;
 }
 
@@ -426,6 +478,7 @@ void execCMD(char* command_rel){
     }
 
     argc -= 1;
+
 
     // 查找指令
     CMD_t p = CMDList->next;
