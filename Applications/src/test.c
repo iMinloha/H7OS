@@ -1,51 +1,51 @@
 #include "test.h"
 #include "cmsis_os.h"
-#include "u_stdio.h"
+#include "stdio.h"
 #include "TaskHead.h"
 
-// Êä³öSD¿¨ÐÅÏ¢
+// ï¿½ï¿½ï¿½SDï¿½ï¿½ï¿½ï¿½Ï¢
 #if 0
 void printf_sdcard_info(void){
     HAL_SD_CardInfoTypeDef  SDCardInfo;
-    uint64_t CardCap;      	//SD¿¨ÈÝÁ¿
+    uint64_t CardCap;      	//SDï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     HAL_SD_CardCIDTypeDef SDCard_CID;
 
-    HAL_SD_GetCardCID(&hsd1,&SDCard_CID);	//»ñÈ¡CID
-    HAL_SD_GetCardInfo(&hsd1,&SDCardInfo);                    //»ñÈ¡SD¿¨ÐÅÏ¢
-    CardCap=(uint64_t)(SDCardInfo.LogBlockNbr)*(uint64_t)(SDCardInfo.LogBlockSize);	//¼ÆËãSD¿¨ÈÝÁ¿
+    HAL_SD_GetCardCID(&hsd1,&SDCard_CID);	//ï¿½ï¿½È¡CID
+    HAL_SD_GetCardInfo(&hsd1,&SDCardInfo);                    //ï¿½ï¿½È¡SDï¿½ï¿½ï¿½ï¿½Ï¢
+    CardCap=(uint64_t)(SDCardInfo.LogBlockNbr)*(uint64_t)(SDCardInfo.LogBlockSize);	//ï¿½ï¿½ï¿½ï¿½SDï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     switch(SDCardInfo.CardType)
     {
         case CARD_SDSC:
         {
             if(SDCardInfo.CardVersion == CARD_V1_X)
-                u_print("Card Type:SDSC V1\r\n");
+                printf("Card Type:SDSC V1\r\n");
             else if(SDCardInfo.CardVersion == CARD_V2_X)
-                u_print("Card Type:SDSC V2\r\n");
+                printf("Card Type:SDSC V2\r\n");
         }
             break;
-        case CARD_SDHC_SDXC:u_print("Card Type:SDHC\r\n");break;
+        case CARD_SDHC_SDXC:printf("Card Type:SDHC\r\n");break;
         default:break;
     }
-    // SDµÄ¸÷ÖÖÐÅÏ¢Êä³ö£¬ÓÃÓÚÈ·¶¨SD¿¨ÊÇ·ñÕý³£¹¤×÷
-    u_print("Card ManufacturerID: %d \r\n",SDCard_CID.ManufacturerID);				//ÖÆÔìÉÌID
-    u_print("CardVersion:         %d \r\n",(uint32_t)(SDCardInfo.CardVersion));		//¿¨°æ±¾ºÅ
-    u_print("Class:               %d \r\n",(uint32_t)(SDCardInfo.Class));		    //
-    u_print("Card RCA(RelCardAdd):%d \r\n",SDCardInfo.RelCardAdd);					//¿¨Ïà¶ÔµØÖ·
-    u_print("Card BlockNbr:       %d \r\n",SDCardInfo.BlockNbr);						//¿éÊýÁ¿
-    u_print("Card BlockSize:      %d \r\n",SDCardInfo.BlockSize);					//¿é´óÐ¡
-    u_print("LogBlockNbr:         %d \r\n",(uint32_t)(SDCardInfo.LogBlockNbr));		//Âß¼­¿éÊýÁ¿
-    u_print("LogBlockSize:        %d \r\n",(uint32_t)(SDCardInfo.LogBlockSize));		//Âß¼­¿é´óÐ¡
-    u_print("Card Capacity:       %d MB\r\n",(uint32_t)(CardCap>>20));				//¿¨ÈÝÁ¿
+    // SDï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½SDï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    printf("Card ManufacturerID: %d \r\n",SDCard_CID.ManufacturerID);				//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ID
+    printf("CardVersion:         %d \r\n",(uint32_t)(SDCardInfo.CardVersion));		//ï¿½ï¿½ï¿½æ±¾ï¿½ï¿½
+    printf("Class:               %d \r\n",(uint32_t)(SDCardInfo.Class));		    //
+    printf("Card RCA(RelCardAdd):%d \r\n",SDCardInfo.RelCardAdd);					//ï¿½ï¿½ï¿½ï¿½Ôµï¿½Ö·
+    printf("Card BlockNbr:       %d \r\n",SDCardInfo.BlockNbr);						//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    printf("Card BlockSize:      %d \r\n",SDCardInfo.BlockSize);					//ï¿½ï¿½ï¿½Ð¡
+    printf("LogBlockNbr:         %d \r\n",(uint32_t)(SDCardInfo.LogBlockNbr));		//ï¿½ß¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    printf("LogBlockSize:        %d \r\n",(uint32_t)(SDCardInfo.LogBlockSize));		//ï¿½ß¼ï¿½ï¿½ï¿½ï¿½Ð¡
+    printf("Card Capacity:       %d MB\r\n",(uint32_t)(CardCap>>20));				//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 }
 #endif
 
 extern Task_t xTest;
 
 void testFunc(){
-    u_print("OK \r\n");
+    printf("OK \r\n");
     while(1){
         TaskTickStart(xTest);
-        u_print("Hi! \r\n");
+        printf("Hi! \r\n");
         osDelay(1000);
         TaskTickEnd(xTest);
     }

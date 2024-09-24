@@ -42,7 +42,7 @@ void HAL_SDRAM_MspInit(SDRAM_HandleTypeDef* hsdram);
 void HAL_SDRAM_MspDeInit(SDRAM_HandleTypeDef* hsdram);
 
 /* USER CODE BEGIN Prototypes */
-#define SDRAM_Size 32*1024*1024  //32M字节
+#define SDRAM_Size 0x2000000  //32M字节
 #define SDRAM_BANK_ADDR     ((uint32_t)0xC0000000) 				// FMC SDRAM 数据基地址
 #define FMC_COMMAND_TARGET_BANK   FMC_SDRAM_CMD_TARGET_BANK1	//	SDRAM 的bank选择
 #define SDRAM_TIMEOUT     ((uint32_t)0x1000) 						// 超时判断时间

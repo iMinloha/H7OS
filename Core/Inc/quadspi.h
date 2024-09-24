@@ -29,74 +29,74 @@ extern "C" {
 #include "main.h"
 
 /* USER CODE BEGIN Includes */
-#include "u_stdio.h"
+#include "stdio.h"
 /* USER CODE END Includes */
 
 extern QSPI_HandleTypeDef hqspi;
 
 /* USER CODE BEGIN Private defines */
 
-#define QSPI_W25Qxx_OK           		0		// W25QxxÍ¨ÐÅÕý³£
-#define W25Qxx_ERROR_INIT         		-1		// ³õÊ¼»¯´íÎó
-#define W25Qxx_ERROR_WriteEnable       -2		// Ð´Ê¹ÄÜ´íÎó
-#define W25Qxx_ERROR_AUTOPOLLING       -3		// ÂÖÑ¯µÈ´ý´íÎó£¬ÎÞÏìÓ¦
-#define W25Qxx_ERROR_Erase         		-4		// ²Á³ý´íÎó
-#define W25Qxx_ERROR_TRANSMIT         	-5		// ´«Êä´íÎó
-#define W25Qxx_ERROR_MemoryMapped		-6    // ÄÚ´æÓ³ÉäÄ£Ê½´íÎó
+#define QSPI_W25Qxx_OK           		0		// W25QxxÍ¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define W25Qxx_ERROR_INIT         		-1		// ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define W25Qxx_ERROR_WriteEnable       -2		// Ð´Ê¹ï¿½Ü´ï¿½ï¿½ï¿½
+#define W25Qxx_ERROR_AUTOPOLLING       -3		// ï¿½ï¿½Ñ¯ï¿½È´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦
+#define W25Qxx_ERROR_Erase         		-4		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+#define W25Qxx_ERROR_TRANSMIT         	-5		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
+#define W25Qxx_ERROR_MemoryMapped		-6    // ï¿½Ú´ï¿½Ó³ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½
 
-#define W25Qxx_CMD_EnableReset  		0x66		// Ê¹ÄÜ¸´Î»
-#define W25Qxx_CMD_ResetDevice   	0x99		// ¸´Î»Æ÷¼þ
+#define W25Qxx_CMD_EnableReset  		0x66		// Ê¹ï¿½Ü¸ï¿½Î»
+#define W25Qxx_CMD_ResetDevice   	0x99		// ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½
 #define W25Qxx_CMD_JedecID 			0x9F		// JEDEC ID
-#define W25Qxx_CMD_WriteEnable		0X06		// Ð´Ê¹ÄÜ
+#define W25Qxx_CMD_WriteEnable		0X06		// Ð´Ê¹ï¿½ï¿½
 
-#define W25Qxx_CMD_SectorErase 		0x20		// ÉÈÇø²Á³ý£¬4K×Ö½Ú£¬ ²Î¿¼²Á³ýÊ±¼ä 45ms
-#define W25Qxx_CMD_BlockErase_32K 	0x52		// ¿é²Á³ý£¬  32K×Ö½Ú£¬²Î¿¼²Á³ýÊ±¼ä 120ms
-#define W25Qxx_CMD_BlockErase_64K 	0xD8		// ¿é²Á³ý£¬  64K×Ö½Ú£¬²Î¿¼²Á³ýÊ±¼ä 150ms
-#define W25Qxx_CMD_ChipErase 			0xC7		// ÕûÆ¬²Á³ý£¬²Î¿¼²Á³ýÊ±¼ä 20S
+#define W25Qxx_CMD_SectorErase 		0x20		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4Kï¿½Ö½Ú£ï¿½ ï¿½Î¿ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ 45ms
+#define W25Qxx_CMD_BlockErase_32K 	0x52		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?  32Kï¿½Ö½Ú£ï¿½ï¿½Î¿ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ 120ms
+#define W25Qxx_CMD_BlockErase_64K 	0xD8		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?  64Kï¿½Ö½Ú£ï¿½ï¿½Î¿ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ 150ms
+#define W25Qxx_CMD_ChipErase 			0xC7		// ï¿½ï¿½Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¿ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ 20S
 
-#define W25Qxx_CMD_QuadInputPageProgram  	0x32  		// 1-1-4Ä£Ê½ÏÂ(1ÏßÖ¸Áî1ÏßµØÖ·4ÏßÊý¾Ý)£¬Ò³±à³ÌÖ¸Áî£¬²Î¿¼Ð´ÈëÊ±¼ä 0.4ms
-#define W25Qxx_CMD_FastReadQuad_IO       	0xEB  		// 1-4-4Ä£Ê½ÏÂ(1ÏßÖ¸Áî4ÏßµØÖ·4ÏßÊý¾Ý)£¬¿ìËÙ¶ÁÈ¡Ö¸Áî
+#define W25Qxx_CMD_QuadInputPageProgram  	0x32  		// 1-1-4Ä£Ê½ï¿½ï¿½(1ï¿½ï¿½Ö¸ï¿½ï¿½1ï¿½ßµï¿½Ö·4ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½Ò³ï¿½ï¿½ï¿½Ö¸ï¿½î£¬ï¿½Î¿ï¿½Ð´ï¿½ï¿½Ê±ï¿½ï¿? 0.4ms
+#define W25Qxx_CMD_FastReadQuad_IO       	0xEB  		// 1-4-4Ä£Ê½ï¿½ï¿½(1ï¿½ï¿½Ö¸ï¿½ï¿½4ï¿½ßµï¿½Ö·4ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½È¡Ö¸ï¿½ï¿½
 
-#define W25Qxx_CMD_ReadStatus_REG1			0X05			// ¶Á×´Ì¬¼Ä´æÆ÷1
-#define W25Qxx_Status_REG1_BUSY  			0x01			// ¶Á×´Ì¬¼Ä´æÆ÷1µÄµÚ0Î»£¨Ö»¶Á£©£¬Busy±êÖ¾Î»£¬µ±ÕýÔÚ²Á³ý/Ð´ÈëÊý¾Ý/Ð´ÃüÁîÊ±»á±»ÖÃ1
-#define W25Qxx_Status_REG1_WEL  				0x02			// ¶Á×´Ì¬¼Ä´æÆ÷1µÄµÚ1Î»£¨Ö»¶Á£©£¬WELÐ´Ê¹ÄÜ±êÖ¾Î»£¬¸Ã±êÖ¾Î»Îª1Ê±£¬´ú±í¿ÉÒÔ½øÐÐÐ´²Ù×÷
+#define W25Qxx_CMD_ReadStatus_REG1			0X05			// ï¿½ï¿½×´Ì¬ï¿½Ä´ï¿½ï¿½ï¿½1
+#define W25Qxx_Status_REG1_BUSY  			0x01			// ï¿½ï¿½×´Ì¬ï¿½Ä´ï¿½ï¿½ï¿½1ï¿½Äµï¿½0Î»ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Busyï¿½ï¿½Ö¾Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½/Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½/Ð´ï¿½ï¿½ï¿½ï¿½Ê±ï¿½á±»ï¿½ï¿½1
+#define W25Qxx_Status_REG1_WEL  				0x02			// ï¿½ï¿½×´Ì¬ï¿½Ä´ï¿½ï¿½ï¿½1ï¿½Äµï¿½1Î»ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½WELÐ´Ê¹ï¿½Ü±ï¿½Ö¾Î»ï¿½ï¿½ï¿½Ã±ï¿½Ö¾Î»Îª1Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½
 
-#define W25Qxx_PageSize       				256			// Ò³´óÐ¡£¬256×Ö½Ú
-#define W25Qxx_FlashSize       				0x800000		// W25Q64´óÐ¡£¬8M×Ö½Ú
+#define W25Qxx_PageSize       				256			// Ò³ï¿½ï¿½Ð¡ï¿½ï¿½256ï¿½Ö½ï¿½
+#define W25Qxx_FlashSize       				0x800000		// W25Q64ï¿½ï¿½Ð¡ï¿½ï¿½8Mï¿½Ö½ï¿½
 #define W25Qxx_FLASH_ID           			0Xef4017    // W25Q64 JEDEC ID
-#define W25Qxx_ChipErase_TIMEOUT_MAX		100000U		// ³¬Ê±µÈ´ýÊ±¼ä£¬W25Q64ÕûÆ¬²Á³ýËùÐè×î´óÊ±¼äÊÇ100S
-#define W25Qxx_Mem_Addr							0x90000000 	// ÄÚ´æÓ³ÉäÄ£Ê½µÄµØÖ·
+#define W25Qxx_ChipErase_TIMEOUT_MAX		100000U		// ï¿½ï¿½Ê±ï¿½È´ï¿½Ê±ï¿½ä£¬W25Q64ï¿½ï¿½Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿?100S
+#define W25Qxx_Mem_Addr							0x90000000 	// ï¿½Ú´ï¿½Ó³ï¿½ï¿½Ä£Ê½ï¿½Äµï¿½Ö·
 
 
-#define QUADSPI_CLK_PIN							GPIO_PIN_2								// QUADSPI_CLK Òý½Å
-#define	QUADSPI_CLK_PORT							GPIOB										// QUADSPI_CLK Òý½Å¶Ë¿Ú
-#define	QUADSPI_CLK_AF								GPIO_AF9_QUADSPI						// QUADSPI_CLK IO¿Ú¸´ÓÃ
-#define GPIO_QUADSPI_CLK_ENABLE      			__HAL_RCC_GPIOB_CLK_ENABLE()	 	// QUADSPI_CLK Òý½ÅÊ±ÖÓ
+#define QUADSPI_CLK_PIN							GPIO_PIN_2								// QUADSPI_CLK ï¿½ï¿½ï¿½ï¿½
+#define	QUADSPI_CLK_PORT							GPIOB										// QUADSPI_CLK ï¿½ï¿½ï¿½Å¶Ë¿ï¿½
+#define	QUADSPI_CLK_AF								GPIO_AF9_QUADSPI						// QUADSPI_CLK IOï¿½Ú¸ï¿½ï¿½ï¿½
+#define GPIO_QUADSPI_CLK_ENABLE      			__HAL_RCC_GPIOB_CLK_ENABLE()	 	// QUADSPI_CLK ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
 
-#define QUADSPI_BK1_NCS_PIN						GPIO_PIN_6								// QUADSPI_BK1_NCS Òý½Å
-#define	QUADSPI_BK1_NCS_PORT						GPIOB										// QUADSPI_BK1_NCS Òý½Å¶Ë¿Ú
-#define	QUADSPI_BK1_NCS_AF						GPIO_AF10_QUADSPI						// QUADSPI_BK1_NCS IO¿Ú¸´ÓÃ
-#define GPIO_QUADSPI_BK1_NCS_ENABLE        	__HAL_RCC_GPIOB_CLK_ENABLE()	 	// QUADSPI_BK1_NCS Òý½ÅÊ±ÖÓ
+#define QUADSPI_BK1_NCS_PIN						GPIO_PIN_6								// QUADSPI_BK1_NCS ï¿½ï¿½ï¿½ï¿½
+#define	QUADSPI_BK1_NCS_PORT						GPIOB										// QUADSPI_BK1_NCS ï¿½ï¿½ï¿½Å¶Ë¿ï¿½
+#define	QUADSPI_BK1_NCS_AF						GPIO_AF10_QUADSPI						// QUADSPI_BK1_NCS IOï¿½Ú¸ï¿½ï¿½ï¿½
+#define GPIO_QUADSPI_BK1_NCS_ENABLE        	__HAL_RCC_GPIOB_CLK_ENABLE()	 	// QUADSPI_BK1_NCS ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
 
-#define QUADSPI_BK1_IO0_PIN						GPIO_PIN_11								// QUADSPI_BK1_IO0 Òý½Å
-#define	QUADSPI_BK1_IO0_PORT						GPIOD										// QUADSPI_BK1_IO0 Òý½Å¶Ë¿Ú
-#define	QUADSPI_BK1_IO0_AF						GPIO_AF9_QUADSPI						// QUADSPI_BK1_IO0 IO¿Ú¸´ÓÃ
-#define GPIO_QUADSPI_BK1_IO0_ENABLE        	__HAL_RCC_GPIOD_CLK_ENABLE()	 	// QUADSPI_BK1_IO0 Òý½ÅÊ±ÖÓ
+#define QUADSPI_BK1_IO0_PIN						GPIO_PIN_11								// QUADSPI_BK1_IO0 ï¿½ï¿½ï¿½ï¿½
+#define	QUADSPI_BK1_IO0_PORT						GPIOD										// QUADSPI_BK1_IO0 ï¿½ï¿½ï¿½Å¶Ë¿ï¿½
+#define	QUADSPI_BK1_IO0_AF						GPIO_AF9_QUADSPI						// QUADSPI_BK1_IO0 IOï¿½Ú¸ï¿½ï¿½ï¿½
+#define GPIO_QUADSPI_BK1_IO0_ENABLE        	__HAL_RCC_GPIOD_CLK_ENABLE()	 	// QUADSPI_BK1_IO0 ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
 
-#define QUADSPI_BK1_IO1_PIN						GPIO_PIN_12								// QUADSPI_BK1_IO1 Òý½Å
-#define	QUADSPI_BK1_IO1_PORT						GPIOD										// QUADSPI_BK1_IO1 Òý½Å¶Ë¿Ú
-#define	QUADSPI_BK1_IO1_AF						GPIO_AF9_QUADSPI						// QUADSPI_BK1_IO1 IO¿Ú¸´ÓÃ
-#define GPIO_QUADSPI_BK1_IO1_ENABLE        	__HAL_RCC_GPIOD_CLK_ENABLE()	 	// QUADSPI_BK1_IO1 Òý½ÅÊ±ÖÓ
+#define QUADSPI_BK1_IO1_PIN						GPIO_PIN_12								// QUADSPI_BK1_IO1 ï¿½ï¿½ï¿½ï¿½
+#define	QUADSPI_BK1_IO1_PORT						GPIOD										// QUADSPI_BK1_IO1 ï¿½ï¿½ï¿½Å¶Ë¿ï¿½
+#define	QUADSPI_BK1_IO1_AF						GPIO_AF9_QUADSPI						// QUADSPI_BK1_IO1 IOï¿½Ú¸ï¿½ï¿½ï¿½
+#define GPIO_QUADSPI_BK1_IO1_ENABLE        	__HAL_RCC_GPIOD_CLK_ENABLE()	 	// QUADSPI_BK1_IO1 ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
 
-#define QUADSPI_BK1_IO2_PIN						GPIO_PIN_2								// QUADSPI_BK1_IO2 Òý½Å
-#define	QUADSPI_BK1_IO2_PORT						GPIOE										// QUADSPI_BK1_IO2 Òý½Å¶Ë¿Ú
-#define	QUADSPI_BK1_IO2_AF						GPIO_AF9_QUADSPI						// QUADSPI_BK1_IO2 IO¿Ú¸´ÓÃ
-#define GPIO_QUADSPI_BK1_IO2_ENABLE        	__HAL_RCC_GPIOE_CLK_ENABLE()	 	// QUADSPI_BK1_IO2 Òý½ÅÊ±ÖÓ
+#define QUADSPI_BK1_IO2_PIN						GPIO_PIN_2								// QUADSPI_BK1_IO2 ï¿½ï¿½ï¿½ï¿½
+#define	QUADSPI_BK1_IO2_PORT						GPIOE										// QUADSPI_BK1_IO2 ï¿½ï¿½ï¿½Å¶Ë¿ï¿½
+#define	QUADSPI_BK1_IO2_AF						GPIO_AF9_QUADSPI						// QUADSPI_BK1_IO2 IOï¿½Ú¸ï¿½ï¿½ï¿½
+#define GPIO_QUADSPI_BK1_IO2_ENABLE        	__HAL_RCC_GPIOE_CLK_ENABLE()	 	// QUADSPI_BK1_IO2 ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
 
-#define QUADSPI_BK1_IO3_PIN						GPIO_PIN_13								// QUADSPI_BK1_IO3 Òý½Å
-#define	QUADSPI_BK1_IO3_PORT						GPIOD										// QUADSPI_BK1_IO3 Òý½Å¶Ë¿Ú
-#define	QUADSPI_BK1_IO3_AF						GPIO_AF9_QUADSPI						// QUADSPI_BK1_IO3 IO¿Ú¸´ÓÃ
-#define GPIO_QUADSPI_BK1_IO3_ENABLE      	__HAL_RCC_GPIOD_CLK_ENABLE()	 	// QUADSPI_BK1_IO3 Òý½ÅÊ±ÖÓ
+#define QUADSPI_BK1_IO3_PIN						GPIO_PIN_13								// QUADSPI_BK1_IO3 ï¿½ï¿½ï¿½ï¿½
+#define	QUADSPI_BK1_IO3_PORT						GPIOD										// QUADSPI_BK1_IO3 ï¿½ï¿½ï¿½Å¶Ë¿ï¿½
+#define	QUADSPI_BK1_IO3_AF						GPIO_AF9_QUADSPI						// QUADSPI_BK1_IO3 IOï¿½Ú¸ï¿½ï¿½ï¿½
+#define GPIO_QUADSPI_BK1_IO3_ENABLE      	__HAL_RCC_GPIOD_CLK_ENABLE()	 	// QUADSPI_BK1_IO3 ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
 
 /* USER CODE END Private defines */
 
@@ -104,21 +104,21 @@ void MX_QUADSPI_Init(void);
 
 /* USER CODE BEGIN Prototypes */
 
-int8_t	QSPI_W25Qxx_Init(void);						// W25Qxx³õÊ¼»¯
-int8_t 	QSPI_W25Qxx_Reset(void);					// ¸´Î»Æ÷¼þ
-uint32_t QSPI_W25Qxx_ReadID(void);					// ¶ÁÈ¡Æ÷¼þID
-int8_t 	QSPI_W25Qxx_MemoryMappedMode(void);		// ½øÈëÄÚ´æÓ³ÉäÄ£Ê½
+int8_t	QSPI_W25Qxx_Init(void);						// W25Qxxï¿½ï¿½Ê¼ï¿½ï¿½
+int8_t 	QSPI_W25Qxx_Reset(void);					// ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½
+uint32_t QSPI_W25Qxx_ReadID(void);					// ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ID
+int8_t 	QSPI_W25Qxx_MemoryMappedMode(void);		// ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½Ó³ï¿½ï¿½Ä£Ê½
 
-int8_t 	QSPI_W25Qxx_SectorErase(uint32_t SectorAddress);		// ÉÈÇø²Á³ý£¬4K×Ö½Ú£¬ ²Î¿¼²Á³ýÊ±¼ä 45ms
-int8_t 	QSPI_W25Qxx_BlockErase_32K (uint32_t SectorAddress);	// ¿é²Á³ý£¬  32K×Ö½Ú£¬²Î¿¼²Á³ýÊ±¼ä 120ms
-int8_t 	QSPI_W25Qxx_BlockErase_64K (uint32_t SectorAddress);	// ¿é²Á³ý£¬  64K×Ö½Ú£¬²Î¿¼²Á³ýÊ±¼ä 150ms£¬Êµ¼ÊÊ¹ÓÃ½¨ÒéÊ¹ÓÃ64K²Á³ý£¬²Á³ýµÄÊ±¼ä×î¿ì
-int8_t 	QSPI_W25Qxx_ChipErase (void);                         // ÕûÆ¬²Á³ý£¬²Î¿¼²Á³ýÊ±¼ä 20S
+int8_t 	QSPI_W25Qxx_SectorErase(uint32_t SectorAddress);		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4Kï¿½Ö½Ú£ï¿½ ï¿½Î¿ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ 45ms
+int8_t 	QSPI_W25Qxx_BlockErase_32K (uint32_t SectorAddress);	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?  32Kï¿½Ö½Ú£ï¿½ï¿½Î¿ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ 120ms
+int8_t 	QSPI_W25Qxx_BlockErase_64K (uint32_t SectorAddress);	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?  64Kï¿½Ö½Ú£ï¿½ï¿½Î¿ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ 150msï¿½ï¿½Êµï¿½ï¿½Ê¹ï¿½Ã½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½64Kï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿?
+int8_t 	QSPI_W25Qxx_ChipErase (void);                         // ï¿½ï¿½Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¿ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ 20S
 
-int8_t	QSPI_W25Qxx_WritePage(uint8_t* pBuffer, uint32_t WriteAddr, uint16_t NumByteToWrite);	// °´Ò³Ð´Èë£¬×î´ó256×Ö½Ú
-int8_t	QSPI_W25Qxx_WriteBuffer(uint8_t* pData, uint32_t WriteAddr, uint32_t Size);				// Ð´ÈëÊý¾Ý£¬×î´ó²»ÄÜ³¬¹ýflashÐ¾Æ¬µÄ´óÐ¡
-int8_t 	QSPI_W25Qxx_ReadBuffer(uint8_t* pBuffer, uint32_t ReadAddr, uint32_t NumByteToRead);	// ¶ÁÈ¡Êý¾Ý£¬×î´ó²»ÄÜ³¬¹ýflashÐ¾Æ¬µÄ´óÐ¡
+int8_t	QSPI_W25Qxx_WritePage(uint8_t* pBuffer, uint32_t WriteAddr, uint16_t NumByteToWrite);	// ï¿½ï¿½Ò³Ð´ï¿½ë£¬ï¿½ï¿½ï¿?256ï¿½Ö½ï¿½
+int8_t	QSPI_W25Qxx_WriteBuffer(uint8_t* pData, uint32_t WriteAddr, uint32_t Size);				// Ð´ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½Ü³ï¿½ï¿½ï¿½flashÐ¾Æ¬ï¿½Ä´ï¿½Ð¡
+int8_t 	QSPI_W25Qxx_ReadBuffer(uint8_t* pBuffer, uint32_t ReadAddr, uint32_t NumByteToRead);	// ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½Ü³ï¿½ï¿½ï¿½flashÐ¾Æ¬ï¿½Ä´ï¿½Ð¡
 
-int8_t QSPI_W25Qxx_MemoryWrite(void* addr, uint32_t size);	// Ð´ÈëÊý¾Ýµ½flash
+int8_t QSPI_W25Qxx_MemoryWrite(void* addr, uint32_t size);	// Ð´ï¿½ï¿½ï¿½ï¿½ï¿½Ýµï¿½flash
 
 /* USER CODE END Prototypes */
 

@@ -1,9 +1,10 @@
+#include <string.h>
 #include "xTaskManager.h"
 #include "TaskHead.h"
 #include "xShellTask.h"
 #include "xTaskInit.h"
 #include "memctl.h"
-#include "u_stdio.h"
+#include "stdio.h"
 #include "RAMFS.h"
 #include "test.h"
 
@@ -18,7 +19,7 @@ Task_t RAMFS_TASK_Create(char *name, TaskStatus_E status, TaskPriority_E priorit
     Task_t task = (Task_t) kernel_alloc(sizeof(struct Task));
 
     task->name = kernel_alloc(strlen(name) + 1);
-    strcopy(task->name, name);
+    strcpy(task->name, name);
 
     task->status = status;
     task->PID = PID_Global++;
@@ -31,14 +32,14 @@ Task_t RAMFS_TASK_Create(char *name, TaskStatus_E status, TaskPriority_E priorit
 
 
 void ThreadInit(){
-    // 线程都在这里进行注册
+    // 绾跨▼閮藉湪杩欓噷杩涜娉ㄥ唽
     osThreadDef(xShell, ShellTask, osPriorityNormal, 0, 1024);
     xShellHandle = osThreadCreate(osThread(xShell), NULL);
 
     osThreadDef(xTaskManager, TaskManager, osPriorityAboveNormal, 0, 1024);
     xTaskManagerHandle = osThreadCreate(osThread(xTaskManager), NULL);
 
-    osThreadDef(xTaskInit, QueueInit, osPriorityIdle, 0, 2048);
+    osThreadDef(xTaskInit, QueueInit, osPriorityNormal, 0, 1024);
     xTaskInitHandle = osThreadCreate(osThread(xTaskInit), NULL);
 
     osThreadDef(xTaskTest, testFunc, osPriorityRealtime, 0, 2048);
@@ -62,8 +63,8 @@ void TaskManager(void const * argument){
         TaskTickStart(xTaskManager);
         Task_t currentTask = head;
 
-        uint32_t currentTotalTicks = xTaskGetTickCount(); // 当前系统总滴答数
-        uint32_t deltaTime = currentTotalTicks - lastTotalTicks; // 计算自上次统计以来的增量时间
+        uint32_t currentTotalTicks = xTaskGetTickCount(); // 褰撳墠绯荤粺鎬绘淮绛旀暟
+        uint32_t deltaTime = currentTotalTicks - lastTotalTicks; // 璁＄畻鑷笂娆＄粺璁′互鏉ョ殑澧為噺鏃堕棿
 
 
         while (currentTask != NULL){

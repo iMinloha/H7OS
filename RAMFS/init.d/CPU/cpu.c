@@ -1,7 +1,7 @@
 #include "cpu.h"
 #include "memctl.h"
 #include "adc.h"
-#include "u_stdio.h"
+#include "stdio.h"
 
 
 float updateCPU(){
@@ -12,9 +12,9 @@ float updateCPU(){
 }
 
 /**
- * 创建CPU对象
- * @return CPU对象
- * @note 该函数会自动初始化CPU对象，对象为CortexM7
+ * 鍒涘缓CPU瀵硅薄
+ * @return CPU瀵硅薄
+ * @note 璇ュ嚱鏁颁細鑷姩鍒濆鍖朇PU瀵硅薄锛屽璞′负CortexM7
  */
 void createCPU(){
     CortexM7 = (CPU_t) kernel_alloc(sizeof(struct CPU));
@@ -25,11 +25,9 @@ void createCPU(){
 }
 
 void showCPUInfo(){
-    u_print("CPU name: %s\n", CortexM7->name);
-    u_print("CPU description: %s\n", CortexM7->description);
-    u_print("CPU frequency: %d HZ\n", CortexM7->frequency);
+    printf("CPU name: %s\n", CortexM7->name);
+    printf("CPU description: %s\n", CortexM7->description);
+    printf("CPU frequency: %d HZ\n", CortexM7->frequency);
     float temp = updateCPU();
-    u_print("CPU temperature:");
-    put_double(temp, 10, 1);
-    u_print(" C\n");
+    printf("CPU temperature: %f C\n", temp);
 }

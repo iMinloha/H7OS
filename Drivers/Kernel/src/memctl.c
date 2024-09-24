@@ -3,7 +3,7 @@
 #include "tlsf.h"
 
 /***
- * @brief ÄÚ´æ¿½±´
+ * @brief å†…å­˜æ‹·è´
  * @param dest: destination address
  * @param src: source address
  * @param size: size of the memory block
@@ -15,7 +15,7 @@ void memoryCopy(void *dest, void *src, int size){
 }
 
 /***
- * @brief ÄÚ´æÉèÖÃ
+ * @brief å†…å­˜è®¾ç½®
  * @param dest: destination address
  * @param val: value to set
  * @param size: size of the memory block
@@ -26,11 +26,11 @@ void memorySet(void *dest, char val, int size){
 }
 
 /***
- * @brief ÄÚ´æ±È½Ï
+ * @brief å†…å­˜æ¯”è¾ƒ
  * @param dest: destination address
  * @param src: source address
  * @param size: size of the memory block
- * @return ±È½Ï½á¹û
+ * @return æ¯”è¾ƒç»“æœ
  * */
 int memoryCompare(void *dest, void *src, int size){
     char *d = (char *)dest;
@@ -40,55 +40,57 @@ int memoryCompare(void *dest, void *src, int size){
 }
 
 /***
- * @brief QSPI flashĞ´ÈëÊı¾İ
- * @param addr: Ğ´ÈëµØÖ·(´Ó0x0000¿ªÊ¼µ½0x0400)
- * @param data: Ğ´ÈëÊı¾İ
- * @param size: Ğ´ÈëÊı¾İ´óĞ¡
+ * @brief QSPI flashå†™å…¥æ•°æ®
+ * @param addr: å†™å…¥åœ°å€(ä»0x0000å¼€å§‹åˆ°0x0400)
+ * @param data: å†™å…¥æ•°æ®
+ * @param size: å†™å…¥æ•°æ®å¤§å°
  * */
 void flashWrite(uint32_t addr, uint8_t *data, uint32_t size){
     QSPI_W25Qxx_WriteBuffer(data, addr, size);
 }
 
 /***
- * @brief QSPI flash¶ÁÈ¡Êı¾İ
- * @param addr: ¶ÁÈ¡µØÖ·
- * @param data: ¶ÁÈ¡Êı¾İ´æ·ÅµØÖ·
- * @param size: ¶ÁÈ¡Êı¾İ´óĞ¡
+ * @brief QSPI flashè¯»å–æ•°æ®
+ * @param addr: è¯»å–åœ°å€
+ * @param data: è¯»å–æ•°æ®å­˜æ”¾åœ°å€
+ * @param size: è¯»å–æ•°æ®å¤§å°
  * */
 void flashRead(uint32_t addr, uint8_t *data, uint32_t size){
     QSPI_W25Qxx_ReadBuffer(data, addr, size);
 }
 
-// ========================= ÒÔÏÂÊÇSDRAMÄÚ´æ¹ÜÀíËã·¨ =========================
+// ========================= ä»¥ä¸‹æ˜¯SDRAMå†…å­˜ç®¡ç†ç®—æ³• =========================
 /***
- * @brief Ë¢ĞÂSDRAM
+ * @brief åˆ·æ–°SDRAM
  * */
 void flashSDRAM(){
     for (uint32_t i = 0; i < SDRAM_Size; i++) IO_U8 (SDRAM_BANK_ADDR+i) = 0;
 }
 
-// ÄÚ´æ³Ø
+// å†…å­˜æ± 
 tlsf_t mem_pool;
 tlsf_t kernel_pool;
-// Ê¹ÓÃÄÚ´æ
+// ä½¿ç”¨å†…å­˜
 uint32_t using_mem = 0;
 
 /***
- * @brief SDRAMÄÚ´æ¹ÜÀí³õÊ¼»¯
- * @note ¸Ãº¯Êı»á³õÊ¼»¯SDRAMÄÚ´æ¹ÜÀíËã·¨, ÇëÔÚÊ¹ÓÃSDRAMÄÚ´æ¹ÜÀíÇ°µ÷ÓÃ¸Ãº¯Êı.
+ * @brief SDRAMå†…å­˜ç®¡ç†åˆå§‹åŒ–
+ * @note è¯¥å‡½æ•°ä¼šåˆå§‹åŒ–SDRAMå†…å­˜ç®¡ç†ç®—æ³•, è¯·åœ¨ä½¿ç”¨SDRAMå†…å­˜ç®¡ç†å‰è°ƒç”¨è¯¥å‡½æ•°.
  * */
 void MemControl_Init(){
     flashSDRAM();
-    // ÄÚºË¿Õ¼ä(»á×Ô¶¯±£´æÔÚQSPI FlashÖĞ)
-    kernel_pool = tlsf_create_with_pool((void*)SDRAM_BANK_ADDR, 2 * 1024 * 1024);
-    // ³ÌĞòÔËĞĞ¿Õ¼ä
-    mem_pool = tlsf_create_with_pool((void*)SDRAM_BANK_ADDR + 2 * 1024 * 1024, 30 * 1024 * 1024);
+    // å†…æ ¸ç©ºé—´(ä¼šè‡ªåŠ¨ä¿å­˜åœ¨QSPI Flashä¸­)
+    kernel_pool = tlsf_create_with_pool((void*)SDRAM_BANK_ADDR + VideoMemSize, KernelMemSize);
+    // ç¨‹åºè¿è¡Œç©ºé—´
+    mem_pool = tlsf_create_with_pool((void*)SDRAM_BANK_ADDR + KernelMemSize + VideoMemSize, UserMemSize);
+    // æ˜¾å­˜
+    // tlsf_t video_pool = tlsf_create_with_pool((void*)SDRAM_BANK_ADDR + KernelMemSize + UserMemSize, VideoMemSize);
 }
 
 /***
- * @brief SDRAMÄÚ´æ¹ÜÀí·ÖÅä
- * @param size: ·ÖÅäÄÚ´æ´óĞ¡
- * @return ·ÖÅäÄÚ´æµÄµØÖ·
+ * @brief SDRAMå†…å­˜ç®¡ç†åˆ†é…
+ * @param size: åˆ†é…å†…å­˜å¤§å°
+ * @return åˆ†é…å†…å­˜çš„åœ°å€
  * */
 void* ram_alloc(uint32_t size){
     using_mem += size;
@@ -96,18 +98,18 @@ void* ram_alloc(uint32_t size){
 }
 
 /***
- * @brief SDRAMÄÚ´æ¹ÜÀíÖØĞÂ·ÖÅä
- * @param addr: ÖØĞÂ·ÖÅäÄÚ´æµÄµØÖ·
- * @param size: ÖØĞÂ·ÖÅäÄÚ´æ´óĞ¡
- * @return ÖØĞÂ·ÖÅäÄÚ´æµÄµØÖ·
+ * @brief SDRAMå†…å­˜ç®¡ç†é‡æ–°åˆ†é…
+ * @param addr: é‡æ–°åˆ†é…å†…å­˜çš„åœ°å€
+ * @param size: é‡æ–°åˆ†é…å†…å­˜å¤§å°
+ * @return é‡æ–°åˆ†é…å†…å­˜çš„åœ°å€
  * */
 void* ram_realloc(void* addr, uint32_t size){
     return tlsf_realloc(mem_pool, addr, size);
 }
 
 /***
- * @brief SDRAMÄÚ´æ¹ÜÀíÊÍ·Å
- * @param addr: ÊÍ·ÅÄÚ´æµÄµØÖ·
+ * @brief SDRAMå†…å­˜ç®¡ç†é‡Šæ”¾
+ * @param addr: é‡Šæ”¾å†…å­˜çš„åœ°å€
  * */
 void ram_free(void* addr){
     using_mem -= tlsf_block_size(addr);
@@ -115,34 +117,34 @@ void ram_free(void* addr){
 }
 
 /***
- * @brief SDRAMÄÚ´æ¹ÜÀí¼ì²é
- * @return ¼ì²é½á¹û
+ * @brief SDRAMå†…å­˜ç®¡ç†æ£€æŸ¥
+ * @return æ£€æŸ¥ç»“æœ
  * */
 int ram_check(){
     return tlsf_check(mem_pool);
 }
 
 /***
- * @brief SDRAMÄÚ´æ¹ÜÀíĞÅÏ¢
+ * @brief SDRAMå†…å­˜ç®¡ç†ä¿¡æ¯
  * */
 void ram_info(){
-    if (using_mem < 1024) u_print("Using memory: %d bytes\n", using_mem);
-    else if (using_mem < 1024*1024) u_print("Using memory: %d KB\n", using_mem/1024);
-    else u_print("Using memory: %d MB\n", using_mem/1024/1024);
+    if (using_mem < 1024) printf("Using memory: %d bytes\n", using_mem);
+    else if (using_mem < 1024*1024) printf("Using memory: %d KB\n", using_mem/1024);
+    else printf("Using memory: %d MB\n", using_mem/1024/1024);
 }
 
 /***
- * @brief SDRAMÄÚ´æ¹ÜÀíÏú»Ù
- * @note ¸Ãº¯Êı»áÏú»ÙSDRAMÄÚ´æ¹ÜÀíËã·¨, ÇëÔÚ²»Ê¹ÓÃSDRAMÄÚ´æ¹ÜÀíºóµ÷ÓÃ¸Ãº¯Êı.
+ * @brief SDRAMå†…å­˜ç®¡ç†é”€æ¯
+ * @note è¯¥å‡½æ•°ä¼šé”€æ¯SDRAMå†…å­˜ç®¡ç†ç®—æ³•, è¯·åœ¨ä¸ä½¿ç”¨SDRAMå†…å­˜ç®¡ç†åè°ƒç”¨è¯¥å‡½æ•°.
  * */
 void ram_destroy(){
     tlsf_destroy(mem_pool);
 }
 
 /***
- * @brief SDRAMÄÚ´æ¹ÜÀí¶ÔÆë
- * @param align: ¶ÔÆë´óĞ¡
- * @param bytes: ¶ÔÆë×Ö½ÚÊı
+ * @brief SDRAMå†…å­˜ç®¡ç†å¯¹é½
+ * @param align: å¯¹é½å¤§å°
+ * @param bytes: å¯¹é½å­—èŠ‚æ•°
  * */
 void ram_align(size_t align, size_t bytes){
     tlsf_memalign(mem_pool, align, bytes);

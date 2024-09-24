@@ -25,7 +25,7 @@ enum DeviceType{
     DEVICE_TASK,    // 任务设备(proc显示的内容)
     // --------------------
     FILE_SYSTEM,    // 文件系统
-    FILE,           // 文件
+    DrTFILE,           // 文件
 };
 
 typedef enum DeviceType DeviceType_E;

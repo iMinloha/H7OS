@@ -3,6 +3,8 @@
 
 #include "fmc.h"
 
+#define u_printf printf
+
 // 定义内存管理算法
 /***
  * @brief 内存拷贝
@@ -57,6 +59,9 @@ void flashRead(uint32_t addr, uint8_t *data, uint32_t size);
 #define IO_VOID *(__IO void*)    // 定义IO_VOID为一个指向void的指针
 #define IO_STRUCT(Pointer) *(__IO Pointer)  // 定义IO_STRUCT为一个指向结构体或函数的指针
 // 定义IO操作结束
+#define VideoMemSize 12 * 1024 * 1024  // 显存大小12MB
+#define KernelMemSize 12 * 1024 * 1024  // 内核内存12MB
+#define UserMemSize 8 * 1024 * 1024   // SDRAM内存8MB
 
 /***
  * @brief SDRAM内存管理初始化

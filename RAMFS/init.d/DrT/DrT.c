@@ -1,32 +1,33 @@
+#include <string.h>
 #include "DrT.h"
 #include "memctl.h"
 #include "usart.h"
-#include "u_stdio.h"
+#include "stdio.h"
 #include "quadspi.h"
 #include "fatfs.h"
 #include "RAMFS.h"
 
-// ´®¿ÚÉè±¸Ö¸Õë(ÓÃÓÚÖ¸Ïòµ±Ç°´®¿ÚÖÕ¶ËËùÔÚÎ»ÖÃ)
+// ï¿½ï¿½ï¿½ï¿½ï¿½è±¸Ö¸ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Õ¶ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½)
 FS_t currentFS;
 
 /**
- * @brief Ìí¼Ó×Ó½Úµã
- * @param parent ¸¸½Úµã
- * @param path ×Ó½ÚµãÂ·¾¶
+ * @brief ï¿½ï¿½ï¿½ï¿½ï¿½Ó½Úµï¿½
+ * @param parent ï¿½ï¿½ï¿½Úµï¿½
+ * @param path ï¿½Ó½Úµï¿½Â·ï¿½ï¿½
  */
 void addFSChild(FS_t parent, char *path){
-    // ´´½¨×Ó½Úµã
+    // ï¿½ï¿½ï¿½ï¿½ï¿½Ó½Úµï¿½
     FS_t child = (FS_t) kernel_alloc(sizeof(struct FS));
     child->path = (char*) kernel_alloc(strlen(path) + 1);
-    strcopy(child->path, path);
+    strcpy(child->path, path);
 
     child->node = NULL;
     child->node_count = 0;
     child->parent = parent;
-    child->next = NULL; // ×ÓÎÄ¼þ¼Ð
-    child->child = NULL;    // Í¬²ãÎÄ¼þ¼Ð
+    child->next = NULL; // ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
+    child->child = NULL;    // Í¬ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
 
-    // Ìí¼Óµ½¸¸½ÚµãµÄnextµÄchildÍ¬²ãÁÐ±í
+    // ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½nextï¿½ï¿½childÍ¬ï¿½ï¿½ï¿½Ð±ï¿½
     FS_t p = parent->next;
     if (p == NULL) {
         parent->next = child;
@@ -39,10 +40,10 @@ void addFSChild(FS_t parent, char *path){
 
 
 /**
- * @brief »ñÈ¡×Ó½Úµã
- * @param parent ¸¸½Úµã
- * @param path ×Ó½ÚµãÂ·¾¶
- * @return ×Ó½Úµã
+ * @brief ï¿½ï¿½È¡ï¿½Ó½Úµï¿½
+ * @param parent ï¿½ï¿½ï¿½Úµï¿½
+ * @param path ï¿½Ó½Úµï¿½Â·ï¿½ï¿½
+ * @return ï¿½Ó½Úµï¿½
  */
 FS_t getFSChild(FS_t parent, char *path){
     FS_t p = parent->next;
@@ -54,27 +55,27 @@ FS_t getFSChild(FS_t parent, char *path){
 }
 
 
-// Ìí¼ÓÉè±¸
+// ï¿½ï¿½ï¿½ï¿½ï¿½è±¸
 /**
- * @brief Ìí¼ÓÉè±¸
- * @param node Éè±¸½Úµã
- * @param devicePtr Éè±¸Ö¸Õë(htim, huart, hspi)
- * @param name Éè±¸Ãû³Æ(ÈçTIM1, USART1, SPI1)
- * @param description Éè±¸ÃèÊö(Èç¶¨Ê±Æ÷1, ´®¿Ú1, SPI1)
- * @param type Éè±¸ÀàÐÍ(ÈçÍ¨ÐÅÉè±¸£¬Ê±ÖÓÉè±¸)
- * @param driver Éè±¸Çý¶¯(Ò»¸öº¯ÊýÖ¸Õë)
+ * @brief ï¿½ï¿½ï¿½ï¿½ï¿½è±¸
+ * @param node ï¿½è±¸ï¿½Úµï¿½
+ * @param devicePtr ï¿½è±¸Ö¸ï¿½ï¿½(htim, huart, hspi)
+ * @param name ï¿½è±¸ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½TIM1, USART1, SPI1)
+ * @param description ï¿½è±¸ï¿½ï¿½ï¿½ï¿½(ï¿½ç¶¨Ê±ï¿½ï¿½1, ï¿½ï¿½ï¿½ï¿½1, SPI1)
+ * @param type ï¿½è±¸ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½Í¨ï¿½ï¿½ï¿½è±¸ï¿½ï¿½Ê±ï¿½ï¿½ï¿½è±¸)
+ * @param driver ï¿½è±¸ï¿½ï¿½ï¿½ï¿½(Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½)
  */
 void addDevice(char *path, void* devicePtr, char *name, char *description, DeviceType_E type,
                DeviceStatus_E status, Func_t driver){
     FS_t node = getFSChild(RAM_FS, path);
     if (node == NULL) return;
-    // ´´½¨Éè±¸½Úµã
+    // ï¿½ï¿½ï¿½ï¿½ï¿½è±¸ï¿½Úµï¿½
     DrTNode_t device = (DrTNode_t) kernel_alloc(sizeof(struct DrTNode));
     device->name = (char*) kernel_alloc(strlen(name) + 1);
     device->description = (char*) kernel_alloc(strlen(description) + 1);
 
-    strcopy(device->name, name);
-    strcopy(device->description, description);
+    strcpy(device->name, name);
+    strcpy(device->description, description);
 
     device->device = devicePtr;
     device->status = status;
@@ -87,7 +88,7 @@ void addDevice(char *path, void* devicePtr, char *name, char *description, Devic
     device->parent = node;
     device->next = NULL;
 
-    // Ìí¼Óµ½Éè±¸Á´±í
+    // ï¿½ï¿½ï¿½Óµï¿½ï¿½è±¸ï¿½ï¿½ï¿½ï¿½
     DrTNode_t p = node->node;
     if (p == NULL) {
         node->node = device;
@@ -153,10 +154,10 @@ Task_t getThreadByPID(uint8_t pid){
 }
 
 /**
- * @brief ³õÊ¼»¯Éè±¸Ê÷
+ * @brief ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½è±¸ï¿½ï¿½
  */
 void DrTInit(){
-    // ´´½¨¸ù½ÚµãRootFSÓëÃüÁîÁÐ±í
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½RootFSï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½
     RAM_FS = (FS_t) kernel_alloc(sizeof(struct FS));
     CMDList = (CMD_t) kernel_alloc(sizeof(struct CMD));
     CMDList->next = NULL;
@@ -169,10 +170,10 @@ void DrTInit(){
     RAM_FS->next = NULL;
     RAM_FS->child = NULL;
 
-    // ´®¿ÚÖÕ¶ËÂ·¾¶
+    // ï¿½ï¿½ï¿½ï¿½ï¿½Õ¶ï¿½Â·ï¿½ï¿½
     currentFS = RAM_FS;
 
-    // Ìí¼Ó×ÓÂ·¾¶
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½
     addFSChild(RAM_FS, "dev");
     addFSChild(RAM_FS, "tmp");
     addFSChild(RAM_FS, "mnt");
@@ -183,7 +184,7 @@ void DrTInit(){
     addFSChild(RAM_FS, "etc");
     addFSChild(RAM_FS, "proc");
 
-    // Ìí¼ÓÉè±¸
+    // ï¿½ï¿½ï¿½ï¿½ï¿½è±¸
     addDevice("dev", &CortexM7, "Cortex-M7", "Central Processing Unit", DEVICE_BS, DEVICE_BUSY, NULL);
     addDevice("dev", &huart1, "USART1", "Serial bus device", DEVICE_SERIAL, DEVICE_BUSY, NULL);
 
@@ -192,13 +193,13 @@ void DrTInit(){
     addDevice("mnt", &hqspi, "QSPI", "Quad SPI", DEVICE_STORAGE, DEVICE_ON, NULL);
 
 
-    // Ö¸Áî×¢²á
+    // Ö¸ï¿½ï¿½×¢ï¿½ï¿½
     register_main();
 }
 
 
 /**
- * @brief ¼ÓÔØÂ·¾¶(»ñÈ¡½Úµã)
+ * @brief ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½(ï¿½ï¿½È¡ï¿½Úµï¿½)
  * @param path
  * @return
  */
@@ -219,13 +220,13 @@ FS_t loadPath(char* path) {
 }
 
 /**
- * @brief ¼ÓÔØÉè±¸
+ * @brief ï¿½ï¿½ï¿½ï¿½ï¿½è±¸
  * @param path
  * @return
  */
 DrTNode_t loadDevice(char* path_aim){
     char *path = (char*) kernel_alloc(strlen(path_aim) + 1);
-    strcopy(path, path_aim);
+    strcpy(path, path_aim);
 
     FS_t node;
     if (path[0] == '/') node = RAM_FS;
@@ -243,7 +244,7 @@ DrTNode_t loadDevice(char* path_aim){
             node = tmp_node;
         }
 
-        // token×Ö·û´óÓÚ0ËµÃ÷pathÖÐÓÐ¶àÓàµÄÂ·¾¶
+
         if (strcmp(token, strtok(token, "/")) != 0){
             return NULL;
         } else {
@@ -274,7 +275,7 @@ Task_t loadTask(char* path){
             node = tmp_node;
         }
 
-        // token×Ö·û´óÓÚ0ËµÃ÷pathÖÐÓÐ¶àÓàµÄÂ·¾¶
+        // tokenï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½0Ëµï¿½ï¿½pathï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½
         if (strcmp(token, strtok(token, "/")) != 0){
             return NULL;
         } else {
@@ -289,11 +290,11 @@ Task_t loadTask(char* path){
     return NULL;
 }
 
-// DrT²Ù×÷
-// ====================================[Ö¸Áî²Ù×÷]===================================
+// DrTï¿½ï¿½ï¿½ï¿½
+// ====================================[Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½]===================================
 
 /**
- * @brief ´´½¨Ä¿Â¼
+ * @brief ï¿½ï¿½ï¿½ï¿½Ä¿Â¼
  * @param path
  * @param name
  */
@@ -304,18 +305,18 @@ void ram_mkdir(char* path, char* name){
 }
 
 /**
- * @brief ´´½¨ÎÄ¼þ
+ * @brief ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
  * @param path
  * @param name
  */
 void ram_mkfile(char* path, char* name){
     FS_t node = loadPath(path);
     if(node == NULL) return;
-    addDevice(path, NULL, "file", "file", FILE, DEVICE_ON, NULL);
+    addDevice(path, NULL, "file", "file", DrTFILE, DEVICE_ON, NULL);
 }
 
 /**
- * @brief É¾³ýÄ¿Â¼
+ * @brief É¾ï¿½ï¿½Ä¿Â¼
  * @param path
  * @param name
  */
@@ -335,7 +336,7 @@ void ram_rm(char* path, char *name){
 }
 
 /**
- * @brief ¶ÁÈ¡ÎÄ¼þ
+ * @brief ï¿½ï¿½È¡ï¿½Ä¼ï¿½
  * @param path
  * @param buf
  * @param size
@@ -354,7 +355,7 @@ void ram_read(char* path, void* buf, int size){
 }
 
 /**
- * @brief Ð´ÈëÎÄ¼þ
+ * @brief Ð´ï¿½ï¿½ï¿½Ä¼ï¿½
  * @param path
  * @param buf
  * @param size
@@ -373,7 +374,7 @@ void ram_write(char* path, void* buf, int size){
 }
 
 /**
- * @brief ÏÔÊ¾Ä¿Â¼
+ * @brief ï¿½ï¿½Ê¾Ä¿Â¼
  * @param path
  */
 void ram_ls(char* path){
@@ -383,15 +384,15 @@ void ram_ls(char* path){
     FS_t temp = node->next;
 
     while(temp != NULL){
-        // Êä³önodeµÄ×ÓÎÄ¼þ¼Ð
-        u_print("%s  ", temp->path);
+        // ï¿½ï¿½ï¿½nodeï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
+        printf("%s  ", temp->path);
         temp = temp->child;
     }
 
     if (node->node_count != 0) {
         DrTNode_t p = node->node;
         while(p != NULL){
-            u_print("%s  ", p->name);
+            printf("%s  ", p->name);
             p = p->next;
         }
     }
@@ -399,16 +400,16 @@ void ram_ls(char* path){
     if(node->tasklist != NULL){
         Task_t p = node->tasklist;
         while(p != NULL){
-            u_print("%s\t", p->name);
+            printf("%s\t", p->name);
             p = p->next;
         }
     }
 
-    u_print("\n");
+    printf("\n");
 }
 
 /**
- * @brief ÇÐ»»Ä¿Â¼
+ * @brief ï¿½Ð»ï¿½Ä¿Â¼
  * @param path
  */
 FS_t ram_cd(char* path){
@@ -419,30 +420,30 @@ FS_t ram_cd(char* path){
 }
 
 /**
- * @brief ÏÔÊ¾µ±Ç°Ä¿Â¼
- * @param fs µ±Ç°ÎÄ¼þ¼Ð
- * @param path Â·¾¶(ÒÑ¾­ram_alloc)
+ * @brief ï¿½ï¿½Ê¾ï¿½ï¿½Ç°Ä¿Â¼
+ * @param fs ï¿½ï¿½Ç°ï¿½Ä¼ï¿½ï¿½ï¿½
+ * @param path Â·ï¿½ï¿½(ï¿½Ñ¾ï¿½ram_alloc)
  */
 void ram_pwd(FS_t fs, char* path){
     FS_t temp_node;
-    // µÝ¹éÏÔÊ¾Â·¾¶
+    // ï¿½Ý¹ï¿½ï¿½ï¿½Ê¾Â·ï¿½ï¿½
     if (fs == RAM_FS) {
-        strcopy(path, "/");
+        strcpy(path, "/");
         return;
     }else{
         temp_node = fs;
         ram_pwd(temp_node->parent, path);
-        strconcat(path, temp_node->path);
-        strconcat(path, "/");
+        strcat(path, temp_node->path);
+        strcat(path, "/");
     }
 
     path[strlen(path) - 1] = '\0';
 }
 
 
-// ============================[Ö¸Áî²Ù×÷]===========================
+// ============================[Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½]===========================
 
-// Ìí¼ÓÖ¸Áî
+// ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½
 void addCMD(char* name, char* description, char* usage, Comand_t cmd){
     CMD_t p = CMDList;
     while(p->next != NULL) p = p->next;
@@ -452,27 +453,27 @@ void addCMD(char* name, char* description, char* usage, Comand_t cmd){
     newCMD->name = (char*) kernel_alloc(strlen(name) + 1);
     newCMD->description = (char*) kernel_alloc(strlen(description) + 1);
     newCMD->usage = (char*) kernel_alloc(strlen(usage) + 1);
-    strcopy(newCMD->name, name);
-    strcopy(newCMD->description, description);
-    strcopy(newCMD->usage, usage);
+    strcpy(newCMD->name, name);
+    strcpy(newCMD->description, description);
+    strcpy(newCMD->usage, usage);
 
     newCMD->cmd = cmd;
     newCMD->next = NULL;
     p->next = newCMD;
 }
 
-// Ö´ÐÐÖ¸Áî
+// Ö´ï¿½ï¿½Ö¸ï¿½ï¿½
 void execCMD(char* command_rel){
-    // ¸´ÖÆcommand, ·ÀÖ¹command±»ÐÞ¸Ä
+    // ï¿½ï¿½ï¿½ï¿½command, ï¿½ï¿½Ö¹commandï¿½ï¿½ï¿½Þ¸ï¿½
     char* command = (char*) kernel_alloc(strlen(command_rel) + 1);
-    strcopy(command, command_rel);
+    strcpy(command, command_rel);
 
-    // command½âÎö, command°´¿Õ¸ñ·Ö¸î±£´æµ½argvÊý×éÖÐ
+    // commandï¿½ï¿½ï¿½ï¿½, commandï¿½ï¿½ï¿½Õ¸ï¿½Ö¸î±£ï¿½æµ½argvï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     char *argv[128] = {0};
     int argc = 0;
     char* token = strtok(command, " ");
     while(token != NULL){
-        // °´¿Õ¸ñ·Ö¸î
+        // ï¿½ï¿½ï¿½Õ¸ï¿½Ö¸ï¿½
         argv[argc++] = token;
         token = strtok(NULL, " ");
     }
@@ -480,7 +481,7 @@ void execCMD(char* command_rel){
     argc -= 1;
 
 
-    // ²éÕÒÖ¸Áî
+    // ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½
     CMD_t p = CMDList->next;
     while(p != NULL){
         if(strcmp(p->name, argv[0]) == 0){
@@ -490,23 +491,23 @@ void execCMD(char* command_rel){
         p = p->next;
     }
 
-    u_print("Command not found\n");
+    printf("Command not found\n");
 }
 
 void helpCMD(char *cmd){
     char buf[128];
     memoryCopy(buf, cmd, strlen(cmd) + 1);
     CMD_t p = CMDList->next;
-    u_print("Command\t\tDescription\t\tUsage\n");
+    printf("Command\t\tDescription\t\tUsage\n");
     if(buf[0] == '\0') {
         while(p != NULL){
-            u_print("%s\t\t%s\t\t%s\n", p->name, p->description, p->usage);
+            printf("%s\t\t%s\t\t%s\n", p->name, p->description, p->usage);
             p = p->next;
         }
     }else{
         while(p != NULL){
             if(strcmp(p->name, cmd) == 0){
-                u_print("%s\t\t%s\t\t%s\n", p->name, p->description, p->usage);
+                printf("%s\t\t%s\t\t%s\n", p->name, p->description, p->usage);
                 return;
             }
             p = p->next;

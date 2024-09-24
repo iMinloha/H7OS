@@ -1,63 +1,63 @@
 #include "xTaskInit.h"
 #include "fatfs.h"
-#include "u_stdio.h"
+#include "stdio.h"
 #include "sdmmc.h"
 #include "quadspi.h"
 #include "RAMFS.h"
 #include "adc.h"
 #include "TaskHead.h"
 
-// ³õÊ¼»¯È«¾ÖÈÎÎñ
+// åˆå§‹åŒ–å…¨å±€ä»»åŠ¡
 void taskGlobalInit(){
-    // Êä³öSD¿¨ĞÅÏ¢£¬ È·±£SD¿¨Õı³£¹¤×÷
     HAL_SD_CardInfoTypeDef  SDCardInfo;
     HAL_SD_CardCIDTypeDef SDCard_CID;
 
     HAL_SD_GetCardCID(&hsd1,&SDCard_CID);
     HAL_SD_GetCardInfo(&hsd1,&SDCardInfo);
-    uint64_t CardCap=(uint64_t)(SDCardInfo.LogBlockNbr)*(uint64_t)(SDCardInfo.LogBlockSize);	//¼ÆËãSD¿¨ÈİÁ¿
-    u_print("SD card Drive Capacitor: %D MB\r\n", (uint32_t)(CardCap>>20));
+    uint64_t CardCap = (uint64_t)(SDCardInfo.LogBlockNbr) * (uint64_t)(SDCardInfo.LogBlockSize);	//è®¡ç®—SDå¡å®¹é‡
 
-    // CPU²ÉÑù³õÊ¼»¯
+    printf("SD card Drive Capacitor: %lu MB\r\n", (uint32_t)(CardCap>>20));
+
+    // CPUé‡‡æ ·åˆå§‹åŒ–
     HAL_ADCEx_Calibration_Start(&hadc3,ADC_CALIB_OFFSET,ADC_SINGLE_ENDED);
-    HAL_ADC_Start(&hadc3);  /* Æô¶¯ADC3µÄ×ª»» */
+    HAL_ADC_Start(&hadc3);  /* å¯åŠ¨ADC3çš„è½¬æ¢ */
 
-    // QSPI Flash³õÊ¼»¯£¬²Á³ıËùÓĞÊı¾İ
+    // QSPI Flashåˆå§‹åŒ–ï¼Œæ“¦é™¤æ‰€æœ‰æ•°æ®
     if(QSPI_W25Qxx_BlockErase_32K(0) != QSPI_W25Qxx_OK)
-        u_print("Erase Failed\n");
-    else u_print("QSPI Flash Succeed, ID: %d\n", QSPI_W25Qxx_ReadID());
+        printf("Erase Failed\n");
+    else printf("QSPI Flash Succeed, ID: %lx\n", QSPI_W25Qxx_ReadID());
 
-    // RAMFS³õÊ¼»¯
+    // RAMFSåˆå§‹åŒ–
     DrTInit();
-    // CPU½á¹¹Ìå³õÊ¼»¯(ÓÃÓÚ±ê×¢CPUµÄĞÅÏ¢)
+    // CPUç»“æ„ä½“åˆå§‹åŒ–(ç”¨äºæ ‡æ³¨CPUçš„ä¿¡æ¯)
     createCPU();
 }
 
-/*** º¯ÊıÊéĞ´ÉùÃ÷ **
- *  @note: ¸Ãº¯ÊıÓÃÓÚ³õÊ¼»¯SD¿¨£¬Èç¹ûSD¿¨Î´¹ÒÔØ£¬Ôò³¢ÊÔ¸ñÊ½»¯SD¿¨
- *      ±¾ÏîÄ¿Ê¹ÓÃCubeMXÉú³ÉµÄFatfs£¬ÒòÊ¹ÓÃÁËFreertos£¬Fatfs±ØĞëÊ¹ÓÃFreeRTOSµÄÏûÏ¢¶ÓÁĞ
- *      ËùÒÔĞèÒªÔÚosKernelStart()Ö®Ç°³õÊ¼»¯Fatfs
- *      ×¢Òâ£ºĞèÒª¿ª»úMDMA²Å¿ÉÒÔÕı³£Ê¹ÓÃFATFSµÄf_mkfsº¯Êı
+/*** å‡½æ•°ä¹¦å†™å£°æ˜ **
+ *  @note: è¯¥å‡½æ•°ç”¨äºåˆå§‹åŒ–SDå¡ï¼Œå¦‚æœSDå¡æœªæŒ‚è½½ï¼Œåˆ™å°è¯•æ ¼å¼åŒ–SDå¡
+ *      æœ¬é¡¹ç›®ä½¿ç”¨CubeMXç”Ÿæˆçš„Fatfsï¼Œå› ä½¿ç”¨äº†Freertosï¼ŒFatfså¿…é¡»ä½¿ç”¨FreeRTOSçš„æ¶ˆæ¯é˜Ÿåˆ—
+ *      æ‰€ä»¥éœ€è¦åœ¨osKernelStart()ä¹‹å‰åˆå§‹åŒ–Fatfs
+ *      æ³¨æ„ï¼šéœ€è¦å¼€æœºMDMAæ‰å¯ä»¥æ­£å¸¸ä½¿ç”¨FATFSçš„f_mkfså‡½æ•°
  * */
 void QueueInit(void const * argument){
-    // SD¿¨¹ÒÔØFATFS
+    // SDå¡æŒ‚è½½FATFS
     FRESULT FSRes = f_mount(&SDFatFS,SDPath,1);
     BYTE work[_MAX_SS];
-    // Èç¹û¹ÒÔØÊ§°Ü£¬³¢ÊÔ¸ñÊ½»¯SD¿¨
+    // å¦‚æœæŒ‚è½½å¤±è´¥ï¼Œå°è¯•æ ¼å¼åŒ–SDå¡
     if (FSRes != FR_OK){
-        // ´´½¨FAT32ÎÄ¼şÏµÍ³
+        // åˆ›å»ºFAT32æ–‡ä»¶ç³»ç»Ÿ
         FSRes = f_mkfs(SDPath, FM_FAT32, 0, work, sizeof work);
-        // ÅĞ¶ÏÊÇ·ñ³õÊ¼»¯³É¹û
+        // åˆ¤æ–­æ˜¯å¦åˆå§‹åŒ–æˆæœ
         if (FSRes == FR_OK) {
-            // ³õÊ¼»¯³É¹¦£¬ÖØĞÂ¹ÒÔØ
-            u_print("SD card init succeed\r\n");
+            // åˆå§‹åŒ–æˆåŠŸï¼Œé‡æ–°æŒ‚è½½
+            printf("SD card init succeed\r\n");
             f_mount(&SDFatFS,SDPath,1);
         }
-        // ³õÊ¼»¯Ê§°Ü£¬ÌáÊ¾ÓÃ»§¸ü»»SD¿¨
-        else u_print("Init Faild, please replace SD card\r\n");
+            // åˆå§‹åŒ–å¤±è´¥ï¼Œæç¤ºç”¨æˆ·æ›´æ¢SDå¡
+        else printf("Init Faild, please replace SD card\r\n");
     }
-    // ³õÊ¼»¯³É¹¦£¬ÌáÊ¾ÓÃ»§
-    else u_print("SD card Succeed\r\n");
-    // Ò»´ÎĞÔ³õÊ¼»¯Íê³É£¬¹ÒÆğ³õÊ¼»¯ÈÎÎñ
-    vTaskSuspend(xTaskInitHandle);
+        // åˆå§‹åŒ–æˆåŠŸï¼Œæç¤ºç”¨æˆ·
+    else printf("SD card Succeed\r\n");
+    // ä¸€æ¬¡æ€§åˆå§‹åŒ–å®Œæˆï¼ŒæŒ‚èµ·åˆå§‹åŒ–ä»»åŠ¡
+//    vTaskSuspend(xTaskInitHandle);
 }

@@ -72,9 +72,9 @@ __weak uint8_t BSP_SD_Init(void)
   */
 __weak uint8_t BSP_SD_ITConfig(void)
 {
-  /* Code to be updated by the user or replaced by one from the FW pack (in a stmxxxx_sd.c file) */
+    /* Code to be updated by the user or replaced by one from the FW pack (in a stmxxxx_sd.c file) */
 
-  return (uint8_t)0;
+    return (uint8_t)0;
 }
 
 /* USER CODE END InterruptMode */
@@ -294,10 +294,9 @@ __weak uint8_t BSP_SD_IsDetected(void)
 {
   __IO uint8_t status = SD_PRESENT;
 
-  if (BSP_PlatformIsDetected() == 0x0)
-  {
-    status = SD_NOT_PRESENT;
-  }
+  /* USER CODE BEGIN IsDetectedSection */
+  /* user code can be inserted here */
+  /* USER CODE END IsDetectedSection */
 
   return status;
 }
