@@ -153,6 +153,8 @@ Task_t getThreadByPID(uint8_t pid){
     return NULL;
 }
 
+extern CPU_t CortexM7;
+
 /**
  * @brief ��ʼ���豸��
  */

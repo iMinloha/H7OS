@@ -1,12 +1,21 @@
+#include <string.h>
 #include "info_main.h"
 #include "stdio.h"
 #include "RAMFS.h"
+
+extern CPU_t CortexM7;
 
 void info_main(int argc, char **argv){
     if(argc == 0){
         printf("info: missing argument\n");
     }else if (argc == 1){
         DrTNode_t drt = loadDevice(argv[0]);
+
+        if(strcmp(drt->name, CortexM7->name) == 0) {
+            showCPUInfo();
+            return;
+        }
+
         if(drt == NULL){
             Task_t task = loadTask(argv[0]);
             if(task == NULL){

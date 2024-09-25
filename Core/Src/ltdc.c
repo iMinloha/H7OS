@@ -84,10 +84,10 @@ void MX_LTDC_Init(void)
   pLayerCfg1.WindowY0 = 0;
   pLayerCfg1.WindowY1 = 272;
   pLayerCfg1.PixelFormat = LTDC_PIXEL_FORMAT_ARGB8888;
-  pLayerCfg1.Alpha = 0;
+  pLayerCfg1.Alpha = 255;
   pLayerCfg1.Alpha0 = 0;
-  pLayerCfg1.BlendingFactor1 = LTDC_BLENDING_FACTOR1_CA;
-  pLayerCfg1.BlendingFactor2 = LTDC_BLENDING_FACTOR2_CA;
+  pLayerCfg1.BlendingFactor1 = LTDC_BLENDING_FACTOR1_PAxCA;
+  pLayerCfg1.BlendingFactor2 = LTDC_BLENDING_FACTOR2_PAxCA;
   pLayerCfg1.FBStartAdress = 0;
   pLayerCfg1.ImageWidth = 480;
   pLayerCfg1.ImageHeight = 272;
@@ -118,12 +118,12 @@ void HAL_LTDC_MspInit(LTDC_HandleTypeDef* ltdcHandle)
   /** Initializes the peripherals clock
   */
     PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_LTDC;
-    PeriphClkInitStruct.PLL3.PLL3M = 25;
-    PeriphClkInitStruct.PLL3.PLL3N = 504;
+    PeriphClkInitStruct.PLL3.PLL3M = 5;
+    PeriphClkInitStruct.PLL3.PLL3N = 192;
     PeriphClkInitStruct.PLL3.PLL3P = 2;
     PeriphClkInitStruct.PLL3.PLL3Q = 2;
-    PeriphClkInitStruct.PLL3.PLL3R = 7;
-    PeriphClkInitStruct.PLL3.PLL3RGE = RCC_PLL3VCIRANGE_0;
+    PeriphClkInitStruct.PLL3.PLL3R = 8;
+    PeriphClkInitStruct.PLL3.PLL3RGE = RCC_PLL3VCIRANGE_2;
     PeriphClkInitStruct.PLL3.PLL3VCOSEL = RCC_PLL3VCOWIDE;
     PeriphClkInitStruct.PLL3.PLL3FRACN = 0;
     if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
@@ -308,28 +308,5 @@ void HAL_LTDC_MspDeInit(LTDC_HandleTypeDef* ltdcHandle)
 }
 
 /* USER CODE BEGIN 1 */
-struct{
-    uint32_t Color;  				//	LCD当前画笔颜色
-    uint32_t BackColor;			//	背景色
-    uint32_t ColorMode;			// 颜色格式
-    uint32_t LayerMemoryAdd;	//	层显存地址
-    uint8_t  Layer; 				//	当前层
-    uint8_t  Direction;			//	显示方向
-    uint8_t  BytesPerPixel;		// 每个像素所占字节数
-    uint8_t  ShowNum_Mode;		// 数字显示模式
-} LCD;
 
-void LCD_CopyBuffer(uint16_t x, uint16_t y, uint16_t width, uint16_t height,uint32_t *color){
-    DMA2D->CR	  &=	~(DMA2D_CR_START);
-    DMA2D->CR		=	DMA2D_M2M;
-    DMA2D->FGPFCCR	=	LTDC_PIXEL_FORMAT_RGB565;
-    DMA2D->FGOR    =  0;
-    DMA2D->OOR		=	LCD_Width - width;
-    DMA2D->FGMAR   =  (uint32_t)color;
-    DMA2D->OMAR		=	SDRAM_BANK_ADDR + BytesPerPixel_0*(LCD_Width * y + x);
-    DMA2D->NLR		=	(width<<16)|(height);
-    DMA2D->CR	  |=	DMA2D_CR_START;
-
-    while (DMA2D->CR & DMA2D_CR_START) ;
-}
 /* USER CODE END 1 */

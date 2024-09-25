@@ -3,7 +3,7 @@
 #include "stdio.h"
 #include "TaskHead.h"
 
-// ���SD����Ϣ
+
 #if 0
 void printf_sdcard_info(void){
     HAL_SD_CardInfoTypeDef  SDCardInfo;
@@ -42,10 +42,10 @@ void printf_sdcard_info(void){
 extern Task_t xTest;
 
 void testFunc(){
-    printf("OK \r\n");
+//    printf("OK \r\n");
     while(1){
         TaskTickStart(xTest);
-        printf("Hi! \r\n");
+//        printf("Hi! \r\n");
         osDelay(1000);
         TaskTickEnd(xTest);
     }

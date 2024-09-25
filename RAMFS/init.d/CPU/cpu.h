@@ -22,8 +22,6 @@ struct CPU{
 
 typedef struct CPU* CPU_t;
 
-static CPU_t CortexM7;
-
 /**
  * 创建CPU对象
  * @return CPU对象

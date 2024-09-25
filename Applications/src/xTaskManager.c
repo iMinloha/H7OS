@@ -4,7 +4,6 @@
 #include "xShellTask.h"
 #include "xTaskInit.h"
 #include "memctl.h"
-#include "stdio.h"
 #include "RAMFS.h"
 #include "test.h"
 
@@ -33,22 +32,24 @@ Task_t RAMFS_TASK_Create(char *name, TaskStatus_E status, TaskPriority_E priorit
 
 void ThreadInit(){
     // 线程都在这里进行注册
-    osThreadDef(xShell, ShellTask, osPriorityNormal, 0, 1024);
+    osThreadDef(xShell, ShellTask, osPriorityNormal, 0, 512);
     xShellHandle = osThreadCreate(osThread(xShell), NULL);
 
-    osThreadDef(xTaskManager, TaskManager, osPriorityAboveNormal, 0, 1024);
+    osThreadDef(xTaskManager, TaskManager, osPriorityAboveNormal, 0, 512);
     xTaskManagerHandle = osThreadCreate(osThread(xTaskManager), NULL);
 
-    osThreadDef(xTaskInit, QueueInit, osPriorityNormal, 0, 1024);
+    osThreadDef(xTaskInit, QueueInit, osPriorityNormal, 0, 512);
     xTaskInitHandle = osThreadCreate(osThread(xTaskInit), NULL);
 
-    osThreadDef(xTaskTest, testFunc, osPriorityRealtime, 0, 2048);
+    osThreadDef(xTaskTest, testFunc, osPriorityNormal, 0, 512);
     xTaskTestHandle = osThreadCreate(osThread(xTaskTest), NULL);
 
     xTaskManager = RAMFS_TASK_Create("xTaskManager", TASK_READY, TASK_PRIORITY_SYSTEM, xTaskManagerHandle);
     xShell = RAMFS_TASK_Create("xShell", TASK_READY, TASK_PRIORITY_SYSTEM, xShellHandle);
     xTest = RAMFS_TASK_Create("xTaskTest", TASK_READY, TASK_PRIORITY_NORMAL, xTaskTestHandle);
 }
+
+extern CPU_t CortexM7;
 
 void TaskManager(void const * argument){
     addThread(xShell);
@@ -66,6 +67,7 @@ void TaskManager(void const * argument){
         uint32_t currentTotalTicks = xTaskGetTickCount(); // 当前系统总滴答数
         uint32_t deltaTime = currentTotalTicks - lastTotalTicks; // 计算自上次统计以来的增量时间
 
+        CortexM7->load =  (float) CortexM7->frequency * deltaTime / 1000.0f / 10000000.0f;
 
         while (currentTask != NULL){
 

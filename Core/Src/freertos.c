@@ -60,6 +60,7 @@ osThreadId xNoneHandle;
 
 void NoneTask(void const * argument);
 
+extern void MX_USB_DEVICE_Init(void);
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
 /* GetIdleTaskMemory prototype (linked to static allocation support) */
@@ -164,6 +165,8 @@ void MX_FREERTOS_Init(void) {
 /* USER CODE END Header_NoneTask */
 void NoneTask(void const * argument)
 {
+  /* init code for USB_DEVICE */
+  MX_USB_DEVICE_Init();
   /* USER CODE BEGIN NoneTask */
   /* Infinite loop */
   for(;;)

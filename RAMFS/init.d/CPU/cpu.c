@@ -3,6 +3,7 @@
 #include "adc.h"
 #include "stdio.h"
 
+CPU_t CortexM7;
 
 float updateCPU(){
     HAL_ADC_Start(&hadc3);
@@ -27,7 +28,9 @@ void createCPU(){
 void showCPUInfo(){
     printf("CPU name: %s\n", CortexM7->name);
     printf("CPU description: %s\n", CortexM7->description);
-    printf("CPU frequency: %d HZ\n", CortexM7->frequency);
+    printf("CPU frequency: %lu HZ\n", CortexM7->frequency);
     float temp = updateCPU();
     printf("CPU temperature: %f C\n", temp);
+    printf("CPU load: %f%%\n", CortexM7->load);
+    printf("====================================\n");
 }
