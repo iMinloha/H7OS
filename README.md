@@ -8,6 +8,7 @@
 1. gpio_read(port, pin) // 读取GPIO
 2. gpio_write(port, pin, value) // 写入GPIO
 3. gpio_toggle(port, pin) // 翻转GPIO
+
 - 2. 外设指令
 3. spi_read(name, data) // 读取SPI
 4. spi_write(name, data) // 写入SPI
@@ -18,6 +19,7 @@
 13. tim_setfreq(name, freq) // 设置定时器频率
 14. tim_count(name) // 定时器计数
 16. tim_pwm(name, duty) // 定时器PWM
+
 - 3. SD卡指令
 3. mkdir(path)
 4. cd(path)
@@ -83,15 +85,20 @@ FATFS // fat32文件系统
 RAMFS // ram文件系统(未完成)
     `---init.d // 初始化脚本
     
+USB_DEVICE // USB设备
+    |---App // 应用程序
+    `---Target // 目标BSP配置
+    
 Utilities // 工具, JPG解码
-    |---JPEG // JPG解码
+    `---JPEG // JPG解码
 ```
 
 ## 3. 项目进度
 - [x] 3.1. 基本文件
-  - [x] 3.1.1. u_stdio库
-  - [x] 3.1.2. memctl库
-  - [x] 3.1.3. thread库
+  - [x] 3.1.1. memctl库
+  - [x] 3.1.2. thread库
+  - [x] 3.1.3. tlsf算法
+  - [x] 3.1.4. timer库
 - [x] 3.2. 文件系统功能
   - [x] 3.2.1. ram_alloc(size)函数
   - [x] 3.2.2. ram_free(ptr)函数
@@ -101,6 +108,11 @@ Utilities // 工具, JPG解码
   - [x] 3.2.7. SD挂载FATFS
   - [x] 3.2.8. RAMFS文件系统
   - [x] 3.2.9. 虚拟CPU
+  - [x] 3.2.10. 文件系统指令
+  - [x] 3.2.11. kernel_alloc(size)函数
+  - [x] 3.2.12. kernel_free(ptr)函数
+  - [x] 3.2.13. kernel_realloc(ptr, size)函数
+  - [x] 3.2.14. kernel_create()初始化内核为TLSF内存池
 - [x] 3.3. 外设指令功能
   - [x] 3.3.1. ls指令
   - [x] 3.3.2. cd指令
@@ -109,7 +121,9 @@ Utilities // 工具, JPG解码
   - [x] 3.3.5. help指令
   - [x] 3.3.6. tree指令
 - [ ] 3.4. SD卡指令开发功能
-- [ ] 3.5. USB功能
+- [x] 3.5. USB功能
+  - [x] 3.5.1. USB printf功能
+  - [x] 3.5.2. USB scanf功能
 - [ ] 3.6. 电源管理功能
 
 ## 4. 项目编译
@@ -123,7 +137,7 @@ Minloha: https://blog.minloha.cn
 
 ## 7. 短期TODO
 - [ ] 7.1. 完成SD卡指令开发功能
-- [ ] 7.2. 完成USB功能
+- [x] 7.2. 完成USB功能
 - [ ] 7.3. 完成电源管理功能
 - [x] 7.4. 完成时钟管理功能
 - [x] 7.5. 完成外设指令功能

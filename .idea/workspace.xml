@@ -20,80 +20,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b472e725-50d4-49aa-a3fb-20d03d3770a2" name="更改" comment="增加图形化界面">
-      <change afterPath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Middlewares/ST/STM32_USB_Device_Library/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USB_DEVICE/App/usb_device.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USB_DEVICE/App/usb_device.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USB_DEVICE/App/usbd_cdc_if.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USB_DEVICE/App/usbd_cdc_if.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USB_DEVICE/App/usbd_desc.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USB_DEVICE/App/usbd_desc.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USB_DEVICE/Target/usbd_conf.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/USB_DEVICE/Target/usbd_conf.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.cproject" beforeDir="false" afterPath="$PROJECT_DIR$/.cproject" afterDir="false" />
+    <list default="true" id="b472e725-50d4-49aa-a3fb-20d03d3770a2" name="更改" comment="USB串口驱动">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mxproject" beforeDir="false" afterPath="$PROJECT_DIR$/.mxproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Applications/src/test.c" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/src/test.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Applications/src/xShellTask.c" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/src/xShellTask.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Applications/src/xTaskInit.c" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/src/xTaskInit.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Applications/src/xTaskManager.c" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/src/xTaskManager.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Command/info/info_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Command/info/info_main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/ltdc.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/ltdc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32h7xx_hal_conf.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32h7xx_hal_conf.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32h7xx_it.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32h7xx_it.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/freertos.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/freertos.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/ltdc.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/ltdc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/stm32h7xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32h7xx_it.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/H7OS.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/H7OS.ioc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/CPU/cpu.c" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/CPU/cpu.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/CPU/cpu.h" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/CPU/cpu.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/DrT/DrT.c" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/DrT/DrT.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/STM32H743IITX_FLASH.ld" beforeDir="false" afterPath="$PROJECT_DIR$/STM32H743IITX_FLASH.ld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Applications/src/test.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Applications/src/test.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Applications/src/xShellTask.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Applications/src/xShellTask.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Applications/src/xTaskInit.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Applications/src/xTaskInit.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Command/Register.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Command/Register.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Command/cd/cd_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Command/cd/cd_main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Command/help/help_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Command/help/help_main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Command/info/info_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Command/info/info_main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Core/Src/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_it.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Core/Src/stm32h7xx_it.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/FATFS/Target/sd_diskio.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/FATFS/Target/sd_diskio.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/CPU/cpu.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/CPU/cpu.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/DrT/DrT.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/DrT/DrT.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/H7OS.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/H7OS.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/H7OS.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/H7OS.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/H7OS.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/H7OS.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/H7OS.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/H7OS.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +183,7 @@
       <workItem from="1727146935113" duration="23131000" />
       <workItem from="1727235065963" duration="7886000" />
       <workItem from="1727245672974" duration="6720000" />
-      <workItem from="1727265165618" duration="2987000" />
+      <workItem from="1727265165618" duration="3240000" />
     </task>
     <task id="LOCAL-00001" summary="Fatfs初始化">
       <option name="closed" value="true" />
@@ -344,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727175535299</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="USB串口驱动">
+      <option name="closed" value="true" />
+      <created>1727268225636</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1727268225636</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,6 +316,7 @@
     <MESSAGE value="proc文件夹的功能完善" />
     <MESSAGE value="线程占用统计与proc格式化info输出" />
     <MESSAGE value="增加图形化界面" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加图形化界面" />
+    <MESSAGE value="USB串口驱动" />
+    <option name="LAST_COMMIT_MESSAGE" value="USB串口驱动" />
   </component>
 </project>
