@@ -104,21 +104,23 @@ void MX_QUADSPI_Init(void);
 
 /* USER CODE BEGIN Prototypes */
 
-int8_t	QSPI_W25Qxx_Init(void);						// W25Qxxï¿½ï¿½Ê¼ï¿½ï¿½
-int8_t 	QSPI_W25Qxx_Reset(void);					// ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½
-uint32_t QSPI_W25Qxx_ReadID(void);					// ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ID
-int8_t 	QSPI_W25Qxx_MemoryMappedMode(void);		// ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½Ó³ï¿½ï¿½Ä£Ê½
+int8_t	QSPI_W25Qxx_Init(void);						// ³õÊ¼»¯
+int8_t 	QSPI_W25Qxx_Reset(void);					// ¸´Î»
+uint32_t QSPI_W25Qxx_ReadID(void);					// ¶ÁÈ¡ID
+int8_t 	QSPI_W25Qxx_MemoryMappedMode(void);		// ÄÚ´æÓ³Éä
 
-int8_t 	QSPI_W25Qxx_SectorErase(uint32_t SectorAddress);		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4Kï¿½Ö½Ú£ï¿½ ï¿½Î¿ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ 45ms
-int8_t 	QSPI_W25Qxx_BlockErase_32K (uint32_t SectorAddress);	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?  32Kï¿½Ö½Ú£ï¿½ï¿½Î¿ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ 120ms
-int8_t 	QSPI_W25Qxx_BlockErase_64K (uint32_t SectorAddress);	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?  64Kï¿½Ö½Ú£ï¿½ï¿½Î¿ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ 150msï¿½ï¿½Êµï¿½ï¿½Ê¹ï¿½Ã½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½64Kï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿?
-int8_t 	QSPI_W25Qxx_ChipErase (void);                         // ï¿½ï¿½Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¿ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ 20S
+// °´µØÖ·²Á³ý
+int8_t 	QSPI_W25Qxx_SectorErase(uint32_t SectorAddress);
+// ²Á³ý32K
+int8_t 	QSPI_W25Qxx_BlockErase_32K (uint32_t SectorAddress);
+// ²ÎÊý64K
+int8_t 	QSPI_W25Qxx_BlockErase_64K (uint32_t SectorAddress);
+// È«Æ¬²Á³ý
+int8_t 	QSPI_W25Qxx_ChipErase (void);
 
-int8_t	QSPI_W25Qxx_WritePage(uint8_t* pBuffer, uint32_t WriteAddr, uint16_t NumByteToWrite);	// ï¿½ï¿½Ò³Ð´ï¿½ë£¬ï¿½ï¿½ï¿?256ï¿½Ö½ï¿½
-int8_t	QSPI_W25Qxx_WriteBuffer(uint8_t* pData, uint32_t WriteAddr, uint32_t Size);				// Ð´ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½Ü³ï¿½ï¿½ï¿½flashÐ¾Æ¬ï¿½Ä´ï¿½Ð¡
-int8_t 	QSPI_W25Qxx_ReadBuffer(uint8_t* pBuffer, uint32_t ReadAddr, uint32_t NumByteToRead);	// ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½Ü³ï¿½ï¿½ï¿½flashÐ¾Æ¬ï¿½Ä´ï¿½Ð¡
-
-int8_t QSPI_W25Qxx_MemoryWrite(void* addr, uint32_t size);	// Ð´ï¿½ï¿½ï¿½ï¿½ï¿½Ýµï¿½flash
+int8_t	QSPI_W25Qxx_WritePage(uint8_t* pBuffer, uint32_t WriteAddr, uint16_t NumByteToWrite);   // °´Ò³Ð´ÈëÊý¾Ý
+int8_t	QSPI_W25Qxx_WriteBuffer(uint8_t* pData, uint32_t WriteAddr, uint32_t Size);     // Ð´ÈëÊý¾Ý
+int8_t 	QSPI_W25Qxx_ReadBuffer(uint8_t* pBuffer, uint32_t ReadAddr, uint32_t NumByteToRead);    // ¶ÁÈ¡Êý¾Ý
 
 /* USER CODE END Prototypes */
 

@@ -18,7 +18,9 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include <string.h>
 #include "quadspi.h"
+#include "memctl.h"
 
 /* USER CODE BEGIN 0 */
 
@@ -592,36 +594,6 @@ int8_t QSPI_W25Qxx_ReadBuffer(uint8_t* pBuffer, uint32_t ReadAddr, uint32_t NumB
     return QSPI_W25Qxx_OK;		// 读取数据成功
 }
 
-int8_t QSPI_W25Qxx_MemoryWrite(void* addr, uint32_t size){
-    uint32_t WriteAddr = (uint32_t) addr;	// 获取要写入的地址
-    uint32_t end_addr, current_size, current_addr;
-    uint8_t *write_data;  // 要写入的数据
-
-    current_size = W25Qxx_PageSize - (WriteAddr % W25Qxx_PageSize); // 计算当前页还剩余的空间
-
-    if (current_size > size)	// 判断当前页剩余的空间是否足够写入所有数据
-        current_size = size;		// 如果足够，则直接获取当前长度
-
-    current_addr = WriteAddr;		// 获取要写入的地址
-    end_addr = WriteAddr + size;	// 计算结束地址
-    write_data = (uint8_t*)addr;	// 获取要写入的数据
-
-    do {
-        // 按页写入数据
-        if (QSPI_W25Qxx_WritePage(write_data, current_addr, current_size) != QSPI_W25Qxx_OK)
-            return W25Qxx_ERROR_TRANSMIT;
-
-        else {
-            current_addr += current_size;    // 计算下一次要写入的地址
-            write_data += current_size;    // 获取下一次要写入的数据存储区地址
-            // 计算下一次写数据的长度
-            current_size = ((current_addr + W25Qxx_PageSize) > end_addr) ? (end_addr - current_addr) : W25Qxx_PageSize;
-        }
-
-    } while (current_addr < end_addr); // 判断数据是否全部写入完毕
-
-    return QSPI_W25Qxx_OK;	// 写入数据成功
-}
 
 void HAL_QSPI_RxCpltCallback(QSPI_HandleTypeDef *hqspi){
     QSPI_RX_Status = 1;  // 当进入此中断函数时，说明QSPI接收完成，将标志变量置1

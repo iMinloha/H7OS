@@ -2,12 +2,13 @@
 #include "RAMFS.h"
 #include "stdio.h"
 #include "memctl.h"
+#include "usbd_cdc_if.h"
 
 extern FS_t currentFS;
 
 void ls_main(int argc, char **argv){
     if (argc > 1)
-        printf("ls: too many arguments\r\n");
+        USB_printf("ls: too many arguments\r\n");
     else if (argc == 1)
         ram_ls(argv[0]);
     else{

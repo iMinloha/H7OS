@@ -2,12 +2,13 @@
 #include "info_main.h"
 #include "stdio.h"
 #include "RAMFS.h"
+#include "usbd_cdc_if.h"
 
 extern CPU_t CortexM7;
 
 void info_main(int argc, char **argv){
     if(argc == 0){
-        printf("info: missing argument\n");
+        USB_printf("info: missing argument\n");
     }else if (argc == 1){
         DrTNode_t drt = loadDevice(argv[0]);
 
@@ -19,109 +20,109 @@ void info_main(int argc, char **argv){
         if(drt == NULL){
             Task_t task = loadTask(argv[0]);
             if(task == NULL){
-                printf("info: device not found\n");
+                USB_printf("info: device not found\n");
                 return;
             }else{
-                printf("Task\t\t\tPID\t\t\tPriority\t\t\tLoad\t\t\tStatus\n");
-                printf("%s\t\t%d", task->name, task->PID);
+                USB_printf("Task\t\t\tPID\t\t\tPriority\t\t\tLoad\t\t\tStatus\n");
+                USB_printf("%s\t\t%d", task->name, task->PID);
                 switch (task->priority) {
                     case TASK_PRIORITY_NORMAL:
-                        printf("\t\t\tNormal");
+                        USB_printf("\t\t\tNormal");
                         break;
                     case TASK_PRIORITY_HIGH:
-                        printf("\t\t\tHigh");
+                        USB_printf("\t\t\tHigh");
                         break;
                     case TASK_PRIORITY_ROOT:
-                        printf("\t\t\tRoot");
+                        USB_printf("\t\t\tRoot");
                         break;
                     case TASK_PRIORITY_SYSTEM:
-                        printf("\t\t\tSystem");
+                        USB_printf("\t\t\tSystem");
                         break;
                     default:
-                        printf("\t\t\tUnknown");
+                        USB_printf("\t\t\tUnknown");
                         break;
                 }
-                printf("\t\t\t\t%f%%", task->cpu);
+                USB_printf("\t\t\t\t%f%%", task->cpu);
                 switch (task->status) {
                     case TASK_READY:
-                        printf("\t\t\tReady\n");
+                        USB_printf("\t\t\tReady\n");
                         break;
                     case TASK_RUNNING:
-                        printf("\t\t\tRunning\n");
+                        USB_printf("\t\t\tRunning\n");
                         break;
                     case TASK_SUSPEND:
-                        printf("\t\t\tSuspend\n");
+                        USB_printf("\t\t\tSuspend\n");
                         break;
                     case TASK_STOP:
-                        printf("\t\t\tStop\n");
+                        USB_printf("\t\t\tStop\n");
                         break;
                     default:
-                        printf("\t\t\tUnknown\n");
+                        USB_printf("\t\t\tUnknown\n");
                         break;
                 }
             }
             return;
         }else{
-            printf("Device: %s\n", drt->name);
-            printf("Description: %s\n", drt->description);
+            USB_printf("Device: %s\n", drt->name);
+            USB_printf("Description: %s\n", drt->description);
             switch (drt->type) {
                 case DEVICE_TIMER:
-                    printf("Type: Timer\n");
+                    USB_printf("Type: Timer\n");
                     break;
                 case DEVICE_BS:
-                    printf("Type: Basic Device\n");
+                    USB_printf("Type: Basic Device\n");
                     break;
                 case DEVICE_STORAGE:
-                    printf("Type: Storage Device\n");
+                    USB_printf("Type: Storage Device\n");
                     break;
                 case DEVICE_DISPLAY:
-                    printf("Type: Display Device\n");
+                    USB_printf("Type: Display Device\n");
                     break;
                 case DEVICE_INPUT:
-                    printf("Type: Input Device\n");
+                    USB_printf("Type: Input Device\n");
                     break;
                 case DEVICE_SERIAL:
-                    printf("Type: Serial Device\n");
+                    USB_printf("Type: Serial Device\n");
                     break;
                 case DEVICE_TRANSPORT:
-                    printf("Type: Transport Device\n");
+                    USB_printf("Type: Transport Device\n");
                     break;
                 case DEVICE_VOTAGE:
-                    printf("Type: Voltage Device\n");
+                    USB_printf("Type: Voltage Device\n");
                     break;
                 case FILE_SYSTEM:
-                    printf("Type: File System\n");
+                    USB_printf("Type: File System\n");
                     break;
                 case DrTFILE:
-                    printf("Type: File\n");
+                    USB_printf("Type: File\n");
                     break;
                 default:
-                    printf("Type: Unknown\n");
+                    USB_printf("Type: Unknown\n");
                     break;
             }
             switch (drt->status) {
                 case DEVICE_OFF:
-                    printf("Status: Off\n");
+                    USB_printf("Status: Off\n");
                     break;
                 case DEVICE_ON:
-                    printf("Status: On\n");
+                    USB_printf("Status: On\n");
                     break;
                 case DEVICE_SUSPEND:
-                    printf("Status: Suspend\n");
+                    USB_printf("Status: Suspend\n");
                     break;
                 case DEVICE_ERROR:
-                    printf("Status: Error\n");
+                    USB_printf("Status: Error\n");
                     break;
                 case DEVICE_BUSY:
-                    printf("Status: Busy\n");
+                    USB_printf("Status: Busy\n");
                     break;
                 default:
-                    printf("Status: Unknown\n");
+                    USB_printf("Status: Unknown\n");
                     break;
             }
         }
     }else{
-        printf("info /path/device\n");
+        USB_printf("info /path/device\n");
     }
-    printf("=-=-=-=-=-=-=-=-=-=-\n");
+    USB_printf("=-=-=-=-=-=-=-=-=-=-\n");
 }

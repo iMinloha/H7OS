@@ -92,6 +92,11 @@ static FS_t RAM_FS;
 // 初始化设备树(添加设备目录与分类)
 void DrTInit();
 
+// 判断kernel的ramfs是否存在
+void checkDrT();
+// 保存设备树
+void saveDrT();
+
 
 // ===============================[指令操作]===============================
 
@@ -195,6 +200,8 @@ FS_t loadPath(char* path);
  * @return
  */
 DrTNode_t loadDevice(char* path);
+
+// ===============================[任务操作]===============================
 
 /**
  * @brief 加载任务信息

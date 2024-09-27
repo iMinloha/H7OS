@@ -1,7 +1,10 @@
+#include <string.h>
 #include "test.h"
 #include "cmsis_os.h"
 #include "stdio.h"
 #include "TaskHead.h"
+#include "quadspi.h"
+#include "memctl.h"
 
 
 #if 0
@@ -42,12 +45,27 @@ void printf_sdcard_info(void){
 extern Task_t xTest;
 
 void testFunc(){
-//    printf("OK \r\n");
+#if 0
+    test_p test_ptr = kernel_alloc(sizeof(struct test));
+    test_ptr->a = 2;
+    test_ptr->b = 2.0f;
+    Everything everything = (Everything) test_ptr;
+
+
     while(1){
         TaskTickStart(xTest);
-//        printf("Hi! \r\n");
+
+        QSPI_W25Qxx_WriteBuffer((uint8_t *)everything, 0, sizeof(struct test));
+        QSPI_W25Qxx_ReadBuffer((uint8_t *)everything, 0, sizeof(struct test));
+        printf("a: %d, b: %f \r\n", ((test_p)everything)->a, ((test_p)everything)->b);
+
         osDelay(1000);
         TaskTickEnd(xTest);
     }
-
+#endif
+    while (1){
+        int code = ram_check();
+        printf("ram check: %d \r\n", code);
+        osDelay(1000);
+    }
 }

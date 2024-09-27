@@ -6,17 +6,14 @@
 #include "quadspi.h"
 #include "fatfs.h"
 #include "RAMFS.h"
+#include "usbd_cdc_if.h"
 
-// �����豸ָ��(����ָ��ǰ�����ն�����λ��)
+// 串口指针
 FS_t currentFS;
 
-/**
- * @brief �����ӽڵ�
- * @param parent ���ڵ�
- * @param path �ӽڵ�·��
- */
+
 void addFSChild(FS_t parent, char *path){
-    // �����ӽڵ�
+    // 添加子文件系统(目录)
     FS_t child = (FS_t) kernel_alloc(sizeof(struct FS));
     child->path = (char*) kernel_alloc(strlen(path) + 1);
     strcpy(child->path, path);
@@ -24,10 +21,10 @@ void addFSChild(FS_t parent, char *path){
     child->node = NULL;
     child->node_count = 0;
     child->parent = parent;
-    child->next = NULL; // ���ļ���
-    child->child = NULL;    // ͬ���ļ���
+    child->next = NULL; // 确保下一个节点是空
+    child->child = NULL;
 
-    // ���ӵ����ڵ��next��childͬ���б�
+    // 在父节点层节点下添加节点
     FS_t p = parent->next;
     if (p == NULL) {
         parent->next = child;
@@ -38,13 +35,6 @@ void addFSChild(FS_t parent, char *path){
     }
 }
 
-
-/**
- * @brief ��ȡ�ӽڵ�
- * @param parent ���ڵ�
- * @param path �ӽڵ�·��
- * @return �ӽڵ�
- */
 FS_t getFSChild(FS_t parent, char *path){
     FS_t p = parent->next;
     while(p != NULL){
@@ -55,21 +45,12 @@ FS_t getFSChild(FS_t parent, char *path){
 }
 
 
-// �����豸
-/**
- * @brief �����豸
- * @param node �豸�ڵ�
- * @param devicePtr �豸ָ��(htim, huart, hspi)
- * @param name �豸����(��TIM1, USART1, SPI1)
- * @param description �豸����(�綨ʱ��1, ����1, SPI1)
- * @param type �豸����(��ͨ���豸��ʱ���豸)
- * @param driver �豸����(һ������ָ��)
- */
+
 void addDevice(char *path, void* devicePtr, char *name, char *description, DeviceType_E type,
                DeviceStatus_E status, Func_t driver){
     FS_t node = getFSChild(RAM_FS, path);
     if (node == NULL) return;
-    // �����豸�ڵ�
+    // 添加设备到链表
     DrTNode_t device = (DrTNode_t) kernel_alloc(sizeof(struct DrTNode));
     device->name = (char*) kernel_alloc(strlen(name) + 1);
     device->description = (char*) kernel_alloc(strlen(description) + 1);
@@ -156,10 +137,10 @@ Task_t getThreadByPID(uint8_t pid){
 extern CPU_t CortexM7;
 
 /**
- * @brief ��ʼ���豸��
+ * @brief DrT设备树声明
  */
 void DrTInit(){
-    // �������ڵ�RootFS�������б�
+    // Root文件系统
     RAM_FS = (FS_t) kernel_alloc(sizeof(struct FS));
     CMDList = (CMD_t) kernel_alloc(sizeof(struct CMD));
     CMDList->next = NULL;
@@ -172,21 +153,18 @@ void DrTInit(){
     RAM_FS->next = NULL;
     RAM_FS->child = NULL;
 
-    // �����ն�·��
+    // 串口设备指针
     currentFS = RAM_FS;
 
-    // ������·��
-    addFSChild(RAM_FS, "dev");
-    addFSChild(RAM_FS, "tmp");
-    addFSChild(RAM_FS, "mnt");
-    addFSChild(RAM_FS, "bin");
-    addFSChild(RAM_FS, "usr");
-    addFSChild(RAM_FS, "root");
-    addFSChild(RAM_FS, "opt");
-    addFSChild(RAM_FS, "etc");
-    addFSChild(RAM_FS, "proc");
+    // 添加系统文件夹
+    addFSChild(RAM_FS, "dev");  // 设备文件夹
+    addFSChild(RAM_FS, "mnt");  // 挂载文件夹
+    addFSChild(RAM_FS, "usr");  // 用户文件夹(会自动保存在QSPI Flash中)
+    addFSChild(RAM_FS, "root"); // 根文件夹
+    addFSChild(RAM_FS, "opt");  // 可选文件夹
+    addFSChild(RAM_FS, "proc"); // 进程文件夹
 
-    // �����豸
+    // 添加设备
     addDevice("dev", &CortexM7, "Cortex-M7", "Central Processing Unit", DEVICE_BS, DEVICE_BUSY, NULL);
     addDevice("dev", &huart1, "USART1", "Serial bus device", DEVICE_SERIAL, DEVICE_BUSY, NULL);
 
@@ -195,16 +173,17 @@ void DrTInit(){
     addDevice("mnt", &hqspi, "QSPI", "Quad SPI", DEVICE_STORAGE, DEVICE_ON, NULL);
 
 
-    // ָ��ע��
+    // ָ指令注册
     register_main();
 }
 
+void saveDrT(){
+    // 保存usr路径下的内容到设备树到QSPI中, 以便下次启动时加载(仅需加载root节点，其他的内容全部复制即可)
+    FS_t usr_node = loadPath("/usr");
 
-/**
- * @brief ����·��(��ȡ�ڵ�)
- * @param path
- * @return
- */
+}
+
+
 FS_t loadPath(char* path) {
     FS_t node = RAM_FS;
     if (strcmp(path, "/") == 0) return node;
@@ -277,7 +256,7 @@ Task_t loadTask(char* path){
             node = tmp_node;
         }
 
-        // token�ַ�����0˵��path���ж����·��
+        // token不能包含任何的/
         if (strcmp(token, strtok(token, "/")) != 0){
             return NULL;
         } else {
@@ -292,36 +271,24 @@ Task_t loadTask(char* path){
     return NULL;
 }
 
-// DrT����
-// ====================================[ָ�����]===================================
+// DrT
+// ====================================[RAM文件系统操作]===================================
 
-/**
- * @brief ����Ŀ¼
- * @param path
- * @param name
- */
+
 void ram_mkdir(char* path, char* name){
     FS_t node = loadPath(path);
     if(node == NULL) return;
     addFSChild(node, name);
 }
 
-/**
- * @brief �����ļ�
- * @param path
- * @param name
- */
+
 void ram_mkfile(char* path, char* name){
     FS_t node = loadPath(path);
     if(node == NULL) return;
     addDevice(path, NULL, "file", "file", DrTFILE, DEVICE_ON, NULL);
 }
 
-/**
- * @brief ɾ��Ŀ¼
- * @param path
- * @param name
- */
+
 void ram_rm(char* path, char *name){
     FS_t node = loadPath(path);
     if(node == NULL) return;
@@ -337,12 +304,7 @@ void ram_rm(char* path, char *name){
     }
 }
 
-/**
- * @brief ��ȡ�ļ�
- * @param path
- * @param buf
- * @param size
- */
+
 void ram_read(char* path, void* buf, int size){
     FS_t node = loadPath(path);
     if(node == NULL) return;
@@ -356,12 +318,7 @@ void ram_read(char* path, void* buf, int size){
     }
 }
 
-/**
- * @brief д���ļ�
- * @param path
- * @param buf
- * @param size
- */
+
 void ram_write(char* path, void* buf, int size){
     FS_t node = loadPath(path);
     if(node == NULL) return;
@@ -376,7 +333,7 @@ void ram_write(char* path, void* buf, int size){
 }
 
 /**
- * @brief ��ʾĿ¼
+ * @brief ram显示目录
  * @param path
  */
 void ram_ls(char* path){
@@ -386,15 +343,15 @@ void ram_ls(char* path){
     FS_t temp = node->next;
 
     while(temp != NULL){
-        // ���node�����ļ���
-        printf("%s  ", temp->path);
+        // node就是目标节点
+        USB_printf("%s  ", temp->path);
         temp = temp->child;
     }
 
     if (node->node_count != 0) {
         DrTNode_t p = node->node;
         while(p != NULL){
-            printf("%s  ", p->name);
+            USB_printf("%s  ", p->name);
             p = p->next;
         }
     }
@@ -402,16 +359,16 @@ void ram_ls(char* path){
     if(node->tasklist != NULL){
         Task_t p = node->tasklist;
         while(p != NULL){
-            printf("%s\t", p->name);
+            USB_printf("%s\t", p->name);
             p = p->next;
         }
     }
 
-    printf("\n");
+    USB_printf("\n");
 }
 
 /**
- * @brief �л�Ŀ¼
+ * @brief 切换串口指针到指定目录
  * @param path
  */
 FS_t ram_cd(char* path){
@@ -421,14 +378,9 @@ FS_t ram_cd(char* path){
     return node;
 }
 
-/**
- * @brief ��ʾ��ǰĿ¼
- * @param fs ��ǰ�ļ���
- * @param path ·��(�Ѿ�ram_alloc)
- */
+
 void ram_pwd(FS_t fs, char* path){
     FS_t temp_node;
-    // �ݹ���ʾ·��
     if (fs == RAM_FS) {
         strcpy(path, "/");
         return;
@@ -443,9 +395,7 @@ void ram_pwd(FS_t fs, char* path){
 }
 
 
-// ============================[ָ�����]===========================
-
-// ����ָ��
+// ============================[ָ指令系统]===========================
 void addCMD(char* name, char* description, char* usage, Comand_t cmd){
     CMD_t p = CMDList;
     while(p->next != NULL) p = p->next;
@@ -464,18 +414,19 @@ void addCMD(char* name, char* description, char* usage, Comand_t cmd){
     p->next = newCMD;
 }
 
-// ִ��ָ��
+// 执行指令
 void execCMD(char* command_rel){
-    // ����command, ��ֹcommand���޸�
+    // 使用指令前需要先声明一个内存空间用于保护指令所处空间的安全
     char* command = (char*) kernel_alloc(strlen(command_rel) + 1);
     strcpy(command, command_rel);
+    printf("Command: %s\n", command);
 
-    // command����, command���ո�ָ�浽argv������
+    // 分割指令
     char *argv[128] = {0};
     int argc = 0;
     char* token = strtok(command, " ");
     while(token != NULL){
-        // ���ո�ָ�
+        // 遍历并分割
         argv[argc++] = token;
         token = strtok(NULL, " ");
     }
@@ -483,7 +434,7 @@ void execCMD(char* command_rel){
     argc -= 1;
 
 
-    // ����ָ��
+    // 在指令集中查找指令，如果找到则执行
     CMD_t p = CMDList->next;
     while(p != NULL){
         if(strcmp(p->name, argv[0]) == 0){
@@ -500,16 +451,16 @@ void helpCMD(char *cmd){
     char buf[128];
     memoryCopy(buf, cmd, strlen(cmd) + 1);
     CMD_t p = CMDList->next;
-    printf("Command\t\tDescription\t\tUsage\n");
+    USB_printf("Command\t\tDescription\t\tUsage\n");
     if(buf[0] == '\0') {
         while(p != NULL){
-            printf("%s\t\t%s\t\t%s\n", p->name, p->description, p->usage);
+            USB_printf("%s\t\t%s\t\t%s\n", p->name, p->description, p->usage);
             p = p->next;
         }
     }else{
         while(p != NULL){
             if(strcmp(p->name, cmd) == 0){
-                printf("%s\t\t%s\t\t%s\n", p->name, p->description, p->usage);
+                USB_printf("%s\t\t%s\t\t%s\n", p->name, p->description, p->usage);
                 return;
             }
             p = p->next;

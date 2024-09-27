@@ -4,6 +4,8 @@
 #include "cmsis_os.h"
 #include "xTaskManager.h"
 
+#define UserName "H7OS"
+
 // 所有线程都需要放在这里进行注册
 static osThreadId xTaskInitHandle;
 static osThreadId xTaskManagerHandle;

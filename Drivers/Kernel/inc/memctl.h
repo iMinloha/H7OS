@@ -108,16 +108,15 @@ void* kernel_realloc(void* addr, uint32_t size);
 void ram_free(void* addr);
 
 /***
+ * @brief ram内存查看
+ * */
+int ram_check();
+
+/***
  * @brief 内核内存管理释放
  * @param addr: 释放内存的地址
  * */
 void kernel_free(void* addr);
-
-/***
- * @brief SDRAM内存管理检查
- * @return 检查结果
- * */
-int ram_check();
 
 /***
  * @brief SDRAM内存管理信息

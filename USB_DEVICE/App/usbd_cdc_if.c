@@ -363,8 +363,7 @@ void USB_printf(const char *format, ...)
 
 }
 
-uint8_t USB_scanf(uint8_t *buf)
-{
+uint8_t USB_scanf(uint8_t *buf){
     uint32_t  Tickstart;			// 计时起始时间
     uint16_t	 USB_TimeOut;		// 超时判断时间
 
@@ -383,6 +382,7 @@ uint8_t USB_scanf(uint8_t *buf)
         }
     }
 
+    // 阻塞式接收数据
     USBD_CDC_SetRxBuffer(&hUsbDeviceFS, buf);	// 设置接收缓冲区
     USBD_CDC_ReceivePacket(&hUsbDeviceFS);		// 接收数据
 

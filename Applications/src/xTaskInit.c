@@ -23,8 +23,8 @@ void taskGlobalInit(){
     HAL_ADC_Start(&hadc3);  /* 启动ADC3的转换 */
 
     // QSPI Flash初始化，擦除所有数据
-    if(QSPI_W25Qxx_BlockErase_32K(0) != QSPI_W25Qxx_OK)
-        printf("Erase Failed\n");
+    if(QSPI_W25Qxx_Init() != QSPI_W25Qxx_OK)
+        printf("Check W25Qxx Failed\n");
     else printf("QSPI Flash Succeed, ID: %lx\n", QSPI_W25Qxx_ReadID());
 
     // RAMFS初始化

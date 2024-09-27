@@ -129,8 +129,8 @@ int ram_check(){
  * */
 void ram_info(){
     if (using_mem < 1024) printf("Using memory: %d bytes\n", using_mem);
-    else if (using_mem < 1024*1024) printf("Using memory: %d KB\n", using_mem/1024);
-    else printf("Using memory: %d MB\n", using_mem/1024/1024);
+    else if (using_mem < 1024 * 1024) printf("Using memory: %d KB\n", using_mem / 1024);
+    else printf("Using memory: %d MB\n", using_mem / 1024 / 1024);
 }
 
 /***
