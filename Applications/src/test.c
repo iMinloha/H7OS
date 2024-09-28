@@ -65,7 +65,6 @@ void testFunc(){
     }
 #endif
     while (1){
-        execCMD("tree");
         osDelay(1000);
     }
 }

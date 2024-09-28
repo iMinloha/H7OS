@@ -59,7 +59,7 @@ void QueueInit(void const * argument){
         // 初始化成功，提示用户
     else printf("SD card Succeed\r\n");
     // 一次性初始化完成，挂起初始化任务
-//    vTaskSuspend(xTaskInitHandle);
+    // vTaskSuspend(xTaskInitHandle);
     // 杀死初始化任务
     vTaskDelete(xTaskInitHandle);
 }

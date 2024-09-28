@@ -23,6 +23,7 @@ void addFSChild(FS_t parent, char *path){
     child->parent = parent;
     child->child_next = NULL; // 确保下一个节点是空
     child->level_next = NULL;
+    child->tasklist = NULL;
 
     // 在父节点层节点下添加节点
     FS_t p = parent->child_next;
@@ -152,6 +153,7 @@ void DrTInit(){
     RAM_FS->parent = NULL;
     RAM_FS->child_next = NULL;
     RAM_FS->level_next = NULL;
+    RAM_FS->tasklist = NULL;
 
     // 串口设备指针
     currentFS = RAM_FS;

@@ -5,7 +5,7 @@
 #define SPACE " "
 #define TAB "  "
 #define T_SIGNAL "|-"
-#define END_SIGNAL "`"
+#define END_SIGNAL "`-"
 
 // 深度优先搜索算法
 /***

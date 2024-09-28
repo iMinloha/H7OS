@@ -6,13 +6,15 @@
 #include "echo/echo_main.h"
 #include "help/help_main.h"
 #include "tree/tree_main.h"
+#include "bash/bash_main.h"
 
 void register_main(){
-    // 注册指令集
-    CMD("ls", "List files", "ls /path or ls", ls_main);
-    CMD("cd", "Change Directory", "cd /path", cd_main);
-    CMD("info", "list something infomation", "info path/file", info_main);
+    // 注册指令集(bash, ls, cd, info, echo, help, tree)
+    CMD("ls", "List files", "ls -path or ls", ls_main);
+    CMD("cd", "Change Directory", "cd -path", cd_main);
+    CMD("info", "list something infomation", "info -path/file", info_main);
     CMD("echo", "echo something", "echo your want print things", echo_main);
-    CMD("help", "help using command", "help command", help_main);
-    CMD("tree", "show tree", "tree -depth", tree_main);
+    CMD("help", "help using command", "help -command", help_main);
+    CMD("tree", "show file system struct tree", "tree -depth", tree_main);
+    CMD("bash", "use bash command run file", "bash -path/file", bash_main);
 }
