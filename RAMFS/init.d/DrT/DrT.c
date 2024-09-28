@@ -21,25 +21,25 @@ void addFSChild(FS_t parent, char *path){
     child->node = NULL;
     child->node_count = 0;
     child->parent = parent;
-    child->next = NULL; // 确保下一个节点是空
-    child->child = NULL;
+    child->child_next = NULL; // 确保下一个节点是空
+    child->level_next = NULL;
 
     // 在父节点层节点下添加节点
-    FS_t p = parent->next;
+    FS_t p = parent->child_next;
     if (p == NULL) {
-        parent->next = child;
+        parent->child_next = child;
         return;
     }else{
-        while(p->child != NULL) p = p->child;
-        p->child = child;
+        while(p->level_next != NULL) p = p->level_next;
+        p->level_next = child;
     }
 }
 
 FS_t getFSChild(FS_t parent, char *path){
-    FS_t p = parent->next;
+    FS_t p = parent->child_next;
     while(p != NULL){
         if(strcmp(p->path, path) == 0) return p;
-        p = p->child;
+        p = p->level_next;
     }
     return NULL;
 }
@@ -69,7 +69,7 @@ void addDevice(char *path, void* devicePtr, char *name, char *description, Devic
     device->parent = node;
     device->next = NULL;
 
-    // ���ӵ��豸����
+    // 添加设备到链表
     DrTNode_t p = node->node;
     if (p == NULL) {
         node->node = device;
@@ -150,8 +150,8 @@ void DrTInit(){
     RAM_FS->node_count = 0;
 
     RAM_FS->parent = NULL;
-    RAM_FS->next = NULL;
-    RAM_FS->child = NULL;
+    RAM_FS->child_next = NULL;
+    RAM_FS->level_next = NULL;
 
     // 串口设备指针
     currentFS = RAM_FS;
@@ -177,13 +177,11 @@ void DrTInit(){
     register_main();
 }
 
-void saveDrT(){
-    // 保存usr路径下的内容到设备树到QSPI中, 以便下次启动时加载(仅需加载root节点，其他的内容全部复制即可)
-    FS_t usr_node = loadPath("/usr");
-
-}
-
-
+/***
+ * @brief 加载路径,返回目录
+ * @param path
+ * @note 加载绝对路径获取FS_t与相对路径
+ * */
 FS_t loadPath(char* path) {
     FS_t node = RAM_FS;
     if (strcmp(path, "/") == 0) return node;
@@ -292,15 +290,15 @@ void ram_mkfile(char* path, char* name){
 void ram_rm(char* path, char *name){
     FS_t node = loadPath(path);
     if(node == NULL) return;
-    FS_t p = node->next;
+    FS_t p = node->child_next;
     FS_t pre = node;
     while(p != NULL){
         if(strcmp(p->path, name) == 0){
-            pre->next = p->next;
+            pre->child_next = p->child_next;
             return;
         }
         pre = p;
-        p = p->next;
+        p = p->child_next;
     }
 }
 
@@ -340,12 +338,12 @@ void ram_ls(char* path){
     FS_t node = loadPath(path);
     if(node == NULL) return;
 
-    FS_t temp = node->next;
+    FS_t temp = node->child_next;
 
     while(temp != NULL){
         // node就是目标节点
         USB_printf("%s  ", temp->path);
-        temp = temp->child;
+        temp = temp->level_next;
     }
 
     if (node->node_count != 0) {

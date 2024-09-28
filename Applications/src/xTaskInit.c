@@ -53,7 +53,7 @@ void QueueInit(void const * argument){
             printf("SD card init succeed\r\n");
             f_mount(&SDFatFS,SDPath,1);
         }
-            // 初始化失败，提示用户更换SD卡
+        // 初始化失败，提示用户更换SD卡
         else printf("Init Faild, please replace SD card\r\n");
     }
         // 初始化成功，提示用户

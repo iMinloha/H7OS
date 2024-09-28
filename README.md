@@ -122,7 +122,7 @@ Utilities // 工具, JPG解码
   - [x] 3.3.3. info指令
   - [x] 3.3.4. echo指令
   - [x] 3.3.5. help指令
-  - [ ] 3.3.6. tree指令
+  - [x] 3.3.6. tree指令
 - [ ] 3.4. SD卡指令开发功能
 - [x] 3.5. USB功能
   - [x] 3.5.1. USB printf功能

@@ -49,12 +49,13 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN Variables */
-
+#if 0
 /* USER CODE END Variables */
 osThreadId xNoneHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
+#endif
 
 /* USER CODE END FunctionPrototypes */
 
@@ -162,6 +163,7 @@ void MX_FREERTOS_Init(void) {
   * @param  argument: Not used
   * @retval None
   */
+#if 0
 /* USER CODE END Header_NoneTask */
 void NoneTask(void const * argument)
 {
@@ -171,6 +173,7 @@ void NoneTask(void const * argument)
   /* Infinite loop */
   for(;;)
   {
+
     osDelay(1);
   }
   /* USER CODE END NoneTask */
@@ -178,5 +181,5 @@ void NoneTask(void const * argument)
 
 /* Private application code --------------------------------------------------*/
 /* USER CODE BEGIN Application */
-
+#endif
 /* USER CODE END Application */

@@ -5,6 +5,7 @@
 #include "TaskHead.h"
 #include "quadspi.h"
 #include "memctl.h"
+#include "init.d/DrT/DrT.h"
 
 
 #if 0
@@ -64,8 +65,7 @@ void testFunc(){
     }
 #endif
     while (1){
-        int code = ram_check();
-        printf("ram check: %d \r\n", code);
+        execCMD("tree");
         osDelay(1000);
     }
 }

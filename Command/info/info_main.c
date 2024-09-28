@@ -3,6 +3,7 @@
 #include "stdio.h"
 #include "RAMFS.h"
 #include "usbd_cdc_if.h"
+#include "memctl.h"
 
 extern CPU_t CortexM7;
 
@@ -10,15 +11,17 @@ void info_main(int argc, char **argv){
     if(argc == 0){
         USB_printf("info: missing argument\n");
     }else if (argc == 1){
-        DrTNode_t drt = loadDevice(argv[0]);
-
-        if(strcmp(drt->name, CortexM7->name) == 0) {
-            showCPUInfo();
-            return;
-        }
+        char *tmp_drt = (char *) kernel_alloc(strlen(argv[0]) + 1);
+        strcpy(tmp_drt, argv[0]);
+        DrTNode_t drt = loadDevice(tmp_drt);
+        kernel_free(tmp_drt);
 
         if(drt == NULL){
-            Task_t task = loadTask(argv[0]);
+            char *tmp_task = (char *) kernel_alloc(strlen(argv[0]) + 1);
+            strcpy(tmp_task, argv[0]);
+            Task_t task = loadTask(tmp_task);
+            kernel_free(tmp_task);
+
             if(task == NULL){
                 USB_printf("info: device not found\n");
                 return;
@@ -42,7 +45,10 @@ void info_main(int argc, char **argv){
                         USB_printf("\t\t\tUnknown");
                         break;
                 }
-                USB_printf("\t\t\t\t%f%%", task->cpu);
+                if (task->cpu < 1.0f)
+                    USB_printf("\t\t\t\t<1.0%%");
+                else
+                    USB_printf("\t\t\t%f%%", task->cpu);
                 switch (task->status) {
                     case TASK_READY:
                         USB_printf("\t\t\tReady\n");
@@ -63,6 +69,12 @@ void info_main(int argc, char **argv){
             }
             return;
         }else{
+
+            if(strcmp(drt->name, CortexM7->name) == 0) {
+                showCPUInfo();
+                return;
+            }
+
             USB_printf("Device: %s\n", drt->name);
             USB_printf("Description: %s\n", drt->description);
             switch (drt->type) {

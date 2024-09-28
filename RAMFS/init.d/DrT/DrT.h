@@ -80,10 +80,10 @@ struct FS{
 
     // 父级
     FS_t parent;
-    // 层级
-    FS_t next;
     // 子级
-    FS_t child;
+    FS_t child_next;
+    // 层级
+    FS_t level_next;
 };
 
 // 根文件系统
@@ -92,10 +92,19 @@ static FS_t RAM_FS;
 // 初始化设备树(添加设备目录与分类)
 void DrTInit();
 
-// 判断kernel的ramfs是否存在
-void checkDrT();
-// 保存设备树
-void saveDrT();
+/**
+ * @brief 加载路径,返回目录
+ * @param path
+ * @return
+ */
+FS_t loadPath(char* path);
+
+/**
+ * @brief 加载设备
+ * @param path
+ * @return
+ */
+DrTNode_t loadDevice(char* path);
 
 
 // ===============================[指令操作]===============================
@@ -125,8 +134,17 @@ void addCMD(char* name, char* description, char* usage, Comand_t cmd);
 // 执行指令
 void execCMD(char* command);
 
+// 显示帮助
 void helpCMD(char *cmd);
 
+// 定义指令
+/***
+ * @brief 定义指令宏
+ * @param name 指令名
+ * @param description 指令描述
+ * @param usage 指令使用方法
+ * @param cmd 指令函数(Comand_t)
+ * */
 #define CMD(name, description, usage, cmd) addCMD(name, description, usage, cmd)
 
 // ===============================[设备操作]===============================
@@ -186,20 +204,6 @@ FS_t ram_cd(char* path);
  * @param path 路径(已经ram_alloc)
  */
 void ram_pwd(FS_t fs, char* path);
-
-/**
- * @brief 加载路径,返回目录
- * @param path
- * @return
- */
-FS_t loadPath(char* path);
-
-/**
- * @brief 加载设备
- * @param path
- * @return
- */
-DrTNode_t loadDevice(char* path);
 
 // ===============================[任务操作]===============================
 

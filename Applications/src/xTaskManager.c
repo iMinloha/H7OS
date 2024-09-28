@@ -11,6 +11,7 @@
 Task_t xTaskManager;
 Task_t xShell;
 Task_t xTest;
+Task_t xNoneTask;
 
 uint8_t PID_Global = 0;
 
@@ -47,6 +48,7 @@ void ThreadInit(){
     xTaskManager = RAMFS_TASK_Create("xTaskManager", TASK_READY, TASK_PRIORITY_SYSTEM, xTaskManagerHandle);
     xShell = RAMFS_TASK_Create("xShell", TASK_READY, TASK_PRIORITY_SYSTEM, xShellHandle);
     xTest = RAMFS_TASK_Create("xTaskTest", TASK_READY, TASK_PRIORITY_NORMAL, xTaskTestHandle);
+    xNoneTask = RAMFS_TASK_Create("xNoneTask", TASK_READY, TASK_PRIORITY_NORMAL, xNoneHandle);
 }
 
 extern CPU_t CortexM7;
@@ -55,6 +57,7 @@ void TaskManager(void const * argument){
     addThread(xShell);
     addThread(xTaskManager);
     addThread(xTest);
+    addThread(xNoneTask);
 
     Task_t head = getTaskList();
 
@@ -67,15 +70,15 @@ void TaskManager(void const * argument){
         uint32_t currentTotalTicks = xTaskGetTickCount(); // 当前系统总滴答数
         uint32_t deltaTime = currentTotalTicks - lastTotalTicks; // 计算自上次统计以来的增量时间
 
-        CortexM7->load =  (float) CortexM7->frequency * deltaTime / 1000.0f / 10000000.0f;
-
         while (currentTask != NULL){
-
-            currentTask->cpu = (float)currentTask->accumulatedTime / (10 * deltaTime) * 100.0f;
+            // 计算CPU负载
+            currentTask->cpu = (float)currentTask->accumulatedTime / deltaTime * 10;
 
             currentTask = currentTask->next;
         }
         lastTotalTicks = currentTotalTicks;
+
+        CortexM7->load = xNoneTask->cpu;
 
         osDelay(1000);
         TaskTickEnd(xTaskManager);

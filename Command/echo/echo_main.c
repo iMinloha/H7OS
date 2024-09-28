@@ -1,5 +1,4 @@
 #include "echo_main.h"
-#include "stdio.h"
 #include "usbd_cdc_if.h"
 
 void echo_main(int argc, char **argv){

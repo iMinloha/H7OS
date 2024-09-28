@@ -11,6 +11,7 @@ static osThreadId xTaskInitHandle;
 static osThreadId xTaskManagerHandle;
 static osThreadId xShellHandle;
 static osThreadId xTaskTestHandle;
+static osThreadId xNoneHandle;
 
 #define TaskTickStart(task) task->lastWakeTime = xTaskGetTickCount();
 #define TaskTickEnd(task) task->accumulatedTime = xTaskGetTickCount() - task->lastWakeTime;
