@@ -7,6 +7,7 @@
 #include "fatfs.h"
 #include "RAMFS.h"
 #include "usbd_cdc_if.h"
+#include "init.d/CPU/CS.h"
 
 // 串口指针
 FS_t currentFS;
@@ -160,10 +161,9 @@ void DrTInit(){
 
     // 添加系统文件夹
     addFSChild(RAM_FS, "dev");  // 设备文件夹
-    addFSChild(RAM_FS, "mnt");  // 挂载文件夹
+    addFSChild(RAM_FS, "mnt");  // 存储设备文件夹
     addFSChild(RAM_FS, "usr");  // 用户文件夹(会自动保存在QSPI Flash中)
-    addFSChild(RAM_FS, "root"); // 根文件夹
-    addFSChild(RAM_FS, "opt");  // 可选文件夹
+    addFSChild(RAM_FS, "app");  // 可选文件夹
     addFSChild(RAM_FS, "proc"); // 进程文件夹
 
     // 添加设备
@@ -174,6 +174,7 @@ void DrTInit(){
     addDevice("mnt", &SDFatFS, "FATFS", "FAT file system", FILE_SYSTEM, DEVICE_ON, NULL);
     addDevice("mnt", &hqspi, "QSPI", "Quad SPI", DEVICE_STORAGE, DEVICE_ON, NULL);
 
+    addDevice("app", NULL, "bash", "Bourne Again Shell", APP, DEVICE_ON, NULL);
 
     // ָ指令注册
     register_main();
@@ -201,7 +202,7 @@ FS_t loadPath(char* path) {
 }
 
 /**
- * @brief �����豸
+ * @brief 加载设备
  * @param path
  * @return
  */
@@ -239,6 +240,11 @@ DrTNode_t loadDevice(char* path_aim){
     return NULL;
 }
 
+/**
+ * @brief 加载任务对象
+ * @param path
+ * @return
+ */
 Task_t loadTask(char* path){
     FS_t node;
     if (path[0] == '/') node = RAM_FS;
@@ -274,21 +280,21 @@ Task_t loadTask(char* path){
 // DrT
 // ====================================[RAM文件系统操作]===================================
 
-
+// ram创建文件夹
 void ram_mkdir(char* path, char* name){
     FS_t node = loadPath(path);
     if(node == NULL) return;
     addFSChild(node, name);
 }
 
-
+// ram创建文件
 void ram_mkfile(char* path, char* name){
     FS_t node = loadPath(path);
     if(node == NULL) return;
     addDevice(path, NULL, "file", "file", DrTFILE, DEVICE_ON, NULL);
 }
 
-
+// 删除FS_t对象
 void ram_rm(char* path, char *name){
     FS_t node = loadPath(path);
     if(node == NULL) return;

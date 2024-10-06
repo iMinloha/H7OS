@@ -26,6 +26,7 @@ enum DeviceType{
     // --------------------
     FILE_SYSTEM,    // 文件系统
     DrTFILE,           // 文件
+    APP,            // 应用
 };
 
 typedef enum DeviceType DeviceType_E;
