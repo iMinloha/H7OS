@@ -124,7 +124,7 @@ int main(void)
   MX_RTC_Init();
   MX_FATFS_Init();
   MX_ADC3_Init();
-  // MX_LTDC_Init();
+  MX_LTDC_Init();
   /* USER CODE BEGIN 2 */
   // SD卡初始化，FATFS实现的方法
   BSP_SD_Init();
