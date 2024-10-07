@@ -21,8 +21,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b472e725-50d4-49aa-a3fb-20d03d3770a2" name="更改" comment="定时保存">
+      <change afterPath="$PROJECT_DIR$/Command/mkdir/mkdir_main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Command/mkdir/mkdir_main.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Command/Register.c" beforeDir="false" afterPath="$PROJECT_DIR$/Command/Register.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Applications/src/test.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Applications/src/test.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Applications/src/xShellTask.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Applications/src/xShellTask.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Applications/src/xTaskInit.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Applications/src/xTaskInit.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Applications/src/xTaskManager.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Applications/src/xTaskManager.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,11 +94,6 @@
     </key>
   </component>
   <component name="RunManager" selected="OpenOCD 下载并运行.OCD H7OS">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="H7OS" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory" temporary="true">
       <method v="2" />
     </configuration>
@@ -214,7 +220,9 @@
       <workItem from="1728270557122" duration="3798000" />
       <workItem from="1728282626552" duration="23000" />
       <workItem from="1728282763757" duration="2408000" />
-      <workItem from="1728291366625" duration="1530000" />
+      <workItem from="1728291366625" duration="1922000" />
+      <workItem from="1728293430144" duration="6000" />
+      <workItem from="1728303128901" duration="13000" />
     </task>
     <task id="LOCAL-00001" summary="Fatfs初始化">
       <option name="closed" value="true" />
@@ -360,7 +368,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728292907127</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="定时保存">
+      <option name="closed" value="true" />
+      <created>1728292931239</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1728292931239</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
