@@ -9,6 +9,13 @@
 #include "memctl.h"
 #include "quadspi.h"
 
+/*** usb终端线程
+ * @anchor Minloha
+ * @brief 串口终端线程
+ * @description 串口终端线程，用于接收串口指令并执行
+ *              串口指令就是CMD_t链
+ * */
+
 // 全局任务
 extern Task_t xShell;
 

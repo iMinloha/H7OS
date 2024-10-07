@@ -6,12 +6,14 @@
 #include "memctl.h"
 #include "RAMFS.h"
 #include "test.h"
+#include "xMemSave.h"
 
 
 Task_t xTaskManager;
 Task_t xShell;
 Task_t xTest;
 Task_t xNoneTask;
+Task_t xMemSave;
 
 uint8_t PID_Global = 0;
 
@@ -45,9 +47,13 @@ void ThreadInit(){
     osThreadDef(xTaskTest, testFunc, osPriorityNormal, 0, 512);
     xTaskTestHandle = osThreadCreate(osThread(xTaskTest), NULL);
 
+    osThreadDef(xMemSave, MemSaveTask, osPriorityNormal, 0, 512);
+    xMemSaveHandle = osThreadCreate(osThread(xMemSave), NULL);
+
     xTaskManager = RAMFS_TASK_Create("xTaskManager", TASK_READY, TASK_PRIORITY_SYSTEM, xTaskManagerHandle);
     xShell = RAMFS_TASK_Create("xShell", TASK_READY, TASK_PRIORITY_SYSTEM, xShellHandle);
     xTest = RAMFS_TASK_Create("xTaskTest", TASK_READY, TASK_PRIORITY_NORMAL, xTaskTestHandle);
+    xMemSave = RAMFS_TASK_Create("xMemSave", TASK_READY, TASK_PRIORITY_NORMAL, xMemSaveHandle);
     xNoneTask = RAMFS_TASK_Create("xNoneTask", TASK_READY, TASK_PRIORITY_NORMAL, xNoneHandle);
 }
 
@@ -57,6 +63,7 @@ void TaskManager(void const * argument){
     addThread(xShell);
     addThread(xTaskManager);
     addThread(xTest);
+    addThread(xMemSave);
     addThread(xNoneTask);
 
     Task_t head = getTaskList();
