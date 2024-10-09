@@ -152,10 +152,15 @@ void helpCMD(char *cmd);
 
 /**
  * @brief 创建目录
- * @param path
- * @param name
+ * @param path 新建的路径
  */
-void ram_mkdir(char* path, char* name);
+void ram_mkdir(char* path);
+
+/**
+ * @brief 创建多级目录
+ * @param path
+ */
+void ram_deep_mkdir(char *path);
 
 /**
  * @brief 创建文件

@@ -141,7 +141,7 @@ void MX_FREERTOS_Init(void) {
 
   /* Create the thread(s) */
   /* definition and creation of xNone */
-  osThreadDef(xNone, NoneTask, osPriorityNormal, 0, 128);
+  osThreadDef(xNone, NoneTask, osPriorityNormal, 0, 64);
   xNoneHandle = osThreadCreate(osThread(xNone), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */

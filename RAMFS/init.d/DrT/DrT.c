@@ -281,10 +281,48 @@ Task_t loadTask(char* path){
 // ====================================[RAM文件系统操作]===================================
 
 // ram创建文件夹
-void ram_mkdir(char* path, char* name){
-    FS_t node = loadPath(path);
-    if(node == NULL) return;
-    addFSChild(node, name);
+void ram_mkdir(char* path){
+    FS_t node = RAM_FS;
+    if (strcmp(path, "/") == 0) return;
+    else {
+        if (path[0] == '/') path++;
+        char *token = strtok(path, "/");
+        while (token != NULL) {
+            FS_t tmp_node;
+            tmp_node = getFSChild(node, token);
+            if (tmp_node == NULL) break;
+            node = tmp_node;
+            token = strtok(NULL, "/");
+        }
+        // token继续分割，在node下创建文件夹
+        if (strtok(NULL, "/") == NULL) addFSChild(node, token);
+        else USB_printf("mkdir: %s: too many paths need to be created\n", path);
+    }
+}
+
+void ram_deep_mkdir(char *path){
+    FS_t node;
+    if(path[0] == '/' || currentFS == RAM_FS) node = RAM_FS;
+    else node = currentFS;
+
+    if (strcmp(path, "/") == 0) return;
+    else {
+        if (path[0] == '/') path++;
+        char *token = strtok(path, "/");
+        while (token != NULL) {
+            FS_t tmp_node;
+            tmp_node = getFSChild(node, token);
+            if (tmp_node == NULL) break;
+            node = tmp_node;
+            token = strtok(NULL, "/");
+        }
+        // token继续分割，在node下创建文件夹
+        while(token != NULL){
+            addFSChild(node, token);
+            node = getFSChild(node, token);
+            token = strtok(NULL, "/");
+        }
+    }
 }
 
 // ram创建文件

@@ -38,16 +38,16 @@ void ThreadInit(){
     osThreadDef(xShell, ShellTask, osPriorityNormal, 0, 512);
     xShellHandle = osThreadCreate(osThread(xShell), NULL);
 
-    osThreadDef(xTaskManager, TaskManager, osPriorityAboveNormal, 0, 512);
+    osThreadDef(xTaskManager, TaskManager, osPriorityAboveNormal, 0, 256);
     xTaskManagerHandle = osThreadCreate(osThread(xTaskManager), NULL);
 
     osThreadDef(xTaskInit, QueueInit, osPriorityNormal, 0, 512);
     xTaskInitHandle = osThreadCreate(osThread(xTaskInit), NULL);
 
-    osThreadDef(xTaskTest, testFunc, osPriorityNormal, 0, 512);
+    osThreadDef(xTaskTest, testFunc, osPriorityNormal, 0, 256);
     xTaskTestHandle = osThreadCreate(osThread(xTaskTest), NULL);
 
-    osThreadDef(xMemSave, MemSaveTask, osPriorityNormal, 0, 512);
+    osThreadDef(xMemSave, MemSaveTask, osPriorityNormal, 0, 256);
     xMemSaveHandle = osThreadCreate(osThread(xMemSave), NULL);
 
     xTaskManager = RAMFS_TASK_Create("xTaskManager", TASK_READY, TASK_PRIORITY_SYSTEM, xTaskManagerHandle);
