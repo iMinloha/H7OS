@@ -8,6 +8,7 @@
 #include "usbd_cdc_if.h"
 #include "memctl.h"
 #include "quadspi.h"
+#include "usart.h"
 
 /*** usb终端线程
  * @anchor Minloha
@@ -35,7 +36,7 @@ void ShellTask(){
     uint8_t *cmd_buf = (uint8_t *) kernel_alloc(256);
     char *pwd = (char *) kernel_alloc(256);
     memset(cmd_buf, 0, 256);
-    USB_printf("%s@$/:", UserName);
+    USB_color_printf(LIGHT_GREEN, "%s:/$", UserName);
     while(1){
         TaskTickStart(xShell);
 
@@ -46,7 +47,8 @@ void ShellTask(){
         memset(cmd_buf, 0, 256);
 
         ram_pwd(currentFS, pwd);
-        USB_printf("%s@$%s:", UserName, pwd);
+
+        USB_color_printf(LIGHT_GREEN, "%s:%s$", UserName, pwd);
 
         // 等待执行串口指令
         osDelay(1000);

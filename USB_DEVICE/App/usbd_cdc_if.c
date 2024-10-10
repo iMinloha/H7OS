@@ -25,6 +25,7 @@
 /* USER CODE BEGIN INCLUDE */
 #include <stdarg.h>
 #include "cmsis_os.h"
+#include "usart.h"
 /* USER CODE END INCLUDE */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -329,8 +330,7 @@ static int8_t CDC_TransmitCplt_FS(uint8_t *Buf, uint32_t *Len, uint8_t epnum)
 *					数据长度不能超过 APP_TX_DATA_SIZE
 *************************************************************************************************/
 
-void USB_printf(const char *format, ...)
-{
+void USB_printf(const char *format, ...){
     va_list args;					// va_list型变量,指向参数的指针
     uint32_t length;				// 数据的长度
     uint16_t	 USB_TimeOut;		// 超时判断时间

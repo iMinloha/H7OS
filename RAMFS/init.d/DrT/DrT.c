@@ -163,18 +163,11 @@ void DrTInit(){
     addFSChild(RAM_FS, "dev");  // 设备文件夹
     addFSChild(RAM_FS, "mnt");  // 存储设备文件夹
     addFSChild(RAM_FS, "usr");  // 用户文件夹(会自动保存在QSPI Flash中)
-    addFSChild(RAM_FS, "app");  // 可选文件夹
     addFSChild(RAM_FS, "proc"); // 进程文件夹
 
     // 添加设备
     addDevice("dev", &CortexM7, "Cortex-M7", "Central Processing Unit", DEVICE_BS, DEVICE_BUSY, NULL);
     addDevice("dev", &huart1, "USART1", "Serial bus device", DEVICE_SERIAL, DEVICE_BUSY, NULL);
-
-    addDevice("mnt", &hsdram1, "SDMMC", "SD card", DEVICE_STORAGE, DEVICE_ON, NULL);
-    addDevice("mnt", &SDFatFS, "FATFS", "FAT file system", FILE_SYSTEM, DEVICE_ON, NULL);
-    addDevice("mnt", &hqspi, "QSPI", "Quad SPI", DEVICE_STORAGE, DEVICE_ON, NULL);
-
-    addDevice("app", NULL, "bash", "Bourne Again Shell", APP, DEVICE_ON, NULL);
 
     // ָ指令注册
     register_main();
@@ -300,12 +293,12 @@ void ram_mkdir(char* path){
     }
 }
 
-void ram_deep_mkdir(char *path){
+FS_t ram_deep_mkdir(char *path){
     FS_t node;
     if(path[0] == '/' || currentFS == RAM_FS) node = RAM_FS;
     else node = currentFS;
 
-    if (strcmp(path, "/") == 0) return;
+    if (strcmp(path, "/") == 0) return NULL;
     else {
         if (path[0] == '/') path++;
         char *token = strtok(path, "/");
@@ -322,6 +315,7 @@ void ram_deep_mkdir(char *path){
             node = getFSChild(node, token);
             token = strtok(NULL, "/");
         }
+        return node;
     }
 }
 
@@ -422,19 +416,28 @@ FS_t ram_cd(char* path){
     return node;
 }
 
-
-void ram_pwd(FS_t fs, char* path){
+void pwd(FS_t fs, char* path){
     FS_t temp_node;
     if (fs == RAM_FS) {
         strcpy(path, "/");
         return;
     }else{
         temp_node = fs;
-        ram_pwd(temp_node->parent, path);
+        pwd(temp_node->parent, path);
         strcat(path, temp_node->path);
         strcat(path, "/");
     }
 
+    path[strlen(path)] = '\0';
+
+}
+
+void ram_pwd(FS_t fs, char* path){
+    if (fs == RAM_FS) {
+        strcpy(path, "/");
+        return;
+    }
+    pwd(fs, path);
     path[strlen(path) - 1] = '\0';
 }
 
@@ -463,7 +466,6 @@ void execCMD(char* command_rel){
     // 使用指令前需要先声明一个内存空间用于保护指令所处空间的安全
     char* command = (char*) kernel_alloc(strlen(command_rel) + 1);
     strcpy(command, command_rel);
-    printf("Command: %s\n", command);
 
     // 分割指令
     char *argv[128] = {0};

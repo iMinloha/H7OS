@@ -12,7 +12,9 @@ typedef struct cs {
 
 #define CS_SIZE sizeof (struct cs)
 
-void CS_push(char *data, int len);
+void CS_push(char *save_str);
+
+void CS_list();
 
 void CS_save();
 

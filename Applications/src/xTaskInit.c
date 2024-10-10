@@ -9,14 +9,16 @@
 
 // 初始化全局任务
 void taskGlobalInit(){
+
+    // RAMFS初始化
+    DrTInit();
+
     HAL_SD_CardInfoTypeDef  SDCardInfo;
     HAL_SD_CardCIDTypeDef SDCard_CID;
 
     HAL_SD_GetCardCID(&hsd1,&SDCard_CID);
     HAL_SD_GetCardInfo(&hsd1,&SDCardInfo);
     uint64_t CardCap = (uint64_t)(SDCardInfo.LogBlockNbr) * (uint64_t)(SDCardInfo.LogBlockSize);	//计算SD卡容量
-
-    printf("SD card Drive Capacitor: %lu MB\r\n", (uint32_t)(CardCap>>20));
 
     // CPU采样初始化
     HAL_ADCEx_Calibration_Start(&hadc3,ADC_CALIB_OFFSET,ADC_SINGLE_ENDED);
@@ -25,10 +27,10 @@ void taskGlobalInit(){
     // QSPI Flash初始化，擦除所有数据
     if(QSPI_W25Qxx_Init() != QSPI_W25Qxx_OK)
         printf("Check W25Qxx Failed\n");
-    else printf("QSPI Flash Succeed, ID: %lx\n", QSPI_W25Qxx_ReadID());
-
-    // RAMFS初始化
-    DrTInit();
+    else {
+        addDevice("mnt", &hqspi, "QSPI", "Quad SPI", DEVICE_STORAGE, DEVICE_ON, NULL);
+        printf("QSPI Flash Succeed, ID: %lx\n", QSPI_W25Qxx_ReadID());
+    }
     // CPU结构体初始化(用于标注CPU的信息)
     createCPU();
 }
@@ -41,6 +43,7 @@ void taskGlobalInit(){
  * */
 void QueueInit(void const * argument){
     // SD卡挂载FATFS
+    BSP_SD_Init();
     FRESULT FSRes = f_mount(&SDFatFS,SDPath,1);
     BYTE work[_MAX_SS];
     // 如果挂载失败，尝试格式化SD卡
@@ -51,13 +54,17 @@ void QueueInit(void const * argument){
         if (FSRes == FR_OK) {
             // 初始化成功，重新挂载
             printf("SD card init succeed\r\n");
+            addDevice("mnt", &SDFatFS, "FATFS", "FAT file system", FILE_SYSTEM, DEVICE_ON, NULL);
             f_mount(&SDFatFS,SDPath,1);
         }
         // 初始化失败，提示用户更换SD卡
         else printf("Init Faild, please replace SD card\r\n");
     }
         // 初始化成功，提示用户
-    else printf("SD card Succeed\r\n");
+    else {
+        addDevice("mnt", &SDFatFS, "FATFS", "FAT file system", FILE_SYSTEM, DEVICE_ON, NULL);
+        printf("SD card Succeed\r\n");
+    }
     // 一次性初始化完成，挂起初始化任务
     // vTaskSuspend(xTaskInitHandle);
     // 杀死初始化任务

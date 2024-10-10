@@ -116,6 +116,8 @@ uint8_t CDC_Transmit_FS(uint8_t* Buf, uint16_t Len);
 
 void USB_printf(const char *format, ...);		// USB格式化输出 ，使用方法类似 printf
 
+#define USB_color_printf(color, format, ...) USB_printf(color); USB_printf(format, ##__VA_ARGS__); USB_printf(NONE);
+
 uint8_t USB_scanf(uint8_t *buf);        // USB扫描输入
 
 /* USER CODE END EXPORTED_FUNCTIONS */

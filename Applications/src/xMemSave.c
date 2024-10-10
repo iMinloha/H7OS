@@ -11,7 +11,7 @@ void MemSaveTask(void const * argument){
     while(1){
         TaskTickStart(xMemSave);
         // 定时保存指令
-        CS_save();
+        // CS_save();
         osDelay(Second(60));
         TaskTickEnd(xMemSave);
     }

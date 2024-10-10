@@ -93,6 +93,9 @@ static FS_t RAM_FS;
 // 初始化设备树(添加设备目录与分类)
 void DrTInit();
 
+void addDevice(char *path, void* devicePtr, char *name, char *description, DeviceType_E type,
+               DeviceStatus_E status, Func_t driver);
+
 /**
  * @brief 加载路径,返回目录
  * @param path
@@ -160,7 +163,7 @@ void ram_mkdir(char* path);
  * @brief 创建多级目录
  * @param path
  */
-void ram_deep_mkdir(char *path);
+FS_t ram_deep_mkdir(char *path);
 
 /**
  * @brief 创建文件

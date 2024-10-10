@@ -6,6 +6,7 @@
 #include "quadspi.h"
 #include "memctl.h"
 #include "init.d/DrT/DrT.h"
+#include "init.d/CPU/CS.h"
 
 
 #if 0
