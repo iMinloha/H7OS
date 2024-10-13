@@ -17,7 +17,6 @@ static osThreadId xMemSaveHandle; // ÄÚ´æ´æ´¢Ïß³Ì
 #define TaskTickStart(task) task->lastWakeTime = xTaskGetTickCount();
 #define TaskTickEnd(task) task->accumulatedTime = xTaskGetTickCount() - task->lastWakeTime;
 
-
 void ThreadInit();
 
 #endif //H7OS_TASKHEAD_H

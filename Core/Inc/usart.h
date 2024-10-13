@@ -29,6 +29,7 @@ extern "C" {
 #include "main.h"
 
 /* USER CODE BEGIN Includes */
+#define CLEAR        "\x1B[2J\x1B[H"
 #define NONE         "\033[0m"
 #define RED          "\033[0;32;31m"
 #define LIGHT_RED    "\033[1;31m"

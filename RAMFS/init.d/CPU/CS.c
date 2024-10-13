@@ -32,61 +32,71 @@ int commandFound(char* str1, char* str2){
  * @return CS_t 找到子指令，返回这个子指令的位置
  * */
 CS_t CS_replaceSubCommand(char *save_str){
+    char *buf_tmp = kernel_alloc(strlen(save_str));
+    memcpy(buf_tmp, save_str, strlen(save_str));
+
     CS_t tmp = cs_head;
     while (tmp != NULL){
-        int len = commandFound(save_str, tmp->data);
+        int len = commandFound(buf_tmp, tmp->data);
         if (len > 0) return NULL;   // 无操作
         else if (len < 0) return tmp;   // 替换原本的内容
         tmp = tmp->next;
     }
+    kernel_free(buf_tmp);
     return Normal;
 }
 
 // 删除重复指令
-void CS_removeSameCommand(char *buf){
+void CS_removeSameCommand(CS_t response, char *buf){
     char *data = kernel_alloc(128);
     memcpy(data, buf, 128);
     CS_t tmp = cs_head;
     CS_t pre = NULL;
     while (tmp != NULL){
-        if (strcmp(tmp->data, data) == 0){
-            pre->next = tmp->next;
-            kernel_free(tmp);
-            break;
+        if (strcmp(tmp->data, data) == 0 && tmp != response){
+            if (pre == NULL) {
+                kernel_free(tmp);
+                break;
+            } else{
+                pre->next = tmp->next;
+                kernel_free(tmp);
+                break;
+            }
         }
         pre = tmp;
         tmp = tmp->next;
     }
+    kernel_free(data);
 }
 
-void CS_push(char *save_str){
-    char data[128];
-    int len = strlen(save_str);
-    memcpy(data, save_str, len);
+// 推入新的指令缓存
+void CS_push(char *buf){
+    char *data = kernel_alloc(128);
+    memcpy(data, buf, 128);
 
     CS_t response = CS_replaceSubCommand(data);
 
-    if (response == NULL){
-        // 重复内容无需操作
-        return;
-    }else if (response == Normal){
+    if (response == NULL) return;
+    else if (response == Normal){
         if (cs_head == NULL) {
             cs_head = (CS_t) kernel_alloc(CS_SIZE);
             cs_head->next = NULL;
-            memcpy(cs_head->data, data, len);
+            memcpy(cs_head->data, data, W25Qxx_PageSize);
         } else {
             CS_t tmp = cs_head;
             while (tmp->next != NULL) tmp = tmp->next;
             tmp->next = (CS_t) kernel_alloc(CS_SIZE);
             tmp->next->next = NULL;
-            memcpy(tmp->next->data, data, len);
+            memcpy(cs_head->data, data, W25Qxx_PageSize);
         }
     }else{
-        CS_removeSameCommand(data);
-        memcpy(response->data, data, len);
+        CS_removeSameCommand(response, data);
+        memcpy(response->data, data, W25Qxx_PageSize);
     }
+    kernel_free(data);
 }
 
+// 输出指令缓存内容
 void CS_list(){
     CS_t tmp = cs_head;
     while (tmp != NULL){
@@ -95,11 +105,61 @@ void CS_list(){
     }
 }
 
-void CS_save(){
-    int i = 0;
+void CS_clean(){
     CS_t tmp = cs_head;
     while (tmp != NULL){
-        QSPI_W25Qxx_WriteBuffer((uint8_t *)tmp->data, i * W25Qxx_PageSize, 128);
-        tmp = tmp->next;
+        CS_t next = tmp->next;
+        kernel_free(tmp);
+        tmp = next;
     }
+    cs_head = NULL;
+}
+
+// 保存指令缓存
+// save周期非常长, 一定要缓速保存
+void CS_save(){
+    QSPI_W25Qxx_ChipErase();
+    uint8_t i = 0;
+    CS_t tmp = cs_head;
+    while (tmp != NULL){
+        uint8_t *p_data = (uint8_t *) kernel_alloc(128);
+        memset(p_data, 0, 128);
+
+        p_data[0] = QSPI_Page_HaveCS;
+        memcpy((char*) p_data + 1, tmp->data, W25Qxx_PageSize - 1);
+
+        QSPI_W25Qxx_WriteBuffer(p_data, i * W25Qxx_PageSize, 128);
+
+        kernel_free(p_data);
+        tmp = tmp->next;
+        i++;
+    }
+}
+
+void CS_load(){
+    uint8_t *p_data = (uint8_t *) kernel_alloc(128);
+    memset(p_data, 0, 128);
+    QSPI_W25Qxx_ReadBuffer(p_data, 0, 128);
+    if (p_data[0] == QSPI_Page_None) return;
+
+    if (p_data[0] == QSPI_Page_HaveCS){
+        char *buf = kernel_alloc(128);
+        strcpy(buf, (char*) p_data + 1);
+        printf("buf: %s\n", buf);
+        CS_push(buf);
+        kernel_free(buf);
+    }
+
+    int i = 1;
+    while (p_data[0] == QSPI_Page_HaveCS){
+        memset(p_data, 0, 128);
+        QSPI_W25Qxx_ReadBuffer(p_data, i * W25Qxx_PageSize, 128);
+        if (p_data[0] == QSPI_Page_HaveCS){
+            char *buf = kernel_alloc(128);
+            memcpy(buf, (char*) p_data + 1, W25Qxx_PageSize - 1);
+            kernel_free(buf);
+        }
+        i++;
+    }
+    kernel_free(p_data);
 }

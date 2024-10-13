@@ -9,7 +9,7 @@ extern Task_t xNoneTask;
 void NoneTask(void const * argument){
     while(1){
         TaskTickStart(xNoneTask);
-        osDelay(1);
+        osDelay(100);
         TaskTickEnd(xNoneTask);
     }
 }

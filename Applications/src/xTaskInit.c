@@ -6,6 +6,8 @@
 #include "RAMFS.h"
 #include "adc.h"
 #include "TaskHead.h"
+#include "usbd_cdc_if.h"
+#include "usart.h"
 
 // 初始化全局任务
 void taskGlobalInit(){

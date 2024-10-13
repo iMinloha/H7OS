@@ -7,6 +7,8 @@
 #include "help/help_main.h"
 #include "tree/tree_main.h"
 #include "mkdir/mkdir_main.h"
+#include "reboot/reboot_main.h"
+#include "clear/clear_main.h"
 
 void register_main(){
     // ×¢²áÖ¸Áî¼¯(bash, ls, cd, info, echo, help, tree)
@@ -17,4 +19,6 @@ void register_main(){
     CMD("help", "help using command", "help -command", help_main);
     CMD("tree", "show file system struct tree", "tree -depth", tree_main);
     CMD("mkdir", "make your owner folder", "mkdir -path", mkdir_main);
+    CMD("reboot", "restart the microcontroller", "reboot", reboot_main);
+//    CMD("clear", "clean uart screen", "clear", clear_main);
 }

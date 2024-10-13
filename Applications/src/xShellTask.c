@@ -4,11 +4,11 @@
 #include "RAMFS.h"
 #include "TaskHead.h"
 #include "torch_iic.h"
-#include "ltdc.h"
 #include "usbd_cdc_if.h"
 #include "memctl.h"
 #include "quadspi.h"
 #include "usart.h"
+#include "usb_device.h"
 
 /*** usb终端线程
  * @anchor Minloha
@@ -32,11 +32,11 @@ USB_scanf(buf);
 extern FS_t currentFS;
 
 void ShellTask(){
-    osDelay(1000);
+    USB_Init_IT();
     uint8_t *cmd_buf = (uint8_t *) kernel_alloc(256);
     char *pwd = (char *) kernel_alloc(256);
     memset(cmd_buf, 0, 256);
-    USB_color_printf(LIGHT_GREEN, "%s:/$", UserName);
+    USB_color_printf(LIGHT_CYAN, "%s:/$", UserName);
     while(1){
         TaskTickStart(xShell);
 
@@ -48,7 +48,7 @@ void ShellTask(){
 
         ram_pwd(currentFS, pwd);
 
-        USB_color_printf(LIGHT_GREEN, "%s:%s$", UserName, pwd);
+        USB_color_printf(LIGHT_CYAN, "%s:%s$", UserName, pwd);
 
         // 等待执行串口指令
         osDelay(1000);

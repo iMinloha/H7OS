@@ -46,26 +46,34 @@ void printf_sdcard_info(void){
 
 extern Task_t xTest;
 
+typedef struct test{
+    int a;
+    float b;
+} *test_p;
+
+typedef void * Everything;
+
 void testFunc(){
-#if 0
-    test_p test_ptr = kernel_alloc(sizeof(struct test));
-    test_ptr->a = 2;
-    test_ptr->b = 2.0f;
-    Everything everything = (Everything) test_ptr;
+
+//    test_p test_ptr = kernel_alloc(sizeof(struct test));
+//    test_ptr->a = 2;
+//    test_ptr->b = 2.0f;
+//    Everything everything = (Everything) test_ptr;
+//    uint8_t tmp[2] = {11, 22};
+//    uint8_t tmp2[2] = {0};
+//    CS_push("HI");
+//    CS_save();
+//    QSPI_W25Qxx_WriteBuffer(tmp, 0, 2);
 
 
     while(1){
         TaskTickStart(xTest);
-
-        QSPI_W25Qxx_WriteBuffer((uint8_t *)everything, 0, sizeof(struct test));
-        QSPI_W25Qxx_ReadBuffer((uint8_t *)everything, 0, sizeof(struct test));
-        printf("a: %d, b: %f \r\n", ((test_p)everything)->a, ((test_p)everything)->b);
-
+//        QSPI_W25Qxx_ReadBuffer(tmp2, 0, 2);
+//        printf("tmp2[0]: %d, tmp2[1]: %d\n", tmp2[0], tmp2[1]);
+//        CS_load();
         osDelay(1000);
+//        CS_list();
+
         TaskTickEnd(xTest);
-    }
-#endif
-    while (1){
-        osDelay(1000);
     }
 }

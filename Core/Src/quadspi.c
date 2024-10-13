@@ -18,9 +18,7 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
-#include <string.h>
 #include "quadspi.h"
-#include "memctl.h"
 
 /* USER CODE BEGIN 0 */
 
@@ -128,7 +126,7 @@ void HAL_QSPI_MspInit(QSPI_HandleTypeDef* qspiHandle)
     hmdma_quadspi_fifo_th.Instance = MDMA_Channel1;
     hmdma_quadspi_fifo_th.Init.Request = MDMA_REQUEST_QUADSPI_FIFO_TH;
     hmdma_quadspi_fifo_th.Init.TransferTriggerMode = MDMA_BUFFER_TRANSFER;
-    hmdma_quadspi_fifo_th.Init.Priority = MDMA_PRIORITY_LOW;
+    hmdma_quadspi_fifo_th.Init.Priority = MDMA_PRIORITY_VERY_HIGH;
     hmdma_quadspi_fifo_th.Init.Endianness = MDMA_LITTLE_ENDIANNESS_PRESERVE;
     hmdma_quadspi_fifo_th.Init.SourceInc = MDMA_SRC_INC_BYTE;
     hmdma_quadspi_fifo_th.Init.DestinationInc = MDMA_DEST_INC_DISABLE;
@@ -498,18 +496,18 @@ int8_t QSPI_W25Qxx_ChipErase (void){
 int8_t QSPI_W25Qxx_WritePage(uint8_t* pBuffer, uint32_t WriteAddr, uint16_t NumByteToWrite){
     QSPI_CommandTypeDef s_command;	// QSPI传输配置
 
-    s_command.InstructionMode    =   QSPI_INSTRUCTION_1_LINE;    		    // 1线指令模式
-    s_command.AddressSize        =   QSPI_ADDRESS_24_BITS;                  // 24位地址
-    s_command.AlternateByteMode  =   QSPI_ALTERNATE_BYTES_NONE;  		    // 无交替字节
-    s_command.DdrMode            =   QSPI_DDR_MODE_DISABLE;     		    // 禁止DDR模式
-    s_command.DdrHoldHalfCycle   =   QSPI_DDR_HHC_ANALOG_DELAY; 		    // DDR模式中数据延迟，这里用不到
-    s_command.SIOOMode           =   QSPI_SIOO_INST_EVERY_CMD;			    // 每次传输数据都发送指令
-    s_command.AddressMode 		 =   QSPI_ADDRESS_1_LINE; 				    // 1线地址模式
-    s_command.DataMode    		 =   QSPI_DATA_4_LINES;    				    // 4线数据模式
-    s_command.DummyCycles 		 =   0;                    				    // 空周期个数
-    s_command.NbData      		 =   NumByteToWrite;      			        // 数据长度，最大只能256字节
-    s_command.Address     		 =   WriteAddr;         					// 要写入 W25Qxx 的地址
-    s_command.Instruction 		 =   W25Qxx_CMD_QuadInputPageProgram;       // 1-1-4模式下(1线指令1线地址4线数据)，页编程指令
+    s_command.InstructionMode   = QSPI_INSTRUCTION_1_LINE;    		// 1线指令模式
+    s_command.AddressSize       = QSPI_ADDRESS_24_BITS;            // 24位地址
+    s_command.AlternateByteMode = QSPI_ALTERNATE_BYTES_NONE;  		// 无交替字节
+    s_command.DdrMode           = QSPI_DDR_MODE_DISABLE;     		// 禁止DDR模式
+    s_command.DdrHoldHalfCycle  = QSPI_DDR_HHC_ANALOG_DELAY; 		// DDR模式中数据延迟，这里用不到
+    s_command.SIOOMode          = QSPI_SIOO_INST_EVERY_CMD;			// 每次传输数据都发送指令
+    s_command.AddressMode 		 = QSPI_ADDRESS_1_LINE; 				// 1线地址模式
+    s_command.DataMode    		 = QSPI_DATA_4_LINES;    				// 4线数据模式
+    s_command.DummyCycles 		 = 0;                    				// 空周期个数
+    s_command.NbData      		 = NumByteToWrite;      			   // 数据长度，最大只能256字节
+    s_command.Address     		 = WriteAddr;         					// 要写入 W25Qxx 的地址
+    s_command.Instruction 		 = W25Qxx_CMD_QuadInputPageProgram; // 1-1-4模式下(1线指令1线地址4线数据)，页编程指令
 
     // 写使能
     if (QSPI_W25Qxx_WriteEnable() != QSPI_W25Qxx_OK)
@@ -549,6 +547,7 @@ int8_t QSPI_W25Qxx_WriteBuffer(uint8_t* pBuffer, uint32_t WriteAddr, uint32_t Si
         if(QSPI_W25Qxx_WritePage(write_data, current_addr, current_size) != QSPI_W25Qxx_OK)
             return W25Qxx_ERROR_TRANSMIT;
 
+
         else {
             current_addr += current_size;	// 计算下一次要写入的地址
             write_data += current_size;	// 获取下一次要写入的数据存储区地址
@@ -556,11 +555,45 @@ int8_t QSPI_W25Qxx_WriteBuffer(uint8_t* pBuffer, uint32_t WriteAddr, uint32_t Si
             current_size = ((current_addr + W25Qxx_PageSize) > end_addr) ? (end_addr - current_addr) : W25Qxx_PageSize;
         }
     }
-    while (current_addr < end_addr);
+    while (current_addr < end_addr) ; // 判断数据是否全部写入完毕
+
     return QSPI_W25Qxx_OK;	// 写入数据成功
 }
 
-int8_t QSPI_W25Qxx_ReadBuffer(uint8_t* pBuffer, uint32_t ReadAddr, uint32_t NumByteToRead){
+int8_t QSPI_W25Qxx_ReadBuffer(uint8_t* pBuffer, uint32_t ReadAddr, uint32_t NumByteToRead)
+{
+    QSPI_CommandTypeDef s_command;	// QSPI传输配置
+
+    s_command.InstructionMode   = QSPI_INSTRUCTION_1_LINE;    		// 1线指令模式
+    s_command.AddressSize       = QSPI_ADDRESS_24_BITS;            // 24位地址
+    s_command.AlternateByteMode = QSPI_ALTERNATE_BYTES_NONE;  		// 无交替字节
+    s_command.DdrMode           = QSPI_DDR_MODE_DISABLE;     		// 禁止DDR模式
+    s_command.DdrHoldHalfCycle  = QSPI_DDR_HHC_ANALOG_DELAY; 		// DDR模式中数据延迟，这里用不到
+    s_command.SIOOMode          = QSPI_SIOO_INST_EVERY_CMD;			// 每次传输数据都发送指令
+    s_command.AddressMode 		 = QSPI_ADDRESS_4_LINES; 				// 4线地址模式
+    s_command.DataMode    		 = QSPI_DATA_4_LINES;    				// 4线数据模式
+    s_command.DummyCycles 		 = 6;                    				// 空周期个数
+    s_command.NbData      		 = NumByteToRead;      			   	// 数据长度，最大不能超过flash芯片的大小
+    s_command.Address     		 = ReadAddr;         					// 要读取 W25Qxx 的地址
+    s_command.Instruction 		 = W25Qxx_CMD_FastReadQuad_IO; 		// 1-4-4模式下(1线指令4线地址4线数据)，快速读取指令
+
+    // 发送读取命令
+    if (HAL_QSPI_Command(&hqspi, &s_command, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
+        return W25Qxx_ERROR_TRANSMIT;		// 传输数据错误
+
+    //	接收数据
+
+    if (HAL_QSPI_Receive(&hqspi, pBuffer, HAL_QPSI_TIMEOUT_DEFAULT_VALUE) != HAL_OK)
+        return W25Qxx_ERROR_TRANSMIT;		// 传输数据错误
+
+    // 使用自动轮询标志位，等待接收的结束
+    if (QSPI_W25Qxx_AutoPollingMemReady() != QSPI_W25Qxx_OK)
+        return W25Qxx_ERROR_AUTOPOLLING; // 轮询等待无响应
+
+    return QSPI_W25Qxx_OK;	// 读取数据成功
+}
+
+int8_t QSPI_W25Qxx_ReadBuffer_DMA(uint8_t* pBuffer, uint32_t ReadAddr, uint32_t NumByteToRead){
     QSPI_CommandTypeDef s_command;	// QSPI传输配置
 
     s_command.InstructionMode   = QSPI_INSTRUCTION_1_LINE;    		// 1线指令模式
@@ -591,7 +624,6 @@ int8_t QSPI_W25Qxx_ReadBuffer(uint8_t* pBuffer, uint32_t ReadAddr, uint32_t NumB
 
     return QSPI_W25Qxx_OK;		// 读取数据成功
 }
-
 
 void HAL_QSPI_RxCpltCallback(QSPI_HandleTypeDef *hqspi){
     QSPI_RX_Status = 1;  // 当进入此中断函数时，说明QSPI接收完成，将标志变量置1

@@ -55,7 +55,22 @@ USBD_HandleTypeDef hUsbDeviceFS;
  * -- Insert your external function declaration here --
  */
 /* USER CODE BEGIN 1 */
+void USB_Init_IT(){
+    if (USBD_Init(&hUsbDeviceFS, &FS_Desc, DEVICE_FS) != USBD_OK)
+        Error_Handler();
+    if (USBD_RegisterClass(&hUsbDeviceFS, &USBD_CDC) != USBD_OK)
+        Error_Handler();
+    if (USBD_CDC_RegisterInterface(&hUsbDeviceFS, &USBD_Interface_fops_FS) != USBD_OK)
+        Error_Handler();
+    if (USBD_Start(&hUsbDeviceFS) != USBD_OK)
+        Error_Handler();
 
+    HAL_PWREx_EnableUSBVoltageDetector();
+
+    while(  hUsbDeviceFS.dev_state != USBD_STATE_CONFIGURED);
+
+    HAL_Delay(200);	// 建立连接之后，延时等待一段时间，不然第一次发送的数据容易丢失
+}
 /* USER CODE END 1 */
 
 /**

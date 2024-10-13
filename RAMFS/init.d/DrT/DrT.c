@@ -46,8 +46,6 @@ FS_t getFSChild(FS_t parent, char *path){
     return NULL;
 }
 
-
-
 void addDevice(char *path, void* devicePtr, char *name, char *description, DeviceType_E type,
                DeviceStatus_E status, Func_t driver){
     FS_t node = getFSChild(RAM_FS, path);
@@ -63,8 +61,10 @@ void addDevice(char *path, void* devicePtr, char *name, char *description, Devic
     device->device = devicePtr;
     device->status = status;
     device->type = type;
+
     device->data = kernel_alloc(128);
     device->driver = driver;
+
     Mutex_t mutex = (Mutex_t) kernel_alloc(MUTEX_SIZE);
     mutex_init(mutex);
     device->mutex = mutex;
@@ -382,14 +382,14 @@ void ram_ls(char* path){
 
     while(temp != NULL){
         // node就是目标节点
-        USB_printf("%s  ", temp->path);
+        USB_color_printf(LIGHT_GREEN, "%s  ", temp->path);
         temp = temp->level_next;
     }
 
     if (node->node_count != 0) {
         DrTNode_t p = node->node;
         while(p != NULL){
-            USB_printf("%s  ", p->name);
+            USB_color_printf(LIGHT_BLUE, "%s  ", p->name);
             p = p->next;
         }
     }
@@ -397,7 +397,7 @@ void ram_ls(char* path){
     if(node->tasklist != NULL){
         Task_t p = node->tasklist;
         while(p != NULL){
-            USB_printf("%s\t", p->name);
+            USB_color_printf(LIGHT_PURPLE, "%s\t", p->name);
             p = p->next;
         }
     }

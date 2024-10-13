@@ -44,10 +44,10 @@ void ThreadInit(){
     osThreadDef(xTaskInit, QueueInit, osPriorityNormal, 0, 512);
     xTaskInitHandle = osThreadCreate(osThread(xTaskInit), NULL);
 
-    osThreadDef(xTaskTest, testFunc, osPriorityNormal, 0, 256);
+    osThreadDef(xTaskTest, testFunc, osPriorityNormal, 0, 512);
     xTaskTestHandle = osThreadCreate(osThread(xTaskTest), NULL);
 
-    osThreadDef(xMemSave, MemSaveTask, osPriorityNormal, 0, 256);
+    osThreadDef(xMemSave, MemSaveTask, osPriorityNormal, 0, 128);
     xMemSaveHandle = osThreadCreate(osThread(xMemSave), NULL);
 
     xTaskManager = RAMFS_TASK_Create("xTaskManager", TASK_READY, TASK_PRIORITY_SYSTEM, xTaskManagerHandle);
@@ -80,6 +80,8 @@ void TaskManager(void const * argument){
         while (currentTask != NULL){
             // 计算CPU负载
             currentTask->cpu = (float)currentTask->accumulatedTime / deltaTime * 10;
+            if (currentTask->cpu > 100)
+                currentTask->cpu = 100;
 
             currentTask = currentTask->next;
         }
