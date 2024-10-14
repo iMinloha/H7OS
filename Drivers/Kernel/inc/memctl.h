@@ -3,7 +3,7 @@
 
 #include "fmc.h"
 
-#define u_printf printf
+#define LOGGER printf
 
 // 定义内存管理算法
 /***

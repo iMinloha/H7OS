@@ -12,7 +12,6 @@ static osThreadId xTaskManagerHandle; // 任务管理器，用于统计线程占用的
 static osThreadId xShellHandle; // shell线程
 static osThreadId xTaskTestHandle;  // 测试线程
 static osThreadId xNoneHandle; // 咸鱼线程，用于测量CPU空闲度的
-static osThreadId xMemSaveHandle; // 内存存储线程
 
 #define TaskTickStart(task) task->lastWakeTime = xTaskGetTickCount();
 #define TaskTickEnd(task) task->accumulatedTime = xTaskGetTickCount() - task->lastWakeTime;

@@ -2,9 +2,9 @@
 #include "CS.h"
 #include "memctl.h"
 #include "quadspi.h"
+#include "init.d/DrT/DrT.h"
 
 CS_t cs_head = NULL;
-#define Normal ((void *)1)
 
 // 头部开始的子串匹配,去除深度创建重复文件夹
 int commandFound(char* str1, char* str2){
@@ -96,6 +96,26 @@ void CS_push(char *buf){
     kernel_free(data);
 }
 
+// 朴素插值
+// 无查询环节的插值
+void CS_normal_append(char *buf){
+    char *data = kernel_alloc(128);
+    memcpy(data, buf, 128);
+    // 插值
+    CS_t tmp_head = cs_head;
+    if (tmp_head == NULL) {
+        tmp_head = (CS_t) kernel_alloc(CS_SIZE);
+        tmp_head->next = NULL;
+        memcpy(tmp_head->data, data, W25Qxx_PageSize);
+    } else {
+        CS_t tmp = cs_head;
+        while (tmp->next != NULL) tmp = tmp->next;
+        tmp->next = (CS_t) kernel_alloc(CS_SIZE);
+        tmp->next->next = NULL;
+        memcpy(cs_head->data, data, W25Qxx_PageSize);
+    }
+}
+
 // 输出指令缓存内容
 void CS_list(){
     CS_t tmp = cs_head;
@@ -105,6 +125,15 @@ void CS_list(){
     }
 }
 
+void CS_Run(){
+    CS_t tmp = cs_head;
+    while (tmp != NULL){
+        execCMD(tmp->data);
+        tmp = tmp->next;
+    }
+}
+
+// 历史指令清除
 void CS_clean(){
     CS_t tmp = cs_head;
     while (tmp != NULL){
@@ -136,17 +165,19 @@ void CS_save(){
     }
 }
 
+// 加载CS缓存指令
 void CS_load(){
     uint8_t *p_data = (uint8_t *) kernel_alloc(128);
     memset(p_data, 0, 128);
     QSPI_W25Qxx_ReadBuffer(p_data, 0, 128);
-    if (p_data[0] == QSPI_Page_None) return;
+    if (p_data[0] != QSPI_Page_HaveCS) return;
 
     if (p_data[0] == QSPI_Page_HaveCS){
         char *buf = kernel_alloc(128);
         strcpy(buf, (char*) p_data + 1);
-        printf("buf: %s\n", buf);
         CS_push(buf);
+        printf("CS: %s\n", buf);
+        execCMD(buf);
         kernel_free(buf);
     }
 

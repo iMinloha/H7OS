@@ -8,6 +8,7 @@
 #include "TaskHead.h"
 #include "usbd_cdc_if.h"
 #include "usart.h"
+#include "init.d/CPU/CS.h"
 
 // 初始化全局任务
 void taskGlobalInit(){
@@ -27,14 +28,14 @@ void taskGlobalInit(){
     HAL_ADC_Start(&hadc3);  /* 启动ADC3的转换 */
 
     // QSPI Flash初始化，擦除所有数据
-    if(QSPI_W25Qxx_Init() != QSPI_W25Qxx_OK)
-        printf("Check W25Qxx Failed\n");
+    if(QSPI_W25Qxx_Init() != QSPI_W25Qxx_OK) printf("Check W25Qxx Failed\n");
     else {
         addDevice("mnt", &hqspi, "QSPI", "Quad SPI", DEVICE_STORAGE, DEVICE_ON, NULL);
         printf("QSPI Flash Succeed, ID: %lx\n", QSPI_W25Qxx_ReadID());
     }
     // CPU结构体初始化(用于标注CPU的信息)
     createCPU();
+    // 加载QSPI内容
 }
 
 /*** 函数书写声明 **
@@ -44,6 +45,7 @@ void taskGlobalInit(){
  *      注意：需要开机MDMA才可以正常使用FATFS的f_mkfs函数
  * */
 void QueueInit(void const * argument){
+    CS_load();
     // SD卡挂载FATFS
     BSP_SD_Init();
     FRESULT FSRes = f_mount(&SDFatFS,SDPath,1);

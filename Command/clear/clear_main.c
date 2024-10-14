@@ -3,9 +3,7 @@
 #include "usart.h"
 
 void clear_main(int argc, char **argv){
-    if (argc > 0) {
+    if (argc > 0)
         USB_printf("clear: too many arguments");
-        return;
-    }
-    USB_printf(CLEAR);
+    else USB_printf(CLEAR);
 }

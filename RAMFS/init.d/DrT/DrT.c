@@ -164,6 +164,7 @@ void DrTInit(){
     addFSChild(RAM_FS, "mnt");  // 存储设备文件夹
     addFSChild(RAM_FS, "usr");  // 用户文件夹(会自动保存在QSPI Flash中)
     addFSChild(RAM_FS, "proc"); // 进程文件夹
+    LOGGER("DrT Init\n");
 
     // 添加设备
     addDevice("dev", &CortexM7, "Cortex-M7", "Central Processing Unit", DEVICE_BS, DEVICE_BUSY, NULL);
@@ -171,6 +172,9 @@ void DrTInit(){
 
     // ָ指令注册
     register_main();
+    LOGGER("Command Init\n");
+
+    // 加载DrT
 }
 
 /***
@@ -490,7 +494,7 @@ void execCMD(char* command_rel){
         p = p->next;
     }
 
-    printf("Command not found\n");
+    USB_printf("Command not found\n");
 }
 
 void helpCMD(char *cmd){

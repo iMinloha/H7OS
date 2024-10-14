@@ -14,17 +14,23 @@ typedef struct cs {
     struct cs *next;
 }* CS_t;
 
+// 指令块大小
 #define CS_SIZE sizeof (struct cs)
+// NULL的反义
+#define Normal ((void *)1)
 
+// 添加指令保存
 void CS_push(char *save_str);
-
+// 清空保存
 void CS_clean();
-
+// 输出展示
 void CS_list();
-
+// 保存
 void CS_save();
-
+// 加载
 void CS_load();
+// 执行
+void CS_Run();
 
 
 #endif

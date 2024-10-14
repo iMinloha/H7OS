@@ -86,7 +86,7 @@ FATFS // fat32文件系统
     `---Target // 目标BSP
     
 RAMFS // ram文件系统(未完成)
-    `---init.d // 初始化脚本
+    `---init.d // 初始化脚本(包含arm的汇编)
     
 USB_DEVICE // USB设备
     |---App // 应用程序
@@ -123,11 +123,16 @@ Utilities // 工具, JPG解码
   - [x] 3.3.4. echo指令
   - [x] 3.3.5. help指令
   - [x] 3.3.6. tree指令
+  - [x] 3.3.7. save指令
+  - [x] 3.3.8. reboot指令
+  - [x] 3.3.9. dfu指令
+  - [x] 3.3.10. clear指令
 - [ ] 3.4. SD卡指令开发功能
 - [x] 3.5. USB功能
   - [x] 3.5.1. USB printf功能
   - [x] 3.5.2. USB scanf功能
   - [x] 3.5.3. USB终端(自适应波特率)
+  - [x] 3.5.4. USB DFU下载程序
 - [ ] 3.6. 电源管理功能
 
 ## 4. 项目编译

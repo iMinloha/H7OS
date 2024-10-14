@@ -1,3 +1,0 @@
-D:/H7OS/cmake-build-debug/CMakeFiles/H7OS.elf.dir
-D:/H7OS/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/H7OS/cmake-build-debug/CMakeFiles/rebuild_cache.dir
