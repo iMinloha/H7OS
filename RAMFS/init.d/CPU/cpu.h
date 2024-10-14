@@ -19,7 +19,7 @@ struct CPU{
     // CPU∏∫‘ÿ
     double load;
 };
-
+// CPU∂‘œÛ
 typedef struct CPU* CPU_t;
 
 /**

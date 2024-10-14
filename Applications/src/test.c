@@ -73,7 +73,6 @@ void testFunc(){
 //        CS_load();
         osDelay(1000);
 //        CS_list();
-
         TaskTickEnd(xTest);
     }
 }
