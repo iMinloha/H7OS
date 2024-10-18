@@ -145,6 +145,7 @@ void MX_FREERTOS_Init(void) {
   xNoneHandle = osThreadCreate(osThread(xNone), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
+//    HAL_Delay(5000);
     // 内存控制初始化
     MemControl_Init();
     // 设备全局初始化

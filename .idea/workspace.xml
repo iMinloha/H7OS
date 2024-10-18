@@ -21,14 +21,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b472e725-50d4-49aa-a3fb-20d03d3770a2" name="更改" comment="更多指令与持久化操作系统">
+      <change afterPath="$PROJECT_DIR$/Command/pwd/pwd_main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Command/pwd/pwd_main.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Command/rm/rm_main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Command/rm/rm_main.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Applications/src/test.c" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/src/test.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/Kernel/inc/memctl.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/Kernel/inc/memctl.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RAMFS/RAMFS.h" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/RAMFS.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/CPU/cpu.h" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/CPU/cpu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/src/xShellTask.c" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/src/xShellTask.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/src/xTaskInit.c" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/src/xTaskInit.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Command/Register.c" beforeDir="false" afterPath="$PROJECT_DIR$/Command/Register.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/freertos.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/freertos.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_sdmmc.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_sdmmc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/ASM/reset.s" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/ASM/reset.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/CPU/CS.c" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/CPU/CS.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/DrT/DrT.c" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/DrT/DrT.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/DrT/DrT.h" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/DrT/DrT.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-871383019be10101edc5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-32a67aed960db499b93d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-10-14T12-22-53-0162.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-H7OS.elf-Debug-2dae1b2394bcd523a793.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Applications/src/xMemSave.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Applications/src/xShellTask.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Applications/src/xShellTask.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Applications/src/xTaskInit.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Applications/src/xTaskInit.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Command/Register.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Command/Register.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Core/Src/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/memctl.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/memctl.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/ASM/reset.s.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/ASM/reset.s.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/CPU/CS.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/CPU/CS.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/DrT/DrT.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/DrT/DrT.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/H7OS.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/H7OS.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/H7OS.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/H7OS.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/H7OS.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/H7OS.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/H7OS.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/H7OS.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +107,7 @@
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/28211/Desktop/51&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -93,11 +128,6 @@
       <method v="2" />
     </configuration>
     <configuration name="H7OS.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="H7OS" RUN_TARGET_NAME="H7OS.elf" EXPLICIT_BUILD_TARGET_NAME="all">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -265,7 +295,33 @@
       <workItem from="1728897354797" duration="5000" />
       <workItem from="1728897388312" duration="394000" />
       <workItem from="1728897795296" duration="7217000" />
-      <workItem from="1728908566911" duration="1547000" />
+      <workItem from="1728908566911" duration="4438000" />
+      <workItem from="1728916356993" duration="742000" />
+      <workItem from="1728956909580" duration="617000" />
+      <workItem from="1728958636446" duration="22000" />
+      <workItem from="1728958677763" duration="173000" />
+      <workItem from="1728964456062" duration="528000" />
+      <workItem from="1728970865593" duration="453000" />
+      <workItem from="1728990249461" duration="4861000" />
+      <workItem from="1729047424148" duration="6000" />
+      <workItem from="1729048879575" duration="22000" />
+      <workItem from="1729061018079" duration="91000" />
+      <workItem from="1729061349848" duration="674000" />
+      <workItem from="1729074369283" duration="1257000" />
+      <workItem from="1729075697628" duration="3623000" />
+      <workItem from="1729079394122" duration="3108000" />
+      <workItem from="1729086694583" duration="164000" />
+      <workItem from="1729087605586" duration="80000" />
+      <workItem from="1729137852362" duration="1926000" />
+      <workItem from="1729141562605" duration="790000" />
+      <workItem from="1729149269274" duration="175000" />
+      <workItem from="1729149469191" duration="1532000" />
+      <workItem from="1729155809893" duration="38000" />
+      <workItem from="1729167853609" duration="652000" />
+      <workItem from="1729173842659" duration="22000" />
+      <workItem from="1729175106854" duration="669000" />
+      <workItem from="1729225303163" duration="747000" />
+      <workItem from="1729226077644" duration="3737000" />
     </task>
     <task id="LOCAL-00001" summary="Fatfs初始化">
       <option name="closed" value="true" />
@@ -467,7 +523,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728904526912</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="更多指令与持久化操作系统">
+      <option name="closed" value="true" />
+      <created>1728910177243</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1728910177243</updated>
+    </task>
+    <task id="LOCAL-00027" summary="更多指令与持久化操作系统">
+      <option name="closed" value="true" />
+      <created>1728910216109</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1728910216109</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -513,5 +585,16 @@
     <MESSAGE value="CS数据系统" />
     <MESSAGE value="更多指令与持久化操作系统" />
     <option name="LAST_COMMIT_MESSAGE" value="更多指令与持久化操作系统" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c</url>
+          <line>3182</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

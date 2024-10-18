@@ -5,6 +5,7 @@
 #include "u_thread.h"
 #include "Register.h"
 #include "xTaskManager.h"
+#include "fatfs.h"
 
 /****************************************************
  * DrT 设备树
@@ -78,6 +79,11 @@ struct FS{
     // --------------------
     // proc目录子项目
     Task_t tasklist;
+
+    // --------------------
+    // FATFS挂载点
+    FATFS fs;
+    DIR mount_dir;
 
     // 父级
     FS_t parent;

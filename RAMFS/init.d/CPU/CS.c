@@ -176,7 +176,6 @@ void CS_load(){
         char *buf = kernel_alloc(128);
         strcpy(buf, (char*) p_data + 1);
         CS_push(buf);
-        printf("CS: %s\n", buf);
         execCMD(buf);
         kernel_free(buf);
     }

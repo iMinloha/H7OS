@@ -32,7 +32,6 @@ USB_scanf(buf);
 extern FS_t currentFS;
 
 void ShellTask(){
-    USB_Init_IT();
     uint8_t *cmd_buf = (uint8_t *) kernel_alloc(256);
     char *pwd = (char *) kernel_alloc(256);
     memset(cmd_buf, 0, 256);

@@ -164,15 +164,15 @@ void DrTInit(){
     addFSChild(RAM_FS, "mnt");  // 存储设备文件夹
     addFSChild(RAM_FS, "usr");  // 用户文件夹(会自动保存在QSPI Flash中)
     addFSChild(RAM_FS, "proc"); // 进程文件夹
-    LOGGER("DrT Init\n");
+    LOGGER("[DrT]: DrT Init\n");
 
     // 添加设备
-    addDevice("dev", &CortexM7, "Cortex-M7", "Central Processing Unit", DEVICE_BS, DEVICE_BUSY, NULL);
+    addDevice("dev", &CortexM7, "CPU", "Central Processing Unit", DEVICE_BS, DEVICE_BUSY, NULL);
     addDevice("dev", &huart1, "USART1", "Serial bus device", DEVICE_SERIAL, DEVICE_BUSY, NULL);
 
     // ָ指令注册
     register_main();
-    LOGGER("Command Init\n");
+    LOGGER("[CMD]: Command Init\n");
 
     // 加载DrT
 }
@@ -260,9 +260,8 @@ Task_t loadTask(char* path){
         }
 
         // token不能包含任何的/
-        if (strcmp(token, strtok(token, "/")) != 0){
-            return NULL;
-        } else {
+        if (strcmp(token, strtok(token, "/")) != 0) return NULL;
+        else {
             Task_t p = node->tasklist;
             while (p != NULL) {
                 if (strcmp(p->name, token) == 0) return p;

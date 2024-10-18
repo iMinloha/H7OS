@@ -125,8 +125,7 @@ int main(void)
   MX_ADC3_Init();
   /* USER CODE BEGIN 2 */
   // SD卡初始化，FATFS实现的方法
-  // BSP_SD_Init();
-  // MX_USB_DEVICE_Init();
+  MX_USB_DEVICE_Init();
   /* USER CODE END 2 */
 
   /* Call init function for freertos objects (in freertos.c) */
