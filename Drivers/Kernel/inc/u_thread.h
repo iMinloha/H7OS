@@ -3,6 +3,11 @@
 
 #include <stdatomic.h>
 
+typedef enum{
+    True,
+    False,
+} Bool;
+
 typedef struct param* param_t;
 
 /**

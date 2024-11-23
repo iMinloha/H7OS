@@ -133,8 +133,8 @@ void info_main(int argc, char **argv){
                     break;
             }
         }
+        USB_printf("=-=-=-=-=-=-=-=-=-=-\n");
     }else{
         USB_printf("info /path/device\n");
     }
-    USB_printf("=-=-=-=-=-=-=-=-=-=-\n");
 }

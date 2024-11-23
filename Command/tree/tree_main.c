@@ -11,5 +11,4 @@ void tree_main(int argc, char **argv){
     if (argc == 0) DFS(currentFS, 1);
     else if (argc == 1) DFS(currentFS, atoi(argv[0]));
     else USB_printf("Invalid number of arguments, use command: tree -depth\n");
-
 }

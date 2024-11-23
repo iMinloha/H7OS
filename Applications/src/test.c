@@ -71,6 +71,9 @@ void testFunc(){
 //        QSPI_W25Qxx_ReadBuffer(tmp2, 0, 2);
 //        printf("tmp2[0]: %d, tmp2[1]: %d\n", tmp2[0], tmp2[1]);
 //        CS_load();
+//        execCMD("mkdir test/test1");
+//        execCMD("mkdir test/test2");
+//        execCMD("rm -r test");
         osDelay(1000);
 //        CS_list();
         TaskTickEnd(xTest);

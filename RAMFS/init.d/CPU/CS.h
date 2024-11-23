@@ -21,16 +21,20 @@ typedef struct cs {
 
 // 添加指令保存
 void CS_push(char *save_str);
+
 // 清空保存
 void CS_clean();
+
 // 输出展示
 void CS_list();
+
 // 保存
 void CS_save();
+
 // 加载
 void CS_load();
+
 // 执行
 void CS_Run();
-
 
 #endif

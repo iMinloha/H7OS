@@ -80,10 +80,14 @@ struct FS{
     // proc目录子项目
     Task_t tasklist;
 
+    // 是否允许删除
+    uint8_t allow_rm;
+
     // --------------------
     // FATFS挂载点
     FATFS fs;
-    DIR mount_dir;
+    // 一个FATFS可以挂载到一个DrTNode上
+    DIR mount_dir; // 挂载目录
 
     // 父级
     FS_t parent;
@@ -180,10 +184,10 @@ void ram_mkfile(char* path, char* name);
 
 /**
  * @brief 删除目录
- * @param path
- * @param name
+ * @param path 路径
+ * @param isDir 是否为文件夹
  */
-void ram_rm(char* path, char *name);
+void ram_rm(char* path, Bool isDir);
 
 /**
  * @brief 读取文件

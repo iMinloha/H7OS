@@ -20,8 +20,8 @@ float updateCPU(){
  */
 void createCPU(){
     CortexM7 = (CPU_t) kernel_alloc(sizeof(struct CPU));
-    CortexM7->name = "Cortex-M7";
-    CortexM7->description = "Cortex-M7 CPU";
+    CortexM7->name = "CPU";
+    CortexM7->description = "STM32 CPU";
     CortexM7->frequency = HAL_RCC_GetSysClockFreq();
     CortexM7->temperature = 0;
 }

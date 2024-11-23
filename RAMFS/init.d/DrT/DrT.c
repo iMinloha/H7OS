@@ -12,8 +12,7 @@
 // 串口指针
 FS_t currentFS;
 
-
-void addFSChild(FS_t parent, char *path){
+void addPropertiesFSChild(FS_t parent, char *path){
     // 添加子文件系统(目录)
     FS_t child = (FS_t) kernel_alloc(sizeof(struct FS));
     child->path = (char*) kernel_alloc(strlen(path) + 1);
@@ -21,6 +20,7 @@ void addFSChild(FS_t parent, char *path){
 
     child->node = NULL;
     child->node_count = 0;
+    child->allow_rm = 0;
     child->parent = parent;
     child->child_next = NULL; // 确保下一个节点是空
     child->level_next = NULL;
@@ -37,6 +37,33 @@ void addFSChild(FS_t parent, char *path){
     }
 }
 
+
+void addFSChild(FS_t parent, char *path){
+    // 添加子文件系统(目录)
+    FS_t child = (FS_t) kernel_alloc(sizeof(struct FS));
+    child->path = (char*) kernel_alloc(strlen(path) + 1);
+    strcpy(child->path, path);
+
+    child->node = NULL;
+    child->node_count = 0;
+    child->allow_rm = 1;
+    child->parent = parent;
+    child->child_next = NULL; // 确保下一个节点是空
+    child->level_next = NULL;
+    child->tasklist = NULL;
+
+    // 在父节点层节点下添加节点
+    FS_t p = parent->child_next;
+    if (p == NULL) {
+        parent->child_next = child;
+        return;
+    }else{
+        while(p->level_next != NULL) p = p->level_next;
+        p->level_next = child;
+    }
+}
+
+
 FS_t getFSChild(FS_t parent, char *path){
     FS_t p = parent->child_next;
     while(p != NULL){
@@ -45,6 +72,7 @@ FS_t getFSChild(FS_t parent, char *path){
     }
     return NULL;
 }
+
 
 void addDevice(char *path, void* devicePtr, char *name, char *description, DeviceType_E type,
                DeviceStatus_E status, Func_t driver){
@@ -97,6 +125,7 @@ void addThread(Task_t task){
     }
 }
 
+
 Task_t getThread(char* name){
     FS_t node = getFSChild(RAM_FS, "proc");
     if (node == NULL) return NULL;
@@ -108,11 +137,13 @@ Task_t getThread(char* name){
     return NULL;
 }
 
+
 Task_t getTaskList(){
     FS_t node = getFSChild(RAM_FS, "proc");
     if (node == NULL) return NULL;
     return node->tasklist;
 }
+
 
 Task_t getTaskByHandle(osThreadId handle){
     FS_t node = getFSChild(RAM_FS, "proc");
@@ -125,6 +156,7 @@ Task_t getTaskByHandle(osThreadId handle){
     return NULL;
 }
 
+
 Task_t getThreadByPID(uint8_t pid){
     FS_t node = getFSChild(RAM_FS, "proc");
     if (node == NULL) return NULL;
@@ -135,6 +167,7 @@ Task_t getThreadByPID(uint8_t pid){
     }
     return NULL;
 }
+
 
 extern CPU_t CortexM7;
 
@@ -160,10 +193,10 @@ void DrTInit(){
     currentFS = RAM_FS;
 
     // 添加系统文件夹
-    addFSChild(RAM_FS, "dev");  // 设备文件夹
-    addFSChild(RAM_FS, "mnt");  // 存储设备文件夹
-    addFSChild(RAM_FS, "usr");  // 用户文件夹(会自动保存在QSPI Flash中)
-    addFSChild(RAM_FS, "proc"); // 进程文件夹
+    addPropertiesFSChild(RAM_FS, "dev");  // 设备文件夹
+    addPropertiesFSChild(RAM_FS, "mnt");  // 存储设备文件夹
+    addPropertiesFSChild(RAM_FS, "usr");  // 用户文件夹(会自动保存在QSPI Flash中)
+    addPropertiesFSChild(RAM_FS, "proc"); // 进程文件夹
     LOGGER("[DrT]: DrT Init\n");
 
     // 添加设备
@@ -291,7 +324,7 @@ void ram_mkdir(char* path){
             token = strtok(NULL, "/");
         }
         // token继续分割，在node下创建文件夹
-        if (strtok(NULL, "/") == NULL) addFSChild(node, token);
+        if (strtok(NULL, "/") == NULL) addPropertiesFSChild(node, token);
         else USB_printf("mkdir: %s: too many paths need to be created\n", path);
     }
 }
@@ -330,19 +363,71 @@ void ram_mkfile(char* path, char* name){
 }
 
 // 删除FS_t对象
-void ram_rm(char* path, char *name){
-    FS_t node = loadPath(path);
-    if(node == NULL) return;
-    FS_t p = node->child_next;
-    FS_t pre = node;
-    while(p != NULL){
-        if(strcmp(p->path, name) == 0){
-            pre->child_next = p->child_next;
-            return;
-        }
-        pre = p;
-        p = p->child_next;
+void ram_rm_dir(FS_t node){
+    FS_t parent_child = node->parent->child_next;
+    FS_t pFs = parent_child;
+    FS_t preFS = parent_child;
+
+    while (pFs != NULL){
+        if (pFs == node) break;
+        preFS = pFs;
+        pFs = pFs->level_next;
     }
+
+    // 没找到文件夹
+    if(pFs != node) {
+        USB_color_printf(LIGHT_RED, "rm: delete \"%s\" faild!\n", node->path);
+        return;
+    }
+
+    // 判断是否是相同节点
+    if (parent_child->level_next == NULL) node->parent->child_next = NULL;
+    else if(preFS == pFs) node->parent->child_next = pFs->level_next;
+    else preFS->level_next = pFs->level_next;
+
+    FS_t aim_child_pointer = node->child_next;
+    while (aim_child_pointer != NULL){
+        FS_t aim_child = aim_child_pointer;
+        aim_child_pointer = aim_child_pointer->level_next;
+        ram_rm_dir(aim_child);
+    }
+
+    kernel_free(node);
+}
+
+// 未测试,没有对应文件
+void ram_rm_file(DrTNode_t device){
+    if(device == NULL) return;
+    // device就是目标
+    if (device->type == DrTFILE){
+        // 执行删除操作
+        FS_t parent = device->parent;
+        DrTNode_t p = parent->node;
+        DrTNode_t pre = parent->node;
+        while(p != NULL){
+            if(p == device){
+                pre->next = p->next;
+                kernel_free(p);
+                return;
+            }
+            pre = p;
+            p = p->next;
+        }
+    } else USB_color_printf(LIGHT_RED, "rm: delete \"%s\" faild!\n", device->name);
+}
+
+
+void ram_rm(char* aim_dir, Bool isDir){
+    char *path = kernel_alloc(strlen(aim_dir) + 1);
+    strcpy(path, aim_dir);
+    FS_t node = loadPath(path);
+    DrTNode_t device = loadDevice(path);
+    if (node == NULL && device == NULL) {
+        USB_printf("rm: no such file or folder, check it!\n");
+        return;
+    }
+    else if(node != NULL && isDir == True) ram_rm_dir(node);
+    else if(device != NULL && isDir == False) ram_rm_file(device);
 }
 
 
