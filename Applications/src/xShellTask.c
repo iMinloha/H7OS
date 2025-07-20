@@ -40,7 +40,9 @@ void ShellTask(){
         TaskTickStart(xShell);
 
         USB_scanf(cmd_buf);
-        while (cmd_buf[0] == 0) USB_scanf(cmd_buf);
+        while (cmd_buf[0] == 0) {
+            USB_scanf(cmd_buf);
+        }
 
         execCMD((char*) cmd_buf);
         memset(cmd_buf, 0, 256);
@@ -50,7 +52,7 @@ void ShellTask(){
         USB_color_printf(LIGHT_CYAN, "%s:%s$", UserName, pwd);
 
         // 等待执行串口指令
-        osDelay(1000);
+        osDelay(100);
         TaskTickEnd(xShell);
     }
 }

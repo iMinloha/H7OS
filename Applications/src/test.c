@@ -74,6 +74,7 @@ void testFunc(){
 //        execCMD("mkdir test/test1");
 //        execCMD("mkdir test/test2");
 //        execCMD("rm -r test");
+
         osDelay(1000);
 //        CS_list();
         TaskTickEnd(xTest);

@@ -1,7 +1,7 @@
 #此文件从模板自动生成! 请勿更改!
 set(CMAKE_SYSTEM_NAME Generic)
 set(CMAKE_SYSTEM_VERSION 1)
-cmake_minimum_required(VERSION 3.26)
+cmake_minimum_required(VERSION 3.31)
 
 # specify cross-compilers and tools
 set(CMAKE_C_COMPILER arm-none-eabi-gcc)
@@ -50,9 +50,9 @@ else ()
 endif ()
 
 # 包含头文件
-set(I "Drivers/Kernel/inc" "Applications/inc" "RAMFS/" "Command/")
+set(I "Drivers/Kernel/inc" "Applications/inc" "RAMFS/" "Command/" "UsrBin/")
 # 包含路径文件
-set(S "Applications/*.*" "Command/*.*" "RAMFS/*.*")
+set(S "Applications/*.*" "Command/*.*" "RAMFS/*.*" "UsrBin/*.*")
 
 include_directories(Core/Inc Drivers/STM32H7xx_HAL_Driver/Inc Drivers/STM32H7xx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32H7xx/Include Drivers/CMSIS/Include Middlewares/Third_Party/FreeRTOS/Source/include Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F Utilities/JPEG FATFS/Target FATFS/App Middlewares/Third_Party/FatFs/src USB_DEVICE/App USB_DEVICE/Target Middlewares/ST/STM32_USB_Device_Library/Core/Inc Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc ${I})
 

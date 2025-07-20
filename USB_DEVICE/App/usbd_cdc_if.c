@@ -322,69 +322,69 @@ static int8_t CDC_TransmitCplt_FS(uint8_t *Buf, uint32_t *Len, uint8_t epnum)
 
 
 /*************************************************************************************************
-*	º¯ Êý Ãû:	USB_printf
-*	Èë¿Ú²ÎÊý:	format - Êä³ö¸ñÊ½
-*	·µ »Ø Öµ:	ÎÞ
-*	º¯Êý¹¦ÄÜ:	USB¸ñÊ½»¯Êä³ö
-*	Ëµ    Ã÷:	Ê¹ÓÃÀàËÆprintf£¬Í¨¹ýUSB CDC ÐéÄâ´®¿Ú£¬½«Êý¾Ý¸ñÊ½»¯Êä³ö£¬PC¶Ë¿ÉÓÃ´®¿ÚÖúÊÖ½ÓÊÕ£¬
-*					Êý¾Ý³¤¶È²»ÄÜ³¬¹ý APP_TX_DATA_SIZE
+*	ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½:	USB_printf
+*	ï¿½ï¿½Ú²ï¿½ï¿½ï¿½:	format - ï¿½ï¿½ï¿½ï¿½ï¿½Ê½
+*	ï¿½ï¿½ ï¿½ï¿½ Öµ:	ï¿½ï¿½
+*	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:	USBï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½
+*	Ëµ    ï¿½ï¿½:	Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½printfï¿½ï¿½Í¨ï¿½ï¿½USB CDC ï¿½ï¿½ï¿½â´®ï¿½Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¸ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½PCï¿½Ë¿ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½Õ£ï¿½
+*					ï¿½ï¿½ï¿½Ý³ï¿½ï¿½È²ï¿½ï¿½Ü³ï¿½ï¿½ï¿½ APP_TX_DATA_SIZE
 *************************************************************************************************/
 
 void USB_printf(const char *format, ...){
-    va_list args;					// va_listÐÍ±äÁ¿,Ö¸Ïò²ÎÊýµÄÖ¸Õë
-    uint32_t length;				// Êý¾ÝµÄ³¤¶È
-    uint16_t	 USB_TimeOut;		// ³¬Ê±ÅÐ¶ÏÊ±¼ä
-    uint32_t  Tickstart;			// ¼ÆÊ±ÆðÊ¼Ê±¼ä
+    va_list args;					// va_listï¿½Í±ï¿½ï¿½ï¿½,Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½
+    uint32_t length;				// ï¿½ï¿½ï¿½ÝµÄ³ï¿½ï¿½ï¿½
+    uint16_t	 USB_TimeOut;		// ï¿½ï¿½Ê±ï¿½Ð¶ï¿½Ê±ï¿½ï¿½
+    uint32_t  Tickstart;			// ï¿½ï¿½Ê±ï¿½ï¿½Ê¼Ê±ï¿½ï¿½
 
-    va_start(args, format);	// ¶ÁÈ¡¿É±ä²ÎÊý
+    va_start(args, format);	// ï¿½ï¿½È¡ï¿½É±ï¿½ï¿½ï¿½ï¿½
 
-    // Ïò×Ö·û´®´òÓ¡Ö¸¶¨¸ñÊ½µÄÊý¾Ý£¬²¢»ñÈ¡×îÖÕµÄÊý¾Ý³¤¶È
+    // ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ó¡Ö¸ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½Õµï¿½ï¿½ï¿½ï¿½Ý³ï¿½ï¿½ï¿½
     length = vsnprintf((char *)UserTxBufferFS, APP_TX_DATA_SIZE, (char *)format, args);
 
-    va_end(args);					// ½áÊø¿É±ä²ÎÊýµÄ¶ÁÈ¡
+    va_end(args);					// ï¿½ï¿½ï¿½ï¿½ï¿½É±ï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½È¡
 
 
-    USB_TimeOut = 3;	// ³¬Ê±µÈ´ýÊ±¼ä£¬ÕâÀïÈ¡3ms£¬Êµ²âµ¥´Î·¢ËÍ2KµÄÊý¾Ý½«½ü2ms£¬ÓÃ»§¿ÉÒÔ¸ù¾ÝÊµ¼ÊÐèÇó½øÐÐµ÷Õû
+    USB_TimeOut = 3;	// ï¿½ï¿½Ê±ï¿½È´ï¿½Ê±ï¿½ä£¬ï¿½ï¿½ï¿½ï¿½È¡3msï¿½ï¿½Êµï¿½âµ¥ï¿½Î·ï¿½ï¿½ï¿½2Kï¿½ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½ï¿½2msï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½Ô¸ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½
 
-    if( hUsbDeviceFS.dev_state == USBD_STATE_CONFIGURED )		// ÅÐ¶ÏUSBÊÇ·ñ´¦ÓÚÁ¬½Ó×´Ì¬
+    if( hUsbDeviceFS.dev_state == USBD_STATE_CONFIGURED )		// ï¿½Ð¶ï¿½USBï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬
     {
-        USBD_CDC_HandleTypeDef *hcdc = (USBD_CDC_HandleTypeDef*)hUsbDeviceFS.pClassData;	// »ñÈ¡ÏàÓ¦µÄCDC×´Ì¬
+        USBD_CDC_HandleTypeDef *hcdc = (USBD_CDC_HandleTypeDef*)hUsbDeviceFS.pClassData;	// ï¿½ï¿½È¡ï¿½ï¿½Ó¦ï¿½ï¿½CDC×´Ì¬
 
-        Tickstart = xTaskGetTickCount();		// »ñÈ¡µ±Ç°Ê±¼ä
-        while(hcdc->TxState !=0)		// µÈ´ý·¢ËÍÍê³É
+        Tickstart = xTaskGetTickCount();		// ï¿½ï¿½È¡ï¿½ï¿½Ç°Ê±ï¿½ï¿½
+        while(hcdc->TxState !=0)		// ï¿½È´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         {
             if((xTaskGetTickCount() - Tickstart) > USB_TimeOut) {
-                break;	// Ìø³öµÈ´ý
+                break;	// ï¿½ï¿½ï¿½ï¿½ï¿½È´ï¿½
             }
         }
     }
 
-    CDC_Transmit_FS(UserTxBufferFS, length); // µ÷ÓÃ USB CDCº¯Êý·¢ËÍÊý¾Ý
+    CDC_Transmit_FS(UserTxBufferFS, length); // ï¿½ï¿½ï¿½ï¿½ USB CDCï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 }
 
 uint8_t USB_scanf(uint8_t *buf){
-    uint32_t  Tickstart;			// ¼ÆÊ±ÆðÊ¼Ê±¼ä
-    uint16_t	 USB_TimeOut;		// ³¬Ê±ÅÐ¶ÏÊ±¼ä
+    uint32_t  Tickstart;			// ï¿½ï¿½Ê±ï¿½ï¿½Ê¼Ê±ï¿½ï¿½
+    uint16_t	 USB_TimeOut;		// ï¿½ï¿½Ê±ï¿½Ð¶ï¿½Ê±ï¿½ï¿½
 
-    USB_TimeOut = 3;	// ³¬Ê±µÈ´ýÊ±¼ä£¬ÕâÀïÈ¡3ms£¬Êµ²âµ¥´Î·¢ËÍ2KµÄÊý¾Ý½«½ü2ms£¬ÓÃ»§¿ÉÒÔ¸ù¾ÝÊµ¼ÊÐèÇó½øÐÐµ÷Õû
+    USB_TimeOut = 3;	// ï¿½ï¿½Ê±ï¿½È´ï¿½Ê±ï¿½ä£¬ï¿½ï¿½ï¿½ï¿½È¡3msï¿½ï¿½Êµï¿½âµ¥ï¿½Î·ï¿½ï¿½ï¿½2Kï¿½ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½ï¿½2msï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½Ô¸ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½
 
-    if( hUsbDeviceFS.dev_state == USBD_STATE_CONFIGURED )		// ÅÐ¶ÏUSBÊÇ·ñ´¦ÓÚÁ¬½Ó×´Ì¬
+    if( hUsbDeviceFS.dev_state == USBD_STATE_CONFIGURED )		// ï¿½Ð¶ï¿½USBï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬
     {
-        USBD_CDC_HandleTypeDef *hcdc = (USBD_CDC_HandleTypeDef*)hUsbDeviceFS.pClassData;	// »ñÈ¡ÏàÓ¦µÄCDC×´Ì¬
+        USBD_CDC_HandleTypeDef *hcdc = (USBD_CDC_HandleTypeDef*)hUsbDeviceFS.pClassData;	// ï¿½ï¿½È¡ï¿½ï¿½Ó¦ï¿½ï¿½CDC×´Ì¬
 
-        Tickstart = xTaskGetTickCount();		// »ñÈ¡µ±Ç°Ê±¼ä
-        while(hcdc->TxState !=0)		// µÈ´ý·¢ËÍÍê³É
+        Tickstart = xTaskGetTickCount();		// ï¿½ï¿½È¡ï¿½ï¿½Ç°Ê±ï¿½ï¿½
+        while(hcdc->TxState !=0)		// ï¿½È´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         {
             if((xTaskGetTickCount() - Tickstart) > USB_TimeOut) {
-                break;	// Ìø³öµÈ´ý
+                break;	// ï¿½ï¿½ï¿½ï¿½ï¿½È´ï¿½
             }
         }
     }
 
-    // ×èÈûÊ½½ÓÊÕÊý¾Ý
-    USBD_CDC_SetRxBuffer(&hUsbDeviceFS, buf);	// ÉèÖÃ½ÓÊÕ»º³åÇø
-    USBD_CDC_ReceivePacket(&hUsbDeviceFS);		// ½ÓÊÕÊý¾Ý
+    // ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    USBD_CDC_SetRxBuffer(&hUsbDeviceFS, buf);	// ï¿½ï¿½ï¿½Ã½ï¿½ï¿½Õ»ï¿½ï¿½ï¿½ï¿½ï¿½
+    USBD_CDC_ReceivePacket(&hUsbDeviceFS);		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
     return 0;
 }

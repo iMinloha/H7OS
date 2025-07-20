@@ -146,11 +146,11 @@ void MX_FREERTOS_Init(void) {
 
   /* USER CODE BEGIN RTOS_THREADS */
 //    HAL_Delay(5000);
-    // ÄÚ´æ¿ØÖÆ³õÊ¼»¯
+    // ï¿½Ú´ï¿½ï¿½ï¿½Æ³ï¿½Ê¼ï¿½ï¿½
     MemControl_Init();
-    // Éè±¸È«¾Ö³õÊ¼»¯
+    // ï¿½è±¸È«ï¿½Ö³ï¿½Ê¼ï¿½ï¿½
     taskGlobalInit();
-    // ³õÊ¼»¯È«¾ÖÈÎÎñ
+    // ï¿½ï¿½Ê¼ï¿½ï¿½È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     ThreadInit();
     /* add threads, ... */
     //  SDRAM_Initialization_Sequence(&hsdram1);

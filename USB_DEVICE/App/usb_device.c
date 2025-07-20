@@ -69,7 +69,7 @@ void USB_Init_IT(){
 
     while(  hUsbDeviceFS.dev_state != USBD_STATE_CONFIGURED);
 
-    HAL_Delay(200);	// 建立连接之后，延时等待一段时间，不然第一次发送的数据容易丢失
+    HAL_Delay(200);
 }
 /* USER CODE END 1 */
 
@@ -80,8 +80,8 @@ void USB_Init_IT(){
 void MX_USB_DEVICE_Init(void)
 {
   /* USER CODE BEGIN USB_DEVICE_Init_PreTreatment */
-    uint16_t	 USB_TimeOut;		// 超时判断时间
-    uint32_t  Tickstart;			// 计时起始时间
+    uint16_t	 USB_TimeOut;		// 锟斤拷时锟叫讹拷时锟斤拷
+    uint32_t  Tickstart;			// 锟斤拷时锟斤拷始时锟斤拷
 
   /* USER CODE END USB_DEVICE_Init_PreTreatment */
 
@@ -107,17 +107,17 @@ void MX_USB_DEVICE_Init(void)
 
     HAL_PWREx_EnableUSBVoltageDetector();
 
-    USB_TimeOut = 1000;			// 这里取1000ms
-    Tickstart = HAL_GetTick();	// 获取systick当前时间
-    while(  hUsbDeviceFS.dev_state != USBD_STATE_CONFIGURED )	//  等待USB建立连接
+    USB_TimeOut = 1000;			// 锟斤拷锟斤拷取1000ms
+    Tickstart = HAL_GetTick();	// 锟斤拷取systick锟斤拷前时锟斤拷
+    while(  hUsbDeviceFS.dev_state != USBD_STATE_CONFIGURED )	//  锟饺达拷USB锟斤拷锟斤拷锟斤拷锟斤拷
     {
-        if((HAL_GetTick() - Tickstart) > USB_TimeOut) // 判断是否超时
+        if((HAL_GetTick() - Tickstart) > USB_TimeOut) // 锟叫讹拷锟角凤拷时
         {
-            break;	// 若超时则跳出
+            break;	// 锟斤拷锟斤拷时锟斤拷锟斤拷锟斤拷
         }
     }
 
-    HAL_Delay(200);	// 建立连接之后，延时等待一段时间，不然第一次发送的数据容易丢失
+    HAL_Delay(200);	// 锟斤拷锟斤拷锟斤拷锟斤拷之锟斤拷锟斤拷时锟饺达拷一锟斤拷时锟戒，锟斤拷然锟斤拷一锟轿凤拷锟酵碉拷锟斤拷锟斤拷锟斤拷锟阶讹拷失
 
   /* USER CODE END USB_DEVICE_Init_PostTreatment */
 }

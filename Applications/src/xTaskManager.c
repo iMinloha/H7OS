@@ -74,15 +74,11 @@ void TaskManager(void const * argument){
         while (currentTask != NULL){
             // 计算CPU负载
             currentTask->cpu = (float)currentTask->accumulatedTime / deltaTime * 10;
-            if (currentTask->cpu > 100)
-                currentTask->cpu = 100;
-
+            if (currentTask->cpu > 100) currentTask->cpu = 100;
             currentTask = currentTask->next;
         }
         lastTotalTicks = currentTotalTicks;
-
         CortexM7->load = xNoneTask->cpu;
-
         osDelay(1000);
         TaskTickEnd(xTaskManager);
     }

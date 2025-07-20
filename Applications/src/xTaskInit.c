@@ -9,22 +9,32 @@
 #include "usbd_cdc_if.h"
 #include "usart.h"
 #include "init.d/CPU/CS.h"
+#include "memctl.h"
+
+uint8_t Sd_status = 0;
+extern FATFS SDFatFS; /* File system object for SD logical drive */
+
 
 // 初始化全局任务
 void taskGlobalInit(){
-
     // RAMFS初始化
     DrTInit();
-
-    HAL_SD_CardInfoTypeDef  SDCardInfo;
+    HAL_SD_CardInfoTypeDef SDCardInfo;
     HAL_SD_CardCIDTypeDef SDCard_CID;
 
     HAL_SD_GetCardCID(&hsd1,&SDCard_CID);
     HAL_SD_GetCardInfo(&hsd1,&SDCardInfo);
     uint64_t CardCap = (uint64_t)(SDCardInfo.LogBlockNbr) * (uint64_t)(SDCardInfo.LogBlockSize);	//计算SD卡容量
+    FATFS_LinkDriver(&SD_Driver, SDPath);
+
     // 判断SD卡是否初始化
-    if (CardCap > 0) printf("[xTaskInit]: SD Card Capacity: %lldMB\n", CardCap / 1024 / 1024);
-    else printf("[xTaskInit]: SD Card Not Found\n");
+    if (CardCap > 0) {
+        printf("[xTaskInit]: SD Card Capacity: %lldMB\n", CardCap / 1024 / 1024);
+        Sd_status = 1;
+    } else {
+        printf("[xTaskInit]: SD Card Not Found\n");
+        Sd_status = 0;
+    }
 
     // CPU采样初始化
     HAL_ADCEx_Calibration_Start(&hadc3,ADC_CALIB_OFFSET,ADC_SINGLE_ENDED);
@@ -38,7 +48,6 @@ void taskGlobalInit(){
     }
     // CPU结构体初始化(用于标注CPU的信息)
     createCPU();
-    // 加载QSPI内容
 }
 
 /*** 函数书写声明 **
@@ -49,29 +58,32 @@ void taskGlobalInit(){
  * */
 void QueueInit(void const * argument){
     CS_load();
-    // SD卡挂载FATFS
-    BSP_SD_Init();
-    FRESULT FSRes = f_mount(&SDFatFS,SDPath,1);
-    BYTE work[_MAX_SS];
-    // 如果挂载失败，尝试格式化SD卡
-    if (FSRes != FR_OK){
-        // 创建FAT32文件系统
-        FSRes = f_mkfs(SDPath, FM_FAT32, 0, work, sizeof work);
-        // 判断是否初始化成果
-        if (FSRes == FR_OK) {
-            // 初始化成功，重新挂载
+    if (Sd_status == 1) {
+        FRESULT FSRes = f_mount(&SDFatFS, SDPath, 1);
+        // 如果挂载失败，尝试格式化SD卡
+        if (FSRes != FR_OK) {
+            // 创建FAT32文件系统
+            BYTE work[_MAX_SS];
+            FSRes = f_mkfs(SDPath, FM_FAT32, 0, work, sizeof(work));
+            // 判断是否初始化成果
+            if (FSRes == FR_OK) {
+                // 初始化成功，重新挂载
+                USB_color_printf(LIGHT_GREEN, "\n[xTaskInit]: SD card Succeed\r\n");
+                printf("Init SD faild!\n");
+                addDevice("mnt", NULL, "SD card", "FAT file system", FILE_SYSTEM, DEVICE_ON, NULL);
+                f_mount(&SDFatFS, SDPath, 1);
+            }
+            // 初始化失败，提示用户更换SD卡
+            else USB_color_printf(LIGHT_RED, "\n[xTaskInit]: SD Init Faild, please replace SD card\r\n");
+
+        } else {
+            addDevice("mnt", &SDFatFS, "SD card", "FAT file system", FILE_SYSTEM, DEVICE_ON, NULL);
             USB_color_printf(LIGHT_GREEN, "\n[xTaskInit]: SD card Succeed\r\n");
-            addDevice("mnt", &SDFatFS, "FATFS", "FAT file system", FILE_SYSTEM, DEVICE_ON, NULL);
-            f_mount(&SDFatFS,SDPath,1);
         }
-        // 初始化失败，提示用户更换SD卡
-        else USB_color_printf(LIGHT_RED, "\n[xTaskInit]: SD Init Faild, please replace SD card\r\n");
-    } else {
-        addDevice("mnt", &SDFatFS, "FATFS", "FAT file system", FILE_SYSTEM, DEVICE_ON, NULL);
-        USB_color_printf(LIGHT_GREEN, "\n[xTaskInit]: SD card Succeed\r\n");
     }
     // 一次性初始化完成，挂起初始化任务
     // vTaskSuspend(xTaskInitHandle);
     // 杀死初始化任务
+    osDelay(1);
     vTaskDelete(xTaskInitHandle);
 }

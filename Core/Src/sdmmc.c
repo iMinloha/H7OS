@@ -45,6 +45,7 @@ void MX_SDMMC1_SD_Init(void)
   hsd1.Init.HardwareFlowControl = SDMMC_HARDWARE_FLOW_CONTROL_DISABLE;
   hsd1.Init.ClockDiv = 6;
   /* USER CODE BEGIN SDMMC1_Init 2 */
+  if(HAL_SD_Init(&hsd1) != HAL_OK) return;
 
   /* USER CODE END SDMMC1_Init 2 */
 

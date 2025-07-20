@@ -457,6 +457,7 @@ PI8.Signal=GPIO_Output
 PinOutPanel.RotationAngle=0
 ProjectManager.AskForMigrate=true
 ProjectManager.BackupPrevious=false
+ProjectManager.CompilerLinker=GCC
 ProjectManager.CompilerOptimize=6
 ProjectManager.ComputerToolchain=false
 ProjectManager.CoupleFile=true

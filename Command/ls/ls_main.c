@@ -1,6 +1,5 @@
 #include "ls_main.h"
 #include "RAMFS.h"
-#include "stdio.h"
 #include "memctl.h"
 #include "usbd_cdc_if.h"
 

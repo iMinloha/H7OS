@@ -124,8 +124,8 @@ int main(void)
   MX_FATFS_Init();
   MX_ADC3_Init();
   /* USER CODE BEGIN 2 */
-  // SD卡初始化，FATFS实现的方法
   MX_USB_DEVICE_Init();
+  BSP_SD_Init();
   /* USER CODE END 2 */
 
   /* Call init function for freertos objects (in freertos.c) */
@@ -133,17 +133,6 @@ int main(void)
 
   /* Start scheduler */
   osKernelStart();
-
-  /* We should never get here as control is now taken by the scheduler */
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
-  while (1)
-  {
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
-  }
-  /* USER CODE END 3 */
 }
 
 /**

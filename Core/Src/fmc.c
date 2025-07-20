@@ -29,30 +29,30 @@ void SDRAM_Initialization_Sequence(SDRAM_HandleTypeDef *hsdram){
     FMC_SDRAM_CommandTypeDef Command;
 
     /* Configure a clock configuration enable command */
-    Command.CommandMode 				= FMC_SDRAM_CMD_CLK_ENABLE;	// ¿ªÆôSDRAMÊ±ÖÓ
-    Command.CommandTarget 				= FMC_COMMAND_TARGET_BANK; 	// Ñ¡ÔñÒª¿ØÖÆµÄÇøÓò
+    Command.CommandMode 				= FMC_SDRAM_CMD_CLK_ENABLE;	// ï¿½ï¿½ï¿½ï¿½SDRAMÊ±ï¿½ï¿½
+    Command.CommandTarget 				= FMC_COMMAND_TARGET_BANK; 	// Ñ¡ï¿½ï¿½Òªï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½
     Command.AutoRefreshNumber 		    = 1;
     Command.ModeRegisterDefinition 	= 0;
 
-    HAL_SDRAM_SendCommand(hsdram, &Command, SDRAM_TIMEOUT);	// ·¢ËÍ¿ØÖÆÖ¸Áî
+    HAL_SDRAM_SendCommand(hsdram, &Command, SDRAM_TIMEOUT);	// ï¿½ï¿½ï¿½Í¿ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½
 
     while (HAL_SDRAM_GetState(hsdram) != HAL_SDRAM_STATE_READY);
 
     /* Configure a PALL (precharge all) command */
-    Command.CommandMode 				= FMC_SDRAM_CMD_PALL;		// Ô¤³äµçÃüÁî
-    Command.CommandTarget 				= FMC_COMMAND_TARGET_BANK;	// Ñ¡ÔñÒª¿ØÖÆµÄÇøÓò
+    Command.CommandMode 				= FMC_SDRAM_CMD_PALL;		// Ô¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    Command.CommandTarget 				= FMC_COMMAND_TARGET_BANK;	// Ñ¡ï¿½ï¿½Òªï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½
     Command.AutoRefreshNumber 		    = 1;
     Command.ModeRegisterDefinition 	= 0;
 
-    HAL_SDRAM_SendCommand(hsdram, &Command, SDRAM_TIMEOUT);  // ·¢ËÍ¿ØÖÆÖ¸Áî
+    HAL_SDRAM_SendCommand(hsdram, &Command, SDRAM_TIMEOUT);  // ï¿½ï¿½ï¿½Í¿ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½
 
     /* Configure a Auto-Refresh command */
-    Command.CommandMode 				= FMC_SDRAM_CMD_AUTOREFRESH_MODE;	// Ê¹ÓÃ×Ô¶¯Ë¢ÐÂ
-    Command.CommandTarget 				= FMC_COMMAND_TARGET_BANK;          // Ñ¡ÔñÒª¿ØÖÆµÄÇøÓò
-    Command.AutoRefreshNumber			= 8;                                // ×Ô¶¯Ë¢ÐÂ´ÎÊý
+    Command.CommandMode 				= FMC_SDRAM_CMD_AUTOREFRESH_MODE;	// Ê¹ï¿½ï¿½ï¿½Ô¶ï¿½Ë¢ï¿½ï¿½
+    Command.CommandTarget 				= FMC_COMMAND_TARGET_BANK;          // Ñ¡ï¿½ï¿½Òªï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½
+    Command.AutoRefreshNumber			= 8;                                // ï¿½Ô¶ï¿½Ë¢ï¿½Â´ï¿½ï¿½ï¿½
     Command.ModeRegisterDefinition 	= 0;
 
-    HAL_SDRAM_SendCommand(hsdram, &Command, SDRAM_TIMEOUT);	// ·¢ËÍ¿ØÖÆÖ¸Áî
+    HAL_SDRAM_SendCommand(hsdram, &Command, SDRAM_TIMEOUT);	// ï¿½ï¿½ï¿½Í¿ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½
 
     /* Program the external memory mode register */
     tmpmrd = (uint32_t)SDRAM_MODEREG_BURST_LENGTH_2  |
@@ -61,14 +61,14 @@ void SDRAM_Initialization_Sequence(SDRAM_HandleTypeDef *hsdram){
              SDRAM_MODEREG_OPERATING_MODE_STANDARD   |
              SDRAM_MODEREG_WRITEBURST_MODE_SINGLE;
 
-    Command.CommandMode				= FMC_SDRAM_CMD_LOAD_MODE;	// ¼ÓÔØÄ£Ê½¼Ä´æÆ÷ÃüÁî
-    Command.CommandTarget 				= FMC_COMMAND_TARGET_BANK;	// Ñ¡ÔñÒª¿ØÖÆµÄÇøÓò
+    Command.CommandMode				= FMC_SDRAM_CMD_LOAD_MODE;	// ï¿½ï¿½ï¿½ï¿½Ä£Ê½ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    Command.CommandTarget 				= FMC_COMMAND_TARGET_BANK;	// Ñ¡ï¿½ï¿½Òªï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½
     Command.AutoRefreshNumber 		    = 1;
     Command.ModeRegisterDefinition 	= tmpmrd;
 
-    HAL_SDRAM_SendCommand(hsdram, &Command, SDRAM_TIMEOUT);	// ·¢ËÍ¿ØÖÆÖ¸Áî
+    HAL_SDRAM_SendCommand(hsdram, &Command, SDRAM_TIMEOUT);	// ï¿½ï¿½ï¿½Í¿ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½
 
-    HAL_SDRAM_ProgramRefreshRate(hsdram, 918);  // ÅäÖÃË¢ÐÂÂÊ
+    HAL_SDRAM_ProgramRefreshRate(hsdram, 918);  // ï¿½ï¿½ï¿½ï¿½Ë¢ï¿½ï¿½ï¿½ï¿½
 }
 /* USER CODE END 0 */
 

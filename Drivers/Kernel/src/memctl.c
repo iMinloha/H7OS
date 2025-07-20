@@ -69,6 +69,7 @@ void flashSDRAM(){
 
 // 内存池
 tlsf_t mem_pool;
+// 内核内存池
 tlsf_t kernel_pool;
 // 使用内存
 uint32_t using_mem = 0;
