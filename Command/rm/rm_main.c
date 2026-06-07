@@ -1,52 +1,58 @@
 #include "rm_main.h"
 #include "usbd_cdc_if.h"
-#include "init.d/DrT/DrT.h"
+#include "Core/DrT.h"
 #include "memctl.h"
-#include "init.d/CPU/CS.h"
+#include "fatfs.h"
+#include <string.h>
 
 extern FS_t currentFS;
 
-void rm(char *path, Bool isDir){
-    // dirÆ´½ÓÎª¾ø¶ÔÂ·¾¶
-    char *dir = kernel_alloc(128);
-    ram_pwd(currentFS, dir);
-
-    // Æ´½ÓdirºÍpath
-    if (path[0] == '/' || strcmp(dir, "/") == 0) sprintf(dir, "%s%s", dir, path);
-    else sprintf(dir, "%s/%s", dir, path);
-
-
-    // É¾³ýÄ¿±ê
-    ram_rm(dir, isDir);
-
-    // Æ´½ÓÖ¸Áî±£´æÔÚCSÊ÷ÖÐ
-    char *cmd = kernel_alloc(96);
-
-    if (isDir == True) sprintf(cmd, "rm -r %s", dir);
-    else sprintf(cmd, "rm %s", dir);
-
-    CS_push(cmd);
-
-    // ÊÍ·ÅÄÚ´æ
-    kernel_free(dir);
-    kernel_free(cmd);
-}
-
-
-
-/***                                                                                    
- * @note: rm path/filename
- *        rm -r path
- * */
 void rm_main(int argc, char *argv[]){
-    Bool isDir = strcmp(argv[0], "-r") == 0 ? True : False;
-    if (argc == 0) USB_printf("Usage: rm <path>/<file> or rm -r <path>\n");
-    else if (argc == 1){
-        // ´ÓºóÍùÇ°·Ö¸îÂ·¾¶ºÍÎÄ¼þÃû
-        if (isDir == True) USB_printf("Usage: rm <path>/<file> or rm -r <path>\n");
-        else rm(argv[0], isDir);
-    }else if (argc == 2){
-        if (isDir == True) rm(argv[1], isDir);
-        else USB_printf("Usage: rm <path>/<file> or rm -r <path>\n");
-    } else USB_printf("Usage: rm <path>/<file> or rm -r <path>\n");
+    if (argc != 1) {
+        USB_printf("Usage: rm <path>\n");
+        return;
+    }
+
+    /* å¦‚æžœåœ¨ SD æŒ‚è½½ç‚¹å†…, ç›´æŽ¥åœ¨ SD å¡ä¸Šåˆ é™¤ */
+    char *sd_path = fs_to_sd_path(argv[0]);
+    if (sd_path != NULL) {
+        /* å…ˆå°è¯•ä½œä¸ºæ–‡ä»¶åˆ é™¤, å†å°è¯•ä½œä¸ºç©ºç›®å½•åˆ é™¤ */
+        FRESULT res = f_unlink(sd_path);
+        if (res == FR_OK) {
+            USB_printf("rm: [SD] %s\n", sd_path);
+        } else {
+            /* f_unlink å¤±è´¥, å¯èƒ½æ˜¯ç›®å½•, å°è¯• f_rmdir (éœ€è¦ opendir ç¡®è®¤æ˜¯ç›®å½•) */
+            DIR test;
+            if (f_opendir(&test, sd_path) == FR_OK) {
+                f_closedir(&test);
+                res = f_unlink(sd_path);  /* FATFS f_unlink ä¹Ÿèƒ½åˆ ç©ºç›®å½•... è¯•è¯• */
+                if (res != FR_OK) {
+                    USB_color_printf(LIGHT_RED, "rm: [SD] cannot remove '%s' (dir not empty?)\n", sd_path);
+                } else {
+                    USB_printf("rm: [SD] %s\n", sd_path);
+                }
+            } else {
+                USB_color_printf(LIGHT_RED, "rm: [SD] '%s' not found\n", sd_path);
+            }
+        }
+        kernel_free(sd_path);
+        return;
+    }
+
+    /* å¦åˆ™åœ¨ RAMFS ä¸­åˆ é™¤ */
+    char *abs_path = kernel_alloc(256);
+    if (argv[0][0] == '/') {
+        strcpy(abs_path, argv[0]);
+    } else {
+        ram_pwd(currentFS, abs_path);
+        uint32_t len = strlen(abs_path);
+        if (len > 0 && abs_path[len - 1] != '/') {
+            abs_path[len] = '/';
+            abs_path[len + 1] = '\0';
+        }
+        strcat(abs_path, argv[0]);
+    }
+
+    ram_rm(abs_path);
+    kernel_free(abs_path);
 }

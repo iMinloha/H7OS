@@ -70,8 +70,10 @@ void info_main(int argc, char **argv){
             return;
         }else{
 
-            if(strcmp(drt->name, CortexM7->name) == 0) {
-                showCPUInfo();
+            /* Device found — if it has fops, use dev_read for rich output */
+            uint8_t buf[256];
+            if (dev_read(argv[0], buf, sizeof(buf)) > 0) {
+                USB_printf("%s", (char*)buf);
                 return;
             }
 

@@ -8,30 +8,32 @@
 #include "tree/tree_main.h"
 #include "mkdir/mkdir_main.h"
 #include "reboot/reboot_main.h"
-#include "clear/clear_main.h"
-#include "cmd/cmd_main.h"
 #include "save/save_main.h"
-#include "dfu/dfu_main.h"
 #include "pwd/pwd_main.h"
 #include "rm/rm_main.h"
 #include "reset/reset_main.h"
+#include "flash/flash_main.h"
+#include "touch/touch_main.h"
+#include "mount/mount_main.h"
+#include "cat/cat_main.h"
+#include "use/use_main.h"
 
 void register_main(){
-    // 注册指令集(bash, ls, cd, info, echo, help, tree)
-    CMD("ls", "List files", "ls -path or ls", ls_main);
-    CMD("cd", "Change Directory", "cd -path", cd_main);
-    CMD("info", "list something infomation", "info -path/file", info_main);
-    CMD("echo", "echo something", "echo your want print things", echo_main);
-    CMD("help", "help using command", "help -command", help_main);
-    CMD("tree", "show file system struct tree", "tree -depth", tree_main);
-    CMD("mkdir", "make your owner folder", "mkdir -path", mkdir_main);
-    CMD("reboot", "restart the microcontroller", "reboot", reboot_main);
-    CMD("save", "safely save the operating system", "save", save_main);
-    CMD("pwd", "output the current path", "pwd", pwd_main);
-    CMD("rm", "remove the file or folder", "rm", rm_main);
-    CMD("reset", "system disk reset", "reset", reset_main);
-    // DFU需要通过USB下载，不可以用汇编实现
-//    CMD("dfu", "the system enters DFU mode", "dfu", dfu_main);
-//    CMD("cmd", "nothing happend", "cmd", cmd_main);
-//    CMD("clear", "clean uart screen", "clear", clear_main);
+    CMD("ls",    "List files",             "ls [path]",            ls_main);
+    CMD("cd",    "Change directory",       "cd <path>",            cd_main);
+    CMD("info",  "Show device/task info",  "info <path>",          info_main);
+    CMD("echo",  "Print a message",        "echo <text>",          echo_main);
+    CMD("help",  "Show command help",      "help [command]",       help_main);
+    CMD("tree",  "Show filesystem tree",   "tree [depth]",         tree_main);
+    CMD("mkdir", "Create a directory",     "mkdir <path>",         mkdir_main);
+    CMD("mount", "Mount SD to RAMFS",      "mount [sd] <ramfs>",   mount_main);
+    CMD("reboot","Restart the system",     "reboot",               reboot_main);
+    CMD("save",  "Save filesystem to flash","save",                save_main);
+    CMD("pwd",   "Print working directory","pwd",                  pwd_main);
+    CMD("rm",    "Remove file/directory",  "rm <path>",            rm_main);
+    CMD("reset", "Factory reset (erase)",  "reset",                reset_main);
+    CMD("flash", "Erase QSPI flash chip",  "flash",                flash_main);
+    CMD("touch", "Create a file",          "touch <path> [data]",  touch_main);
+    CMD("cat",   "Print file contents",    "cat <file>",           cat_main);
+    CMD("use",   "Use device fops",        "use <dev> <op> [args]", use_main);
 }

@@ -8,7 +8,7 @@
 #include "TaskHead.h"
 #include "usbd_cdc_if.h"
 #include "usart.h"
-#include "init.d/CPU/CS.h"
+#include "Periph/FS_Serial.h"
 #include "memctl.h"
 
 uint8_t Sd_status = 0;
@@ -25,7 +25,7 @@ void taskGlobalInit(){
     HAL_SD_GetCardCID(&hsd1,&SDCard_CID);
     HAL_SD_GetCardInfo(&hsd1,&SDCardInfo);
     uint64_t CardCap = (uint64_t)(SDCardInfo.LogBlockNbr) * (uint64_t)(SDCardInfo.LogBlockSize);	//计算SD卡容量
-    FATFS_LinkDriver(&SD_Driver, SDPath);
+    /* FATFS_LinkDriver 已在 MX_FATFS_Init() 中调用, 此处不重复 */
 
     // 判断SD卡是否初始化
     if (CardCap > 0) {
@@ -57,7 +57,7 @@ void taskGlobalInit(){
  *      注意：需要开机MDMA才可以正常使用FATFS的f_mkfs函数
  * */
 void QueueInit(void const * argument){
-    CS_load();
+    FS_Deserialize();
     if (Sd_status == 1) {
         FRESULT FSRes = f_mount(&SDFatFS, SDPath, 1);
         // 如果挂载失败，尝试格式化SD卡
@@ -78,6 +78,14 @@ void QueueInit(void const * argument){
         } else {
             addDevice("mnt", &SDFatFS, "SDcard", "FAT file system", FILE_SYSTEM, DEVICE_ON, NULL);
             printf("[xTaskInit]: Fatfs Succeed\r\n");
+            /* 修复: FatFs 未正确计算 database */
+            if (SDFatFS.fs_type == FS_FAT32) {
+                DWORD db = SDFatFS.fatbase + SDFatFS.n_fats * SDFatFS.fsize;
+                if (SDFatFS.database != db) {
+                    printf("[xTaskInit]: fix database %lu -> %lu\n", SDFatFS.database, db);
+                    SDFatFS.database = db;
+                }
+            }
         }
     }
     // 一次性初始化完成，挂起初始化任务

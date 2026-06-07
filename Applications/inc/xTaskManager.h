@@ -38,10 +38,10 @@ struct Task{
     // 任务句柄
     osThreadId handle;
     // 计数
-    uint32_t lastWakeTime;
     // 累计时间
-    uint32_t accumulatedTime;
     // PID
+    uint32_t lastWakeTime;
+    uint32_t accumulatedTime;
     uint8_t PID;
     // 下一个任务
     Task_t next;

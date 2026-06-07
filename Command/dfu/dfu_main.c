@@ -1,6 +1,6 @@
 #include "dfu_main.h"
 #include "usbd_cdc_if.h"
-#include "init.d/CPU/CS.h"
+#include "Periph/FS_Serial.h"
 #include "cmsis_os.h"
 
 extern void dfu_mode(void);
@@ -10,8 +10,8 @@ void dfu_main(int argc, char **argv){
         USB_printf("dfu: too many arguments");
         return;
     }
-    USB_printf("wait for saveing...");
-    CS_save();
+    USB_printf("Saving filesystem before DFU...\n");
+    FS_Serialize();
     osDelay(1000);
     dfu_mode();
 }

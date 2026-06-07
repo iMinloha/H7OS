@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Applications/inc/TaskHead.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Applications/inc/xTaskManager.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Applications/src/xNoneTask.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/CMakeLists.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/CMakeLists_template.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Command/Register.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Command/mkdir/mkdir_main.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Command/rm/rm_main.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Core/Inc/fmc.h" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/Core/Inc/quadspi.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Core/Src/fmc.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Core/Src/freertos.c" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Core/Src/lcd_define.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Core/Src/main.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Core/Src/quadspi.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Core/Src/torch_iic.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Drivers/Kernel/inc/memctl.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Drivers/Kernel/inc/u_thread.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/RAMFS/RAMFS.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/RAMFS/init.d/ASM/reset.s" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/RAMFS/init.d/ASM/sd_boot.s" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/RAMFS/init.d/Algorithm/DFS.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/RAMFS/init.d/Algorithm/DFS.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/RAMFS/init.d/CPU/CS.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/RAMFS/init.d/CPU/CS.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/RAMFS/init.d/CPU/cpu.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/RAMFS/init.d/DrT/DrT.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/USB_DEVICE/App/usb_device.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/USB_DEVICE/App/usbd_cdc_if.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/USB_DEVICE/App/usbd_cdc_if.h" charset="GBK" />
+  </component>
+</project>

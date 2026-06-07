@@ -7,7 +7,7 @@
 
 extern Task_t xNoneTask;
 
-// 无所事事线程(用于统计CPU负担)
+
 void NoneTask(void const * argument){
     while(1){
         TaskTickStart(xNoneTask);

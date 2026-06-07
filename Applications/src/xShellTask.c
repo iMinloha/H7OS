@@ -31,7 +31,6 @@ void ShellTask(){
     USB_color_printf(LIGHT_CYAN, "%s:/$\n", UserName);
     while(1){
         TaskTickStart(xShell);
-
         USB_scanf(cmd_buf);
         while (cmd_buf[0] == 0) USB_scanf(cmd_buf);
 
@@ -39,10 +38,14 @@ void ShellTask(){
         memset(cmd_buf, 0, 256);
 
         ram_pwd(currentFS, pwd);
+        if (currentFS->sd_mount_path != NULL) {
+            char *sd = currentFS->sd_cd_path ? currentFS->sd_cd_path : currentFS->sd_mount_path;
+            strcat(pwd, " [SD:");
+            strcat(pwd, sd);
+            strcat(pwd, "]");
+        }
 
         USB_color_printf(LIGHT_CYAN, "%s:%s$\n", UserName, pwd);
-
-        // 等待执行串口指令
         osDelay(100);
         TaskTickEnd(xShell);
     }

@@ -31,7 +31,7 @@
 #include "usbd_cdc.h"
 
 /* USER CODE BEGIN INCLUDE */
-
+#include "usart.h"
 /* USER CODE END INCLUDE */
 
 /** @addtogroup STM32_USB_OTG_DEVICE_LIBRARY
@@ -116,7 +116,7 @@ uint8_t CDC_Transmit_FS(uint8_t* Buf, uint16_t Len);
 
 void USB_printf(const char *format, ...);		// USB��ʽ����� ��ʹ�÷������� printf
 
-#define USB_color_printf(color, format, ...) USB_printf(color); USB_printf(format, ##__VA_ARGS__); USB_printf(NONE);
+#define USB_color_printf(color, format, ...) {USB_printf(color); USB_printf(format, ##__VA_ARGS__); USB_printf(NONE);}
 
 uint8_t USB_scanf(uint8_t *buf);        // USBɨ������
 

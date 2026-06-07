@@ -1,7 +1,7 @@
-#´ËÎÄ¼ş´ÓÄ£°å×Ô¶¯Éú³É! ÇëÎğ¸ü¸Ä!
+#æ­¤æ–‡ä»¶ä»æ¨¡æ¿è‡ªåŠ¨ç”Ÿæˆ! è¯·å‹¿æ›´æ”¹!
 set(CMAKE_SYSTEM_NAME Generic)
 set(CMAKE_SYSTEM_VERSION 1)
-cmake_minimum_required(VERSION 4.0)
+cmake_minimum_required(VERSION 4.1)
 
 # specify cross-compilers and tools
 set(CMAKE_C_COMPILER arm-none-eabi-gcc)
@@ -49,12 +49,12 @@ else ()
     add_compile_options(-Og -g)
 endif ()
 
-# °üº¬Í·ÎÄ¼ş
-set(I "Drivers/Kernel/inc" "Applications/inc" "RAMFS/" "Command/")
-# °üº¬Â·¾¶ÎÄ¼ş
+# åŒ…å«å¤´æ–‡ä»¶
+set(I "Drivers/Kernel/inc" "Applications/inc" "RAMFS/" "RAMFS/init.d" "Command/")
+# åŒ…å«è·¯å¾„æ–‡ä»¶
 set(S "Applications/*.*" "Command/*.*" "RAMFS/*.*")
 
-include_directories(Core/Inc Drivers/STM32H7xx_HAL_Driver/Inc Drivers/STM32H7xx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32H7xx/Include Drivers/CMSIS/Include Middlewares/Third_Party/FreeRTOS/Source/include Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F Utilities/JPEG FATFS/Target FATFS/App Middlewares/Third_Party/FatFs/src USB_DEVICE/App USB_DEVICE/Target Middlewares/ST/STM32_USB_Device_Library/Core/Inc Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc ${I})
+include_directories(Core/Inc Drivers/STM32H7xx_HAL_Driver/Inc Drivers/STM32H7xx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32H7xx/Include Drivers/CMSIS/Include Middlewares/Third_Party/FreeRTOS/Source/include Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F Utilities/JPEG FATFS/Target FATFS/App Middlewares/Third_Party/FatFs/src USB_DEVICE/App USB_DEVICE/Target Middlewares/ST/STM32_USB_Device_Library/Core/Inc Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc Drivers/BSP ${I})
 
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx)
 

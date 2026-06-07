@@ -35,6 +35,7 @@ extern "C" {
 #define LIGHT_RED    "\033[1;31m"
 #define GREEN        "\033[0;32;32m"
 #define LIGHT_GREEN  "\033[1;32m"
+#define LIGHT_YELLOW "\033[1;33m"
 #define BLUE         "\033[0;32;34m"
 #define LIGHT_BLUE   "\033[1;34m"
 #define DARY_GRAY    "\033[1;30m"
@@ -50,11 +51,14 @@ extern "C" {
 
 extern UART_HandleTypeDef huart1;
 
+extern UART_HandleTypeDef huart2;
+
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
 
 void MX_USART1_UART_Init(void);
+void MX_USART2_UART_Init(void);
 
 /* USER CODE BEGIN Prototypes */
 

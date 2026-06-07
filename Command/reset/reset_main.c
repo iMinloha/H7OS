@@ -2,7 +2,6 @@
 #include "memctl.h"
 #include "usbd_cdc_if.h"
 #include "quadspi.h"
-#include "init.d/CPU/CS.h"
 #include "usart.h"
 
 void reset_main(int argc, char *argv[]){
@@ -16,9 +15,7 @@ void reset_main(int argc, char *argv[]){
     if (strcmp(input_buf, "y") == 0){
         USB_color_printf(YELLOW, "reset: System is resetting...\n");
         if (QSPI_W25Qxx_ChipErase() == QSPI_W25Qxx_OK) {
-            USB_color_printf(YELLOW, "reset: Flash chip erased.\n");
-            CS_clean();
-            USB_color_printf(YELLOW, "reset: It will take effect after restart\n");
+            USB_color_printf(YELLOW, "reset: Flash chip erased. It will take effect after restart\n");
         }
         else USB_color_printf(LIGHT_RED, "reset: Flash chip erase failed.\n");
     }else{
