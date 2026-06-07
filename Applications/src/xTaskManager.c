@@ -33,14 +33,14 @@ Task_t RAMFS_TASK_Create(char *name, TaskStatus_E status, TaskPriority_E priorit
 
 void ThreadInit(){
     // 线程都在这里进行注册
+    osThreadDef(xTaskInit, QueueInit, osPriorityNormal, 0, 512);
+    xTaskInitHandle = osThreadCreate(osThread(xTaskInit), NULL);
+
     osThreadDef(xShell, ShellTask, osPriorityNormal, 0, 512);
     xShellHandle = osThreadCreate(osThread(xShell), NULL);
 
     osThreadDef(xTaskManager, TaskManager, osPriorityAboveNormal, 0, 256);
     xTaskManagerHandle = osThreadCreate(osThread(xTaskManager), NULL);
-
-    osThreadDef(xTaskInit, QueueInit, osPriorityNormal, 0, 512);
-    xTaskInitHandle = osThreadCreate(osThread(xTaskInit), NULL);
 
     osThreadDef(xTaskTest, testFunc, osPriorityNormal, 0, 512);
     xTaskTestHandle = osThreadCreate(osThread(xTaskTest), NULL);

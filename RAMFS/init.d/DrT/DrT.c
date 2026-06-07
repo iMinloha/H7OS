@@ -12,6 +12,7 @@
 // 串口指针
 FS_t currentFS;
 
+
 void addPropertiesFSChild(FS_t parent, char *path){
     // 添加子文件系统(目录)
     FS_t child = (FS_t) kernel_alloc(sizeof(struct FS));
@@ -197,6 +198,7 @@ void DrTInit(){
     addPropertiesFSChild(RAM_FS, "mnt");  // 存储设备文件夹
     addPropertiesFSChild(RAM_FS, "usr");  // 用户文件夹(会自动保存在QSPI Flash中)
     addPropertiesFSChild(RAM_FS, "proc"); // 进程文件夹
+    addPropertiesFSChild(RAM_FS, "bin"); // 用户应用文件夹
     LOGGER("[DrT]: DrT Init\n");
 
     // 添加设备
@@ -218,6 +220,7 @@ void DrTInit(){
 FS_t loadPath(char* path) {
     FS_t node = RAM_FS;
     if (strcmp(path, "/") == 0) return node;
+    else if (strcmp(path, "../") == 0) return currentFS->parent;
     else {
         if (path[0] == '/') path++;
         char *token = strtok(path, "/");
@@ -536,7 +539,6 @@ void addCMD(char* name, char* description, char* usage, Comand_t cmd){
     while(p->next != NULL) p = p->next;
     CMD_t newCMD = (CMD_t) kernel_alloc(sizeof(struct CMD));
 
-
     newCMD->name = (char*) kernel_alloc(strlen(name) + 1);
     newCMD->description = (char*) kernel_alloc(strlen(description) + 1);
     newCMD->usage = (char*) kernel_alloc(strlen(usage) + 1);
@@ -599,6 +601,5 @@ void helpCMD(char *cmd){
             }
             p = p->next;
         }
-
     }
 }

@@ -3,6 +3,11 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
+    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
+  </component>
   <component name="CMakePresetLoader">{
   &quot;useNewFormat&quot;: true
 }</component>
@@ -19,62 +24,46 @@
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" GENERATION_OPTIONS="-G &quot;MinGW Makefiles&quot;" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b472e725-50d4-49aa-a3fb-20d03d3770a2" name="更改" comment="rm指令">
-      <change afterPath="$PROJECT_DIR$/Command/mount/mount_main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Command/mount/mount_main.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mmc.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mmc_ex.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_nand.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_nor.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sram.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.cproject" beforeDir="false" afterPath="$PROJECT_DIR$/.cproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b472e725-50d4-49aa-a3fb-20d03d3770a2" name="更改" comment="修复FatFS挂载问题">
+      <change afterPath="$PROJECT_DIR$/Command/builder/builder_main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Command/builder/builder_main.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Inc/ltdc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Src/ltdc.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc_ex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RAMFS/init.d/Bin/builder/builder.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RAMFS/init.d/Bin/builder/builder.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RAMFS/init.d/Bin/builder/keywords/Args.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RAMFS/init.d/Bin/builder/keywords/kw_build.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RAMFS/init.d/Bin/builder/keywords/kw_build.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mxproject" beforeDir="false" afterPath="$PROJECT_DIR$/.mxproject" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Applications/src/test.c" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/src/test.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Applications/src/xNoneTask.c" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/src/xNoneTask.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Applications/src/xShellTask.c" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/src/xShellTask.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Applications/src/xTaskInit.c" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/src/xTaskInit.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Applications/src/xTaskManager.c" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/src/xTaskManager.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Command/ls/ls_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Command/ls/ls_main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/fmc.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/fmc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/quadspi.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/quadspi.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/fmc.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/fmc.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Command/help/help_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Command/help/help_main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Command/info/info_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Command/info/info_main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/lcd_define.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/lcd_define.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32h7xx_hal_conf.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32h7xx_hal_conf.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/freertos.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/freertos.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/gpio.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/lcd_define.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/lcd_define.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/quadspi.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/quadspi.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/sdmmc.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/sdmmc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/Kernel/inc/memctl.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/Kernel/inc/memctl.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Drivers/Kernel/src/memctl.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/Kernel/src/memctl.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/H7OS.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/H7OS.ioc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USB_DEVICE/App/usb_device.c" beforeDir="false" afterPath="$PROJECT_DIR$/USB_DEVICE/App/usb_device.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USB_DEVICE/App/usbd_cdc_if.c" beforeDir="false" afterPath="$PROJECT_DIR$/USB_DEVICE/App/usbd_cdc_if.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USB_DEVICE/App/usbd_cdc_if.h" beforeDir="false" afterPath="$PROJECT_DIR$/USB_DEVICE/App/usbd_cdc_if.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-b6c71fd1ed7ec1706cc9.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-5bb0ddbb908fcceac092.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/DrT/DrT.c" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/DrT/DrT.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/DrT/DrT.h" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/DrT/DrT.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeASMCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Applications/src/test.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Applications/src/test.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Applications/src/xNoneTask.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Applications/src/xNoneTask.c.obj" afterDir="false" />
@@ -193,13 +182,12 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Utilities/JPEG/jpeg_utils.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/H7OS.elf.dir/Utilities/JPEG/jpeg_utils.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/H7OS.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/H7OS.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/H7OS.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/H7OS.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/H7OS.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/H7OS.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/H7OS.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/H7OS.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,6 +214,99 @@
     &quot;accountId&quot;: &quot;3a14dc33-76f4-4b56-a280-5782fa07c4f1&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -251,6 +332,7 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;OpenOCD 下载并运行.OCD H7OS.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -260,23 +342,27 @@
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/28211/Desktop/51&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/H7OS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;serialMonitor.commands&quot;: &quot;ls&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;serialmonitor.settings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CMakeSettings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\H7OS\Core\Inc" />
       <recent name="D:\H7OS\Applications\inc" />
       <recent name="D:\H7OS\Drivers\Kernel\inc" />
-      <recent name="D:\H7OS\Core\Inc" />
     </key>
+  </component>
+  <component name="RtosSettings">
+    <option name="rtosEnabled" value="true" />
+    <option name="rtosType" value="FreeRTOS" />
   </component>
   <component name="RunManager" selected="OpenOCD 下载并运行.OCD H7OS">
     <configuration name="H7OS" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory" temporary="true">
@@ -288,8 +374,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="CMake 应用程序.H7OS.elf" />
       <item itemvalue="CMake 调试.H7OS" />
+      <item itemvalue="CMake 应用程序.H7OS.elf" />
       <item itemvalue="OpenOCD 下载并运行.OCD H7OS" />
     </list>
     <recent_temporary>
@@ -595,7 +681,63 @@
       <workItem from="1750493412981" duration="1071000" />
       <workItem from="1753007666633" duration="8290000" />
       <workItem from="1753019257348" duration="2739000" />
-      <workItem from="1753025599499" duration="735000" />
+      <workItem from="1753025599499" duration="3373000" />
+      <workItem from="1753034193047" duration="162000" />
+      <workItem from="1753062678695" duration="10881000" />
+      <workItem from="1753112983059" duration="5000" />
+      <workItem from="1753336499720" duration="68000" />
+      <workItem from="1753337574561" duration="3709000" />
+      <workItem from="1753367539053" duration="51000" />
+      <workItem from="1754918636556" duration="84000" />
+      <workItem from="1755007270386" duration="1000" />
+      <workItem from="1755054021582" duration="7000" />
+      <workItem from="1756383862765" duration="120000" />
+      <workItem from="1756384098784" duration="55000" />
+      <workItem from="1756387604518" duration="731000" />
+      <workItem from="1756469650873" duration="650000" />
+      <workItem from="1756517552226" duration="10000" />
+      <workItem from="1756916396414" duration="1037000" />
+      <workItem from="1756981560675" duration="724000" />
+      <workItem from="1757006122236" duration="616000" />
+      <workItem from="1757053684532" duration="15000" />
+      <workItem from="1759072145673" duration="28000" />
+      <workItem from="1759072183876" duration="891000" />
+      <workItem from="1759117428612" duration="1000" />
+      <workItem from="1759676122786" duration="49000" />
+      <workItem from="1759676902242" duration="2476000" />
+      <workItem from="1759679698760" duration="31000" />
+      <workItem from="1759743594521" duration="1920000" />
+      <workItem from="1759748130738" duration="55000" />
+      <workItem from="1759749898304" duration="5000" />
+      <workItem from="1759846437431" duration="2998000" />
+      <workItem from="1759913527239" duration="4801000" />
+      <workItem from="1759920926716" duration="11049000" />
+      <workItem from="1759985947021" duration="15000" />
+      <workItem from="1759990250168" duration="1138000" />
+      <workItem from="1760079897647" duration="1785000" />
+      <workItem from="1763541118195" duration="624000" />
+      <workItem from="1764239383002" duration="79000" />
+      <workItem from="1764789632717" duration="305000" />
+      <workItem from="1764837591603" duration="13000" />
+      <workItem from="1764837769822" duration="636000" />
+      <workItem from="1764838476726" duration="118000" />
+      <workItem from="1764918142820" duration="7000" />
+      <workItem from="1765085116288" duration="1712000" />
+      <workItem from="1765212047411" duration="29000" />
+      <workItem from="1765212406892" duration="1221000" />
+      <workItem from="1765545136873" duration="9000" />
+      <workItem from="1765773119739" duration="8000" />
+      <workItem from="1765845156950" duration="867000" />
+      <workItem from="1765862408637" duration="3667000" />
+      <workItem from="1765875079342" duration="700000" />
+      <workItem from="1765931083611" duration="1204000" />
+      <workItem from="1765942603383" duration="262000" />
+      <workItem from="1770959673565" duration="539000" />
+      <workItem from="1770967675216" duration="6000" />
+      <workItem from="1773725193536" duration="462000" />
+      <workItem from="1778934963299" duration="759000" />
+      <workItem from="1779718688810" duration="120000" />
+      <workItem from="1780814046490" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="Fatfs初始化">
       <option name="closed" value="true" />
@@ -829,7 +971,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732356109059</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="修复FatFS挂载问题">
+      <option name="closed" value="true" />
+      <created>1753026521378</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1753026521378</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -875,7 +1025,8 @@
     <MESSAGE value="更多指令与持久化操作系统" />
     <MESSAGE value="todo rm" />
     <MESSAGE value="rm指令" />
-    <option name="LAST_COMMIT_MESSAGE" value="rm指令" />
+    <MESSAGE value="修复FatFS挂载问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复FatFS挂载问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -884,6 +1035,16 @@
           <url>file://$PROJECT_DIR$/Core/Inc/main.h</url>
           <line>45</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Core/Src/ltdc.c</url>
+          <line>558</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Core/Src/ltdc.c</url>
+          <line>372</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

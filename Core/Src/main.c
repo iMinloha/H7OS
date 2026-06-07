@@ -24,6 +24,7 @@
 #include "dma2d.h"
 #include "fatfs.h"
 #include "jpeg.h"
+#include "ltdc.h"
 #include "mdma.h"
 #include "quadspi.h"
 #include "rng.h"
@@ -36,7 +37,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "torch_iic.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -123,9 +124,11 @@ int main(void)
   MX_RTC_Init();
   MX_FATFS_Init();
   MX_ADC3_Init();
+  MX_LTDC_Init();
   /* USER CODE BEGIN 2 */
   MX_USB_DEVICE_Init();
   BSP_SD_Init();
+  Touch_Init();
   /* USER CODE END 2 */
 
   /* Call init function for freertos objects (in freertos.c) */
@@ -133,6 +136,17 @@ int main(void)
 
   /* Start scheduler */
   osKernelStart();
+
+  /* We should never get here as control is now taken by the scheduler */
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
+  while (1)
+  {
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
+  }
+  /* USER CODE END 3 */
 }
 
 /**

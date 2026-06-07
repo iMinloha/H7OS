@@ -44,6 +44,8 @@ enum DeviceStatus{
 typedef enum DeviceStatus DeviceStatus_E;
 typedef struct FS* FS_t;
 typedef struct DrTNode* DrTNode_t;
+typedef struct FunctionTable* FT_t;
+
 
 struct DrTNode{
     // 设备地址
@@ -59,7 +61,7 @@ struct DrTNode{
     // 设备数据缓冲
     void* data;
     // --------------------
-    // 设备驱动
+    // 设备驱动(或者说bin的指令)
     Func_t driver;
     // --------------------
     Mutex_t mutex;  // 设备锁
@@ -68,7 +70,7 @@ struct DrTNode{
     FS_t parent;
 };
 
-struct FS{
+struct FS {
     // 路径
     char* path;
 
@@ -94,7 +96,19 @@ struct FS{
     // 子级
     FS_t child_next;
     // 层级
-    FS_t level_next;
+     FS_t level_next;
+};
+
+// 用户函数表
+struct FunctionTable{
+    // bin的函数地址
+    Func_t func;
+    // 函数参数结构体
+    void *args;
+    // 函数的ID(哈希表的索引)
+    uint16_t id;
+    // 函数名(用于查询)
+    char* func_name;
 };
 
 // 根文件系统
@@ -127,7 +141,7 @@ typedef void (*Comand_t)(int argc, char **argv);
 
 typedef struct CMD* CMD_t;
 
-struct CMD{
+struct CMD {
     char* name; // 指令名，如mkdir, rm, ls
     char* description;  // 指令描述, 用于help
     char* usage;    // 指令使用方法

@@ -1,6 +1,8 @@
 #include <string.h>
 #include "test.h"
 #include "cmsis_os.h"
+#include "dma2d.h"
+#include "ltdc.h"
 #include "stdio.h"
 #include "TaskHead.h"
 #include "quadspi.h"
@@ -15,23 +17,22 @@ void printf_sdcard_info(void){
     uint64_t CardCap;      	//SD������
     HAL_SD_CardCIDTypeDef SDCard_CID;
 
-    HAL_SD_GetCardCID(&hsd1,&SDCard_CID);	//��ȡCID
-    HAL_SD_GetCardInfo(&hsd1,&SDCardInfo);                    //��ȡSD����Ϣ
-    CardCap=(uint64_t)(SDCardInfo.LogBlockNbr)*(uint64_t)(SDCardInfo.LogBlockSize);	//����SD������
+    HAL_SD_GetCardCID(&hsd1,&SDCard_CID);
+    HAL_SD_GetCardInfo(&hsd1,&SDCardInfo);
+    CardCap=(uint64_t)(SDCardInfo.LogBlockNbr)*(uint64_t)(SDCardInfo.LogBlockSize);
     switch(SDCardInfo.CardType)
     {
-        case CARD_SDSC:
-        {
+        case CARD_SDSC: {
             if(SDCardInfo.CardVersion == CARD_V1_X)
                 printf("Card Type:SDSC V1\r\n");
             else if(SDCardInfo.CardVersion == CARD_V2_X)
                 printf("Card Type:SDSC V2\r\n");
         }
             break;
-        case CARD_SDHC_SDXC:printf("Card Type:SDHC\r\n");break;
+        case CARD_SDHC_SDXC: printf("Card Type:SDHC\r\n");break;
         default:break;
     }
-    // SD�ĸ�����Ϣ���������ȷ��SD���Ƿ���������
+
     printf("Card ManufacturerID: %d \r\n",SDCard_CID.ManufacturerID);				//������ID
     printf("CardVersion:         %d \r\n",(uint32_t)(SDCardInfo.CardVersion));		//���汾��
     printf("Class:               %d \r\n",(uint32_t)(SDCardInfo.Class));		    //
@@ -46,15 +47,8 @@ void printf_sdcard_info(void){
 
 extern Task_t xTest;
 
-typedef struct test{
-    int a;
-    float b;
-} *test_p;
-
-typedef void * Everything;
 
 void testFunc(){
-
 //    test_p test_ptr = kernel_alloc(sizeof(struct test));
 //    test_ptr->a = 2;
 //    test_ptr->b = 2.0f;
@@ -63,9 +57,10 @@ void testFunc(){
 //    uint8_t tmp2[2] = {0};
 //    CS_push("HI");
 //    CS_save();
-//    QSPI_W25Qxx_WriteBuffer(tmp, 0, 2);
+    //    QSPI_W25Qxx_WriteBuffer(tmp, 0, 2);
+    // LCD_DisplayText(0, 0, "Hello World!");
 
-
+    // LCD_FillRect(130,  3,320,16);
     while(1){
         TaskTickStart(xTest);
 //        QSPI_W25Qxx_ReadBuffer(tmp2, 0, 2);

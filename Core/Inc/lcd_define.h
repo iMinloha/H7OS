@@ -3,6 +3,8 @@
 
 #include <stdint-gcc.h>
 
+#include "ff.h"
+
 typedef struct _pFont{
     const uint8_t *pTable;
     uint16_t Width;
@@ -11,11 +13,22 @@ typedef struct _pFont{
     uint16_t Table_Rows;
 } pFONT;
 
-extern pFONT CH_Font12;
-extern pFONT CH_Font16;
-extern pFONT CH_Font20;
-extern pFONT CH_Font24;
-extern pFONT CH_Font32;
+typedef struct _pChineseFont {
+    uint16_t Width;
+    uint16_t Height;
+    uint16_t Sizes;
+    const TCHAR * FontPath;
+} pChineseFont;
+
+extern	pChineseFont CH_Font12 ;
+extern	pChineseFont CH_Font16 ;
+extern	pChineseFont CH_Font24 ;
+extern	pChineseFont CH_Font32 ;
+
+#define  FontPath_CH_Font12  "0:GB2312_12.FON"
+#define  FontPath_CH_Font16  "0:GB2312_16.FON"
+#define  FontPath_CH_Font24  "0:GB2312_24.FON"
+#define  FontPath_CH_Font32  "0:GB2312_32.FON"
 
 extern pFONT Font32;
 extern pFONT Font24;

@@ -23,9 +23,9 @@ void info_main(int argc, char **argv){
             kernel_free(tmp_task);
 
             if(task == NULL){
-                USB_printf("info: device not found\n");
+                USB_printf("info: device not found or not a device\n");
                 return;
-            }else{
+            }else {
                 USB_printf("Task\t\t\tPID\t\t\tPriority\t\t\tLoad\t\t\tStatus\n");
                 USB_printf("%s\t\t%d", task->name, task->PID);
                 switch (task->priority) {
@@ -107,6 +107,9 @@ void info_main(int argc, char **argv){
                     break;
                 case DrTFILE:
                     USB_printf("Type: File\n");
+                    break;
+                case APP:
+                    USB_printf("Type: Executable file\n");
                     break;
                 default:
                     USB_printf("Type: Unknown\n");

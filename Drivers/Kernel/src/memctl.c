@@ -80,12 +80,12 @@ uint32_t using_mem = 0;
  * */
 void MemControl_Init(){
     flashSDRAM();
+    // 显存
+    // tlsf_t video_pool = tlsf_create_with_pool((void*)SDRAM_BANK_ADDR, VideoMemSize);
     // 内核空间(会自动保存在QSPI Flash中)
     kernel_pool = tlsf_create_with_pool((void*)SDRAM_BANK_ADDR + VideoMemSize, KernelMemSize);
     // 程序运行空间
     mem_pool = tlsf_create_with_pool((void*)SDRAM_BANK_ADDR + KernelMemSize + VideoMemSize, UserMemSize);
-    // 显存
-    // tlsf_t video_pool = tlsf_create_with_pool((void*)SDRAM_BANK_ADDR + KernelMemSize + UserMemSize, VideoMemSize);
 }
 
 /***

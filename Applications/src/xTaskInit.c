@@ -68,22 +68,18 @@ void QueueInit(void const * argument){
             // 判断是否初始化成果
             if (FSRes == FR_OK) {
                 // 初始化成功，重新挂载
-                USB_color_printf(LIGHT_GREEN, "\n[xTaskInit]: SD card Succeed\r\n");
-                printf("Init SD faild!\n");
-                addDevice("mnt", NULL, "SD card", "FAT file system", FILE_SYSTEM, DEVICE_ON, NULL);
+                printf("[xTaskInit]: Fatfs Succeed\r\n");
+                addDevice("mnt", NULL, "SDcard", "FAT file system", FILE_SYSTEM, DEVICE_ON, NULL);
                 f_mount(&SDFatFS, SDPath, 1);
             }
             // 初始化失败，提示用户更换SD卡
-            else USB_color_printf(LIGHT_RED, "\n[xTaskInit]: SD Init Faild, please replace SD card\r\n");
+            else printf("\n[xTaskInit]: SD Init Faild, please replace SD card\r\n");
 
         } else {
-            addDevice("mnt", &SDFatFS, "SD card", "FAT file system", FILE_SYSTEM, DEVICE_ON, NULL);
-            USB_color_printf(LIGHT_GREEN, "\n[xTaskInit]: SD card Succeed\r\n");
+            addDevice("mnt", &SDFatFS, "SDcard", "FAT file system", FILE_SYSTEM, DEVICE_ON, NULL);
+            printf("[xTaskInit]: Fatfs Succeed\r\n");
         }
     }
     // 一次性初始化完成，挂起初始化任务
-    // vTaskSuspend(xTaskInitHandle);
-    // 杀死初始化任务
-    osDelay(1);
-    vTaskDelete(xTaskInitHandle);
+    while (1) osDelay(1000);
 }

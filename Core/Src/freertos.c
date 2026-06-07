@@ -146,11 +146,8 @@ void MX_FREERTOS_Init(void) {
 
   /* USER CODE BEGIN RTOS_THREADS */
 //    HAL_Delay(5000);
-    // �ڴ���Ƴ�ʼ��
     MemControl_Init();
-    // �豸ȫ�ֳ�ʼ��
     taskGlobalInit();
-    // ��ʼ��ȫ������
     ThreadInit();
     /* add threads, ... */
     //  SDRAM_Initialization_Sequence(&hsdram1);
