@@ -116,7 +116,8 @@ uint8_t CDC_Transmit_FS(uint8_t* Buf, uint16_t Len);
 
 void USB_printf(const char *format, ...);		// USB��ʽ����� ��ʹ�÷������� printf
 
-#define USB_color_printf(color, format, ...) {USB_printf(color); USB_printf(format, ##__VA_ARGS__); USB_printf(NONE);}
+#define USB_color_printf(color, format, ...) \
+    do { USB_printf(color); USB_printf(format, ##__VA_ARGS__); USB_printf(NONE); } while (0)
 
 uint8_t USB_scanf(uint8_t *buf);        // USBɨ������
 

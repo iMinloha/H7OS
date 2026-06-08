@@ -90,7 +90,8 @@ FS_t ram_deep_mkdir(char* path) {
 
 /* ── rm ──────────────────────────────────────────────────── */
 
-static void ram_rm_dir(FS_t node) {
+static void ram_rm_dir(FS_t node)
+{
     FS_t head = node->parent->child_next;
     FS_t p = head, prev = head;
     while (p) {
@@ -107,21 +108,38 @@ static void ram_rm_dir(FS_t node) {
         ram_rm_dir(c);
         c = n;
     }
+    kernel_free(node->path);
+    if (node->sd_mount_path) kernel_free(node->sd_mount_path);
+    if (node->sd_cd_path) kernel_free(node->sd_cd_path);
     kernel_free(node);
 }
 
-static void ram_rm_file(DrTNode_t device) {
+static void ram_rm_file(DrTNode_t device)
+{
     if (!device || device->type != DrTFILE) return;
     FS_t parent = device->parent;
-    DrTNode_t p = parent->node, prev = parent->node;
-    while (p) {
-        if (p == device) {
-            prev->next = p->next;
-            kernel_free(p);
-            return;
-        }
-        prev = p;
-        p = p->next;
+    if (!parent) return;
+    if (parent->node == device) {
+        parent->node = device->next;
+        parent->node_count--;
+        kernel_free(device->name);
+        kernel_free(device->description);
+        kernel_free(device->data);
+        kernel_free(device->mutex);
+        kernel_free(device);
+        return;
+    }
+    DrTNode_t prev = parent->node;
+    while (prev && prev->next && prev->next != device)
+        prev = prev->next;
+    if (prev && prev->next == device) {
+        prev->next = device->next;
+        parent->node_count--;
+        kernel_free(device->name);
+        kernel_free(device->description);
+        kernel_free(device->data);
+        kernel_free(device->mutex);
+        kernel_free(device);
     }
 }
 

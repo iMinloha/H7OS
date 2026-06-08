@@ -39,17 +39,18 @@ void execCMD(char* command_rel) {
     argc -= 1;
 
 
-    // 在指令集中查找指令，如果找到则执行
     CMD_t p = CMDList->next;
     while (p != NULL) {
         if (strcmp(p->name, argv[0]) == 0) {
             p->cmd(argc, &argv[1]);
+            kernel_free(command);
             return;
         }
         p = p->next;
     }
 
     USB_printf("sh: '%s' not found. Type 'help'.\n", argv[0]);
+    kernel_free(command);
 }
 
 void helpCMD(char* cmd) {

@@ -17,9 +17,9 @@ void mkdir_main(int argc, char **argv){
     if (sd_path != NULL) {
         FRESULT res = f_mkdir(sd_path);
         if (res == FR_OK)
-            USB_color_printf(LIGHT_GREEN, "mkdir: [SD] %s\n", sd_path)
+            USB_color_printf(LIGHT_GREEN, "mkdir: [SD] %s\n", sd_path);
         else
-            USB_color_printf(LIGHT_RED, "mkdir: [SD] failed (%d)\n", res)
+            USB_color_printf(LIGHT_RED, "mkdir: [SD] failed (%d)\n", res);
         kernel_free(sd_path);
         return;
     }

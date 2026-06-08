@@ -56,9 +56,7 @@ int main(void)
     osKernelStart();
 
     /* 不应该到达这里 */
-    while (1)
-    {
-    }
+    while (1);
 }
 
 /**

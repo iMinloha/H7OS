@@ -36,11 +36,8 @@ void gpio_register(GPIO_TypeDef *port, uint16_t pin, const char *name, uint8_t i
     if (d) d->fops = (void*)&gpio_fops;
 }
 
-void gpio_device_init(void) {
-    /* PF7 - user LED / output pin (CubeMX pre-init'd as OUTPUT_PP) */
+void gpio_device_init(void)
+{
     GPIO_OUTPUT(GPIOF, GPIO_PIN_7, "PF7");
-    /* Add more pins below:
-       GPIO_INPUT(GPIOA, GPIO_PIN_0, "BTN");
-       GPIO_OUTPUT(GPIOB, GPIO_PIN_1, "LED2");
-    */
+    GPIO_OUTPUT(GPIOH, GPIO_PIN_7, "PH7");
 }

@@ -1,6 +1,14 @@
 CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/bsp_devices.c.obj: \
  D:\H7OS\HAL\FK743M2-IIT6\BSP\bsp_devices.c \
- D:\H7OS\Platform/bsp_devices.h D:\H7OS\Platform\Board/board_select.h \
+ D:\H7OS\Platform/bsp_devices.h \
+ e:\program\ files\ (x86)\gnu\ arm\ embedded\ toolchain\10\ 2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h \
+ e:\program\ files\ (x86)\gnu\ arm\ embedded\ toolchain\10\ 2021.10\arm-none-eabi\include\stdint.h \
+ e:\program\ files\ (x86)\gnu\ arm\ embedded\ toolchain\10\ 2021.10\arm-none-eabi\include\machine\_default_types.h \
+ e:\program\ files\ (x86)\gnu\ arm\ embedded\ toolchain\10\ 2021.10\arm-none-eabi\include\sys\features.h \
+ e:\program\ files\ (x86)\gnu\ arm\ embedded\ toolchain\10\ 2021.10\arm-none-eabi\include\_newlib_version.h \
+ e:\program\ files\ (x86)\gnu\ arm\ embedded\ toolchain\10\ 2021.10\arm-none-eabi\include\sys\_intsup.h \
+ e:\program\ files\ (x86)\gnu\ arm\ embedded\ toolchain\10\ 2021.10\arm-none-eabi\include\sys\_stdint.h \
+ D:\H7OS\Platform\Board/board_select.h \
  D:\H7OS\Platform\Board/board_fk743m2.h \
  D:\H7OS\HAL\FK743M2-IIT6\Inc/main.h \
  D:\H7OS\Drivers\STM32H7xx_HAL_Driver\Inc/stm32h7xx_hal.h \
@@ -10,13 +18,6 @@ CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/bsp_devices.c.obj: \
  D:\H7OS\Drivers\CMSIS\Device\ST\STM32H7xx\Include/stm32h7xx.h \
  D:\H7OS\Drivers\CMSIS\Device\ST\STM32H7xx\Include/stm32h743xx.h \
  D:\H7OS\Drivers\CMSIS\Include/core_cm7.h \
- e:\program\ files\ (x86)\gnu\ arm\ embedded\ toolchain\10\ 2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h \
- e:\program\ files\ (x86)\gnu\ arm\ embedded\ toolchain\10\ 2021.10\arm-none-eabi\include\stdint.h \
- e:\program\ files\ (x86)\gnu\ arm\ embedded\ toolchain\10\ 2021.10\arm-none-eabi\include\machine\_default_types.h \
- e:\program\ files\ (x86)\gnu\ arm\ embedded\ toolchain\10\ 2021.10\arm-none-eabi\include\sys\features.h \
- e:\program\ files\ (x86)\gnu\ arm\ embedded\ toolchain\10\ 2021.10\arm-none-eabi\include\_newlib_version.h \
- e:\program\ files\ (x86)\gnu\ arm\ embedded\ toolchain\10\ 2021.10\arm-none-eabi\include\sys\_intsup.h \
- e:\program\ files\ (x86)\gnu\ arm\ embedded\ toolchain\10\ 2021.10\arm-none-eabi\include\sys\_stdint.h \
  D:\H7OS\Drivers\CMSIS\Include/cmsis_version.h \
  D:\H7OS\Drivers\CMSIS\Include/cmsis_compiler.h \
  D:\H7OS\Drivers\CMSIS\Include/cmsis_gcc.h \

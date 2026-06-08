@@ -1,0 +1,224 @@
+<changelist name="在变基之前未提交的更改_[更改]" date="1780924979926" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/shelved.patch" />
+  <option name="DESCRIPTION" value="在变基之前未提交的更改 [更改]" />
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Core/Src/main.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Core/Src/main.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/main.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/usart/bsp_usart.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/usart/bsp_usart.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/bsp_usart.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/gpio/bsp_gpio.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/gpio/bsp_gpio.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/bsp_gpio.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/H7OS.elf" />
+    <option name="AFTER_PATH" value="build/H7OS.elf" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/H7OS.elf" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Applications/src/xTaskManager.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Applications/src/xTaskManager.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/xTaskManager.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Applications/src/xShellTask.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Applications/src/xShellTask.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/xShellTask.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/cat/cat_main.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/cat/cat_main.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/cat_main.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/mkdir/mkdir_main.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/mkdir/mkdir_main.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/mkdir_main.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Cmd/DrT_cmd.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Cmd/DrT_cmd.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/DrT_cmd.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/info/info_main.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/info/info_main.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/info_main.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/pwm/bsp_pwm.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/pwm/bsp_pwm.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/bsp_pwm.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/reset/reset_main.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/reset/reset_main.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/reset_main.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/touch/torch_iic.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/touch/torch_iic.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/torch_iic.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/flash/flash_main.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/flash/flash_main.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/flash_main.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Applications/src/xTaskInit.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Applications/src/xTaskInit.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/xTaskInit.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/cpu/bsp_cpu.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/cpu/bsp_cpu.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/bsp_cpu.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/ls_main.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/tree/tree_main.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/tree/tree_main.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/tree_main.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/adc/bsp_adc.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/adc/bsp_adc.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/bsp_adc.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/bsp_devices.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/bsp_devices.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/bsp_devices.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/Register.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/Register.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/Register.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/mount/mount_main.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/mount/mount_main.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/mount_main.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/help/help_main.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/help/help_main.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/help_main.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/cp/cp_main.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/cp/cp_main.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/cp_main.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/FS_Serial.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/FS_Serial.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/FS_Serial.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Platform/bsp_init.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Platform/bsp_init.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/bsp_init.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Applications/src/test.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Applications/src/test.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/test.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/freertos.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Proc/DrT_proc.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Proc/DrT_proc.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/DrT_proc.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/H7OS.bin" />
+    <option name="AFTER_PATH" value="build/H7OS.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/H7OS.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/dfu/dfu_main.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/dfu/dfu_main.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/dfu_main.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/FS/DrT_fs.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/FS/DrT_fs.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/DrT_fs.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/i2c/bsp_i2c.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/i2c/bsp_i2c.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/bsp_i2c.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Mnt/DrT_mnt.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Mnt/DrT_mnt.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/DrT_mnt.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Dev/DrT_dev.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Dev/DrT_dev.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/DrT_dev.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/cd/cd_main.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/cd/cd_main.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/cd_main.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/mv/mv_main.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/mv/mv_main.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/mv_main.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Applications/src/xNoneTask.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Applications/src/xNoneTask.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/xNoneTask.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Core/DrT.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Core/DrT.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/DrT.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/touch/touch_main.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/touch/touch_main.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/touch_main.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/use/use_main.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/use/use_main.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/use_main.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Algo/DFS.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Algo/DFS.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/DFS.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/rm/rm_main.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/rm/rm_main.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/rm_main.c.obj" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/pwd/pwd_main.c.obj" />
+    <option name="AFTER_PATH" value="build/CMakeFiles/H7OS.elf.dir/Command/pwd/pwd_main.c.obj" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[更改]/pwd_main.c.obj" />
+  </binary>
+</changelist>

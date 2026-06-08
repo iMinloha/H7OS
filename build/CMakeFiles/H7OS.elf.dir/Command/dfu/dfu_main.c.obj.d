@@ -130,4 +130,4 @@ CMakeFiles/H7OS.elf.dir/Command/dfu/dfu_main.c.obj: \
  D:\H7OS\Middlewares\Third_Party\FatFs\src/ff_gen_drv.h \
  D:\H7OS\Middlewares\Third_Party\FatFs\src/diskio.h \
  D:\H7OS\Middlewares\Third_Party\FatFs\src/ff.h \
- D:\H7OS\FATFS\Target/sd_diskio.h D:\H7OS\HAL\FK743M2-IIT6\Inc/rtc.h
+ D:\H7OS\FATFS\Target/sd_diskio.h D:\H7OS\Platform/bsp_devices.h

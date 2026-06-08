@@ -118,4 +118,4 @@ CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/cpu/bsp_cpu.c.obj: \
  D:\H7OS\FATFS\Target/sd_diskio.h D:\H7OS\RAMFS\init.d/Periph/cpu.h \
  e:\program\ files\ (x86)\gnu\ arm\ embedded\ toolchain\10\ 2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stdint-gcc.h \
  D:\H7OS\Drivers\Kernel\inc/memctl.h D:\H7OS\HAL\FK743M2-IIT6\Inc/fmc.h \
- D:\H7OS\HAL\FK743M2-IIT6\Inc/main.h
+ D:\H7OS\HAL\FK743M2-IIT6\Inc/main.h D:\H7OS\HAL\FK743M2-IIT6\Inc/adc.h

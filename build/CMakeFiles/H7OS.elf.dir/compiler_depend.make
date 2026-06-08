@@ -1162,7 +1162,6 @@ CMakeFiles/H7OS.elf.dir/Command/dfu/dfu_main.c.obj: D:/H7OS/Command/dfu/dfu_main
   D:/H7OS/FATFS/Target/ffconf.h \
   D:/H7OS/FATFS/Target/sd_diskio.h \
   D:/H7OS/HAL/FK743M2-IIT6/Inc/main.h \
-  D:/H7OS/HAL/FK743M2-IIT6/Inc/rtc.h \
   D:/H7OS/HAL/FK743M2-IIT6/Inc/stm32h7xx_hal_conf.h \
   D:/H7OS/HAL/FK743M2-IIT6/Inc/usart.h \
   D:/H7OS/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h \
@@ -1187,6 +1186,7 @@ CMakeFiles/H7OS.elf.dir/Command/dfu/dfu_main.c.obj: D:/H7OS/Command/dfu/dfu_main
   D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
   D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
   D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
+  D:/H7OS/Platform/bsp_devices.h \
   D:/H7OS/RAMFS/init.d/Core/DrT.h \
   D:/H7OS/RAMFS/init.d/Periph/FS_Serial.h \
   D:/H7OS/USB_DEVICE/App/usbd_cdc_if.h \
@@ -2264,7 +2264,6 @@ CMakeFiles/H7OS.elf.dir/Command/pwd/pwd_main.c.obj: D:/H7OS/Command/pwd/pwd_main
   D:/H7OS/Drivers/CMSIS/Include/cmsis_version.h \
   D:/H7OS/Drivers/CMSIS/Include/core_cm7.h \
   D:/H7OS/Drivers/CMSIS/Include/mpu_armv7.h \
-  D:/H7OS/Drivers/Kernel/inc/memctl.h \
   D:/H7OS/Drivers/Kernel/inc/u_thread.h \
   D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
   D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
@@ -2313,7 +2312,6 @@ CMakeFiles/H7OS.elf.dir/Command/pwd/pwd_main.c.obj: D:/H7OS/Command/pwd/pwd_main
   D:/H7OS/FATFS/Target/bsp_driver_sd.h \
   D:/H7OS/FATFS/Target/ffconf.h \
   D:/H7OS/FATFS/Target/sd_diskio.h \
-  D:/H7OS/HAL/FK743M2-IIT6/Inc/fmc.h \
   D:/H7OS/HAL/FK743M2-IIT6/Inc/main.h \
   D:/H7OS/HAL/FK743M2-IIT6/Inc/stm32h7xx_hal_conf.h \
   D:/H7OS/HAL/FK743M2-IIT6/Inc/usart.h \
@@ -2526,7 +2524,6 @@ CMakeFiles/H7OS.elf.dir/Command/reset/reset_main.c.obj: D:/H7OS/Command/reset/re
   D:/H7OS/Drivers/CMSIS/Include/cmsis_version.h \
   D:/H7OS/Drivers/CMSIS/Include/core_cm7.h \
   D:/H7OS/Drivers/CMSIS/Include/mpu_armv7.h \
-  D:/H7OS/Drivers/Kernel/inc/memctl.h \
   D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
   D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
   D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h \
@@ -2570,7 +2567,6 @@ CMakeFiles/H7OS.elf.dir/Command/reset/reset_main.c.obj: D:/H7OS/Command/reset/re
   D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h \
   D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_sdmmc.h \
   D:/H7OS/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h \
-  D:/H7OS/HAL/FK743M2-IIT6/Inc/fmc.h \
   D:/H7OS/HAL/FK743M2-IIT6/Inc/main.h \
   D:/H7OS/HAL/FK743M2-IIT6/Inc/quadspi.h \
   D:/H7OS/HAL/FK743M2-IIT6/Inc/stm32h7xx_hal_conf.h \
@@ -3363,6 +3359,7 @@ CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj: D:/H7OS/Core/Src/freertos.c \
   D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
   D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
   D:/H7OS/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
+  D:/H7OS/Platform/bsp_devices.h \
   e:/program\ files\ (x86)/gnu\ arm\ embedded\ toolchain/10\ 2021.10/arm-none-eabi/include/_ansi.h \
   e:/program\ files\ (x86)/gnu\ arm\ embedded\ toolchain/10\ 2021.10/arm-none-eabi/include/_newlib_version.h \
   e:/program\ files\ (x86)/gnu\ arm\ embedded\ toolchain/10\ 2021.10/arm-none-eabi/include/machine/_default_types.h \
@@ -7639,6 +7636,7 @@ CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/cpu/bsp_cpu.c.obj: D:/H7OS/HAL/FK74
   D:/H7OS/FATFS/Target/ffconf.h \
   D:/H7OS/FATFS/Target/sd_diskio.h \
   D:/H7OS/HAL/FK743M2-IIT6/BSP/cpu/bsp_cpu.h \
+  D:/H7OS/HAL/FK743M2-IIT6/Inc/adc.h \
   D:/H7OS/HAL/FK743M2-IIT6/Inc/fmc.h \
   D:/H7OS/HAL/FK743M2-IIT6/Inc/main.h \
   D:/H7OS/HAL/FK743M2-IIT6/Inc/stm32h7xx_hal_conf.h \
@@ -11229,7 +11227,14 @@ CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj: D:
 
 CMakeFiles/H7OS.elf.dir/Platform/bsp_init.c.obj: D:/H7OS/Platform/bsp_init.c \
   D:/H7OS/Platform/bsp_devices.h \
-  D:/H7OS/Platform/bsp_init.h
+  D:/H7OS/Platform/bsp_init.h \
+  e:/program\ files\ (x86)/gnu\ arm\ embedded\ toolchain/10\ 2021.10/arm-none-eabi/include/_newlib_version.h \
+  e:/program\ files\ (x86)/gnu\ arm\ embedded\ toolchain/10\ 2021.10/arm-none-eabi/include/machine/_default_types.h \
+  e:/program\ files\ (x86)/gnu\ arm\ embedded\ toolchain/10\ 2021.10/arm-none-eabi/include/stdint.h \
+  e:/program\ files\ (x86)/gnu\ arm\ embedded\ toolchain/10\ 2021.10/arm-none-eabi/include/sys/_intsup.h \
+  e:/program\ files\ (x86)/gnu\ arm\ embedded\ toolchain/10\ 2021.10/arm-none-eabi/include/sys/_stdint.h \
+  e:/program\ files\ (x86)/gnu\ arm\ embedded\ toolchain/10\ 2021.10/arm-none-eabi/include/sys/features.h \
+  e:/program\ files\ (x86)/gnu\ arm\ embedded\ toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
 
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Algo/DFS.c.obj: D:/H7OS/RAMFS/init.d/Algo/DFS.c \
   D:/H7OS/Applications/inc/xTaskManager.h \
@@ -13340,8 +13345,6 @@ D:/H7OS/HAL/FK743M2-IIT6/BSP/hal_init.h:
 
 D:/H7OS/Command/dfu/dfu_main.c:
 
-D:/H7OS/HAL/FK743M2-IIT6/Inc/rtc.h:
-
 D:/H7OS/HAL/FK743M2-IIT6/BSP/pwm/bsp_pwm.c:
 
 D:/H7OS/Command/flash/flash_main.c:
@@ -13399,6 +13402,8 @@ D:/H7OS/Core/Src/sysmem.c:
 D:/H7OS/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c:
 
 D:/H7OS/Drivers/Kernel/src/timer.c:
+
+D:/H7OS/HAL/FK743M2-IIT6/Inc/rtc.h:
 
 D:/H7OS/Platform/bsp_init.c:
 

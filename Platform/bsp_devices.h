@@ -1,7 +1,11 @@
 #ifndef BSP_DEVICES_H
 #define BSP_DEVICES_H
 
-/** Call once during boot to register all hardware devices into DrT */
+#include <stdint.h>
+
 void devices_init(void);
+void board_periph_init(void);
+uint64_t board_sd_get_capacity(void);
+void board_rtc_set_dfu_flag(void);
 
 #endif

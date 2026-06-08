@@ -2,7 +2,7 @@
 #include "Core/DrT.h"
 #include "Periph/cpu.h"
 #include "memctl.h"
-#include <stdio.h>
+#include "adc.h"
 #include <stdio.h>
 
 extern CPU_t CortexM7;
@@ -44,12 +44,17 @@ bsp_file_ops_t cpu_fops = {
     .write = cpu_write,
 };
 
-void cpu_device_init(void) {
-    createCPU();   /* step 1 */
-    addDevice("dev/cpu", CortexM7, "CPU", "Central Processing Unit", DEVICE_BS, DEVICE_ON, NULL);  /* step 2 */
-    /* step 3: lookup and bind fops */
+void cpu_device_init(void)
+{
+    HAL_ADCEx_Calibration_Start(&hadc3, ADC_CALIB_OFFSET, ADC_SINGLE_ENDED);
+    HAL_ADC_Start(&hadc3);
+
+    createCPU();
+    addDevice("dev/cpu", CortexM7, "CPU",
+        "Central Processing Unit", DEVICE_BS, DEVICE_ON, NULL);
+
     char _path[64];
     sprintf(_path, "/dev/cpu/CPU");
     DrTNode_t d = loadDevice(_path);
-    if (d) { d->fops = (void*)&cpu_fops; }
+    if (d) d->fops = (void *) &cpu_fops;
 }

@@ -100,3 +100,24 @@ void devices_init(void)
     adc_device_init();
 #endif
 }
+
+#if BOARD_HAS_SDMMC
+uint64_t board_sd_get_capacity(void)
+{
+    HAL_SD_CardInfoTypeDef info;
+    if (HAL_SD_GetCardInfo(&hsd1, &info) != HAL_OK)
+        return 0;
+    return (uint64_t) info.LogBlockNbr * (uint64_t) info.LogBlockSize;
+}
+#else
+uint64_t board_sd_get_capacity(void) { return 0; }
+#endif
+
+#if BOARD_HAS_RTC
+void board_rtc_set_dfu_flag(void)
+{
+    HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR1, 0x44465501);
+}
+#else
+void board_rtc_set_dfu_flag(void) { }
+#endif

@@ -128,5 +128,4 @@ CMakeFiles/H7OS.elf.dir/Command/pwd/pwd_main.c.obj: \
  D:\H7OS\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_core.h \
  D:\H7OS\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_ioreq.h \
  D:\H7OS\Middlewares\ST\STM32_USB_Device_Library\Core\Inc/usbd_ctlreq.h \
- D:\H7OS\HAL\FK743M2-IIT6\Inc/usart.h D:\H7OS\HAL\FK743M2-IIT6\Inc/main.h \
- D:\H7OS\Drivers\Kernel\inc/memctl.h D:\H7OS\HAL\FK743M2-IIT6\Inc/fmc.h
+ D:\H7OS\HAL\FK743M2-IIT6\Inc/usart.h D:\H7OS\HAL\FK743M2-IIT6\Inc/main.h

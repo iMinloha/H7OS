@@ -117,7 +117,7 @@ uint8_t Touch_IIC_WriteByte(uint8_t IIC_Data){
             Touch_IIC_SDA(1);
         IIC_Data <<= 1;
     }
-    return Touch_IIC_WaitACK(); //????õô???
+    return Touch_IIC_WaitACK(); //????ï¿½ï¿½???
 }
 
 
@@ -158,30 +158,25 @@ void GT9XX_Reset(void){
     Touch_IIC_Delay(20000);
 }
 
-uint8_t GT9XX_WriteHandle (uint16_t addr){
-    uint8_t status;
-
+uint8_t GT9XX_WriteHandle(uint16_t addr)
+{
+    uint8_t status = ERROR;
     Touch_IIC_Start();
-    if( Touch_IIC_WriteByte(GT9XX_IIC_WADDR) == ACK_OK )
-        if( Touch_IIC_WriteByte((uint8_t)(addr >> 8)) == ACK_OK )
-            if( Touch_IIC_WriteByte((uint8_t)(addr)) != ACK_OK )
-                status = ERROR;
-
-    status = SUCCESS;
+    if (Touch_IIC_WriteByte(GT9XX_IIC_WADDR) == ACK_OK
+        && Touch_IIC_WriteByte((uint8_t)(addr >> 8)) == ACK_OK
+        && Touch_IIC_WriteByte((uint8_t)(addr)) == ACK_OK)
+        status = SUCCESS;
     return status;
 }
 
-uint8_t GT9XX_WriteData (uint16_t addr,uint8_t value){
-    uint8_t status;
-
+uint8_t GT9XX_WriteData(uint16_t addr, uint8_t value)
+{
+    uint8_t status = ERROR;
     Touch_IIC_Start();
-
-    if( GT9XX_WriteHandle(addr) == SUCCESS)
-        if (Touch_IIC_WriteByte(value) != ACK_OK) status = ERROR;
-
-
+    if (GT9XX_WriteHandle(addr) == SUCCESS
+        && Touch_IIC_WriteByte(value) == ACK_OK)
+        status = SUCCESS;
     Touch_IIC_Stop();
-    status = SUCCESS;
     return status;
 }
 
