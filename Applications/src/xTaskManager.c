@@ -6,6 +6,7 @@
 #include "memctl.h"
 #include "RAMFS.h"
 #include "test.h"
+#include "task.h"
 
 Task_t xTaskManager;
 Task_t xShell;
@@ -42,10 +43,10 @@ void ThreadInit(){
     osThreadDef(xTaskTest, testFunc, osPriorityNormal, 0, 512);
     xTaskTestHandle = osThreadCreate(osThread(xTaskTest), NULL);
 
-    xTaskManager = RAMFS_TASK_Create("xTaskManager", TASK_READY, TASK_PRIORITY_SYSTEM, xTaskManagerHandle);
-    xShell      = RAMFS_TASK_Create("xShell",       TASK_READY, TASK_PRIORITY_SYSTEM, xShellHandle);
-    xTest       = RAMFS_TASK_Create("xTaskTest",    TASK_READY, TASK_PRIORITY_NORMAL, xTaskTestHandle);
-    xNoneTask   = RAMFS_TASK_Create("xNoneTask",    TASK_READY, TASK_PRIORITY_NORMAL, xNoneHandle);
+    xTaskManager = RAMFS_TASK_Create("TaskMgr", TASK_READY, TASK_PRIORITY_SYSTEM, xTaskManagerHandle);
+    xShell      = RAMFS_TASK_Create("Shell",    TASK_READY, TASK_PRIORITY_SYSTEM, xShellHandle);
+    xTest       = RAMFS_TASK_Create("Test",     TASK_READY, TASK_PRIORITY_NORMAL, xTaskTestHandle);
+    xNoneTask   = RAMFS_TASK_Create("Kernel",   TASK_READY, TASK_PRIORITY_NORMAL, xNoneHandle);
 }
 
 extern CPU_t CortexM7;
@@ -56,31 +57,61 @@ void TaskManager(void const * argument){
     addThread(xTest);
     addThread(xNoneTask);
 
-    Task_t head = getTaskList();
-    uint32_t lastTick = xTaskGetTickCount();
-
     while(1){
-        TaskTickStart(xTaskManager);
-        uint32_t now = xTaskGetTickCount();
-        uint32_t dt = now - lastTick;
-        if (dt == 0) dt = 1;
-        lastTick = now;
+        /* Query FreeRTOS for per-task runtime stats.
+         * FreeRTOS automatically tracks actual CPU execution time
+         * (not including blocked/sleeping time) via the DWT cycle counter. */
+        UBaseType_t uxArraySize = uxTaskGetNumberOfTasks();
+        TaskStatus_t *pxTaskStatusArray =
+            (TaskStatus_t *)kernel_alloc(uxArraySize * sizeof(TaskStatus_t));
 
-        uint32_t totalAcc = 0;
-        Task_t t = head;
-        while (t) {
-            /* CPU% = task_acc_time / total_time * 100 */
-            t->cpu = (float)t->accumulatedTime * 100.0f / (float)dt;
-            if (t->cpu > 100.0f) t->cpu = 100.0f;
-            totalAcc += t->accumulatedTime;
-            t->accumulatedTime = 0;  /* reset for next interval */
-            t = t->next;
+        if (pxTaskStatusArray != NULL) {
+            uint32_t ulTotalRunTime;
+            uxArraySize = uxTaskGetSystemState(pxTaskStatusArray, uxArraySize,
+                                               &ulTotalRunTime);
+
+            uint32_t ulIdleRunTime = 0;
+
+            for (UBaseType_t x = 0; x < uxArraySize; x++) {
+                /* Match FreeRTOS task to our Task_t by handle */
+                Task_t t = getTaskByHandle(pxTaskStatusArray[x].xHandle);
+                if (t != NULL) {
+                    if (ulTotalRunTime > 0) {
+                        t->cpu = (float)pxTaskStatusArray[x].ulRunTimeCounter
+                               * 100.0f / (float)ulTotalRunTime;
+                        if (t->cpu > 100.0f) t->cpu = 100.0f;
+                    } else {
+                        t->cpu = 0.0f;
+                    }
+
+                    /* Sync task status from FreeRTOS */
+                    switch (pxTaskStatusArray[x].eCurrentState) {
+                        case eRunning:   t->status = TASK_RUNNING;  break;
+                        case eReady:     t->status = TASK_READY;    break;
+                        case eBlocked:
+                        case eSuspended: t->status = TASK_SUSPEND;  break;
+                        case eDeleted:   t->status = TASK_STOP;     break;
+                        default: break;
+                    }
+                }
+
+                /* Track FreeRTOS idle task for system load calculation */
+                if (strcmp(pxTaskStatusArray[x].pcTaskName, "IDLE") == 0) {
+                    ulIdleRunTime = pxTaskStatusArray[x].ulRunTimeCounter;
+                }
+            }
+
+            /* System load = 100% - idle CPU percentage */
+            if (ulTotalRunTime > 0) {
+                CortexM7->load = 100.0f
+                    - (float)ulIdleRunTime * 100.0f / (float)ulTotalRunTime;
+                if (CortexM7->load < 0.0f) CortexM7->load = 0.0f;
+                if (CortexM7->load > 100.0f) CortexM7->load = 100.0f;
+            }
+
+            kernel_free(pxTaskStatusArray);
         }
 
-        CortexM7->load = 100.0f - xNoneTask->cpu;
-        if (CortexM7->load < 0) CortexM7->load = 0;
-
         osDelay(1000);
-        TaskTickEnd(xTaskManager);
     }
 }

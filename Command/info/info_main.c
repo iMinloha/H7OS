@@ -26,44 +26,46 @@ void info_main(int argc, char **argv){
                 USB_printf("info: device not found or not a device\n");
                 return;
             }else {
-                USB_printf("Task\t\t\tPID\t\t\tPriority\t\t\tLoad\t\t\tStatus\n");
-                USB_printf("%s\t\t%d", task->name, task->PID);
+                USB_printf("%-16s %-5s %-12s %-8s %-10s\n",
+                           "Task", "PID", "Priority", "Load", "Status");
+                USB_printf("-------------------------------------------------------------\n");
+                USB_printf("%-16s %-5u", task->name, task->PID);
                 switch (task->priority) {
                     case TASK_PRIORITY_NORMAL:
-                        USB_printf("\t\t\tNormal");
+                        USB_printf(" %-12s", "Normal");
                         break;
                     case TASK_PRIORITY_HIGH:
-                        USB_printf("\t\t\tHigh");
+                        USB_printf(" %-12s", "High");
                         break;
                     case TASK_PRIORITY_ROOT:
-                        USB_printf("\t\t\tRoot");
+                        USB_printf(" %-12s", "Root");
                         break;
                     case TASK_PRIORITY_SYSTEM:
-                        USB_printf("\t\t\tSystem");
+                        USB_printf(" %-12s", "System");
                         break;
                     default:
-                        USB_printf("\t\t\tUnknown");
+                        USB_printf(" %-12s", "Unknown");
                         break;
                 }
                 if (task->cpu < 1.0f)
-                    USB_printf("\t\t\t\t<1.0%%");
+                    USB_printf(" %-8s", "<1.0%");
                 else
-                    USB_printf("\t\t\t%f%%", task->cpu);
+                    USB_printf(" %-7.1f%%", task->cpu);
                 switch (task->status) {
                     case TASK_READY:
-                        USB_printf("\t\t\tReady\n");
+                        USB_printf(" %-10s\n", "Ready");
                         break;
                     case TASK_RUNNING:
-                        USB_printf("\t\t\tRunning\n");
+                        USB_printf(" %-10s\n", "Running");
                         break;
                     case TASK_SUSPEND:
-                        USB_printf("\t\t\tSuspend\n");
+                        USB_printf(" %-10s\n", "Suspend");
                         break;
                     case TASK_STOP:
-                        USB_printf("\t\t\tStop\n");
+                        USB_printf(" %-10s\n", "Stop");
                         break;
                     default:
-                        USB_printf("\t\t\tUnknown\n");
+                        USB_printf(" %-10s\n", "Unknown");
                         break;
                 }
             }

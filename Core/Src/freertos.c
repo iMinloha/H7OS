@@ -73,8 +73,21 @@ unsigned long getRunTimeCounterValue(void);
 void vApplicationIdleHook(void);
 
 /* USER CODE BEGIN 1 */
-void configureTimerForRunTimeStats(void) {}
-unsigned long getRunTimeCounterValue(void) { return 0; }
+void configureTimerForRunTimeStats(void) {
+    /* Enable DWT (Data Watchpoint and Trace) cycle counter for Cortex-M7
+     * This provides a free-running 32-bit counter at the CPU clock rate (~480 MHz).
+     * FreeRTOS uses this to accurately measure per-task CPU execution time.
+     * The 480 MHz counter wraps every ~8.9 seconds, which FreeRTOS handles
+     * correctly via unsigned arithmetic in task switch hooks.
+     */
+    CoreDebug->DEMCR |= CoreDebug_DEMCR_TRCENA_Msk;
+    DWT->CYCCNT = 0;
+    DWT->CTRL |= DWT_CTRL_CYCCNTENA_Msk;
+}
+
+unsigned long getRunTimeCounterValue(void) {
+    return DWT->CYCCNT;
+}
 /* USER CODE END 1 */
 
 /* USER CODE BEGIN 2 */

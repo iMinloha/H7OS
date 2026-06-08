@@ -30,7 +30,6 @@ void ShellTask(){
     memset(cmd_buf, 0, 256);
     USB_color_printf(LIGHT_CYAN, "%s:/$\n", UserName);
     while(1){
-        TaskTickStart(xShell);
         USB_scanf(cmd_buf);
         while (cmd_buf[0] == 0) USB_scanf(cmd_buf);
 
@@ -47,6 +46,5 @@ void ShellTask(){
 
         USB_color_printf(LIGHT_CYAN, "%s:%s$\n", UserName, pwd);
         osDelay(100);
-        TaskTickEnd(xShell);
     }
 }

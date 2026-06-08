@@ -37,7 +37,7 @@ static void crc32_init(void) {
     crc32_ready = 1;
 }
 
-static uint32_t crc32_compute(const uint8_t *data, uint32_t len) {
+static uint32_t crc32_compute(const uint8_t* data, uint32_t len) {
     crc32_init();
     uint32_t crc = 0xFFFFFFFFUL;
     for (uint32_t i = 0; i < len; i++) {
@@ -50,29 +50,29 @@ static uint32_t crc32_compute(const uint8_t *data, uint32_t len) {
 /* 二进制读写辅助函数                                                    */
 /* ================================================================== */
 
-static void write_u16(uint8_t *buf, uint32_t *offset, uint16_t val) {
+static void write_u16(uint8_t* buf, uint32_t* offset, uint16_t val) {
     buf[(*offset)++] = (uint8_t)(val & 0xFF);
     buf[(*offset)++] = (uint8_t)((val >> 8) & 0xFF);
 }
 
-static void write_u32(uint8_t *buf, uint32_t *offset, uint32_t val) {
+static void write_u32(uint8_t* buf, uint32_t* offset, uint32_t val) {
     buf[(*offset)++] = (uint8_t)(val & 0xFF);
     buf[(*offset)++] = (uint8_t)((val >> 8) & 0xFF);
     buf[(*offset)++] = (uint8_t)((val >> 16) & 0xFF);
     buf[(*offset)++] = (uint8_t)((val >> 24) & 0xFF);
 }
 
-static uint16_t read_u16(const uint8_t *buf, uint32_t *offset) {
+static uint16_t read_u16(const uint8_t* buf, uint32_t* offset) {
     uint16_t val = (uint16_t)buf[*offset] | ((uint16_t)buf[*offset + 1] << 8);
     *offset += 2;
     return val;
 }
 
-static uint32_t read_u32(const uint8_t *buf, uint32_t *offset) {
+static uint32_t read_u32(const uint8_t* buf, uint32_t* offset) {
     uint32_t val = (uint32_t)buf[*offset]
-                 | ((uint32_t)buf[*offset + 1] << 8)
-                 | ((uint32_t)buf[*offset + 2] << 16)
-                 | ((uint32_t)buf[*offset + 3] << 24);
+        | ((uint32_t)buf[*offset + 1] << 8)
+        | ((uint32_t)buf[*offset + 2] << 16)
+        | ((uint32_t)buf[*offset + 3] << 24);
     *offset += 4;
     return val;
 }
@@ -82,8 +82,8 @@ static uint32_t read_u32(const uint8_t *buf, uint32_t *offset) {
 /* ================================================================== */
 
 typedef struct {
-    char *path;       /* 完整路径, kernel_alloc */
-    uint8_t *data;    /* 文件数据, kernel_alloc */
+    char* path; /* 完整路径, kernel_alloc */
+    uint8_t* data; /* 文件数据, kernel_alloc */
     uint16_t data_len;
 } FileEntry;
 
@@ -91,9 +91,9 @@ typedef struct {
 /* 树遍历: 收集目录 + 文件                                               */
 /* ================================================================== */
 
-static void collect_tree(FS_t node, char *prefix, uint32_t plen, uint32_t pfx_size,
-                         char **dirs, uint16_t *dir_count, uint16_t max_dirs,
-                         FileEntry *files, uint16_t *file_count, uint16_t max_files) {
+static void collect_tree(FS_t node, char* prefix, uint32_t plen, uint32_t pfx_size,
+                         char** dirs, uint16_t* dir_count, uint16_t max_dirs,
+                         FileEntry* files, uint16_t* file_count, uint16_t max_files) {
     if (node == NULL) return;
 
     /* --- 收集当前节点的 DrTFILE 文件 --- */
@@ -102,7 +102,7 @@ static void collect_tree(FS_t node, char *prefix, uint32_t plen, uint32_t pfx_si
         if (dev->type == DrTFILE) {
             /* 构建完整路径: prefix + "/" + dev->name */
             uint32_t path_len = plen + 1 + strlen(dev->name);
-            char *full_path = (char *)kernel_alloc(path_len + 1);
+            char* full_path = (char*)kernel_alloc(path_len + 1);
             memoryCopy(full_path, prefix, plen);
             if (plen > 0 && prefix[plen - 1] != '/') {
                 full_path[plen] = '/';
@@ -116,15 +116,17 @@ static void collect_tree(FS_t node, char *prefix, uint32_t plen, uint32_t pfx_si
             uint16_t dlen = 0;
             if (dev->data != NULL) {
                 /* 找实际数据长度 (最大 127) */
-                uint8_t *d = (uint8_t *)dev->data;
+                uint8_t* d = (uint8_t*)dev->data;
                 while (dlen < 127 && d[dlen] != '\0') dlen++;
                 if (dlen > 0) {
-                    files[*file_count].data = (uint8_t *)kernel_alloc(dlen);
+                    files[*file_count].data = (uint8_t*)kernel_alloc(dlen);
                     memoryCopy(files[*file_count].data, dev->data, dlen);
-                } else {
+                }
+                else {
                     files[*file_count].data = NULL;
                 }
-            } else {
+            }
+            else {
                 files[*file_count].data = NULL;
             }
             files[*file_count].data_len = dlen;
@@ -153,7 +155,7 @@ static void collect_tree(FS_t node, char *prefix, uint32_t plen, uint32_t pfx_si
         uint32_t new_plen = plen + strlen(child->path);
 
         /* 记录目录路径 */
-        char *path_copy = (char *)kernel_alloc(new_plen + 1);
+        char* path_copy = (char*)kernel_alloc(new_plen + 1);
         memoryCopy(path_copy, prefix, new_plen);
         path_copy[new_plen] = '\0';
         dirs[*dir_count] = path_copy;
@@ -178,9 +180,9 @@ static void collect_tree(FS_t node, char *prefix, uint32_t plen, uint32_t pfx_si
 #define FS_SERIAL_BUF_SIZE       8192
 
 void FS_Serialize(void) {
-    char **dirs = (char **)kernel_alloc(sizeof(char *) * FS_SERIAL_MAX_ITEMS);
-    FileEntry *files = (FileEntry *)kernel_alloc(sizeof(FileEntry) * FS_SERIAL_MAX_ITEMS);
-    char *prefix = (char *)kernel_alloc(512);
+    char** dirs = (char**)kernel_alloc(sizeof(char*) * FS_SERIAL_MAX_ITEMS);
+    FileEntry* files = (FileEntry*)kernel_alloc(sizeof(FileEntry) * FS_SERIAL_MAX_ITEMS);
+    char* prefix = (char*)kernel_alloc(512);
     memset(prefix, 0, 512);
     uint16_t dir_count = 0, file_count = 0;
 
@@ -190,14 +192,14 @@ void FS_Serialize(void) {
                  files, &file_count, FS_SERIAL_MAX_ITEMS);
 
     /* 构建二进制 blob */
-    uint8_t *blob = (uint8_t *)kernel_alloc(FS_SERIAL_BUF_SIZE);
+    uint8_t* blob = (uint8_t*)kernel_alloc(FS_SERIAL_BUF_SIZE);
     memset(blob, 0, FS_SERIAL_BUF_SIZE);
     uint32_t offset = 0;
 
     write_u32(blob, &offset, FS_SERIAL_MAGIC);
 
     uint32_t crc_offset = offset;
-    write_u32(blob, &offset, 0x00000000);  /* CRC32 占位 */
+    write_u32(blob, &offset, 0x00000000); /* CRC32 占位 */
 
     write_u16(blob, &offset, dir_count);
     write_u16(blob, &offset, file_count);
@@ -238,22 +240,24 @@ void FS_Serialize(void) {
 
     USB_printf("save: %d dirs, %d files → ", dir_count, file_count);
     if (QSPI_W25Qxx_ChipErase() != QSPI_W25Qxx_OK) {
-        USB_color_printf(LIGHT_RED, "erase failed!\n"); goto cleanup;
+        USB_color_printf(LIGHT_RED, "erase failed!\n");
+        goto cleanup;
     }
     USB_printf("erase OK, writing... ");
     if (QSPI_W25Qxx_WriteBuffer(blob, 0, offset) != QSPI_W25Qxx_OK) {
-        USB_color_printf(LIGHT_RED, "write failed!\n"); goto cleanup;
+        USB_color_printf(LIGHT_RED, "write failed!\n");
+        goto cleanup;
     }
     USB_printf("verify... ");
-    uint8_t *vb = (uint8_t *)kernel_alloc(FS_SERIAL_BUF_SIZE);
+    uint8_t* vb = (uint8_t*)kernel_alloc(FS_SERIAL_BUF_SIZE);
     memset(vb, 0, FS_SERIAL_BUF_SIZE);
     if (QSPI_W25Qxx_ReadBuffer(vb, 0, offset) == QSPI_W25Qxx_OK && memoryCompare(blob, vb, offset)) {
         USB_color_printf(LIGHT_GREEN, "OK (%lu bytes)\n", offset);
-    } else {
+    }
+    else {
         USB_color_printf(LIGHT_RED, "mismatch!\n");
     }
     kernel_free(vb);
-    kernel_free(verify_buf);
 
 cleanup:
     for (uint16_t i = 0; i < dir_count; i++) kernel_free(dirs[i]);
@@ -280,12 +284,12 @@ void FS_Deserialize(void) {
     if (magic != FS_SERIAL_MAGIC) return;
 
     uint32_t stored_crc = read_u32(header, &hdr_off);
-    uint16_t dir_count  = read_u16(header, &hdr_off);
+    uint16_t dir_count = read_u16(header, &hdr_off);
     uint16_t file_count = read_u16(header, &hdr_off);
 
     if (dir_count == 0 && file_count == 0) return;
 
-    uint8_t *blob = (uint8_t *)kernel_alloc(FS_SERIAL_BUF_SIZE);
+    uint8_t* blob = (uint8_t*)kernel_alloc(FS_SERIAL_BUF_SIZE);
     memset(blob, 0, FS_SERIAL_BUF_SIZE);
     if (QSPI_W25Qxx_ReadBuffer(blob, 0, FS_SERIAL_BUF_SIZE) != QSPI_W25Qxx_OK) {
         kernel_free(blob);
@@ -293,7 +297,7 @@ void FS_Deserialize(void) {
     }
 
     /* 计算 payload 长度: 遍历所有目录+文件条目 */
-    uint32_t entry_off = 10;  /* 跳过 magic(4) + crc(4) + dir_count(2) */
+    uint32_t entry_off = 12; /* 跳过 magic(4) + crc(4) + dir_count(2) + file_count(2) */
     for (uint16_t i = 0; i < dir_count; i++) {
         uint16_t plen = read_u16(blob, &entry_off);
         entry_off += plen;
@@ -309,7 +313,7 @@ void FS_Deserialize(void) {
 
     /* 验证 CRC32 */
     {
-        uint32_t payload_len = entry_off - 8;  /* payload_start = 8 */
+        uint32_t payload_len = entry_off - 8; /* payload_start = 8 */
         uint32_t computed_crc = crc32_compute(blob + 8, payload_len);
         if (computed_crc != stored_crc) {
             USB_color_printf(LIGHT_RED, "[FS]: CRC mismatch\n");
@@ -318,14 +322,14 @@ void FS_Deserialize(void) {
     }
 
     /* 重建目录 */
-    uint32_t off = 10;
+    uint32_t off = 12;
     for (uint16_t i = 0; i < dir_count; i++) {
         uint16_t plen = read_u16(blob, &off);
-        char *check_copy = (char *)kernel_alloc(plen + 1);
+        char* check_copy = (char*)kernel_alloc(plen + 1);
         memoryCopy(check_copy, blob + off, plen);
         check_copy[plen] = '\0';
 
-        char *dir_path = (char *)kernel_alloc(plen + 1);
+        char* dir_path = (char*)kernel_alloc(plen + 1);
         strcpy(dir_path, check_copy);
         off += plen;
 
@@ -340,13 +344,13 @@ void FS_Deserialize(void) {
     /* 重建文件 */
     for (uint16_t i = 0; i < file_count; i++) {
         uint16_t plen = read_u16(blob, &off);
-        char *file_path = (char *)kernel_alloc(plen + 1);
+        char* file_path = (char*)kernel_alloc(plen + 1);
         memoryCopy(file_path, blob + off, plen);
         file_path[plen] = '\0';
         off += plen;
 
         uint16_t dlen = read_u16(blob, &off);
-        uint8_t *fdata = (dlen > 0) ? (blob + off) : NULL;
+        uint8_t* fdata = (dlen > 0) ? (blob + off) : NULL;
         off += dlen;
 
         ram_touch(file_path, fdata, dlen);

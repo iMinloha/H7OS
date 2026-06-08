@@ -3,63 +3,66 @@
 #include <string.h>
 
 extern FS_t currentFS;
-void addThread(Task_t task){
-FS_t node = getFSChild(RAM_FS, "proc");
+
+void addThread(Task_t task) {
+    FS_t node = getFSChild(RAM_FS, "proc");
     if (node == NULL) return;
-Task_t p = node->tasklist;
+    Task_t p = node->tasklist;
     if (p == NULL) {
         node->tasklist = task;
         return;
-    }else{
-        while(p->next != NULL) p = p->next;
+    }
+    else {
+        while (p->next != NULL) p = p->next;
         p->next = task;
     }
 }
 
 
-Task_t getThread(char* name){
-FS_t node = getFSChild(RAM_FS, "proc");
+Task_t getThread(char* name) {
+    FS_t node = getFSChild(RAM_FS, "proc");
     if (node == NULL) return NULL;
-Task_t p = node->tasklist;
-    while(p != NULL){
-        if(strcmp(p->name, name) == 0) return p;
+    Task_t p = node->tasklist;
+    while (p != NULL) {
+        if (strcmp(p->name, name) == 0) return p;
         p = p->next;
     }
     return NULL;
 }
 
 
-Task_t getTaskList(){
-FS_t node = getFSChild(RAM_FS, "proc");
+Task_t getTaskList() {
+    FS_t node = getFSChild(RAM_FS, "proc");
     if (node == NULL) return NULL;
     return node->tasklist;
 }
 
 
-Task_t getTaskByHandle(osThreadId handle){
-FS_t node = getFSChild(RAM_FS, "proc");
+Task_t getTaskByHandle(osThreadId handle) {
+    FS_t node = getFSChild(RAM_FS, "proc");
     if (node == NULL) return NULL;
-Task_t p = node->tasklist;
-    while(p != NULL){
-        if(p->handle == handle) return p;
+    Task_t p = node->tasklist;
+    while (p != NULL) {
+        if (p->handle == handle) return p;
         p = p->next;
     }
     return NULL;
 }
 
 
-Task_t getThreadByPID(uint8_t pid){
-FS_t node = getFSChild(RAM_FS, "proc");
+Task_t getThreadByPID(uint8_t pid) {
+    FS_t node = getFSChild(RAM_FS, "proc");
     if (node == NULL) return NULL;
-Task_t p = node->tasklist;
-    while(p != NULL){
-        if(p->PID == pid) return p;
+    Task_t p = node->tasklist;
+    while (p != NULL) {
+        if (p->PID == pid) return p;
         p = p->next;
     }
     return NULL;
 }
-Task_t loadTask(char* path){
-FS_t node;
+
+Task_t loadTask(char* path) {
+    FS_t node;
     if (path[0] == '/') node = RAM_FS;
     else node = currentFS;
 
@@ -67,7 +70,7 @@ FS_t node;
 
     else {
         if (path[0] == '/') path++;
-        char *token = strtok(path, "/");
+        char* token = strtok(path, "/");
         while (token != NULL) {
             FS_t tmp_node = getFSChild(node, token);
             if (tmp_node == NULL) break;
