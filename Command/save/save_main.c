@@ -4,7 +4,7 @@
 
 void save_main(int argc, char **argv){
     if(argc > 0) {
-        USB_printf("save: too many arguments");
+        USB_printf("save: too many arguments\n");
         return;
     }
     FS_Serialize();

@@ -4,7 +4,8 @@
 #include "Core/DrT.h"
 
 // Magic for flash header ("H7FS" in little-endian)
-#define FS_SERIAL_MAGIC     0x53463748
+#define FS_SERIAL_MAGIC_V1  0x53463748
+#define FS_SERIAL_MAGIC     0x53463749  // v2: adds mount persistence
 
 // Record type tags
 #define FS_RECORD_FS        0x01    // FS directory node

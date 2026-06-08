@@ -17,6 +17,9 @@
 #include "mount/mount_main.h"
 #include "cat/cat_main.h"
 #include "use/use_main.h"
+#include "dfu/dfu_main.h"
+#include "cp/cp_main.h"
+#include "mv/mv_main.h"
 
 void register_main(){
     CMD("ls",    "List files",             "ls [path]",            ls_main);
@@ -28,6 +31,7 @@ void register_main(){
     CMD("mkdir", "Create a directory",     "mkdir <path>",         mkdir_main);
     CMD("mount", "Mount SD to RAMFS",      "mount [sd] <ramfs>",   mount_main);
     CMD("reboot","Restart the system",     "reboot",               reboot_main);
+    CMD("dfu",   "Enter DFU firmware upgrade","dfu",               dfu_main);
     CMD("save",  "Save filesystem to flash","save",                save_main);
     CMD("pwd",   "Print working directory","pwd",                  pwd_main);
     CMD("rm",    "Remove file/directory",  "rm <path>",            rm_main);
@@ -35,5 +39,7 @@ void register_main(){
     CMD("flash", "Erase QSPI flash chip",  "flash",                flash_main);
     CMD("touch", "Create a file",          "touch <path> [data]",  touch_main);
     CMD("cat",   "Print file contents",    "cat <file>",           cat_main);
+    CMD("cp",    "Copy file",              "cp <src> <dst>",       cp_main);
+    CMD("mv",    "Move/rename file",       "mv <src> <dst>",       mv_main);
     CMD("use",   "Use device fops",        "use <dev> <op> [args]", use_main);
 }

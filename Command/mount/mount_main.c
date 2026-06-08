@@ -78,6 +78,6 @@ void mount_main(int argc, char *argv[]){
     mnt_fs->sd_mount_path = kernel_alloc(strlen(sd_path) + 1);
     strcpy(mnt_fs->sd_mount_path, sd_path);
 
-    USB_printf("mount: %s -> %s\n", sd_path[0] ? sd_path : "/", ramfs_abs);
+    USB_printf("mounted %s -> %s\n", sd_path[0] ? sd_path : "/", ramfs_abs);
     kernel_free(ramfs_abs);
 }

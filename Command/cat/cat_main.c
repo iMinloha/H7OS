@@ -25,15 +25,24 @@ static void cat_ramfs(const char *path) {
 }
 
 /** Read a file from SD card via FatFs */
-static void cat_sd(const char *sd_path) {
+static void cat_sd(const char *rel_path) {
+    extern char SDPath[4];
     FIL f;
-    if (f_open(&f, sd_path, FA_READ) != FR_OK) {
-        USB_color_printf(LIGHT_RED, "cat: [SD] '%s' not found\n", sd_path);
+    memset(&f, 0, sizeof(f));
+
+    /* Build drive-qualified path: "0:/" + rel_path (skip leading / in rel) */
+    char fatfs_path[256];
+    strcpy(fatfs_path, SDPath);
+    if (rel_path[0] == '/') rel_path++;
+    strcat(fatfs_path, rel_path);
+
+    if (f_open(&f, fatfs_path, FA_READ) != FR_OK) {
+        USB_color_printf(LIGHT_RED, "cat: '%s' not found\n", rel_path);
         return;
     }
     char buf[128];
     UINT br;
-    while (f_read(&f, buf, sizeof(buf), &br) == FR_OK && br > 0) {
+    while (f_read(&f, buf, sizeof(buf) - 1, &br) == FR_OK && br > 0) {
         buf[br] = '\0';
         USB_printf("%s", buf);
     }

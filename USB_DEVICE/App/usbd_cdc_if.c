@@ -346,22 +346,24 @@ void USB_printf(const char *format, ...){
 
     USB_TimeOut = 3;	// ��ʱ�ȴ�ʱ�䣬����ȡ3ms��ʵ�ⵥ�η���2K�����ݽ���2ms���û����Ը���ʵ��������е���
 
-    if( hUsbDeviceFS.dev_state == USBD_STATE_CONFIGURED )		// �ж�USB�Ƿ�������״̬
+    if (hUsbDeviceFS.dev_state == USBD_STATE_CONFIGURED)
     {
-        USBD_CDC_HandleTypeDef *hcdc = (USBD_CDC_HandleTypeDef*)hUsbDeviceFS.pClassData;	// ��ȡ��Ӧ��CDC״̬
+        USBD_CDC_HandleTypeDef *hcdc = (USBD_CDC_HandleTypeDef*)hUsbDeviceFS.pClassData;
 
-        Tickstart = xTaskGetTickCount();		// ��ȡ��ǰʱ��
-        while(hcdc->TxState !=0)		// �ȴ��������
+        /* Wait for previous TX to finish, yield CPU while waiting */
+        Tickstart = xTaskGetTickCount();
+        while (hcdc->TxState != 0)
         {
-            if((xTaskGetTickCount() - Tickstart) > USB_TimeOut) {
-                break;	// �����ȴ�
-            }
+            if ((xTaskGetTickCount() - Tickstart) > 200) break;
+            osDelay(1);
+        }
+
+        /* Only start if USB is idle — drop data if busy > 200ms */
+        if (hcdc->TxState == 0) {
+            CDC_Transmit_FS(UserTxBufferFS, length);
         }
     }
-
-    CDC_Transmit_FS(UserTxBufferFS, length); // ���� USB CDC������������
-
-}
+    }
 
 uint8_t USB_scanf(uint8_t *buf){
     uint32_t  Tickstart;			// ��ʱ��ʼʱ��

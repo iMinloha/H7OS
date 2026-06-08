@@ -4,67 +4,91 @@
 #include "fatfs.h"
 #include <string.h>
 
-#define ShowTab(level) for (int t = 0; t < level; t++) USB_printf("  ")
-
 extern char SDPath[4];
 
-static void dfs_sd_list(const char *sd_path, int level, int depth);
+static void dfs_sd_list(const char *sd_rel, const char *prefix, int depth);
 
-void dfs(FS_t node, int level, int depth) {
+/* Draw a tree node: prefix + branch + name */
+static void draw_node(const char *prefix, int is_last, int is_dir, const char *name) {
+    USB_printf("%s", prefix);
+    USB_printf(is_last ? "`-" : "|-");
+    USB_color_printf(is_dir ? LIGHT_GREEN : LIGHT_YELLOW, " %s%s\n",
+                     name, is_dir ? "/" : "");
+}
+
+/* ── RAMFS tree ──────────────────────────────────────────── */
+static void dfs(FS_t node, const char *prefix, int depth) {
+    /* Count total visible children (devices + dirs + tasks + SD) */
+    int devs = node->node_count;
+    int tasks = 0;
+    Task_t t = node->tasklist; while (t) { tasks++; t = t->next; }
+    int dirs = 0;
+    FS_t c = node->child_next; while (c) { dirs++; c = c->level_next; }
+    int has_sd = (node->sd_mount_path != NULL) ? 1 : 0;
+    int total = devs + tasks + dirs + has_sd;
+    int idx = 0;
+
     /* Devices */
     DrTNode_t dev = node->node;
-    for (int i = 0; i < node->node_count; i++) {
-        ShowTab(level);
-        USB_color_printf(LIGHT_BLUE, "%s %s\n",
-            (i == node->node_count - 1) ? "`-" : "|-", dev->name);
+    while (dev) {
+        idx++;
+        draw_node(prefix, idx >= total, 0, dev->name);
         dev = dev->next;
     }
 
     /* Tasks */
-    Task_t task = node->tasklist;
-    while (task) {
-        ShowTab(level);
-        USB_color_printf(LIGHT_PURPLE, "%s %s\n",
-            task->next ? "|-" : "`-", task->name);
-        task = task->next;
+    t = node->tasklist;
+    while (t) {
+        idx++;
+        draw_node(prefix, idx >= total, 0, t->name);
+        t = t->next;
     }
 
     /* RAMFS children */
-    if (level <= depth) {
-        FS_t child = node->child_next;
-        while (child) {
-            ShowTab(level);
-            char *tag = child->sd_mount_path ? " -> [SD]" : "";
-            USB_color_printf(LIGHT_GREEN, "%s %s%s\n",
-                child->level_next ? "|-" : "`-", child->path, tag);
-            dfs(child, level + 1, depth);
-            child = child->level_next;
+    if (depth > 0) {
+        c = node->child_next;
+        while (c) {
+            idx++;
+            char tag[16] = "";
+            if (c->sd_mount_path) strcpy(tag, " -> [SD]");
+            char name_buf[64];
+            snprintf(name_buf, sizeof(name_buf), "%s%s", c->path, tag);
+            draw_node(prefix, idx >= total, 1, name_buf);
+
+            /* Build child prefix: add "|   " or "    " */
+            char child_prefix[256];
+            snprintf(child_prefix, sizeof(child_prefix), "%s%s",
+                     prefix, idx >= total ? "    " : "|   ");
+            dfs(c, child_prefix, depth - 1);
+            c = c->level_next;
         }
     }
 
-    /* SD mount */
-    if (node->sd_mount_path && level < depth)
-        dfs_sd_list(node->sd_mount_path, level + 1, depth);
+    /* SD mount content */
+    if (has_sd && depth > 0) {
+        char child_prefix[256];
+        snprintf(child_prefix, sizeof(child_prefix), "%s    ", prefix);
+        dfs_sd_list(node->sd_mount_path, child_prefix, depth - 1);
+    }
 }
 
-static void dfs_sd_list(const char *sd_rel, int level, int depth) {
+/* ── SD card tree ────────────────────────────────────────── */
+static void dfs_sd_list(const char *sd_rel, const char *prefix, int depth) {
     char fatfs_path[256];
     strcpy(fatfs_path, SDPath);
     if (sd_rel[0]) strcat(fatfs_path, sd_rel);
 
-    /* First pass: count items (dirs + files), skip dot entries */
+    /* First pass: count entries, skip dot files */
     DIR dir;
     if (f_opendir(&dir, fatfs_path) != FR_OK) return;
     FILINFO f;
-    int total = 0, dirs = 0, files = 0;
+    int total = 0;
     while (f_readdir(&dir, &f) == FR_OK && f.fname[0]) {
-        if (f.fname[0] == '.') continue;
-        total++;
-        if (f.fattrib & AM_DIR) dirs++; else files++;
+        if (f.fname[0] != '.') total++;
     }
     f_closedir(&dir);
 
-    /* Second pass: display all entries */
+    /* Second pass: display entries */
     if (f_opendir(&dir, fatfs_path) != FR_OK) return;
     int idx = 0;
     while (f_readdir(&dir, &f) == FR_OK && f.fname[0]) {
@@ -72,17 +96,21 @@ static void dfs_sd_list(const char *sd_rel, int level, int depth) {
         idx++;
         int is_dir = (f.fattrib & AM_DIR) ? 1 : 0;
         int is_last = (idx >= total);
-        ShowTab(level);
-        USB_color_printf(is_dir ? LIGHT_GREEN : LIGHT_YELLOW, "%s %s%s\n",
-            is_last ? "`-" : "|-", f.fname, is_dir ? "/" : "");
-        if (is_dir && level < depth) {
-            char sub[256];
-            if (sd_rel[0]) sprintf(sub, "%s/%s", sd_rel, f.fname);
-            else strcpy(sub, f.fname);
-            dfs_sd_list(sub, level + 1, depth);
+        draw_node(prefix, is_last, is_dir, f.fname);
+
+        if (is_dir && depth > 0) {
+            char sub_rel[256];
+            if (sd_rel[0]) snprintf(sub_rel, sizeof(sub_rel), "%s/%s", sd_rel, f.fname);
+            else strncpy(sub_rel, f.fname, sizeof(sub_rel));
+            char child_prefix[256];
+            snprintf(child_prefix, sizeof(child_prefix), "%s%s",
+                     prefix, is_last ? "    " : "|   ");
+            dfs_sd_list(sub_rel, child_prefix, depth - 1);
         }
     }
     f_closedir(&dir);
 }
 
-void DFS(FS_t node, int depth) { dfs(node, 0, depth); }
+void DFS(FS_t node, int depth) {
+    dfs(node, "", depth);
+}

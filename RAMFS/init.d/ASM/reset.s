@@ -1,7 +1,7 @@
     .section .text
-    .global system_reset    // 系统复位
-    .global shutdown_system // 关机(低功耗模式，除非触发中断)
-    .global dfu_mode  // DFU模式(错误)
+    .global system_reset
+    .global shutdown_system
+    .global jump_to_bootloader
 
 system_reset:
     dsb
@@ -25,3 +25,11 @@ shutdown_system:
     orr r1, r1, r2
     str r1, [r0]
     wfi
+
+/* Jump to STM32H7 system bootloader (DFU over USB OTG) */
+jump_to_bootloader:
+    ldr r0, =0x1FF09800
+    ldr r1, [r0]
+    msr msp, r1
+    ldr r0, [r0, #4]
+    bx r0

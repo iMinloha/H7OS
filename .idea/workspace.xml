@@ -29,8 +29,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b472e725-50d4-49aa-a3fb-20d03d3770a2" name="更改" comment="FATFS无缝兼容">
+      <change afterPath="$PROJECT_DIR$/Command/cp/cp_main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Command/cp/cp_main.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Command/mv/mv_main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Command/mv/mv_main.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Command/Register.c" beforeDir="false" afterPath="$PROJECT_DIR$/Command/Register.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Command/cat/cat_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Command/cat/cat_main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Command/dfu/dfu_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Command/dfu/dfu_main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Command/mount/mount_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Command/mount/mount_main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Command/save/save_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Command/save/save_main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FATFS/Target/ffconf.h" beforeDir="false" afterPath="$PROJECT_DIR$/FATFS/Target/ffconf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/ASM/reset.s" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/ASM/reset.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/Cmd/DrT_cmd.c" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/Cmd/DrT_cmd.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/Periph/FS_Serial.c" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/Periph/FS_Serial.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/Periph/FS_Serial.h" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/Periph/FS_Serial.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/USB_DEVICE/App/usbd_cdc_if.c" beforeDir="false" afterPath="$PROJECT_DIR$/USB_DEVICE/App/usbd_cdc_if.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

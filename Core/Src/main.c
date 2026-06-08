@@ -136,6 +136,14 @@ int main(void)
   MX_USART2_UART_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
+
+  /* DFU boot check: read RTC backup register (preserved across reset) */
+  extern void jump_to_bootloader(void);
+  if (HAL_RTCEx_BKUPRead(&hrtc, RTC_BKP_DR1) == 0x44465501) {
+      HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR1, 0);  /* Clear flag */
+      jump_to_bootloader();  /* Jump to STM32 system bootloader (USB DFU) */
+  }
+
   MX_USB_DEVICE_Init();
   BSP_SD_Init();
   Touch_Init();

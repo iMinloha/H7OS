@@ -49,24 +49,25 @@ void execCMD(char* command_rel) {
         p = p->next;
     }
 
-    USB_printf("Command not found\n");
+    USB_printf("sh: '%s' not found. Type 'help'.\n", argv[0]);
 }
 
 void helpCMD(char* cmd) {
     char buf[128];
     memoryCopy(buf, cmd, strlen(cmd) + 1);
     CMD_t p = CMDList->next;
-    USB_printf("Command\t\tDescription\t\tUsage\n");
     if (buf[0] == '\0') {
+        USB_printf("%-8s  %-26s  %s\n", "Command", "Description", "Usage");
         while (p != NULL) {
-            USB_printf("%s\t\t%s\t\t%s\n", p->name, p->description, p->usage);
+            USB_printf("%-8s  %-26s  %s\n", p->name, p->description, p->usage);
             p = p->next;
         }
     }
     else {
         while (p != NULL) {
             if (strcmp(p->name, cmd) == 0) {
-                USB_printf("%s\t\t%s\t\t%s\n", p->name, p->description, p->usage);
+                USB_printf("%s — %s\n", p->name, p->description);
+                USB_printf("Usage: %s\n", p->usage);
                 return;
             }
             p = p->next;
