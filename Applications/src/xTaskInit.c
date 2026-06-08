@@ -46,8 +46,8 @@ void taskGlobalInit(){
         addDevice("mnt", &hqspi, "QSPI", "Quad SPI", DEVICE_STORAGE, DEVICE_ON, NULL);
         printf("[xTaskInit]: QSPI Flash Succeed, ID: %lx\n", QSPI_W25Qxx_ReadID());
     }
-    // CPU结构体初始化(用于标注CPU的信息)
-    createCPU();
+    /* CPU 设备由 devices_init() -> cpu_device_init() 统一注册,
+       不再在此单独调用 createCPU() */
 }
 
 /*** 函数书写声明 **

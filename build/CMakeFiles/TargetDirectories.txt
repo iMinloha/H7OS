@@ -1,0 +1,3 @@
+D:/H7OS/build/CMakeFiles/H7OS.elf.dir
+D:/H7OS/build/CMakeFiles/edit_cache.dir
+D:/H7OS/build/CMakeFiles/rebuild_cache.dir

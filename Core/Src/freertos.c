@@ -30,6 +30,7 @@
 #include "xTaskInit.h"
 #include "xTaskManager.h"
 #include "TaskHead.h"
+#include "bsp_devices.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -153,6 +154,7 @@ void MX_FREERTOS_Init(void) {
 //    HAL_Delay(5000);
     MemControl_Init();
     taskGlobalInit();
+    devices_init();    /* 注册 BSP 外设到 DrT 设备树 (在 DrTInit + TLSF 之后) */
     ThreadInit();
     /* add threads, ... */
     //  SDRAM_Initialization_Sequence(&hsdram1);

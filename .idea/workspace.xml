@@ -29,23 +29,479 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b472e725-50d4-49aa-a3fb-20d03d3770a2" name="更改" comment="FATFS无缝兼容">
-      <change afterPath="$PROJECT_DIR$/Command/cp/cp_main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Command/cp/cp_main.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Command/mv/mv_main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Command/mv/mv_main.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/adc/bsp_adc.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/adc/bsp_adc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/bsp_devices.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/cpu/bsp_cpu.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/cpu/bsp_cpu.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/gpio/bsp_gpio.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/gpio/bsp_gpio.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/hal_init.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/hal_init.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/i2c/bsp_i2c.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/i2c/bsp_i2c.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/lcd/lcd_define.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/lcd/lcd_define.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/pwm/bsp_pwm.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/pwm/bsp_pwm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/touch/torch_iic.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/touch/torch_iic.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/usart/bsp_usart.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/usart/bsp_usart.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/FK743M2-IIT6.ioc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Inc/adc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Inc/dma.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Inc/dma2d.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Inc/fmc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Inc/gpio.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Inc/i2c.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Inc/jpeg.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Inc/jpeg_utils_conf.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Inc/ltdc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Inc/main.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Inc/mdma.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Inc/quadspi.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Inc/rng.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Inc/rtc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Inc/sdmmc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Inc/stm32h7xx_hal_conf.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Inc/stm32h7xx_it.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Inc/tim.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Inc/usart.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/STM32H743IITX_FLASH.ld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/STM32H743IITX_RAM.ld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Src/adc.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Src/dma.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Src/dma2d.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Src/fmc.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Src/gpio.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Src/i2c.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Src/jpeg.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Src/ltdc.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Src/mdma.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Src/quadspi.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Src/rng.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Src/rtc.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Src/sdmmc.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Src/stm32h7xx_hal_msp.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Src/stm32h7xx_hal_timebase_tim.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Src/stm32h7xx_it.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Src/system_stm32h7xx.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Src/tim.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Src/usart.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Startup/startup_stm32h743iitx.s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Platform/Board/board_fk743m2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Platform/Board/board_select.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Platform/Board/board_template.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Platform/bsp_devices.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Platform/bsp_file_ops.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Platform/bsp_init.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Platform/bsp_init.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/4.1.1/CMakeASMCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/4.1.1/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/4.1.1/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/4.1.1/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/4.1.1/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/4.1.1/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/4.1.1/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/4.1.1/CompilerIdC/CMakeCCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/4.1.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/4.1.1/CompilerIdCXX/CMakeCXXCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/ASM.includecache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/test.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/test.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/xNoneTask.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/xNoneTask.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/xShellTask.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/xShellTask.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/xTaskInit.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/xTaskInit.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/xTaskManager.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/xTaskManager.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/Register.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/Register.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/cat/cat_main.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/cat/cat_main.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/cd/cd_main.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/cd/cd_main.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/cp/cp_main.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/cp/cp_main.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/dfu/dfu_main.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/dfu/dfu_main.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/echo/echo_main.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/echo/echo_main.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/flash/flash_main.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/flash/flash_main.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/help/help_main.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/help/help_main.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/info/info_main.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/info/info_main.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/mkdir/mkdir_main.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/mkdir/mkdir_main.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/mount/mount_main.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/mount/mount_main.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/mv/mv_main.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/mv/mv_main.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/pwd/pwd_main.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/pwd/pwd_main.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/reboot/reboot_main.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/reboot/reboot_main.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/reset/reset_main.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/reset/reset_main.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/rm/rm_main.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/rm/rm_main.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/save/save_main.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/save/save_main.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/touch/touch_main.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/touch/touch_main.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/tree/tree_main.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/tree/tree_main.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/use/use_main.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/use/use_main.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Core/Src/main.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Core/Src/main.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Core/Src/syscalls.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Core/Src/syscalls.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Core/Src/sysmem.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Core/Src/sysmem.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/DependInfo.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/memctl.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/memctl.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/timer.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/timer.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/tlsf.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/tlsf.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_thread.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_thread.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/FATFS/App/fatfs.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/FATFS/App/fatfs.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/FATFS/Target/bsp_driver_sd.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/FATFS/Target/bsp_driver_sd.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/FATFS/Target/sd_diskio.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/FATFS/Target/sd_diskio.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/adc/bsp_adc.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/adc/bsp_adc.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/bsp_devices.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/bsp_devices.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/cpu/bsp_cpu.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/cpu/bsp_cpu.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/gpio/bsp_gpio.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/gpio/bsp_gpio.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/i2c/bsp_i2c.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/i2c/bsp_i2c.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/lcd/lcd_define.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/lcd/lcd_define.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/pwm/bsp_pwm.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/pwm/bsp_pwm.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/touch/torch_iic.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/touch/torch_iic.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/usart/bsp_usart.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/usart/bsp_usart.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/adc.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/adc.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/dma.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/dma.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/dma2d.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/dma2d.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/fmc.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/fmc.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/gpio.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/gpio.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/hal_init.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/hal_init.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/i2c.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/i2c.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/jpeg.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/jpeg.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/ltdc.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/ltdc.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/mdma.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/mdma.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/quadspi.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/quadspi.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/rng.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/rng.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/rtc.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/rtc.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/sdmmc.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/sdmmc.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/stm32h7xx_hal_msp.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/stm32h7xx_hal_msp.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/stm32h7xx_hal_timebase_tim.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/stm32h7xx_hal_timebase_tim.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/stm32h7xx_it.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/stm32h7xx_it.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/system_stm32h7xx.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/system_stm32h7xx.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/tim.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/tim.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/usart.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/usart.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Startup/startup_stm32h743iitx.s.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/unicode.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/unicode.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Platform/bsp_init.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Platform/bsp_init.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/ASM/reset.s.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/ASM/sd_boot.s.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Algo/DFS.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Algo/DFS.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/builder.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/builder.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/keywords/kw_build.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/keywords/kw_build.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Cmd/DrT_cmd.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Cmd/DrT_cmd.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Core/DrT.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Core/DrT.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Dev/DrT_dev.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Dev/DrT_dev.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/FS/DrT_fs.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/FS/DrT_fs.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Mnt/DrT_mnt.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Mnt/DrT_mnt.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/FS_Serial.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/FS_Serial.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/cpu.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/cpu.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Proc/DrT_proc.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Proc/DrT_proc.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/USB_DEVICE/App/usb_device.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/USB_DEVICE/App/usb_device.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/USB_DEVICE/App/usbd_desc.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/USB_DEVICE/App/usbd_desc.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Utilities/JPEG/jpeg_utils.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Utilities/JPEG/jpeg_utils.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/build.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/cmake_clean.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/compiler_depend.internal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/depend.internal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/flags.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/link.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/objects1.rsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/progress.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/InstallScripts.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/H7OS.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/H7OS.elf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/H7OS.hex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/H7OS.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cproject" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Command/Register.c" beforeDir="false" afterPath="$PROJECT_DIR$/Command/Register.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Command/cat/cat_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Command/cat/cat_main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Command/dfu/dfu_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Command/dfu/dfu_main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Command/mount/mount_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Command/mount/mount_main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Command/save/save_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Command/save/save_main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mxproject" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/src/xTaskInit.c" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/src/xTaskInit.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists_template.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/adc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/dma.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/dma2d.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/fmc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/gpio.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/i2c.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/jpeg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/jpeg_utils_conf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/lcd_define.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/ltdc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/mdma.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/quadspi.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/rng.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/rtc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/sdmmc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32h7xx_hal_conf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32h7xx_it.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/tim.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/torch_iic.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/usart.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/adc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/dma.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/dma2d.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/fmc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/freertos.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/freertos.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/gpio.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/i2c.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/jpeg.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/lcd_define.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/ltdc.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FATFS/Target/ffconf.h" beforeDir="false" afterPath="$PROJECT_DIR$/FATFS/Target/ffconf.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/ASM/reset.s" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/ASM/reset.s" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/Cmd/DrT_cmd.c" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/Cmd/DrT_cmd.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/Periph/FS_Serial.c" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/Periph/FS_Serial.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/Periph/FS_Serial.h" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/Periph/FS_Serial.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/USB_DEVICE/App/usbd_cdc_if.c" beforeDir="false" afterPath="$PROJECT_DIR$/USB_DEVICE/App/usbd_cdc_if.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/mdma.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/quadspi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/rng.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/rtc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/sdmmc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/stm32h7xx_hal_msp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/stm32h7xx_hal_timebase_tim.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/stm32h7xx_it.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/system_stm32h7xx.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/tim.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/torch_iic.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/usart.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Startup/startup_stm32h743iitx.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/BSP/Components/adc/bsp_adc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/BSP/Components/adc/bsp_adc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/BSP/Components/cpu/bsp_cpu.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/BSP/Components/cpu/bsp_cpu.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/BSP/Components/gpio/bsp_gpio.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/BSP/Components/gpio/bsp_gpio.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/BSP/Components/i2c/bsp_i2c.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/BSP/Components/i2c/bsp_i2c.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/BSP/Components/pwm/bsp_pwm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/BSP/Components/pwm/bsp_pwm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/BSP/Components/usart/bsp_usart.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/BSP/Components/usart/bsp_usart.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/BSP/bsp_devices.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/BSP/bsp_devices.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/BSP/bsp_file_ops.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/H7OS.ioc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/STM32H743IITX_FLASH.ld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/STM32H743IITX_RAM.ld" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +514,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -73,7 +534,38 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://D:/H7OS/Command/mount/mount_main.c" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -96,32 +588,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;OpenOCD 下载并运行.OCD H7OS.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/H7OS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;serialMonitor.commands&quot;: &quot;ls&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CMakeSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "OpenOCD 下载并运行.OCD H7OS.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.west.config.association.type.startup.service": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/H7OS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "serialMonitor.commands": "ls",
+    "settings.editor.selected.configurable": "CMakeSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\H7OS\Core\Inc" />
@@ -154,6 +646,8 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="CMake 调试.H7OS" />
+        <item itemvalue="CMake 调试.H7OS" />
         <item itemvalue="CMake 调试.H7OS" />
       </list>
     </recent_temporary>
@@ -513,6 +1007,8 @@
       <workItem from="1779718688810" duration="120000" />
       <workItem from="1780814046490" duration="20163000" />
       <workItem from="1780885282880" duration="4572000" />
+      <workItem from="1780917026193" duration="41000" />
+      <workItem from="1780917080913" duration="2512000" />
     </task>
     <task id="LOCAL-00001" summary="Fatfs初始化">
       <option name="closed" value="true" />
@@ -833,19 +1329,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Core/Inc/main.h</url>
-          <line>45</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Core/Src/ltdc.c</url>
-          <line>558</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Core/Src/ltdc.c</url>
-          <line>372</line>
-          <option name="timeStamp" value="15" />
+          <url>file://$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/usart/bsp_usart.c</url>
+          <line>75</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
