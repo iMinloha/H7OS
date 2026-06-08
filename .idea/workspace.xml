@@ -28,14 +28,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b472e725-50d4-49aa-a3fb-20d03d3770a2" name="更改" comment="优化表格输出">
-      <change afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FatFs/src/option/unicode.c" afterDir="false" />
+    <list default="true" id="b472e725-50d4-49aa-a3fb-20d03d3770a2" name="更改" comment="FATFS无缝兼容">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Command/cat/cat_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Command/cat/cat_main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Command/rm/rm_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Command/rm/rm_main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FATFS/Target/ffconf.h" beforeDir="false" afterPath="$PROJECT_DIR$/FATFS/Target/ffconf.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/Algo/DFS.c" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/Algo/DFS.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/FS/DrT_fs.c" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/FS/DrT_fs.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -502,7 +497,7 @@
       <workItem from="1778934963299" duration="759000" />
       <workItem from="1779718688810" duration="120000" />
       <workItem from="1780814046490" duration="20163000" />
-      <workItem from="1780885282880" duration="3838000" />
+      <workItem from="1780885282880" duration="4572000" />
     </task>
     <task id="LOCAL-00001" summary="Fatfs初始化">
       <option name="closed" value="true" />
@@ -760,7 +755,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780886584442</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="FATFS无缝兼容">
+      <option name="closed" value="true" />
+      <created>1780901949363</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1780901949363</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -784,7 +787,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fatfs初始化" />
     <MESSAGE value="Fatfs初始化瞬死线程" />
     <MESSAGE value="增加CPU设备信息" />
     <MESSAGE value="info指令用于查看设备信息" />
@@ -809,7 +811,8 @@
     <MESSAGE value="修复FatFS挂载问题" />
     <MESSAGE value="删除CS,增加FS,优化代码结构" />
     <MESSAGE value="优化表格输出" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化表格输出" />
+    <MESSAGE value="FATFS无缝兼容" />
+    <option name="LAST_COMMIT_MESSAGE" value="FATFS无缝兼容" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
