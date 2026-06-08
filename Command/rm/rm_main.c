@@ -16,23 +16,18 @@ void rm_main(int argc, char *argv[]){
     /* 如果在 SD 挂载点内, 直接在 SD 卡上删除 */
     char *sd_path = fs_to_sd_path(argv[0]);
     if (sd_path != NULL) {
-        /* 先尝试作为文件删除, 再尝试作为空目录删除 */
         FRESULT res = f_unlink(sd_path);
-        if (res == FR_OK) {
-            USB_printf("rm: [SD] %s\n", sd_path);
-        } else {
-            /* f_unlink 失败, 可能是目录, 尝试 f_rmdir (需要 opendir 确认是目录) */
+        if (res != FR_OK) {
+            /* f_unlink 失败, 可能是非空目录, 尝试确认是否目录存在 */
             DIR test;
             if (f_opendir(&test, sd_path) == FR_OK) {
                 f_closedir(&test);
-                res = f_unlink(sd_path);  /* FATFS f_unlink 也能删空目录... 试试 */
+                res = f_unlink(sd_path);
                 if (res != FR_OK) {
-                    USB_color_printf(LIGHT_RED, "rm: [SD] cannot remove '%s' (dir not empty?)\n", sd_path);
-                } else {
-                    USB_printf("rm: [SD] %s\n", sd_path);
+                    USB_color_printf(LIGHT_RED, "rm: cannot remove '%s': directory not empty\n", sd_path);
                 }
             } else {
-                USB_color_printf(LIGHT_RED, "rm: [SD] '%s' not found\n", sd_path);
+                USB_color_printf(LIGHT_RED, "rm: '%s' not found\n", sd_path);
             }
         }
         kernel_free(sd_path);

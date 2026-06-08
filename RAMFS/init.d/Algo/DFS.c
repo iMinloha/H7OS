@@ -2,8 +2,11 @@
 #include "RAMFS.h"
 #include "usbd_cdc_if.h"
 #include "fatfs.h"
+#include <string.h>
 
 #define ShowTab(level) for (int t = 0; t < level; t++) USB_printf("  ")
+
+extern char SDPath[4];
 
 static void dfs_sd_list(const char *sd_path, int level, int depth);
 
@@ -44,25 +47,37 @@ void dfs(FS_t node, int level, int depth) {
         dfs_sd_list(node->sd_mount_path, level + 1, depth);
 }
 
-static void dfs_sd_list(const char *sd_path, int level, int depth) {
+static void dfs_sd_list(const char *sd_rel, int level, int depth) {
+    char fatfs_path[256];
+    strcpy(fatfs_path, SDPath);
+    if (sd_rel[0]) strcat(fatfs_path, sd_rel);
+
+    /* First pass: count items (dirs + files), skip dot entries */
     DIR dir;
-    if (f_opendir(&dir, sd_path) != FR_OK) return;
+    if (f_opendir(&dir, fatfs_path) != FR_OK) return;
     FILINFO f;
-    int count = 0;
-    while (f_readdir(&dir, &f) == FR_OK && f.fname[0])
-        if ((f.fattrib & AM_DIR) && f.fname[0] != '.') count++;
+    int total = 0, dirs = 0, files = 0;
+    while (f_readdir(&dir, &f) == FR_OK && f.fname[0]) {
+        if (f.fname[0] == '.') continue;
+        total++;
+        if (f.fattrib & AM_DIR) dirs++; else files++;
+    }
     f_closedir(&dir);
 
-    if (f_opendir(&dir, sd_path) != FR_OK) return;
+    /* Second pass: display all entries */
+    if (f_opendir(&dir, fatfs_path) != FR_OK) return;
     int idx = 0;
     while (f_readdir(&dir, &f) == FR_OK && f.fname[0]) {
-        if (!(f.fattrib & AM_DIR) || f.fname[0] == '.') continue;
+        if (f.fname[0] == '.') continue;
+        idx++;
+        int is_dir = (f.fattrib & AM_DIR) ? 1 : 0;
+        int is_last = (idx >= total);
         ShowTab(level);
-        USB_color_printf(LIGHT_GREEN, "%s %s/\n",
-            (++idx >= count) ? "`-" : "|-", f.fname);
-        if (level < depth) {
+        USB_color_printf(is_dir ? LIGHT_GREEN : LIGHT_YELLOW, "%s %s%s\n",
+            is_last ? "`-" : "|-", f.fname, is_dir ? "/" : "");
+        if (is_dir && level < depth) {
             char sub[256];
-            if (sd_path[0]) sprintf(sub, "%s/%s", sd_path, f.fname);
+            if (sd_rel[0]) sprintf(sub, "%s/%s", sd_rel, f.fname);
             else strcpy(sub, f.fname);
             dfs_sd_list(sub, level + 1, depth);
         }

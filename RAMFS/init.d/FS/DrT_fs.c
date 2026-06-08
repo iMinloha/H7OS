@@ -6,6 +6,15 @@
 #include <stdio.h>
 
 extern FS_t currentFS;
+extern char SDPath[4];
+
+/* ── Helpers ─────────────────────────────────────────────── */
+
+/** Convert relative SD path to FatFs-qualified path (e.g. ""→"0:", "/x"→"0:/x") */
+static void sd_to_fatfs_path(char *out, const char *rel) {
+    strcpy(out, SDPath);
+    if (rel[0] != '\0') strcat(out, rel);
+}
 
 /* ── Directory tree helpers ──────────────────────────────── */
 
@@ -45,8 +54,8 @@ FS_t getFSChild(FS_t parent, char* path) {
 }
 
 FS_t loadPath(char* path) {
-    FS_t node = RAM_FS;
-    if (strcmp(path, "/") == 0) return node;
+    FS_t node = (path[0] == '/') ? RAM_FS : currentFS;
+    if (strcmp(path, "/") == 0) return RAM_FS;
     if (strcmp(path, "../") == 0) return currentFS->parent;
     if (path[0] == '/') path++;
     char* token = strtok(path, "/");
@@ -213,10 +222,12 @@ void ram_ls(char* path) {
     }
 
     if (node->sd_mount_path) {
-        char* sd = node->sd_cd_path ? node->sd_cd_path : node->sd_mount_path;
+        char* rel = node->sd_cd_path ? node->sd_cd_path : node->sd_mount_path;
+        char fatfs_path[64];
+        sd_to_fatfs_path(fatfs_path, rel);
         DIR dir;
         FILINFO f;
-        if (f_opendir(&dir, sd) == FR_OK) {
+        if (f_opendir(&dir, fatfs_path) == FR_OK) {
             while (f_readdir(&dir, &f) == FR_OK && f.fname[0]) {
                 if (f.fname[0] == '.') continue;
                 USB_color_printf(f.fattrib & AM_DIR ? LIGHT_GREEN : LIGHT_YELLOW,
@@ -256,13 +267,22 @@ FS_t ram_cd(char* path) {
                     strcpy(currentFS->sd_cd_path, base);
                     *slash = '/';
                 }
+                return currentFS;
             }
+            /* At SD mount root (base is empty or has no slash) — go back to RAMFS */
+            if (currentFS->sd_cd_path) {
+                kernel_free(currentFS->sd_cd_path);
+                currentFS->sd_cd_path = NULL;
+            }
+            currentFS = currentFS->parent;
             return currentFS;
         }
         char* new_sd = kernel_alloc(strlen(base) + strlen(path) + 2);
         sprintf(new_sd, "%s/%s", base, path);
+        char fatfs_check[64];
+        sd_to_fatfs_path(fatfs_check, new_sd);
         DIR d;
-        if (f_opendir(&d, new_sd) == FR_OK) {
+        if (f_opendir(&d, fatfs_check) == FR_OK) {
             f_closedir(&d);
             if (currentFS->sd_cd_path) kernel_free(currentFS->sd_cd_path);
             currentFS->sd_cd_path = new_sd;

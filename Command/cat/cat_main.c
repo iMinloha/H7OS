@@ -20,7 +20,7 @@ static void cat_ramfs(const char *path) {
         return;
     }
     if (dev->data) {
-        USB_printf("%s", (char*)dev->data);
+        USB_printf("%s\n", (char*)dev->data);
     }
 }
 
@@ -37,6 +37,7 @@ static void cat_sd(const char *sd_path) {
         buf[br] = '\0';
         USB_printf("%s", buf);
     }
+    USB_printf("\n");
     f_close(&f);
 }
 
