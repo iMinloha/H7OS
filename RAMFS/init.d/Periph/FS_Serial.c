@@ -15,7 +15,7 @@
 
 #include "FS_Serial.h"
 #include "memctl.h"
-#include "quadspi.h"
+#include "platform.h"
 #include "usbd_cdc_if.h"
 
 /* ================================================================== */
@@ -290,19 +290,19 @@ void FS_Serialize(void) {
     write_u32(blob, &offset, 0x454E4400);
 
     USB_printf("save: %d dirs, %d files, %d mounts → ", dir_count, file_count, mount_count);
-    if (QSPI_W25Qxx_ChipErase() != QSPI_W25Qxx_OK) {
+    if (Platform_QSPI_ChipErase() != 0) {
         USB_color_printf(LIGHT_RED, "erase failed!\n");
         goto cleanup;
     }
     USB_printf("erase OK, writing... ");
-    if (QSPI_W25Qxx_WriteBuffer(blob, 0, offset) != QSPI_W25Qxx_OK) {
+    if (Platform_QSPI_Write(blob, 0, offset) != 0) {
         USB_color_printf(LIGHT_RED, "write failed!\n");
         goto cleanup;
     }
     USB_printf("verify... ");
     uint8_t* vb = (uint8_t*)kernel_alloc(FS_SERIAL_BUF_SIZE);
     memset(vb, 0, FS_SERIAL_BUF_SIZE);
-    if (QSPI_W25Qxx_ReadBuffer(vb, 0, offset) == QSPI_W25Qxx_OK && memoryCompare(blob, vb, offset)) {
+    if (Platform_QSPI_Read(vb, 0, offset) == 0 && memoryCompare(blob, vb, offset)) {
         USB_color_printf(LIGHT_GREEN, "OK (%lu bytes)\n", offset);
     }
     else {
@@ -334,7 +334,7 @@ cleanup:
 
 void FS_Deserialize(void) {
     uint8_t header[16];
-    if (QSPI_W25Qxx_ReadBuffer(header, 0, 16) != QSPI_W25Qxx_OK) return;
+    if (Platform_QSPI_Read(header, 0, 16) != 0) return;
 
     uint32_t hdr_off = 0;
     uint32_t magic = read_u32(header, &hdr_off);
@@ -349,7 +349,7 @@ void FS_Deserialize(void) {
 
     uint8_t* blob = (uint8_t*)kernel_alloc(FS_SERIAL_BUF_SIZE);
     memset(blob, 0, FS_SERIAL_BUF_SIZE);
-    if (QSPI_W25Qxx_ReadBuffer(blob, 0, FS_SERIAL_BUF_SIZE) != QSPI_W25Qxx_OK) {
+    if (Platform_QSPI_Read(blob, 0, FS_SERIAL_BUF_SIZE) != 0) {
         kernel_free(blob);
         return;
     }

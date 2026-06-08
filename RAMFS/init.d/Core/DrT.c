@@ -1,6 +1,15 @@
+/**
+ * @file    DrT.c
+ * @brief   DrT 设备树 + RAMFS 初始化
+ *          DrT device tree + RAMFS initialization
+ *
+ * 只通过 platform.h 访问硬件, 不直接引用 HAL 或 BSP 头文件。
+ * Only accesses hardware through platform.h, no direct HAL/BSP includes.
+ */
+
 #include "Core/DrT.h"
 #include "memctl.h"
-#include "bsp_devices.h"
+#include "platform.h"
 #include <string.h>
 #include "Periph/cpu.h"
 
@@ -39,6 +48,9 @@ void DrTInit(void) {
     fs_create_child(dev, "adc", 0);
     fs_create_child(dev, "i2c", 0);
 
-    devices_init();
+    /* 注册所有板载外设到 DrT (通过 Platform API) */
+    /* Register all onboard peripherals to DrT (via Platform API) */
+    Platform_DevicesInit();
+
     register_main();
 }

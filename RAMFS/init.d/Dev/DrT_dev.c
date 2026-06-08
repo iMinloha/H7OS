@@ -25,6 +25,20 @@ void addDevice(char* path, void* devicePtr, char* name, char* description, Devic
     }
     kernel_free(path_dup);
 
+    /* ── 防重复: 检查同名设备是否已存在 ────────────────────── */
+    /*    Dedup: check if device with same name already exists   */
+    {
+        DrTNode_t exist = node->node;
+        while (exist) {
+            if (exist->name && strcmp(exist->name, name) == 0) {
+                /* 设备已存在, 静默跳过 (防止重复注册) */
+                /* Device already exists, silently skip (prevents duplicates) */
+                return;
+            }
+            exist = exist->next;
+        }
+    }
+
     DrTNode_t device = (DrTNode_t)kernel_alloc(sizeof(struct DrTNode));
     device->name = (char*)kernel_alloc(strlen(name) + 1);
     device->description = (char*)kernel_alloc(strlen(description) + 1);
@@ -34,8 +48,8 @@ void addDevice(char* path, void* devicePtr, char* name, char* description, Devic
     device->status = status;
     device->type = type;
     device->data = kernel_alloc(128);
-    device->fops = NULL;
-    (void)driver; /* reserved for future use */
+    device->fops = driver;
+    (void)driver; /* used above */
 
     Mutex_t mutex = (Mutex_t)kernel_alloc(MUTEX_SIZE);
     mutex_init(mutex);

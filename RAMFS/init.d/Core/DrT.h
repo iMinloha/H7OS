@@ -54,7 +54,7 @@ typedef struct DrTNode* DrTNode_t;
 
 /** Device node: hardware, file, or mount point */
 struct DrTNode {
-    void           *device;       /* HAL handle (e.g. &huart1) */
+    void           *device;       /* Opaque device handle (managed by Platform/BSP) */
     DeviceStatus_E  status;
     DeviceType_E    type;
     char           *name;

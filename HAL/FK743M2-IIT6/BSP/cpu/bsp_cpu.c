@@ -2,7 +2,7 @@
 #include "Core/DrT.h"
 #include "Periph/cpu.h"
 #include "memctl.h"
-#include "adc.h"
+#include "platform.h"
 #include <stdio.h>
 
 extern CPU_t CortexM7;
@@ -46,8 +46,9 @@ bsp_file_ops_t cpu_fops = {
 
 void cpu_device_init(void)
 {
-    HAL_ADCEx_Calibration_Start(&hadc3, ADC_CALIB_OFFSET, ADC_SINGLE_ENDED);
-    HAL_ADC_Start(&hadc3);
+    /* 通过 Platform API 校准并启动内部温度传感器 ADC3 */
+    /* Calibrate and start internal temperature sensor ADC3 via Platform API */
+    Platform_CPU_TempInit();
 
     createCPU();
     addDevice("dev/cpu", CortexM7, "CPU",
