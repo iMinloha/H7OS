@@ -18,9 +18,8 @@ typedef struct bsp_file_ops {
 ```
 1. 驱动实现 file_ops 函数 / driver implements file_ops
    └─ gpio_read(), gpio_write(), ...
-2. device_init() 调用 addDevice() 注册到 DrT 树
-3. loadDevice() 查找设备节点并绑定 fops
-4. 用户通过 use/open/read/write 访问 / user accesses via use/open/read/write
+2. device_init() 调用 `dev_register()` (Platform 层 `dev_register.h`) 注册
+   `dev_register()` 内部封装 addDevice() + loadDevice() + fops 绑定
 ```
 
 ## 已有驱动 / Existing Drivers

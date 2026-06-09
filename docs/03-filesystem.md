@@ -32,6 +32,7 @@ struct DrTNode {
     char          *description; // 描述 / description
     void          *data;      // 文件数据 / file data buffer
     void          *fops;      // bsp_file_ops_t 函数表 / file operations
+    osThreadId     owner;     // 打开该设备的任务 / task that opened this device
     Mutex_t        mutex;     // 互斥锁 / mutex
     DrTNode_t      next;      // 下一个兄弟 / next sibling
     FS_t           parent;    // 父目录 / parent directory

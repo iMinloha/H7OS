@@ -1,6 +1,6 @@
 # Shell 命令参考 / Shell Command Reference
 
-Shell 通过 USB CDC 虚拟串口 (USART2) 交互。提示符: `root:/path$`
+Shell 通过 USB CDC 虚拟串口 (USART1) 交互。提示符: `root:/path$`
 
 ## 命令列表 / Command List
 
@@ -19,6 +19,10 @@ Shell 通过 USB CDC 虚拟串口 (USART2) 交互。提示符: `root:/path$`
 | `cp <src> <dst>` | `cp /usr/a.txt /mnt/SDcard/b.txt` | 复制文件 / copy file |
 | `mv <src> <dst>` | `mv a.txt b.txt` | 移动/重命名 / move/rename (SD→SD 为原地 rename) |
 | `tree [path] [depth]` | `tree /sd 2` | 树形显示目录 / show directory tree |
+### 脚本 / Script
+
+| 命令 | 用法 | 说明 |
+|------|------|------|
 | `run <file>` | `run /blink` | 异步执行脚本 / run script (RAMFS or SD) |
 | `kill <name\|pid>` | `kill /blink`, `kill 3` | 终止脚本或任务 / terminate script or task |
 

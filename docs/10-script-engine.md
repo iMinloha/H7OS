@@ -583,7 +583,7 @@ if (sscanf(raw, "%15s %2s %d", vn, op2, &val) == 3 && !strcmp(op2, "+=")) {
 |------|-----|
 | 执行方式 | 独立 FreeRTOS 线程 |
 | 优先级 | `osPriorityBelowNormal` (低于 Shell) |
-| 栈大小 | 2048 字节 |
+| 栈大小 | 1024 字节 |
 | 最大并发 | 4 个脚本 |
 | 互斥保护 | `taskENTER_CRITICAL()` (TLSF) + `strtok_r` (命令解析) |
 | 终止 | `kill` 设置标志 + `osThreadTerminate` |
@@ -600,7 +600,7 @@ if (sscanf(raw, "%15s %2s %d", vn, op2, &val) == 3 && !strcmp(op2, "+=")) {
 | 脚本行数 | 256 |
 | 脚本文件大小 | 8 KB (SD), 128 B (RAMFS) |
 | 同时运行 | 4 个脚本 |
-| 线程栈 | 2048 字节 |
+| 线程栈 | 1024 字节 (`SCRIPT_STACK_SZ`) |
 | 变量类型 | `int` (32-bit, 有符号) |
 | 表达式 | 单个二元运算 (`a op b`) |
 | 嵌套深度 | 受栈制约 (~5 层) |

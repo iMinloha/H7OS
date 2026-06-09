@@ -96,6 +96,9 @@ H7OS/
 │       │   ├── cpu/              #       CPU monitor / CPU 监控
 │       │   ├── lcd/              #       LCD panel config / 液晶配置
 │       │   └── touch/            #       touch screen / 触摸屏
+│       ├── Drivers/              #     CubeMX HAL 库 (CMSIS + HAL_Driver)
+│       │   ├── CMSIS/            #       CMSIS 核心头文件
+│       │   └── STM32H7xx_HAL_Driver/  #  STM32 HAL 驱动
 │       ├── *.ioc                 #     CubeMX project / CubeMX 工程
 │       └── *.ld                  #     linker script / 链接脚本
 │
@@ -103,6 +106,8 @@ H7OS/
 │   ├── platform.h                #   ⭐ THE ONE HEADER for Software / Software 唯一头文件
 │   ├── platform.c                #   ⭐ Implementation wrapping all HAL / 封装所有 HAL 的实现
 │   ├── bsp_file_ops.h            #   file_ops interface (open/close/read/write)
+│   ├── dev_register.h            #   统一设备注册 (addDevice+loadDevice+fops)
+│   ├── script_config.h           #   Builder 脚本引擎配置
 │   ├── bsp_devices.h             #   Internal: device registration / 内部: 设备注册 API
 │   ├── bsp_init.h/.c             #   Platform_Init() declaration + impl
 │   └── Board/                    #   board configs / 板级配置
@@ -139,7 +144,7 @@ H7OS/
 │
 ├── FATFS/                        # FatFs integration / FatFs 集成
 ├── USB_DEVICE/                   # USB CDC virtual COM / USB CDC 虚拟串口
-├── Drivers/                      # STM32 HAL + CMSIS + Kernel / 驱动
+├── Drivers/                      # OS Kernel (TLSF allocator) / 内核
 ├── Middlewares/                  # FreeRTOS + FatFs + USB / 中间件
 ├── docs/                         # documentation / 文档
 └── CMakeLists.txt                # build system / 构建系统
@@ -148,7 +153,7 @@ H7OS/
 ### 板级切换 / Board Switching
 
 ```
-cmake -DBOARD=Fk743M2-IIT6 →  HAL/FK743M2-IIT6/ 编译
+cmake -DBOARD=FK743M2-IIT6 →  HAL/FK743M2-IIT6/ 编译
 cmake -DBOARD=MyBoard     →  HAL/MyBoard/     编译
 ```
 

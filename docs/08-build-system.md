@@ -55,7 +55,7 @@ cmake -B build -DBOARD=FK743M2-IIT6 -DCMAKE_BUILD_TYPE=Release -G "MinGW Makefil
 
 ## 添加新板子 / Adding a Board
 
-详见 `docs/NEW_BOARD.md`。简要流程:
+详见 [`docs/02-new-board.md`](02-new-board.md)。简要流程:
 
 1. `mkdir HAL/MyBoard` → CubeMX 生成代码
 2. 复制 `Platform/Board/board_template.h` → 创建配置
