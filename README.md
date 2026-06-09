@@ -21,6 +21,7 @@ Linux-style embedded RTOS on STM32H743IIT6, Cortex-M7 @ 480 MHz, FreeRTOS + TLSF
   - [USB CDC 虚拟串口](#usb-cdc-虚拟串口)
   - [TLSF 内存分配器](#tlsf-内存分配器)
   - [多板型支持](#多板型支持)
+  - [Builder 脚本引擎 / Builder Script Engine](#builder-脚本引擎--builder-script-engine)
 - [添加新板子 / Adding a Board](#添加新板子--adding-a-board)
 - [添加新设备驱动 / Adding a Device Driver](#添加新设备驱动--adding-a-device-driver)
 - [构建 / Build](#构建--build)
@@ -256,6 +257,38 @@ HAL → Platform → Software 三层架构, `-DBOARD=xxx` 切换。
 cmake -DBOARD=FK743M2-IIT6  →  编译 HAL/FK743M2-IIT6/
 cmake -DBOARD=MyBoard       →  编译 HAL/MyBoard/
 ```
+
+---
+
+### Builder 脚本引擎 / Builder Script Engine
+
+异步嵌入式脚本解释器，独立 FreeRTOS 线程执行，不阻塞 Shell。支持 `for`/`while`/`if` 控制流、`open`/`read`/`write`/`close` 设备 I/O、变量和算术运算。
+
+```python
+# GPIO 闪烁
+val = 0
+while 1
+  write /dev/gpio/PF7 val
+  if val == 0
+     val = 1
+  else
+     val = 0
+  endif
+  delay(500)
+endwhile
+```
+
+| 命令 | 说明 |
+|------|------|
+| `run <file>` | 异步启动脚本 (RAMFS 或 SD) |
+| `kill <name\|pid>` | 终止脚本 |
+| `info /proc/<name>` | 查看脚本任务状态 |
+
+**语法**: 变量赋值、`+` `-` `*` `/` `++` `--` 算术、`==` `!=` `>` `<` `>=` `<=` 比较、`0xNN` 十六进制字节。所有 Shell 命令可直接在脚本中调用。
+
+**外设 I/O**: 统一 `open` → `read`/`write` → `close` 接口，支持 GPIO / USART / PWM / ADC / I2C / CPU。脚本引擎自动 `open`，直接调用软件层 `dev_*` 函数。
+
+详见: [Builder 脚本引擎文档](docs/10-script-engine.md)
 
 ---
 
