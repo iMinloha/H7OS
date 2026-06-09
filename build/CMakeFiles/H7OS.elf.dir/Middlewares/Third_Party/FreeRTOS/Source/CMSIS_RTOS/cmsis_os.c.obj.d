@@ -40,4 +40,4 @@ CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis
  D:\H7OS\Middlewares\Third_Party\FreeRTOS\Source\include/queue.h \
  D:\H7OS\Middlewares\Third_Party\FreeRTOS\Source\include/event_groups.h \
  D:\H7OS\Middlewares\Third_Party\FreeRTOS\Source\include/timers.h \
- D:\H7OS\Drivers\CMSIS\Include/cmsis_gcc.h
+ D:\H7OS\HAL\FK743M2-IIT6\Drivers\CMSIS\Include/cmsis_gcc.h

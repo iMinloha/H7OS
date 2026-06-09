@@ -14,8 +14,8 @@
 # EXTERNAL cache entries
 ########################
 
-//Target board name (folder under HAL/)
-BOARD:STRING=FK743M2-IIT6
+//No help, variable specified on the command line.
+BOARD:UNINITIALIZED=FK743M2-IIT6
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=E:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2021.10/bin/arm-none-eabi-addr2line.exe

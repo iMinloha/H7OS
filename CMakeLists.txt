@@ -97,11 +97,11 @@ include_directories(Command/)
 # OS 内核
 include_directories(Drivers/Kernel/inc)
 
-# STM32 HAL 库 & CMSIS
-include_directories(Drivers/STM32H7xx_HAL_Driver/Inc)
-include_directories(Drivers/STM32H7xx_HAL_Driver/Inc/Legacy)
-include_directories(Drivers/CMSIS/Device/ST/STM32H7xx/Include)
-include_directories(Drivers/CMSIS/Include)
+# STM32 HAL 库 & CMSIS (板级自包含, CubeMX 可覆盖)
+include_directories(HAL/${BOARD}/Drivers/STM32H7xx_HAL_Driver/Inc)
+include_directories(HAL/${BOARD}/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy)
+include_directories(HAL/${BOARD}/Drivers/CMSIS/Device/ST/STM32H7xx/Include)
+include_directories(HAL/${BOARD}/Drivers/CMSIS/Include)
 
 # FreeRTOS
 include_directories(Middlewares/Third_Party/FreeRTOS/Source/include)
@@ -127,6 +127,8 @@ include_directories(Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc)
 file(GLOB_RECURSE HAL_SOURCES "HAL/${BOARD}/*.*")
 # 排除 CubeMX 生成的 main.c (真正的入口是 Core/Src/main.c)
 list(FILTER HAL_SOURCES EXCLUDE REGEX ".*/Src/main\\.c$")
+# 排除 Drivers/ 目录 (CMSIS & HAL_Driver 由 DRIVER_SOURCES 单独管理)
+list(FILTER HAL_SOURCES EXCLUDE REGEX ".*/Drivers/.*")
 
 # Platform 层 —— 统一接口
 file(GLOB_RECURSE PLATFORM_SOURCES "Platform/*.*")
@@ -136,8 +138,8 @@ file(GLOB_RECURSE CORE_SOURCES "Core/*.*")
 
 # 中间件 & 驱动
 file(GLOB_RECURSE DRIVER_SOURCES
-    "Drivers/STM32H7xx_HAL_Driver/*.*"
-    "Drivers/CMSIS/*.*"
+    "HAL/${BOARD}/Drivers/STM32H7xx_HAL_Driver/*.*"
+    "HAL/${BOARD}/Drivers/CMSIS/*.*"
     "Drivers/Kernel/*.*"
 )
 file(GLOB_RECURSE MIDDLEWARE_SOURCES

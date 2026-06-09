@@ -951,1086 +951,6 @@ Drivers/Kernel/src/u_thread.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_thread.c.s
 .PHONY : Drivers/Kernel/src/u_thread.c.s
 
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.s
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.obj: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.obj
-
-# target to build an object file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.obj
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.obj
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.i: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.i
-
-# target to preprocess a source file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.i
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.i
-
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.s: Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.s
-
-# target to generate assembly for a file
-Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.s
-.PHONY : Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.s
-
 FATFS/App/fatfs.obj: FATFS/App/fatfs.c.obj
 .PHONY : FATFS/App/fatfs.obj
 
@@ -2342,6 +1262,1086 @@ HAL/FK743M2-IIT6/BSP/usart/bsp_usart.s: HAL/FK743M2-IIT6/BSP/usart/bsp_usart.c.s
 HAL/FK743M2-IIT6/BSP/usart/bsp_usart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/usart/bsp_usart.c.s
 .PHONY : HAL/FK743M2-IIT6/BSP/usart/bsp_usart.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.s
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.obj: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.obj
+
+# target to build an object file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.obj
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.obj
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.i: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.i
+
+# target to preprocess a source file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.i
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.i
+
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.s: HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.s
+
+# target to generate assembly for a file
+HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.s
+.PHONY : HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.s
 
 HAL/FK743M2-IIT6/Src/adc.obj: HAL/FK743M2-IIT6/Src/adc.c.obj
 .PHONY : HAL/FK743M2-IIT6/Src/adc.obj
@@ -3287,6 +3287,30 @@ Platform/bsp_init.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Platform/bsp_init.c.s
 .PHONY : Platform/bsp_init.c.s
 
+Platform/platform.obj: Platform/platform.c.obj
+.PHONY : Platform/platform.obj
+
+# target to build an object file
+Platform/platform.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Platform/platform.c.obj
+.PHONY : Platform/platform.c.obj
+
+Platform/platform.i: Platform/platform.c.i
+.PHONY : Platform/platform.i
+
+# target to preprocess a source file
+Platform/platform.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Platform/platform.c.i
+.PHONY : Platform/platform.c.i
+
+Platform/platform.s: Platform/platform.c.s
+.PHONY : Platform/platform.s
+
+# target to generate assembly for a file
+Platform/platform.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Platform/platform.c.s
+.PHONY : Platform/platform.c.s
+
 RAMFS/init.d/ASM/reset.obj: RAMFS/init.d/ASM/reset.s.obj
 .PHONY : RAMFS/init.d/ASM/reset.obj
 
@@ -3799,141 +3823,6 @@ help:
 	@echo ... Drivers/Kernel/src/u_thread.obj
 	@echo ... Drivers/Kernel/src/u_thread.i
 	@echo ... Drivers/Kernel/src/u_thread.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.s
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.obj
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.i
-	@echo ... Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.s
 	@echo ... FATFS/App/fatfs.obj
 	@echo ... FATFS/App/fatfs.i
 	@echo ... FATFS/App/fatfs.s
@@ -3973,6 +3862,141 @@ help:
 	@echo ... HAL/FK743M2-IIT6/BSP/usart/bsp_usart.obj
 	@echo ... HAL/FK743M2-IIT6/BSP/usart/bsp_usart.i
 	@echo ... HAL/FK743M2-IIT6/BSP/usart/bsp_usart.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.s
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.obj
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.i
+	@echo ... HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.s
 	@echo ... HAL/FK743M2-IIT6/Src/adc.obj
 	@echo ... HAL/FK743M2-IIT6/Src/adc.i
 	@echo ... HAL/FK743M2-IIT6/Src/adc.s
@@ -4091,6 +4115,9 @@ help:
 	@echo ... Platform/bsp_init.obj
 	@echo ... Platform/bsp_init.i
 	@echo ... Platform/bsp_init.s
+	@echo ... Platform/platform.obj
+	@echo ... Platform/platform.i
+	@echo ... Platform/platform.s
 	@echo ... RAMFS/init.d/ASM/reset.obj
 	@echo ... RAMFS/init.d/ASM/sd_boot.obj
 	@echo ... RAMFS/init.d/Algo/DFS.obj
