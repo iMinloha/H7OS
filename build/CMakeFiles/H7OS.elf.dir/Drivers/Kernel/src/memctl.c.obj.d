@@ -87,4 +87,14 @@ CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/memctl.c.obj: \
  e:\program\ files\ (x86)\gnu\ arm\ embedded\ toolchain\10\ 2021.10\arm-none-eabi\include\sys\sched.h \
  e:\program\ files\ (x86)\gnu\ arm\ embedded\ toolchain\10\ 2021.10\arm-none-eabi\include\machine\types.h \
  e:\program\ files\ (x86)\gnu\ arm\ embedded\ toolchain\10\ 2021.10\arm-none-eabi\include\sys\stdio.h \
- D:\H7OS\Drivers\Kernel\inc/tlsf.h
+ D:\H7OS\Drivers\Kernel\inc/tlsf.h \
+ D:\H7OS\Middlewares\Third_Party\FreeRTOS\Source\include/FreeRTOS.h \
+ D:\H7OS\Core\Inc/FreeRTOSConfig.h \
+ D:\H7OS\Middlewares\Third_Party\FreeRTOS\Source\include/projdefs.h \
+ D:\H7OS\Middlewares\Third_Party\FreeRTOS\Source\include/portable.h \
+ D:\H7OS\Middlewares\Third_Party\FreeRTOS\Source\include/deprecated_definitions.h \
+ D:\H7OS\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F/portmacro.h \
+ D:\H7OS\Middlewares\Third_Party\FreeRTOS\Source\include/mpu_wrappers.h \
+ e:\program\ files\ (x86)\gnu\ arm\ embedded\ toolchain\10\ 2021.10\arm-none-eabi\include\reent.h \
+ D:\H7OS\Middlewares\Third_Party\FreeRTOS\Source\include/task.h \
+ D:\H7OS\Middlewares\Third_Party\FreeRTOS\Source\include/list.h

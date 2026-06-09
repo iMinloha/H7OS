@@ -471,6 +471,30 @@ Command/info/info_main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Command/info/info_main.c.s
 .PHONY : Command/info/info_main.c.s
 
+Command/kill/kill_main.obj: Command/kill/kill_main.c.obj
+.PHONY : Command/kill/kill_main.obj
+
+# target to build an object file
+Command/kill/kill_main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Command/kill/kill_main.c.obj
+.PHONY : Command/kill/kill_main.c.obj
+
+Command/kill/kill_main.i: Command/kill/kill_main.c.i
+.PHONY : Command/kill/kill_main.i
+
+# target to preprocess a source file
+Command/kill/kill_main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Command/kill/kill_main.c.i
+.PHONY : Command/kill/kill_main.c.i
+
+Command/kill/kill_main.s: Command/kill/kill_main.c.s
+.PHONY : Command/kill/kill_main.s
+
+# target to generate assembly for a file
+Command/kill/kill_main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Command/kill/kill_main.c.s
+.PHONY : Command/kill/kill_main.c.s
+
 Command/ls/ls_main.obj: Command/ls/ls_main.c.obj
 .PHONY : Command/ls/ls_main.obj
 
@@ -662,6 +686,30 @@ Command/rm/rm_main.s: Command/rm/rm_main.c.s
 Command/rm/rm_main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Command/rm/rm_main.c.s
 .PHONY : Command/rm/rm_main.c.s
+
+Command/run/run_main.obj: Command/run/run_main.c.obj
+.PHONY : Command/run/run_main.obj
+
+# target to build an object file
+Command/run/run_main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Command/run/run_main.c.obj
+.PHONY : Command/run/run_main.c.obj
+
+Command/run/run_main.i: Command/run/run_main.c.i
+.PHONY : Command/run/run_main.i
+
+# target to preprocess a source file
+Command/run/run_main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Command/run/run_main.c.i
+.PHONY : Command/run/run_main.c.i
+
+Command/run/run_main.s: Command/run/run_main.c.s
+.PHONY : Command/run/run_main.s
+
+# target to generate assembly for a file
+Command/run/run_main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/Command/run/run_main.c.s
+.PHONY : Command/run/run_main.c.s
 
 Command/save/save_main.obj: Command/save/save_main.c.obj
 .PHONY : Command/save/save_main.obj
@@ -3399,6 +3447,30 @@ RAMFS/init.d/Bin/builder/keywords/kw_build.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/keywords/kw_build.c.s
 .PHONY : RAMFS/init.d/Bin/builder/keywords/kw_build.c.s
 
+RAMFS/init.d/Bin/builder/script.obj: RAMFS/init.d/Bin/builder/script.c.obj
+.PHONY : RAMFS/init.d/Bin/builder/script.obj
+
+# target to build an object file
+RAMFS/init.d/Bin/builder/script.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/script.c.obj
+.PHONY : RAMFS/init.d/Bin/builder/script.c.obj
+
+RAMFS/init.d/Bin/builder/script.i: RAMFS/init.d/Bin/builder/script.c.i
+.PHONY : RAMFS/init.d/Bin/builder/script.i
+
+# target to preprocess a source file
+RAMFS/init.d/Bin/builder/script.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/script.c.i
+.PHONY : RAMFS/init.d/Bin/builder/script.c.i
+
+RAMFS/init.d/Bin/builder/script.s: RAMFS/init.d/Bin/builder/script.c.s
+.PHONY : RAMFS/init.d/Bin/builder/script.s
+
+# target to generate assembly for a file
+RAMFS/init.d/Bin/builder/script.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\H7OS.elf.dir\build.make CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/script.c.s
+.PHONY : RAMFS/init.d/Bin/builder/script.c.s
+
 RAMFS/init.d/Cmd/DrT_cmd.obj: RAMFS/init.d/Cmd/DrT_cmd.c.obj
 .PHONY : RAMFS/init.d/Cmd/DrT_cmd.obj
 
@@ -3763,6 +3835,9 @@ help:
 	@echo ... Command/info/info_main.obj
 	@echo ... Command/info/info_main.i
 	@echo ... Command/info/info_main.s
+	@echo ... Command/kill/kill_main.obj
+	@echo ... Command/kill/kill_main.i
+	@echo ... Command/kill/kill_main.s
 	@echo ... Command/ls/ls_main.obj
 	@echo ... Command/ls/ls_main.i
 	@echo ... Command/ls/ls_main.s
@@ -3787,6 +3862,9 @@ help:
 	@echo ... Command/rm/rm_main.obj
 	@echo ... Command/rm/rm_main.i
 	@echo ... Command/rm/rm_main.s
+	@echo ... Command/run/run_main.obj
+	@echo ... Command/run/run_main.i
+	@echo ... Command/run/run_main.s
 	@echo ... Command/save/save_main.obj
 	@echo ... Command/save/save_main.i
 	@echo ... Command/save/save_main.s
@@ -4129,6 +4207,9 @@ help:
 	@echo ... RAMFS/init.d/Bin/builder/keywords/kw_build.obj
 	@echo ... RAMFS/init.d/Bin/builder/keywords/kw_build.i
 	@echo ... RAMFS/init.d/Bin/builder/keywords/kw_build.s
+	@echo ... RAMFS/init.d/Bin/builder/script.obj
+	@echo ... RAMFS/init.d/Bin/builder/script.i
+	@echo ... RAMFS/init.d/Bin/builder/script.s
 	@echo ... RAMFS/init.d/Cmd/DrT_cmd.obj
 	@echo ... RAMFS/init.d/Cmd/DrT_cmd.i
 	@echo ... RAMFS/init.d/Cmd/DrT_cmd.s

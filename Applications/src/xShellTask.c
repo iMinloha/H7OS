@@ -31,7 +31,10 @@ void ShellTask(){
     USB_color_printf(LIGHT_CYAN, "%s:/$\n", UserName);
     while(1){
         USB_scanf(cmd_buf);
-        while (cmd_buf[0] == 0) USB_scanf(cmd_buf);
+        while (cmd_buf[0] == 0) {
+            USB_scanf(cmd_buf);
+            osDelay(1);  /* 让出 CPU, 让脚本等低优先级任务有机会运行 */
+        }
 
         execCMD((char*) cmd_buf);
         memset(cmd_buf, 0, 256);

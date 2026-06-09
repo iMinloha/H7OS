@@ -271,19 +271,21 @@ FS_t ram_cd(char* path) {
         if (strcmp(path, "..") == 0) {
             char* slash = strrchr(base, '/');
             if (slash) {
-                *slash = '\0';
-                if (strcmp(base, currentFS->sd_mount_path) == 0) {
+                int at_mount_root = (slash == base);  /* base="/xxx", slash at pos 0 → root */
+                if (at_mount_root) {
+                    /* 回到 SD 挂载根: 清除 sd_cd_path */
                     if (currentFS->sd_cd_path) {
                         kernel_free(currentFS->sd_cd_path);
                         currentFS->sd_cd_path = NULL;
                     }
-                    *slash = '/';
-                }
-                else {
-                    if (currentFS->sd_cd_path) kernel_free(currentFS->sd_cd_path);
-                    currentFS->sd_cd_path = kernel_alloc(strlen(base) + 1);
-                    strcpy(currentFS->sd_cd_path, base);
-                    *slash = '/';
+                } else {
+                    /* 上溯一级: 截断 base, 分配新的 sd_cd_path */
+                    int new_len = (int)(slash - base);  /* 在 free 之前计算长度 */
+                    char* old_cd = currentFS->sd_cd_path;
+                    currentFS->sd_cd_path = kernel_alloc(new_len + 1);
+                    memcpy(currentFS->sd_cd_path, base, new_len);
+                    currentFS->sd_cd_path[new_len] = '\0';
+                    if (old_cd) kernel_free(old_cd);
                 }
                 return currentFS;
             }

@@ -126,4 +126,5 @@ CMakeFiles/H7OS.elf.dir/Command/Register.c.obj: \
  D:\H7OS\Command\flash/flash_main.h D:\H7OS\Command\touch/touch_main.h \
  D:\H7OS\Command\mount/mount_main.h D:\H7OS\Command\cat/cat_main.h \
  D:\H7OS\Command\use/use_main.h D:\H7OS\Command\dfu/dfu_main.h \
- D:\H7OS\Command\cp/cp_main.h D:\H7OS\Command\mv/mv_main.h
+ D:\H7OS\Command\cp/cp_main.h D:\H7OS\Command\mv/mv_main.h \
+ D:\H7OS\Command\run/run_main.h D:\H7OS\Command\kill/kill_main.h

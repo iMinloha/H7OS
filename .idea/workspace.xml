@@ -28,530 +28,109 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b472e725-50d4-49aa-a3fb-20d03d3770a2" name="更改" comment="完善文档">
-      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6-file.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Platform/platform.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Platform/platform.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/Kernel/src/memctl.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/Kernel/src/memctl.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/Kernel/src/timer.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/Kernel/src/timer.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/Kernel/src/tlsf.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/Kernel/src/tlsf.c.obj.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/Kernel/src/u_thread.c.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/Kernel/src/u_thread.c.obj.d" afterDir="false" />
+    <list default="true" id="b472e725-50d4-49aa-a3fb-20d03d3770a2" name="更改" comment="platform修改项目结构">
+      <change afterPath="$PROJECT_DIR$/Command/kill/kill_main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Command/kill/kill_main.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Command/run/run_main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Command/run/run_main.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/.cproject" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/.mxproject" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HAL/clean_cubemx.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RAMFS/init.d/Bin/builder/script.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RAMFS/init.d/Bin/builder/script.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/kill/kill_main.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/kill/kill_main.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/run/run_main.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/run/run_main.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/script.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/script.c.obj.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/compiler_depend.internal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/10-script-engine.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/src/xNoneTask.c" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/src/xNoneTask.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applications/src/xShellTask.c" beforeDir="false" afterPath="$PROJECT_DIR$/Applications/src/xShellTask.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Device/ST/STM32H7xx/Include/system_stm32h7xx.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32H7xx/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Device/ST/STM32H7xx/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/cmsis_armcc.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Include/cmsis_armcc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/cmsis_armclang.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Include/cmsis_armclang.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/cmsis_armclang_ltm.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Include/cmsis_armclang_ltm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/cmsis_compiler.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Include/cmsis_compiler.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/cmsis_gcc.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Include/cmsis_gcc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/cmsis_iccarm.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Include/cmsis_iccarm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/cmsis_version.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Include/cmsis_version.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/core_armv81mml.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Include/core_armv81mml.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/core_armv8mbl.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Include/core_armv8mbl.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/core_armv8mml.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Include/core_armv8mml.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/core_cm0.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Include/core_cm0.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/core_cm0plus.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Include/core_cm0plus.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/core_cm1.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Include/core_cm1.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/core_cm23.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Include/core_cm23.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/core_cm3.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Include/core_cm3.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/core_cm33.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Include/core_cm33.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/core_cm35p.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Include/core_cm35p.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/core_cm4.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Include/core_cm4.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/core_cm7.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Include/core_cm7.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/core_sc000.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Include/core_sc000.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/core_sc300.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Include/core_sc300.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/mpu_armv7.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Include/mpu_armv7.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/mpu_armv8.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Include/mpu_armv8.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/Include/tz_context.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/Include/tz_context.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/CMSIS/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/CMSIS/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/Kernel/inc/memctl.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/Kernel/inc/timer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/Kernel/inc/tlsf.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/Kernel/inc/tlsfbit.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/Kernel/inc/u_thread.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/Kernel/src/memctl.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/Kernel/src/timer.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/Kernel/src/tlsf.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/Kernel/src/u_thread.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_adc_ex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_cortex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_def.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma2d.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_dma_ex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_exti.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_flash_ex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_gpio_ex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_hsem.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_jpeg.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_jpeg.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_ltdc_ex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mdma.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mmc.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mmc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mmc_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_mmc_ex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_nand.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_nand.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_nor.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_nor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pcd_ex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_qspi.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_qspi.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc_ex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rng.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rng.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rng_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rng_ex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rtc.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rtc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rtc_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rtc_ex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sd.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sd.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sd_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sd_ex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sdram.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sram.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_sram.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_adc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_bus.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_bus.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_cortex.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_cortex.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_crs.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_crs.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_delayblock.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_delayblock.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dma.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dma.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dma2d.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dma2d.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dmamux.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_dmamux.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_exti.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_exti.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_fmc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_gpio.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_gpio.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_hsem.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_hsem.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_i2c.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_i2c.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_lpuart.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_lpuart.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_pwr.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_pwr.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_rcc.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_rcc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_rng.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_rng.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_rtc.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_rtc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_sdmmc.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_sdmmc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_system.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_system.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_tim.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_tim.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usart.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usart.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_usb.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ll_utils.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Command/Register.c" beforeDir="false" afterPath="$PROJECT_DIR$/Command/Register.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Command/info/info_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Command/info/info_main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Command/tree/tree_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Command/tree/tree_main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Command/use/use_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Command/use/use_main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/Kernel/src/memctl.c" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/Kernel/src/memctl.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAL/FK743M2-IIT6-file.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/adc/bsp_adc.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/adc/bsp_adc.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/cpu/bsp_cpu.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/cpu/bsp_cpu.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/gpio/bsp_gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/gpio/bsp_gpio.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/i2c/bsp_i2c.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/i2c/bsp_i2c.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/pwm/bsp_pwm.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/pwm/bsp_pwm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/usart/bsp_usart.c" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/BSP/usart/bsp_usart.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HAL/FK743M2-IIT6/FK743M2-IIT6.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/HAL/FK743M2-IIT6/FK743M2-IIT6.ioc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/Algo/DFS.c" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/Algo/DFS.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/Cmd/DrT_cmd.c" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/Cmd/DrT_cmd.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/Core/DrT.h" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/Core/DrT.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/Dev/DrT_dev.c" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/Dev/DrT_dev.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RAMFS/init.d/FS/DrT_fs.c" beforeDir="false" afterPath="$PROJECT_DIR$/RAMFS/init.d/FS/DrT_fs.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/4.1.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/4.1.1/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/4.1.1/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/4.1.1/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/xNoneTask.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/xNoneTask.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/xNoneTask.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/xNoneTask.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/xShellTask.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/xShellTask.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/xShellTask.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/xShellTask.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/xTaskInit.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/xTaskInit.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/xTaskInit.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/xTaskInit.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/xTaskManager.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/xTaskManager.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/xTaskManager.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Applications/src/xTaskManager.c.obj.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/Register.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/Register.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/Register.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/Register.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/cat/cat_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/cat/cat_main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/cat/cat_main.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/cat/cat_main.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/cd/cd_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/cd/cd_main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/cd/cd_main.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/cd/cd_main.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/cp/cp_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/cp/cp_main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/cp/cp_main.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/cp/cp_main.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/dfu/dfu_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/dfu/dfu_main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/dfu/dfu_main.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/dfu/dfu_main.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/echo/echo_main.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/echo/echo_main.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/flash/flash_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/flash/flash_main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/flash/flash_main.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/flash/flash_main.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/help/help_main.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/help/help_main.c.obj.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/help/help_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/help/help_main.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/info/info_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/info/info_main.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/info/info_main.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/info/info_main.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/mkdir/mkdir_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/mkdir/mkdir_main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/mkdir/mkdir_main.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/mkdir/mkdir_main.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/mount/mount_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/mount/mount_main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/mount/mount_main.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/mount/mount_main.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/mv/mv_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/mv/mv_main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/mv/mv_main.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/mv/mv_main.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/pwd/pwd_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/pwd/pwd_main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/pwd/pwd_main.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/pwd/pwd_main.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/reboot/reboot_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/reboot/reboot_main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/reboot/reboot_main.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/reboot/reboot_main.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/reset/reset_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/reset/reset_main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/reset/reset_main.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/reset/reset_main.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/rm/rm_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/rm/rm_main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/rm/rm_main.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/rm/rm_main.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/save/save_main.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/save/save_main.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/touch/touch_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/touch/touch_main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/touch/touch_main.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/touch/touch_main.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/tree/tree_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/tree/tree_main.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/tree/tree_main.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/tree/tree_main.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/use/use_main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/use/use_main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/use/use_main.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Command/use/use_main.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Core/Src/freertos.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Core/Src/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Core/Src/main.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Core/Src/main.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/memctl.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/memctl.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/timer.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/timer.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/tlsf.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/tlsf.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_thread.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/u_thread.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_jpeg.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mmc_ex.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nand.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_nor.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rng_ex.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rtc_ex.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sd_ex.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/FATFS/App/fatfs.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/FATFS/App/fatfs.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/FATFS/Target/bsp_driver_sd.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/FATFS/Target/bsp_driver_sd.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/FATFS/Target/bsp_driver_sd.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/FATFS/Target/bsp_driver_sd.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/FATFS/Target/sd_diskio.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/FATFS/Target/sd_diskio.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/FATFS/Target/sd_diskio.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/FATFS/Target/sd_diskio.c.obj.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/memctl.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/memctl.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/memctl.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Drivers/Kernel/src/memctl.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/adc/bsp_adc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/adc/bsp_adc.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/adc/bsp_adc.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/adc/bsp_adc.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/bsp_devices.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/bsp_devices.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/bsp_devices.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/bsp_devices.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/cpu/bsp_cpu.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/cpu/bsp_cpu.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/cpu/bsp_cpu.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/cpu/bsp_cpu.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/gpio/bsp_gpio.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/gpio/bsp_gpio.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/gpio/bsp_gpio.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/gpio/bsp_gpio.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/hal_init.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/hal_init.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/hal_init.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/hal_init.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/i2c/bsp_i2c.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/i2c/bsp_i2c.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/i2c/bsp_i2c.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/i2c/bsp_i2c.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/lcd/lcd_define.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/lcd/lcd_define.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/pwm/bsp_pwm.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/pwm/bsp_pwm.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/pwm/bsp_pwm.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/pwm/bsp_pwm.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/touch/torch_iic.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/touch/torch_iic.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/touch/torch_iic.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/touch/torch_iic.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/usart/bsp_usart.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/usart/bsp_usart.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/usart/bsp_usart.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/BSP/usart/bsp_usart.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/adc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/adc.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/adc.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/adc.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/dma.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/dma.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/dma.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/dma.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/dma2d.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/dma2d.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/dma2d.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/dma2d.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/fmc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/fmc.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/fmc.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/fmc.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/gpio.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/gpio.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/gpio.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/gpio.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/hal_init.c.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/hal_init.c.obj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/i2c.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/i2c.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/i2c.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/i2c.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/jpeg.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/jpeg.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/jpeg.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/jpeg.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/ltdc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/ltdc.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/ltdc.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/ltdc.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/mdma.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/mdma.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/mdma.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/mdma.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/quadspi.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/quadspi.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/quadspi.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/quadspi.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/rng.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/rng.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/rng.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/rng.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/rtc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/rtc.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/rtc.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/rtc.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/sdmmc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/sdmmc.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/sdmmc.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/sdmmc.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/stm32h7xx_hal_msp.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/stm32h7xx_hal_msp.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/stm32h7xx_hal_msp.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/stm32h7xx_hal_msp.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/stm32h7xx_hal_timebase_tim.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/stm32h7xx_hal_timebase_tim.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/stm32h7xx_hal_timebase_tim.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/stm32h7xx_hal_timebase_tim.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/stm32h7xx_it.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/stm32h7xx_it.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/stm32h7xx_it.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/stm32h7xx_it.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/system_stm32h7xx.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/system_stm32h7xx.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/system_stm32h7xx.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/system_stm32h7xx.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/tim.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/tim.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/tim.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/tim.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/usart.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/usart.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/usart.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/HAL/FK743M2-IIT6/Src/usart.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/unicode.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FatFs/src/option/unicode.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Algo/DFS.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Algo/DFS.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Algo/DFS.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Algo/DFS.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Cmd/DrT_cmd.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Cmd/DrT_cmd.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Cmd/DrT_cmd.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Cmd/DrT_cmd.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Core/DrT.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Core/DrT.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Core/DrT.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Core/DrT.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Dev/DrT_dev.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Dev/DrT_dev.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Dev/DrT_dev.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Dev/DrT_dev.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/FS/DrT_fs.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/FS/DrT_fs.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/FS/DrT_fs.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/FS/DrT_fs.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Mnt/DrT_mnt.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Mnt/DrT_mnt.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Mnt/DrT_mnt.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Mnt/DrT_mnt.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/FS_Serial.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/FS_Serial.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/FS_Serial.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/FS_Serial.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/cpu.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/cpu.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/cpu.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/cpu.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Proc/DrT_proc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Proc/DrT_proc.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Proc/DrT_proc.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Proc/DrT_proc.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/USB_DEVICE/App/usb_device.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/USB_DEVICE/App/usb_device.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/USB_DEVICE/App/usb_device.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/USB_DEVICE/App/usb_device.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/USB_DEVICE/App/usbd_desc.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/USB_DEVICE/App/usbd_desc.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Utilities/JPEG/jpeg_utils.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Utilities/JPEG/jpeg_utils.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Utilities/JPEG/jpeg_utils.c.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/Utilities/JPEG/jpeg_utils.c.obj.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/compiler_depend.internal" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/compiler_depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/objects1.rsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/H7OS.elf.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/H7OS.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/H7OS.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/H7OS.elf" beforeDir="false" afterPath="$PROJECT_DIR$/build/H7OS.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/H7OS.hex" beforeDir="false" afterPath="$PROJECT_DIR$/build/H7OS.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/H7OS.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/H7OS.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/04-shell-commands.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/04-shell-commands.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1332,7 +911,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780927356468</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="platform修改项目结构">
+      <option name="closed" value="true" />
+      <created>1780980453701</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1780980453701</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1356,7 +943,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="增加CPU设备信息" />
     <MESSAGE value="info指令用于查看设备信息" />
     <MESSAGE value="Readme信息修正" />
     <MESSAGE value="注释修正" />
@@ -1381,7 +967,8 @@
     <MESSAGE value="优化表格输出" />
     <MESSAGE value="FATFS无缝兼容" />
     <MESSAGE value="完善文档" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善文档" />
+    <MESSAGE value="platform修改项目结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="platform修改项目结构" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

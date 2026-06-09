@@ -1,6 +1,12 @@
 #include "memctl.h"
 #include "quadspi.h"
 #include "tlsf.h"
+#include "FreeRTOS.h"
+#include "task.h"
+
+/* ── 线程安全: 关中断保护 TLSF 堆操作 (极短临界区, 无死锁风险) ── */
+#define KERN_LOCK()   taskENTER_CRITICAL()
+#define KERN_UNLOCK() taskEXIT_CRITICAL()
 
 /***
  * @brief 内存拷贝
@@ -152,13 +158,21 @@ void ram_align(size_t align, size_t bytes){
 }
 
 void* kernel_alloc(uint32_t size){
-    return tlsf_malloc(kernel_pool, size);
+    KERN_LOCK();
+    void *p = tlsf_malloc(kernel_pool, size);
+    KERN_UNLOCK();
+    return p;
 }
 
 void* kernel_realloc(void* addr, uint32_t size){
-    return tlsf_realloc(kernel_pool, addr, size);
+    KERN_LOCK();
+    void *p = tlsf_realloc(kernel_pool, addr, size);
+    KERN_UNLOCK();
+    return p;
 }
 
 void kernel_free(void* addr){
+    KERN_LOCK();
     tlsf_free(kernel_pool, addr);
+    KERN_UNLOCK();
 }

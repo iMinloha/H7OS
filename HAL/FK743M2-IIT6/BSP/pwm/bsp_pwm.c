@@ -1,5 +1,5 @@
 #include "bsp_pwm.h"
-#include "Core/DrT.h"
+#include "dev_register.h"
 #include "memctl.h"
 #include <stdio.h>
 
@@ -35,10 +35,7 @@ void pwm_register(TIM_HandleTypeDef *htim, uint32_t channel, uint32_t freq_hz, c
 
     pwm_dev_t *data = (pwm_dev_t*)kernel_alloc(sizeof(pwm_dev_t));
     data->htim = htim; data->channel = channel;
-    addDevice("dev/pwm", data, (char*)name, "PWM output", DEVICE_TIMER, DEVICE_ON, NULL);
-    char _path[64]; sprintf(_path, "/dev/pwm/%s", name);
-    DrTNode_t d = loadDevice(_path);
-    if (d) d->fops = (void*)&pwm_fops;
+    dev_register("dev/pwm", data, name, "PWM output", DEVICE_TIMER, &pwm_fops);
 }
 
 void pwm_device_init(void) {

@@ -2,7 +2,8 @@
 #include "memctl.h"
 #include "usbd_cdc_if.h"
 #include <string.h>
-// ============================[ָ指令系统]===========================
+
+// ============================[指令系统]===========================
 void addCMD(char* name, char* description, char* usage, Comand_t cmd) {
     CMD_t p = CMDList;
     while (p->next != NULL) p = p->next;
@@ -20,24 +21,21 @@ void addCMD(char* name, char* description, char* usage, Comand_t cmd) {
     p->next = newCMD;
 }
 
-// 执行指令
+// 执行指令 (strtok_r = 线程安全, 无需全局锁)
 void execCMD(char* command_rel) {
-    // 使用指令前需要先声明一个内存空间用于保护指令所处空间的安全
     char* command = (char*)kernel_alloc(strlen(command_rel) + 1);
     strcpy(command, command_rel);
 
-    // 分割指令
     char* argv[128] = {0};
     int argc = 0;
-    char* token = strtok(command, " ");
+    char* save;
+    char* token = strtok_r(command, " ", &save);
     while (token != NULL) {
-        // 遍历并分割
         argv[argc++] = token;
-        token = strtok(NULL, " ");
+        token = strtok_r(NULL, " ", &save);
     }
 
     argc -= 1;
-
 
     CMD_t p = CMDList->next;
     while (p != NULL) {

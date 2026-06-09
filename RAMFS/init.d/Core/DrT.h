@@ -61,6 +61,7 @@ struct DrTNode {
     char           *description;
     void           *data;         /* File data or extra buffer */
     void           *fops;         /* bsp_file_ops_t* for I/O */
+    osThreadId      owner;        /* Task that opened this device (NULL = available) */
     Mutex_t         mutex;
     DrTNode_t       next;
     FS_t            parent;

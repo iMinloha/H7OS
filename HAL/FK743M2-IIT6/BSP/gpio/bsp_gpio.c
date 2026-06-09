@@ -1,10 +1,9 @@
 #include "bsp_gpio.h"
-#include "Core/DrT.h"
 #include "memctl.h"
+#include "dev_register.h"
 #include <stdio.h>
-#include <string.h>
 
-/* ── GPIO fops ───────────────────────────────────────────── */
+/* ── GPIO fops (HAL 相关, 保留在 BSP) ──────────────────── */
 
 static int gpio_open(void *dev)  { (void)dev; return 0; }
 static int gpio_close(void *dev) { (void)dev; return 0; }
@@ -30,10 +29,7 @@ static bsp_file_ops_t gpio_fops = { gpio_open, gpio_close, gpio_read, gpio_write
 void gpio_register(GPIO_TypeDef *port, uint16_t pin, const char *name, uint8_t is_output) {
     gpio_dev_t *data = (gpio_dev_t*)kernel_alloc(sizeof(gpio_dev_t));
     data->port = port; data->pin = pin; data->is_output = is_output;
-    addDevice("dev/gpio", data, (char*)name, "GPIO pin", DEVICE_SERIAL, DEVICE_ON, NULL);
-    char _path[64]; sprintf(_path, "/dev/gpio/%s", name);
-    DrTNode_t d = loadDevice(_path);
-    if (d) d->fops = (void*)&gpio_fops;
+    dev_register("dev/gpio", data, name, "GPIO pin", DEVICE_SERIAL, &gpio_fops);
 }
 
 void gpio_device_init(void)

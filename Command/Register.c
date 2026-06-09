@@ -20,6 +20,8 @@
 #include "dfu/dfu_main.h"
 #include "cp/cp_main.h"
 #include "mv/mv_main.h"
+#include "run/run_main.h"
+#include "kill/kill_main.h"
 
 void register_main(){
     CMD("ls",    "List files",             "ls [path]",            ls_main);
@@ -27,7 +29,7 @@ void register_main(){
     CMD("info",  "Show device/task info",  "info <path>",          info_main);
     CMD("echo",  "Print a message",        "echo <text>",          echo_main);
     CMD("help",  "Show command help",      "help [command]",       help_main);
-    CMD("tree",  "Show filesystem tree",   "tree [depth]",         tree_main);
+    CMD("tree",  "Show filesystem tree",   "tree [path] [depth]",  tree_main);
     CMD("mkdir", "Create a directory",     "mkdir <path>",         mkdir_main);
     CMD("mount", "Mount SD to RAMFS",      "mount [sd] <ramfs>",   mount_main);
     CMD("reboot","Restart the system",     "reboot",               reboot_main);
@@ -42,4 +44,6 @@ void register_main(){
     CMD("cp",    "Copy file",              "cp <src> <dst>",       cp_main);
     CMD("mv",    "Move/rename file",       "mv <src> <dst>",       mv_main);
     CMD("use",   "Use device fops",        "use <dev> <op> [args]", use_main);
+    CMD("run",   "Run a script file",      "run <script>",         run_main);
+    CMD("kill",  "Terminate a script/task","kill <name|pid>",      kill_main);
 }

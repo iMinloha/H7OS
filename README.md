@@ -467,3 +467,4 @@ if (Platform_HasPeripheral("LTDC")) {
 | 7 | [内存布局 / Memory](docs/07-memory-layout.md) | SDRAM 分区, TLSF 池, FreeRTOS 堆, 链接脚本 |
 | 8 | [构建系统 / Build](docs/08-build-system.md) | 工具链, CMake, FatFs 配置, 已知限制 |
 | 9 | [添加新驱动 / New Device](docs/09-new-device.md) | 设备驱动开发 (SPI 示例), 驱动模式参考 |
+| 10 | [脚本引擎 / Script Engine](docs/10-script-engine.md) | Builder 脚本解释器, for/if/变量, run 命令 |

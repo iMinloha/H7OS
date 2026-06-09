@@ -1,5 +1,5 @@
 #include "bsp_adc.h"
-#include "Core/DrT.h"
+#include "dev_register.h"
 #include "memctl.h"
 #include <stdio.h>
 
@@ -28,10 +28,7 @@ static int adc_write(void *dev, const uint8_t *buf, uint32_t len) {
 static bsp_file_ops_t adc_fops = { NULL, NULL, adc_read, adc_write };
 
 void adc_register(ADC_HandleTypeDef *hadc, const char *name) {
-    addDevice("dev/adc", hadc, (char*)name, "ADC input", DEVICE_VOTAGE, DEVICE_ON, NULL);
-    char _path[64]; sprintf(_path, "/dev/adc/%s", name);
-    DrTNode_t d = loadDevice(_path);
-    if (d) d->fops = (void*)&adc_fops;
+    dev_register("dev/adc", hadc, name, "ADC input", DEVICE_VOTAGE, &adc_fops);
 }
 
 void adc_device_init(void) {

@@ -92,6 +92,7 @@ include_directories(Core/Inc)
 include_directories(Applications/inc)
 include_directories(RAMFS/)
 include_directories(RAMFS/init.d)
+include_directories(RAMFS/init.d/Bin/builder)
 include_directories(Command/)
 
 # OS 内核

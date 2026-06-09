@@ -1834,10 +1834,24 @@ CMakeFiles/H7OS.elf.dir/Command/info/info_main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/H7OS.elf.dir/Command/info/info_main.c.s"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\H7OS\Command\info\info_main.c -o CMakeFiles\H7OS.elf.dir\Command\info\info_main.c.s
 
+CMakeFiles/H7OS.elf.dir/Command/kill/kill_main.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
+CMakeFiles/H7OS.elf.dir/Command/kill/kill_main.c.obj: D:/H7OS/Command/kill/kill_main.c
+CMakeFiles/H7OS.elf.dir/Command/kill/kill_main.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building C object CMakeFiles/H7OS.elf.dir/Command/kill/kill_main.c.obj"
+	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Command/kill/kill_main.c.obj -MF CMakeFiles\H7OS.elf.dir\Command\kill\kill_main.c.obj.d -o CMakeFiles\H7OS.elf.dir\Command\kill\kill_main.c.obj -c D:\H7OS\Command\kill\kill_main.c
+
+CMakeFiles/H7OS.elf.dir/Command/kill/kill_main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/H7OS.elf.dir/Command/kill/kill_main.c.i"
+	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\H7OS\Command\kill\kill_main.c > CMakeFiles\H7OS.elf.dir\Command\kill\kill_main.c.i
+
+CMakeFiles/H7OS.elf.dir/Command/kill/kill_main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/H7OS.elf.dir/Command/kill/kill_main.c.s"
+	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\H7OS\Command\kill\kill_main.c -o CMakeFiles\H7OS.elf.dir\Command\kill\kill_main.c.s
+
 CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj: D:/H7OS/Command/ls/ls_main.c
 CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building C object CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building C object CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj -MF CMakeFiles\H7OS.elf.dir\Command\ls\ls_main.c.obj.d -o CMakeFiles\H7OS.elf.dir\Command\ls\ls_main.c.obj -c D:\H7OS\Command\ls\ls_main.c
 
 CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.i: cmake_force
@@ -1851,7 +1865,7 @@ CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Command/mkdir/mkdir_main.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Command/mkdir/mkdir_main.c.obj: D:/H7OS/Command/mkdir/mkdir_main.c
 CMakeFiles/H7OS.elf.dir/Command/mkdir/mkdir_main.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building C object CMakeFiles/H7OS.elf.dir/Command/mkdir/mkdir_main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building C object CMakeFiles/H7OS.elf.dir/Command/mkdir/mkdir_main.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Command/mkdir/mkdir_main.c.obj -MF CMakeFiles\H7OS.elf.dir\Command\mkdir\mkdir_main.c.obj.d -o CMakeFiles\H7OS.elf.dir\Command\mkdir\mkdir_main.c.obj -c D:\H7OS\Command\mkdir\mkdir_main.c
 
 CMakeFiles/H7OS.elf.dir/Command/mkdir/mkdir_main.c.i: cmake_force
@@ -1865,7 +1879,7 @@ CMakeFiles/H7OS.elf.dir/Command/mkdir/mkdir_main.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Command/mount/mount_main.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Command/mount/mount_main.c.obj: D:/H7OS/Command/mount/mount_main.c
 CMakeFiles/H7OS.elf.dir/Command/mount/mount_main.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building C object CMakeFiles/H7OS.elf.dir/Command/mount/mount_main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building C object CMakeFiles/H7OS.elf.dir/Command/mount/mount_main.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Command/mount/mount_main.c.obj -MF CMakeFiles\H7OS.elf.dir\Command\mount\mount_main.c.obj.d -o CMakeFiles\H7OS.elf.dir\Command\mount\mount_main.c.obj -c D:\H7OS\Command\mount\mount_main.c
 
 CMakeFiles/H7OS.elf.dir/Command/mount/mount_main.c.i: cmake_force
@@ -1879,7 +1893,7 @@ CMakeFiles/H7OS.elf.dir/Command/mount/mount_main.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Command/mv/mv_main.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Command/mv/mv_main.c.obj: D:/H7OS/Command/mv/mv_main.c
 CMakeFiles/H7OS.elf.dir/Command/mv/mv_main.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building C object CMakeFiles/H7OS.elf.dir/Command/mv/mv_main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building C object CMakeFiles/H7OS.elf.dir/Command/mv/mv_main.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Command/mv/mv_main.c.obj -MF CMakeFiles\H7OS.elf.dir\Command\mv\mv_main.c.obj.d -o CMakeFiles\H7OS.elf.dir\Command\mv\mv_main.c.obj -c D:\H7OS\Command\mv\mv_main.c
 
 CMakeFiles/H7OS.elf.dir/Command/mv/mv_main.c.i: cmake_force
@@ -1893,7 +1907,7 @@ CMakeFiles/H7OS.elf.dir/Command/mv/mv_main.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Command/pwd/pwd_main.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Command/pwd/pwd_main.c.obj: D:/H7OS/Command/pwd/pwd_main.c
 CMakeFiles/H7OS.elf.dir/Command/pwd/pwd_main.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building C object CMakeFiles/H7OS.elf.dir/Command/pwd/pwd_main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building C object CMakeFiles/H7OS.elf.dir/Command/pwd/pwd_main.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Command/pwd/pwd_main.c.obj -MF CMakeFiles\H7OS.elf.dir\Command\pwd\pwd_main.c.obj.d -o CMakeFiles\H7OS.elf.dir\Command\pwd\pwd_main.c.obj -c D:\H7OS\Command\pwd\pwd_main.c
 
 CMakeFiles/H7OS.elf.dir/Command/pwd/pwd_main.c.i: cmake_force
@@ -1907,7 +1921,7 @@ CMakeFiles/H7OS.elf.dir/Command/pwd/pwd_main.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Command/reboot/reboot_main.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Command/reboot/reboot_main.c.obj: D:/H7OS/Command/reboot/reboot_main.c
 CMakeFiles/H7OS.elf.dir/Command/reboot/reboot_main.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building C object CMakeFiles/H7OS.elf.dir/Command/reboot/reboot_main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building C object CMakeFiles/H7OS.elf.dir/Command/reboot/reboot_main.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Command/reboot/reboot_main.c.obj -MF CMakeFiles\H7OS.elf.dir\Command\reboot\reboot_main.c.obj.d -o CMakeFiles\H7OS.elf.dir\Command\reboot\reboot_main.c.obj -c D:\H7OS\Command\reboot\reboot_main.c
 
 CMakeFiles/H7OS.elf.dir/Command/reboot/reboot_main.c.i: cmake_force
@@ -1921,7 +1935,7 @@ CMakeFiles/H7OS.elf.dir/Command/reboot/reboot_main.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Command/reset/reset_main.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Command/reset/reset_main.c.obj: D:/H7OS/Command/reset/reset_main.c
 CMakeFiles/H7OS.elf.dir/Command/reset/reset_main.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building C object CMakeFiles/H7OS.elf.dir/Command/reset/reset_main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building C object CMakeFiles/H7OS.elf.dir/Command/reset/reset_main.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Command/reset/reset_main.c.obj -MF CMakeFiles\H7OS.elf.dir\Command\reset\reset_main.c.obj.d -o CMakeFiles\H7OS.elf.dir\Command\reset\reset_main.c.obj -c D:\H7OS\Command\reset\reset_main.c
 
 CMakeFiles/H7OS.elf.dir/Command/reset/reset_main.c.i: cmake_force
@@ -1935,7 +1949,7 @@ CMakeFiles/H7OS.elf.dir/Command/reset/reset_main.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Command/rm/rm_main.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Command/rm/rm_main.c.obj: D:/H7OS/Command/rm/rm_main.c
 CMakeFiles/H7OS.elf.dir/Command/rm/rm_main.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building C object CMakeFiles/H7OS.elf.dir/Command/rm/rm_main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building C object CMakeFiles/H7OS.elf.dir/Command/rm/rm_main.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Command/rm/rm_main.c.obj -MF CMakeFiles\H7OS.elf.dir\Command\rm\rm_main.c.obj.d -o CMakeFiles\H7OS.elf.dir\Command\rm\rm_main.c.obj -c D:\H7OS\Command\rm\rm_main.c
 
 CMakeFiles/H7OS.elf.dir/Command/rm/rm_main.c.i: cmake_force
@@ -1946,10 +1960,24 @@ CMakeFiles/H7OS.elf.dir/Command/rm/rm_main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/H7OS.elf.dir/Command/rm/rm_main.c.s"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\H7OS\Command\rm\rm_main.c -o CMakeFiles\H7OS.elf.dir\Command\rm\rm_main.c.s
 
+CMakeFiles/H7OS.elf.dir/Command/run/run_main.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
+CMakeFiles/H7OS.elf.dir/Command/run/run_main.c.obj: D:/H7OS/Command/run/run_main.c
+CMakeFiles/H7OS.elf.dir/Command/run/run_main.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building C object CMakeFiles/H7OS.elf.dir/Command/run/run_main.c.obj"
+	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Command/run/run_main.c.obj -MF CMakeFiles\H7OS.elf.dir\Command\run\run_main.c.obj.d -o CMakeFiles\H7OS.elf.dir\Command\run\run_main.c.obj -c D:\H7OS\Command\run\run_main.c
+
+CMakeFiles/H7OS.elf.dir/Command/run/run_main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/H7OS.elf.dir/Command/run/run_main.c.i"
+	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\H7OS\Command\run\run_main.c > CMakeFiles\H7OS.elf.dir\Command\run\run_main.c.i
+
+CMakeFiles/H7OS.elf.dir/Command/run/run_main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/H7OS.elf.dir/Command/run/run_main.c.s"
+	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\H7OS\Command\run\run_main.c -o CMakeFiles\H7OS.elf.dir\Command\run\run_main.c.s
+
 CMakeFiles/H7OS.elf.dir/Command/save/save_main.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Command/save/save_main.c.obj: D:/H7OS/Command/save/save_main.c
 CMakeFiles/H7OS.elf.dir/Command/save/save_main.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building C object CMakeFiles/H7OS.elf.dir/Command/save/save_main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building C object CMakeFiles/H7OS.elf.dir/Command/save/save_main.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Command/save/save_main.c.obj -MF CMakeFiles\H7OS.elf.dir\Command\save\save_main.c.obj.d -o CMakeFiles\H7OS.elf.dir\Command\save\save_main.c.obj -c D:\H7OS\Command\save\save_main.c
 
 CMakeFiles/H7OS.elf.dir/Command/save/save_main.c.i: cmake_force
@@ -1963,7 +1991,7 @@ CMakeFiles/H7OS.elf.dir/Command/save/save_main.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Command/touch/touch_main.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Command/touch/touch_main.c.obj: D:/H7OS/Command/touch/touch_main.c
 CMakeFiles/H7OS.elf.dir/Command/touch/touch_main.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building C object CMakeFiles/H7OS.elf.dir/Command/touch/touch_main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building C object CMakeFiles/H7OS.elf.dir/Command/touch/touch_main.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Command/touch/touch_main.c.obj -MF CMakeFiles\H7OS.elf.dir\Command\touch\touch_main.c.obj.d -o CMakeFiles\H7OS.elf.dir\Command\touch\touch_main.c.obj -c D:\H7OS\Command\touch\touch_main.c
 
 CMakeFiles/H7OS.elf.dir/Command/touch/touch_main.c.i: cmake_force
@@ -1977,7 +2005,7 @@ CMakeFiles/H7OS.elf.dir/Command/touch/touch_main.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Command/tree/tree_main.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Command/tree/tree_main.c.obj: D:/H7OS/Command/tree/tree_main.c
 CMakeFiles/H7OS.elf.dir/Command/tree/tree_main.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building C object CMakeFiles/H7OS.elf.dir/Command/tree/tree_main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building C object CMakeFiles/H7OS.elf.dir/Command/tree/tree_main.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Command/tree/tree_main.c.obj -MF CMakeFiles\H7OS.elf.dir\Command\tree\tree_main.c.obj.d -o CMakeFiles\H7OS.elf.dir\Command\tree\tree_main.c.obj -c D:\H7OS\Command\tree\tree_main.c
 
 CMakeFiles/H7OS.elf.dir/Command/tree/tree_main.c.i: cmake_force
@@ -1991,7 +2019,7 @@ CMakeFiles/H7OS.elf.dir/Command/tree/tree_main.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/Command/use/use_main.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/Command/use/use_main.c.obj: D:/H7OS/Command/use/use_main.c
 CMakeFiles/H7OS.elf.dir/Command/use/use_main.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building C object CMakeFiles/H7OS.elf.dir/Command/use/use_main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building C object CMakeFiles/H7OS.elf.dir/Command/use/use_main.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/Command/use/use_main.c.obj -MF CMakeFiles\H7OS.elf.dir\Command\use\use_main.c.obj.d -o CMakeFiles\H7OS.elf.dir\Command\use\use_main.c.obj -c D:\H7OS\Command\use\use_main.c
 
 CMakeFiles/H7OS.elf.dir/Command/use/use_main.c.i: cmake_force
@@ -2004,7 +2032,7 @@ CMakeFiles/H7OS.elf.dir/Command/use/use_main.c.s: cmake_force
 
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/ASM/reset.s.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/ASM/reset.s.obj: D:/H7OS/RAMFS/init.d/ASM/reset.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building ASM object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/ASM/reset.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building ASM object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/ASM/reset.s.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\H7OS.elf.dir\RAMFS\init.d\ASM\reset.s.obj -c D:\H7OS\RAMFS\init.d\ASM\reset.s
 
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/ASM/reset.s.i: cmake_force
@@ -2017,7 +2045,7 @@ CMakeFiles/H7OS.elf.dir/RAMFS/init.d/ASM/reset.s.s: cmake_force
 
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/ASM/sd_boot.s.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/ASM/sd_boot.s.obj: D:/H7OS/RAMFS/init.d/ASM/sd_boot.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building ASM object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/ASM/sd_boot.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building ASM object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/ASM/sd_boot.s.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\H7OS.elf.dir\RAMFS\init.d\ASM\sd_boot.s.obj -c D:\H7OS\RAMFS\init.d\ASM\sd_boot.s
 
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/ASM/sd_boot.s.i: cmake_force
@@ -2031,7 +2059,7 @@ CMakeFiles/H7OS.elf.dir/RAMFS/init.d/ASM/sd_boot.s.s: cmake_force
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Algo/DFS.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Algo/DFS.c.obj: D:/H7OS/RAMFS/init.d/Algo/DFS.c
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Algo/DFS.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Algo/DFS.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Algo/DFS.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Algo/DFS.c.obj -MF CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Algo\DFS.c.obj.d -o CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Algo\DFS.c.obj -c D:\H7OS\RAMFS\init.d\Algo\DFS.c
 
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Algo/DFS.c.i: cmake_force
@@ -2045,7 +2073,7 @@ CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Algo/DFS.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/builder.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/builder.c.obj: D:/H7OS/RAMFS/init.d/Bin/builder/builder.c
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/builder.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/builder.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/builder.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/builder.c.obj -MF CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Bin\builder\builder.c.obj.d -o CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Bin\builder\builder.c.obj -c D:\H7OS\RAMFS\init.d\Bin\builder\builder.c
 
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/builder.c.i: cmake_force
@@ -2059,7 +2087,7 @@ CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/builder.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/keywords/kw_build.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/keywords/kw_build.c.obj: D:/H7OS/RAMFS/init.d/Bin/builder/keywords/kw_build.c
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/keywords/kw_build.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/keywords/kw_build.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/keywords/kw_build.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/keywords/kw_build.c.obj -MF CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Bin\builder\keywords\kw_build.c.obj.d -o CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Bin\builder\keywords\kw_build.c.obj -c D:\H7OS\RAMFS\init.d\Bin\builder\keywords\kw_build.c
 
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/keywords/kw_build.c.i: cmake_force
@@ -2070,10 +2098,24 @@ CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/keywords/kw_build.c.s: cmake_fo
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/keywords/kw_build.c.s"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\H7OS\RAMFS\init.d\Bin\builder\keywords\kw_build.c -o CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Bin\builder\keywords\kw_build.c.s
 
+CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/script.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
+CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/script.c.obj: D:/H7OS/RAMFS/init.d/Bin/builder/script.c
+CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/script.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/script.c.obj"
+	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/script.c.obj -MF CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Bin\builder\script.c.obj.d -o CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Bin\builder\script.c.obj -c D:\H7OS\RAMFS\init.d\Bin\builder\script.c
+
+CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/script.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/script.c.i"
+	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\H7OS\RAMFS\init.d\Bin\builder\script.c > CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Bin\builder\script.c.i
+
+CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/script.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/script.c.s"
+	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\H7OS\RAMFS\init.d\Bin\builder\script.c -o CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Bin\builder\script.c.s
+
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Cmd/DrT_cmd.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Cmd/DrT_cmd.c.obj: D:/H7OS/RAMFS/init.d/Cmd/DrT_cmd.c
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Cmd/DrT_cmd.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Cmd/DrT_cmd.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Cmd/DrT_cmd.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Cmd/DrT_cmd.c.obj -MF CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Cmd\DrT_cmd.c.obj.d -o CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Cmd\DrT_cmd.c.obj -c D:\H7OS\RAMFS\init.d\Cmd\DrT_cmd.c
 
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Cmd/DrT_cmd.c.i: cmake_force
@@ -2087,7 +2129,7 @@ CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Cmd/DrT_cmd.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Core/DrT.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Core/DrT.c.obj: D:/H7OS/RAMFS/init.d/Core/DrT.c
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Core/DrT.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Core/DrT.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Core/DrT.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Core/DrT.c.obj -MF CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Core\DrT.c.obj.d -o CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Core\DrT.c.obj -c D:\H7OS\RAMFS\init.d\Core\DrT.c
 
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Core/DrT.c.i: cmake_force
@@ -2101,7 +2143,7 @@ CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Core/DrT.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Dev/DrT_dev.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Dev/DrT_dev.c.obj: D:/H7OS/RAMFS/init.d/Dev/DrT_dev.c
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Dev/DrT_dev.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Dev/DrT_dev.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Dev/DrT_dev.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Dev/DrT_dev.c.obj -MF CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Dev\DrT_dev.c.obj.d -o CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Dev\DrT_dev.c.obj -c D:\H7OS\RAMFS\init.d\Dev\DrT_dev.c
 
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Dev/DrT_dev.c.i: cmake_force
@@ -2115,7 +2157,7 @@ CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Dev/DrT_dev.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/FS/DrT_fs.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/FS/DrT_fs.c.obj: D:/H7OS/RAMFS/init.d/FS/DrT_fs.c
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/FS/DrT_fs.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/FS/DrT_fs.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/FS/DrT_fs.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/RAMFS/init.d/FS/DrT_fs.c.obj -MF CMakeFiles\H7OS.elf.dir\RAMFS\init.d\FS\DrT_fs.c.obj.d -o CMakeFiles\H7OS.elf.dir\RAMFS\init.d\FS\DrT_fs.c.obj -c D:\H7OS\RAMFS\init.d\FS\DrT_fs.c
 
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/FS/DrT_fs.c.i: cmake_force
@@ -2129,7 +2171,7 @@ CMakeFiles/H7OS.elf.dir/RAMFS/init.d/FS/DrT_fs.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Mnt/DrT_mnt.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Mnt/DrT_mnt.c.obj: D:/H7OS/RAMFS/init.d/Mnt/DrT_mnt.c
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Mnt/DrT_mnt.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Mnt/DrT_mnt.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Mnt/DrT_mnt.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Mnt/DrT_mnt.c.obj -MF CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Mnt\DrT_mnt.c.obj.d -o CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Mnt\DrT_mnt.c.obj -c D:\H7OS\RAMFS\init.d\Mnt\DrT_mnt.c
 
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Mnt/DrT_mnt.c.i: cmake_force
@@ -2143,7 +2185,7 @@ CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Mnt/DrT_mnt.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/FS_Serial.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/FS_Serial.c.obj: D:/H7OS/RAMFS/init.d/Periph/FS_Serial.c
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/FS_Serial.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/FS_Serial.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/FS_Serial.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/FS_Serial.c.obj -MF CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Periph\FS_Serial.c.obj.d -o CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Periph\FS_Serial.c.obj -c D:\H7OS\RAMFS\init.d\Periph\FS_Serial.c
 
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/FS_Serial.c.i: cmake_force
@@ -2157,7 +2199,7 @@ CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/FS_Serial.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/cpu.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/cpu.c.obj: D:/H7OS/RAMFS/init.d/Periph/cpu.c
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/cpu.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/cpu.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/cpu.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/cpu.c.obj -MF CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Periph\cpu.c.obj.d -o CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Periph\cpu.c.obj -c D:\H7OS\RAMFS\init.d\Periph\cpu.c
 
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/cpu.c.i: cmake_force
@@ -2171,7 +2213,7 @@ CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Periph/cpu.c.s: cmake_force
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Proc/DrT_proc.c.obj: CMakeFiles/H7OS.elf.dir/flags.make
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Proc/DrT_proc.c.obj: D:/H7OS/RAMFS/init.d/Proc/DrT_proc.c
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Proc/DrT_proc.c.obj: CMakeFiles/H7OS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Proc/DrT_proc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building C object CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Proc/DrT_proc.c.obj"
 	"E:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Proc/DrT_proc.c.obj -MF CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Proc\DrT_proc.c.obj.d -o CMakeFiles\H7OS.elf.dir\RAMFS\init.d\Proc\DrT_proc.c.obj -c D:\H7OS\RAMFS\init.d\Proc\DrT_proc.c
 
 CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Proc/DrT_proc.c.i: cmake_force
@@ -2310,6 +2352,7 @@ H7OS_elf_OBJECTS = \
 "CMakeFiles/H7OS.elf.dir/Command/flash/flash_main.c.obj" \
 "CMakeFiles/H7OS.elf.dir/Command/help/help_main.c.obj" \
 "CMakeFiles/H7OS.elf.dir/Command/info/info_main.c.obj" \
+"CMakeFiles/H7OS.elf.dir/Command/kill/kill_main.c.obj" \
 "CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj" \
 "CMakeFiles/H7OS.elf.dir/Command/mkdir/mkdir_main.c.obj" \
 "CMakeFiles/H7OS.elf.dir/Command/mount/mount_main.c.obj" \
@@ -2318,6 +2361,7 @@ H7OS_elf_OBJECTS = \
 "CMakeFiles/H7OS.elf.dir/Command/reboot/reboot_main.c.obj" \
 "CMakeFiles/H7OS.elf.dir/Command/reset/reset_main.c.obj" \
 "CMakeFiles/H7OS.elf.dir/Command/rm/rm_main.c.obj" \
+"CMakeFiles/H7OS.elf.dir/Command/run/run_main.c.obj" \
 "CMakeFiles/H7OS.elf.dir/Command/save/save_main.c.obj" \
 "CMakeFiles/H7OS.elf.dir/Command/touch/touch_main.c.obj" \
 "CMakeFiles/H7OS.elf.dir/Command/tree/tree_main.c.obj" \
@@ -2327,6 +2371,7 @@ H7OS_elf_OBJECTS = \
 "CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Algo/DFS.c.obj" \
 "CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/builder.c.obj" \
 "CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/keywords/kw_build.c.obj" \
+"CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/script.c.obj" \
 "CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Cmd/DrT_cmd.c.obj" \
 "CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Core/DrT.c.obj" \
 "CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Dev/DrT_dev.c.obj" \
@@ -2465,6 +2510,7 @@ H7OS.elf: CMakeFiles/H7OS.elf.dir/Command/echo/echo_main.c.obj
 H7OS.elf: CMakeFiles/H7OS.elf.dir/Command/flash/flash_main.c.obj
 H7OS.elf: CMakeFiles/H7OS.elf.dir/Command/help/help_main.c.obj
 H7OS.elf: CMakeFiles/H7OS.elf.dir/Command/info/info_main.c.obj
+H7OS.elf: CMakeFiles/H7OS.elf.dir/Command/kill/kill_main.c.obj
 H7OS.elf: CMakeFiles/H7OS.elf.dir/Command/ls/ls_main.c.obj
 H7OS.elf: CMakeFiles/H7OS.elf.dir/Command/mkdir/mkdir_main.c.obj
 H7OS.elf: CMakeFiles/H7OS.elf.dir/Command/mount/mount_main.c.obj
@@ -2473,6 +2519,7 @@ H7OS.elf: CMakeFiles/H7OS.elf.dir/Command/pwd/pwd_main.c.obj
 H7OS.elf: CMakeFiles/H7OS.elf.dir/Command/reboot/reboot_main.c.obj
 H7OS.elf: CMakeFiles/H7OS.elf.dir/Command/reset/reset_main.c.obj
 H7OS.elf: CMakeFiles/H7OS.elf.dir/Command/rm/rm_main.c.obj
+H7OS.elf: CMakeFiles/H7OS.elf.dir/Command/run/run_main.c.obj
 H7OS.elf: CMakeFiles/H7OS.elf.dir/Command/save/save_main.c.obj
 H7OS.elf: CMakeFiles/H7OS.elf.dir/Command/touch/touch_main.c.obj
 H7OS.elf: CMakeFiles/H7OS.elf.dir/Command/tree/tree_main.c.obj
@@ -2482,6 +2529,7 @@ H7OS.elf: CMakeFiles/H7OS.elf.dir/RAMFS/init.d/ASM/sd_boot.s.obj
 H7OS.elf: CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Algo/DFS.c.obj
 H7OS.elf: CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/builder.c.obj
 H7OS.elf: CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/keywords/kw_build.c.obj
+H7OS.elf: CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Bin/builder/script.c.obj
 H7OS.elf: CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Cmd/DrT_cmd.c.obj
 H7OS.elf: CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Core/DrT.c.obj
 H7OS.elf: CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Dev/DrT_dev.c.obj
@@ -2493,7 +2541,7 @@ H7OS.elf: CMakeFiles/H7OS.elf.dir/RAMFS/init.d/Proc/DrT_proc.c.obj
 H7OS.elf: CMakeFiles/H7OS.elf.dir/build.make
 H7OS.elf: CMakeFiles/H7OS.elf.dir/objects1.rsp
 H7OS.elf: CMakeFiles/H7OS.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Linking C executable H7OS.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\H7OS\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Linking C executable H7OS.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\H7OS.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building D:/H7OS/build/H7OS.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building D:/H7OS/build/H7OS.bin"

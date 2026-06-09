@@ -1,5 +1,5 @@
 #include "bsp_cpu.h"
-#include "Core/DrT.h"
+#include "dev_register.h"
 #include "Periph/cpu.h"
 #include "memctl.h"
 #include "platform.h"
@@ -51,11 +51,6 @@ void cpu_device_init(void)
     Platform_CPU_TempInit();
 
     createCPU();
-    addDevice("dev/cpu", CortexM7, "CPU",
-        "Central Processing Unit", DEVICE_BS, DEVICE_ON, NULL);
-
-    char _path[64];
-    sprintf(_path, "/dev/cpu/CPU");
-    DrTNode_t d = loadDevice(_path);
-    if (d) d->fops = (void *) &cpu_fops;
+    dev_register("dev/cpu", CortexM7, "CPU",
+        "Central Processing Unit", DEVICE_BS, &cpu_fops);
 }

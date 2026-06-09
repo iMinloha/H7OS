@@ -18,7 +18,9 @@ Shell 通过 USB CDC 虚拟串口 (USART2) 交互。提示符: `root:/path$`
 | `rm <path>` | `rm /usr/old.txt` | 删除文件或目录 / remove file or directory |
 | `cp <src> <dst>` | `cp /usr/a.txt /mnt/SDcard/b.txt` | 复制文件 / copy file |
 | `mv <src> <dst>` | `mv a.txt b.txt` | 移动/重命名 / move/rename (SD→SD 为原地 rename) |
-| `tree [depth]` | `tree 2` | 树形显示目录 / show directory tree |
+| `tree [path] [depth]` | `tree /sd 2` | 树形显示目录 / show directory tree |
+| `run <file>` | `run /blink` | 异步执行脚本 / run script (RAMFS or SD) |
+| `kill <name\|pid>` | `kill /blink`, `kill 3` | 终止脚本或任务 / terminate script or task |
 
 ### 挂载 / Mount
 

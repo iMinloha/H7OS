@@ -3,6 +3,7 @@
 #include "RAMFS.h"
 #include "usbd_cdc_if.h"
 #include "memctl.h"
+#include "bsp_file_ops.h"
 
 extern CPU_t CortexM7;
 
@@ -77,9 +78,11 @@ void info_main(int argc, char **argv)
         print_dev_type(drt->type);
         print_dev_status(drt->status);
 
+        /* 诊断读取: 直接调用 fops->read, 绕过所有权检查 */
         if (drt->fops) {
+            bsp_file_ops_t *f = (bsp_file_ops_t*)drt->fops;
             uint8_t buf[256];
-            int n = dev_read(argv[0], buf, sizeof(buf) - 1);
+            int n = f->read ? f->read(drt->device, buf, sizeof(buf) - 1) : -1;
             if (n > 0) {
                 buf[n] = '\0';
                 USB_printf("Value: %s\n", (char *) buf);

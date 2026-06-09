@@ -122,9 +122,14 @@ int dev_open(const char* path) {
     DrTNode_t dev = loadDevice(buf);
     kernel_free(buf);
     if (!dev || !dev->fops) return -1;
+    /* 设备已被其他任务占用 */
+    if (dev->status == DEVICE_BUSY) return -2;
     bsp_file_ops_t* f = (bsp_file_ops_t*)dev->fops;
     int ret = f->open ? f->open(dev->device) : 0;
-    if (ret == 0) dev->status = DEVICE_BUSY;
+    if (ret == 0) {
+        dev->status = DEVICE_BUSY;
+        dev->owner  = osThreadGetId();
+    }
     return ret;
 }
 
@@ -134,9 +139,13 @@ int dev_close(const char* path) {
     DrTNode_t dev = loadDevice(buf);
     kernel_free(buf);
     if (!dev || !dev->fops) return -1;
+    /* 只有打开者才能关闭 */
+    if (dev->status != DEVICE_BUSY)  return -3;
+    if (dev->owner != osThreadGetId()) return -4;
     bsp_file_ops_t* f = (bsp_file_ops_t*)dev->fops;
     int ret = f->close ? f->close(dev->device) : 0;
     dev->status = DEVICE_ON;
+    dev->owner  = NULL;
     return ret;
 }
 
@@ -146,6 +155,9 @@ int dev_read(const char* path, uint8_t* buf, uint32_t len) {
     DrTNode_t dev = loadDevice(p);
     kernel_free(p);
     if (!dev || !dev->fops) return -1;
+    /* 设备未打开, 或不是当前任务打开的 */
+    if (dev->status != DEVICE_BUSY)  return -3;
+    if (dev->owner != osThreadGetId()) return -4;
     bsp_file_ops_t* f = (bsp_file_ops_t*)dev->fops;
     return f->read ? f->read(dev->device, buf, len) : -1;
 }
@@ -156,6 +168,9 @@ int dev_write(const char* path, const uint8_t* buf, uint32_t len) {
     DrTNode_t dev = loadDevice(p);
     kernel_free(p);
     if (!dev || !dev->fops) return -1;
+    /* 设备未打开, 或不是当前任务打开的 */
+    if (dev->status != DEVICE_BUSY)  return -3;
+    if (dev->owner != osThreadGetId()) return -4;
     bsp_file_ops_t* f = (bsp_file_ops_t*)dev->fops;
     return f->write ? f->write(dev->device, buf, len) : -1;
 }

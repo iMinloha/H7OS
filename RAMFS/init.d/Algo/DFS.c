@@ -64,11 +64,13 @@ static void dfs(FS_t node, const char *prefix, int depth) {
         }
     }
 
-    /* SD mount content */
+    /* SD mount content — respect sd_cd_path if navigating inside SD */
     if (has_sd && depth > 0) {
+        const char* sd_base = node->sd_cd_path ? node->sd_cd_path
+                                               : node->sd_mount_path;
         char child_prefix[256];
         snprintf(child_prefix, sizeof(child_prefix), "%s    ", prefix);
-        dfs_sd_list(node->sd_mount_path, child_prefix, depth - 1);
+        dfs_sd_list(sd_base, child_prefix, depth - 1);
     }
 }
 

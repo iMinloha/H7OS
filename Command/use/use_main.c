@@ -5,6 +5,16 @@
 #include <string.h>
 #include <stdlib.h>
 
+static const char *dev_err(int r) {
+    switch (r) {
+    case -1: return "no such device";
+    case -2: return "device busy (opened by another task)";
+    case -3: return "device not opened";
+    case -4: return "permission denied (not the owner)";
+    default: return NULL;
+    }
+}
+
 void use_main(int argc, char **argv) {
     if (argc < 2) {
         USB_printf("Usage: use <device> <op> [args]\n");
@@ -20,15 +30,18 @@ void use_main(int argc, char **argv) {
 
     if (strcmp(op, "open") == 0) {
         int r = dev_open(dev_path);
-        USB_printf("use: open %s → %d\n", dev_path, r);
+        if (r == 0) USB_printf("use: open %s → OK\n", dev_path);
+        else        USB_color_printf(LIGHT_RED, "use: open %s → %s (%d)\n", dev_path, dev_err(r) ? dev_err(r) : "error", r);
     }
     else if (strcmp(op, "close") == 0) {
         int r = dev_close(dev_path);
-        USB_printf("use: close %s → %d\n", dev_path, r);
+        if (r == 0) USB_printf("use: close %s → OK\n", dev_path);
+        else        USB_color_printf(LIGHT_RED, "use: close %s → %s (%d)\n", dev_path, dev_err(r) ? dev_err(r) : "error", r);
     }
     else if (strcmp(op, "write") == 0 && argc >= 3) {
         int r = dev_write(dev_path, (uint8_t*)argv[2], strlen(argv[2]));
-        USB_printf("use: write %s %d bytes → %d\n", dev_path, (int)strlen(argv[2]), r);
+        if (r >= 0) USB_printf("use: write %s %d bytes → OK\n", dev_path, (int)strlen(argv[2]));
+        else        USB_color_printf(LIGHT_RED, "use: write %s → %s (%d)\n", dev_path, dev_err(r) ? dev_err(r) : "error", r);
     }
     else if (strcmp(op, "read") == 0 && argc >= 3) {
         int len = atoi(argv[2]);
@@ -41,7 +54,7 @@ void use_main(int argc, char **argv) {
             for (int i = 0; i < r; i++) USB_printf("%c", buf[i]);
             USB_printf("\n");
         } else {
-            USB_printf("use: read %s → %d\n", dev_path, r);
+            USB_color_printf(LIGHT_RED, "use: read %s → %s (%d)\n", dev_path, dev_err(r) ? dev_err(r) : "error", r);
         }
         kernel_free(buf);
     }

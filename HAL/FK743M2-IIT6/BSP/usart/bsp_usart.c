@@ -1,6 +1,6 @@
 #include "bsp_usart.h"
 #include "usart.h"
-#include "RAMFS.h"
+#include "dev_register.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -73,9 +73,5 @@ bsp_file_ops_t usart1_fops = {
 };
 
 void usart1_device_init(void) {
-    addDevice("dev/serial", &huart1, "USART1", "Serial bus device", DEVICE_SERIAL, DEVICE_ON, NULL);
-    char _path[64];
-    sprintf(_path, "/dev/serial/USART1");
-    DrTNode_t d = loadDevice(_path);
-    if (d) d->fops = (void*)&usart1_fops;
+    dev_register("dev/serial", &huart1, "USART1", "Serial bus device", DEVICE_SERIAL, &usart1_fops);
 }
