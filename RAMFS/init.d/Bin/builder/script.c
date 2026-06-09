@@ -124,7 +124,11 @@ static int find_else_endif(lines_t *L, int i, int *he) {
 }
 
 /* ══════════════════════════════════════════════════════════════ */
-typedef struct { volatile int killed; int errs; const char *name; } script_ctx_t;
+typedef struct { volatile int killed; int errs; const char *name;
+                  uint8_t *wbuf; int wbuf_sz;        /* 预分配工作缓冲区, 避免反复 kernel_alloc */
+} script_ctx_t;
+#include "script_config.h"
+
 #define MAX_ERRS  10
 
 typedef enum { L_CMD, L_ASSIGN, L_FOR, L_IF, L_WHILE, L_DELAY,
@@ -255,15 +259,15 @@ static int exec_line(script_ctx_t *ctx, li_t *in, const char *raw) {
         if (r==0 || r==-2) {
             int n = in->v_int>0 ? in->v_int : 64;
             if (n>512) n=512;
-            uint8_t *rb = kernel_alloc(n+1);
-            memset(rb,0,n+1);
-            r = dev_read(in->dev, rb, n);
-            if (r>0 && in->kind==L_READ_VAR) {
-                rb[r]='\0';
-                var_t *v = va(in->iv);
-                if (v) v->v = atoi((char*)rb);
+            if (ctx->wbuf && n < ctx->wbuf_sz) {
+                memset(ctx->wbuf, 0, n+1);
+                r = dev_read(in->dev, ctx->wbuf, n);
+                if (r>0 && in->kind==L_READ_VAR) {
+                    ctx->wbuf[r]='\0';
+                    var_t *v = va(in->iv);
+                    if (v) v->v = atoi((char*)ctx->wbuf);
+                }
             }
-            kernel_free(rb);
         }
         break;
     }
@@ -272,8 +276,8 @@ static int exec_line(script_ctx_t *ctx, li_t *in, const char *raw) {
         if (r==0 || r==-2) {
             const char *dp = write_data_ptr(raw);
             char ds[128]; subst(ds,sizeof(ds),dp);
-            uint8_t bin[128]; int blen = parse_bin(bin,sizeof(bin),ds);
-            if (blen>0) r = dev_write(in->dev, bin, blen);
+            int blen = parse_bin(ctx->wbuf, ctx->wbuf_sz, ds);
+            if (blen>0) r = dev_write(in->dev, ctx->wbuf, blen);
         }
         break;
     }
@@ -354,8 +358,7 @@ static void exec_while(script_ctx_t *ctx, lines_t *L, int i) {
 /* ══════════════════════════════════════════════════════════════ */
 
 typedef struct { osThreadId handle; Task_t task; char name[20]; script_ctx_t ctx; } script_job_t;
-#define MAX_JOBS 4
-static script_job_t _jobs[MAX_JOBS];
+static script_job_t _jobs[SCRIPT_MAX_JOBS];
 static int _job_cnt;
 
 static script_job_t *job_find_by_name(const char *n) {
@@ -381,6 +384,7 @@ static void script_thread(void const *arg) {
     kernel_free(L); kernel_free(buf);
 
     if(job->task){job->task->status=TASK_STOP;job->task->handle=NULL;}
+    if(job->ctx.wbuf){kernel_free(job->ctx.wbuf);job->ctx.wbuf=NULL;}
     for (int i=0;i<_job_cnt;i++) if(&_jobs[i]==job){_jobs[i]=_jobs[--_job_cnt];break;}
     kernel_free(sa->script); kernel_free(sa);
     osThreadTerminate(NULL);
@@ -388,13 +392,14 @@ static void script_thread(void const *arg) {
 
 osThreadId script_run_async(const char *script, const char *name) {
     if(!script||!*script||!name) return NULL;
-    if(_job_cnt>=MAX_JOBS) return NULL;
+    if(_job_cnt>=SCRIPT_MAX_JOBS) return NULL;
     extern uint8_t PID_Global;
 
     script_job_t *job=&_jobs[_job_cnt++];
     memset(job,0,sizeof(*job));
     strncpy(job->name,name,19);job->name[19]=0;
     job->ctx.killed=0;job->ctx.name=job->name;
+    job->ctx.wbuf=kernel_alloc(SCRIPT_WBUF_SZ);job->ctx.wbuf_sz=SCRIPT_WBUF_SZ;
 
     Task_t t=(Task_t)kernel_alloc(sizeof(struct Task));
     t->name=kernel_alloc(strlen(name)+1);strcpy(t->name,name);
@@ -408,7 +413,7 @@ osThreadId script_run_async(const char *script, const char *name) {
     strcpy(sa->script,script);
     strncpy(sa->name,name,19);sa->name[19]=0;
 
-    osThreadDef(scriptT,script_thread,osPriorityBelowNormal,0,2048);
+    osThreadDef(scriptT,script_thread,osPriorityBelowNormal,0,SCRIPT_STACK_SZ);
     osThreadId h=osThreadCreate(osThread(scriptT),sa);
     if(!h){kernel_free(sa->script);kernel_free(sa);kernel_free(t->name);kernel_free(t);_job_cnt--;return NULL;}
     job->handle=h;t->handle=h;
@@ -420,7 +425,7 @@ int script_kill(const char *name) {
     if(!job)return -1;
     job->ctx.killed=1;
     if(job->handle){osThreadTerminate(job->handle);job->handle=NULL;}
-
+    if(job->ctx.wbuf){kernel_free(job->ctx.wbuf);job->ctx.wbuf=NULL;}
     FS_t proc=getFSChild(RAM_FS,"proc");
     if(proc&&job->task){
         Task_t p=proc->tasklist,prev=NULL;
