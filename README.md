@@ -1,5 +1,7 @@
 # H7OS — 嵌入式操作系统文档
 
+> 现已支持Platform，请移步到master分支查看新版本代码
+
 基于 FreeRTOS 的 Linux 风格嵌入式操作系统，运行于 STM32H743IIT6（FK743M2-IIT6 开发板）。
 提供内存文件系统（RAMFS）、FAT32/exFAT SD 卡支持、USB CDC 虚拟串口 Shell、设备树（Device Tree）与 `file_ops` 驱动框架。
 
